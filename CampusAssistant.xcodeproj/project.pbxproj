@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F1AFCA8B7D65EB81279C020 /* Pods_CampusAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDAE5CCA068A5DD1B1F3387 /* Pods_CampusAssistant.framework */; };
+		EF377C3F1C6F919B00B40D20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF377C3E1C6F919B00B40D20 /* AppDelegate.swift */; };
+		EF377C441C6F919B00B40D20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF377C421C6F919B00B40D20 /* Main.storyboard */; };
+		EF377C461C6F919B00B40D20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF377C451C6F919B00B40D20 /* Assets.xcassets */; };
+		EF377C491C6F919B00B40D20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF377C471C6F919B00B40D20 /* LaunchScreen.storyboard */; };
+		EF377C541C6F919B00B40D20 /* CampusAssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF377C531C6F919B00B40D20 /* CampusAssistantTests.swift */; };
+		EF377C951C7038F800B40D20 /* CATabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF377C921C7038F800B40D20 /* CATabBarController.swift */; };
+		EF3D6FE01C7064740051DA24 /* CAHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D6FDF1C7064740051DA24 /* CAHomeViewController.swift */; };
+		EF3D6FE21C70647C0051DA24 /* CAProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D6FE11C70647C0051DA24 /* CAProfileViewController.swift */; };
+		EF3D6FE41C7064870051DA24 /* CACollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D6FE31C7064870051DA24 /* CACollectionsViewController.swift */; };
+		EF3D6FE71C70CA300051DA24 /* CANavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D6FE61C70CA300051DA24 /* CANavigationController.swift */; };
+		EF3D6FEB1C70D09A0051DA24 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF3D6FE91C70D09A0051DA24 /* Montserrat-Bold.ttf */; };
+		EF3D6FEC1C70D09A0051DA24 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF3D6FEA1C70D09A0051DA24 /* Montserrat-Regular.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF377C501C6F919B00B40D20 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF377C331C6F919B00B40D20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF377C3A1C6F919B00B40D20;
+			remoteInfo = CampusAssistant;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2DDAE5CCA068A5DD1B1F3387 /* Pods_CampusAssistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampusAssistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BC4B34AD9E470E496F72F7F /* Pods-CampusAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusAssistant.release.xcconfig"; path = "Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant.release.xcconfig"; sourceTree = "<group>"; };
+		CA6FFB7B5B45A159BC91AAA8 /* Pods-CampusAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant.debug.xcconfig"; sourceTree = "<group>"; };
+		EF377C3B1C6F919B00B40D20 /* CampusAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF377C3E1C6F919B00B40D20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF377C431C6F919B00B40D20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF377C451C6F919B00B40D20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF377C481C6F919B00B40D20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF377C4A1C6F919B00B40D20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF377C4F1C6F919B00B40D20 /* CampusAssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampusAssistantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF377C531C6F919B00B40D20 /* CampusAssistantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusAssistantTests.swift; sourceTree = "<group>"; };
+		EF377C551C6F919B00B40D20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF377C5E1C6F936900B40D20 /* CampusAssistant-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CampusAssistant-Bridging-Header.h"; sourceTree = "<group>"; };
+		EF377C921C7038F800B40D20 /* CATabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CATabBarController.swift; sourceTree = "<group>"; };
+		EF3D6FDF1C7064740051DA24 /* CAHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAHomeViewController.swift; sourceTree = "<group>"; };
+		EF3D6FE11C70647C0051DA24 /* CAProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAProfileViewController.swift; sourceTree = "<group>"; };
+		EF3D6FE31C7064870051DA24 /* CACollectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACollectionsViewController.swift; sourceTree = "<group>"; };
+		EF3D6FE61C70CA300051DA24 /* CANavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CANavigationController.swift; sourceTree = "<group>"; };
+		EF3D6FE91C70D09A0051DA24 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		EF3D6FEA1C70D09A0051DA24 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF377C381C6F919B00B40D20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F1AFCA8B7D65EB81279C020 /* Pods_CampusAssistant.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF377C4C1C6F919B00B40D20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92967FD6C2ABD89498A83797 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA6FFB7B5B45A159BC91AAA8 /* Pods-CampusAssistant.debug.xcconfig */,
+				6BC4B34AD9E470E496F72F7F /* Pods-CampusAssistant.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CCA2EF2DD3471BA17A9D450B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DDAE5CCA068A5DD1B1F3387 /* Pods_CampusAssistant.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF377C321C6F919B00B40D20 = {
+			isa = PBXGroup;
+			children = (
+				EF377C3D1C6F919B00B40D20 /* CampusAssistant */,
+				EF377C521C6F919B00B40D20 /* CampusAssistantTests */,
+				EF377C3C1C6F919B00B40D20 /* Products */,
+				92967FD6C2ABD89498A83797 /* Pods */,
+				CCA2EF2DD3471BA17A9D450B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF377C3C1C6F919B00B40D20 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF377C3B1C6F919B00B40D20 /* CampusAssistant.app */,
+				EF377C4F1C6F919B00B40D20 /* CampusAssistantTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF377C3D1C6F919B00B40D20 /* CampusAssistant */ = {
+			isa = PBXGroup;
+			children = (
+				EF377C3E1C6F919B00B40D20 /* AppDelegate.swift */,
+				EF377C5E1C6F936900B40D20 /* CampusAssistant-Bridging-Header.h */,
+				EF3D6FE81C70D09A0051DA24 /* Font */,
+				EF377C8E1C7038F800B40D20 /* Extensions */,
+				EF377C8F1C7038F800B40D20 /* Models */,
+				EF377C901C7038F800B40D20 /* ViewControllers */,
+				EF377C941C7038F800B40D20 /* Views */,
+				EF377C421C6F919B00B40D20 /* Main.storyboard */,
+				EF377C451C6F919B00B40D20 /* Assets.xcassets */,
+				EF377C471C6F919B00B40D20 /* LaunchScreen.storyboard */,
+				EF377C4A1C6F919B00B40D20 /* Info.plist */,
+			);
+			path = CampusAssistant;
+			sourceTree = "<group>";
+		};
+		EF377C521C6F919B00B40D20 /* CampusAssistantTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF377C531C6F919B00B40D20 /* CampusAssistantTests.swift */,
+				EF377C551C6F919B00B40D20 /* Info.plist */,
+			);
+			path = CampusAssistantTests;
+			sourceTree = "<group>";
+		};
+		EF377C8E1C7038F800B40D20 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EF377C8F1C7038F800B40D20 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EF377C901C7038F800B40D20 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D6FE51C70CA0E0051DA24 /* Navigation */,
+				EF3D6FDA1C7064260051DA24 /* Collections */,
+				EF3D6FDB1C7064260051DA24 /* Home */,
+				EF3D6FDC1C7064260051DA24 /* Profile */,
+				EF377C911C7038F800B40D20 /* TabBar */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EF377C911C7038F800B40D20 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				EF377C921C7038F800B40D20 /* CATabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		EF377C941C7038F800B40D20 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF3D6FDA1C7064260051DA24 /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D6FE31C7064870051DA24 /* CACollectionsViewController.swift */,
+			);
+			path = Collections;
+			sourceTree = "<group>";
+		};
+		EF3D6FDB1C7064260051DA24 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D6FDF1C7064740051DA24 /* CAHomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EF3D6FDC1C7064260051DA24 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D6FE11C70647C0051DA24 /* CAProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		EF3D6FE51C70CA0E0051DA24 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D6FE61C70CA300051DA24 /* CANavigationController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		EF3D6FE81C70D09A0051DA24 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				EF3D6FE91C70D09A0051DA24 /* Montserrat-Bold.ttf */,
+				EF3D6FEA1C70D09A0051DA24 /* Montserrat-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF377C3A1C6F919B00B40D20 /* CampusAssistant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF377C581C6F919B00B40D20 /* Build configuration list for PBXNativeTarget "CampusAssistant" */;
+			buildPhases = (
+				DEE2614D6AE8D1CB537EB8C0 /* Check Pods Manifest.lock */,
+				EF377C371C6F919B00B40D20 /* Sources */,
+				EF377C381C6F919B00B40D20 /* Frameworks */,
+				EF377C391C6F919B00B40D20 /* Resources */,
+				C6E7D079CC35007FFE647EEA /* Embed Pods Frameworks */,
+				A492C3EB226AFA04064365EE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CampusAssistant;
+			productName = CampusAssistant;
+			productReference = EF377C3B1C6F919B00B40D20 /* CampusAssistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF377C4E1C6F919B00B40D20 /* CampusAssistantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF377C5B1C6F919B00B40D20 /* Build configuration list for PBXNativeTarget "CampusAssistantTests" */;
+			buildPhases = (
+				EF377C4B1C6F919B00B40D20 /* Sources */,
+				EF377C4C1C6F919B00B40D20 /* Frameworks */,
+				EF377C4D1C6F919B00B40D20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF377C511C6F919B00B40D20 /* PBXTargetDependency */,
+			);
+			name = CampusAssistantTests;
+			productName = CampusAssistantTests;
+			productReference = EF377C4F1C6F919B00B40D20 /* CampusAssistantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF377C331C6F919B00B40D20 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CA;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = com.jacob;
+				TargetAttributes = {
+					EF377C3A1C6F919B00B40D20 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 733C233Y34;
+					};
+					EF377C4E1C6F919B00B40D20 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = EF377C3A1C6F919B00B40D20;
+					};
+				};
+			};
+			buildConfigurationList = EF377C361C6F919B00B40D20 /* Build configuration list for PBXProject "CampusAssistant" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF377C321C6F919B00B40D20;
+			productRefGroup = EF377C3C1C6F919B00B40D20 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF377C3A1C6F919B00B40D20 /* CampusAssistant */,
+				EF377C4E1C6F919B00B40D20 /* CampusAssistantTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF377C391C6F919B00B40D20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF3D6FEB1C70D09A0051DA24 /* Montserrat-Bold.ttf in Resources */,
+				EF377C491C6F919B00B40D20 /* LaunchScreen.storyboard in Resources */,
+				EF377C461C6F919B00B40D20 /* Assets.xcassets in Resources */,
+				EF3D6FEC1C70D09A0051DA24 /* Montserrat-Regular.ttf in Resources */,
+				EF377C441C6F919B00B40D20 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF377C4D1C6F919B00B40D20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A492C3EB226AFA04064365EE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6E7D079CC35007FFE647EEA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEE2614D6AE8D1CB537EB8C0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF377C371C6F919B00B40D20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF3D6FE21C70647C0051DA24 /* CAProfileViewController.swift in Sources */,
+				EF377C951C7038F800B40D20 /* CATabBarController.swift in Sources */,
+				EF3D6FE41C7064870051DA24 /* CACollectionsViewController.swift in Sources */,
+				EF3D6FE71C70CA300051DA24 /* CANavigationController.swift in Sources */,
+				EF377C3F1C6F919B00B40D20 /* AppDelegate.swift in Sources */,
+				EF3D6FE01C7064740051DA24 /* CAHomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF377C4B1C6F919B00B40D20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF377C541C6F919B00B40D20 /* CampusAssistantTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF377C511C6F919B00B40D20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF377C3A1C6F919B00B40D20 /* CampusAssistant */;
+			targetProxy = EF377C501C6F919B00B40D20 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF377C421C6F919B00B40D20 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF377C431C6F919B00B40D20 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF377C471C6F919B00B40D20 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF377C481C6F919B00B40D20 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF377C561C6F919B00B40D20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "CampusAssistant/CampusAssistant-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF377C571C6F919B00B40D20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "CampusAssistant/CampusAssistant-Bridging-Header.h";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF377C591C6F919B00B40D20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA6FFB7B5B45A159BC91AAA8 /* Pods-CampusAssistant.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = CampusAssistant/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-47124563-qq.com.CampusAssistant";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CampusAssistant/CampusAssistant-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF377C5A1C6F919B00B40D20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BC4B34AD9E470E496F72F7F /* Pods-CampusAssistant.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = CampusAssistant/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-47124563-qq.com.CampusAssistant";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CampusAssistant/CampusAssistant-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		EF377C5C1C6F919B00B40D20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CampusAssistantTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-47124563-qq.com.CampusAssistantTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CampusAssistant/CampusAssistant-Bridging-Header.h";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CampusAssistant.app/CampusAssistant";
+			};
+			name = Debug;
+		};
+		EF377C5D1C6F919B00B40D20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CampusAssistantTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-47124563-qq.com.CampusAssistantTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CampusAssistant/CampusAssistant-Bridging-Header.h";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CampusAssistant.app/CampusAssistant";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF377C361C6F919B00B40D20 /* Build configuration list for PBXProject "CampusAssistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF377C561C6F919B00B40D20 /* Debug */,
+				EF377C571C6F919B00B40D20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF377C581C6F919B00B40D20 /* Build configuration list for PBXNativeTarget "CampusAssistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF377C591C6F919B00B40D20 /* Debug */,
+				EF377C5A1C6F919B00B40D20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF377C5B1C6F919B00B40D20 /* Build configuration list for PBXNativeTarget "CampusAssistantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF377C5C1C6F919B00B40D20 /* Debug */,
+				EF377C5D1C6F919B00B40D20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF377C331C6F919B00B40D20 /* Project object */;
+}
