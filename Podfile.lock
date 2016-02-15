@@ -1,0 +1,10 @@
+PODS:
+  - RDVTabBarController (1.1.9)
+
+DEPENDENCIES:
+  - RDVTabBarController
+
+SPEC CHECKSUMS:
+  RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
+
+COCOAPODS: 0.39.0
