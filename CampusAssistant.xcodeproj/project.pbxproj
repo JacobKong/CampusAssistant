@@ -17,9 +17,15 @@
 		EF3D6FE01C7064740051DA24 /* CAHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D6FDF1C7064740051DA24 /* CAHomeViewController.swift */; };
 		EF3D6FE21C70647C0051DA24 /* CAProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D6FE11C70647C0051DA24 /* CAProfileViewController.swift */; };
 		EF3D6FE41C7064870051DA24 /* CACollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D6FE31C7064870051DA24 /* CACollectionsViewController.swift */; };
-		EF3D6FE71C70CA300051DA24 /* CANavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D6FE61C70CA300051DA24 /* CANavigationController.swift */; };
 		EF3D6FEB1C70D09A0051DA24 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF3D6FE91C70D09A0051DA24 /* Montserrat-Bold.ttf */; };
 		EF3D6FEC1C70D09A0051DA24 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF3D6FEA1C70D09A0051DA24 /* Montserrat-Regular.ttf */; };
+		EFBC489D1C719DE500915AC7 /* CAWeatherSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC489C1C719DE500915AC7 /* CAWeatherSectionView.swift */; };
+		EFBC489F1C719DFF00915AC7 /* CAWeatherSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFBC489E1C719DFF00915AC7 /* CAWeatherSectionView.xib */; };
+		EFBC48A51C72F6AF00915AC7 /* CAStudyLifeSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC48A41C72F6AF00915AC7 /* CAStudyLifeSectionView.swift */; };
+		EFBC48A71C72FA0400915AC7 /* CAStudyLifeSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFBC48A61C72FA0400915AC7 /* CAStudyLifeSectionView.xib */; };
+		EFBC48AA1C73377000915AC7 /* Macro.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC48A91C73377000915AC7 /* Macro.swift */; };
+		EFBC48B11C733C3100915AC7 /* CAAddMoreSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC48B01C733C3100915AC7 /* CAAddMoreSectionView.swift */; };
+		EFBC48B31C733C3D00915AC7 /* CAAddMoreSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFBC48B21C733C3D00915AC7 /* CAAddMoreSectionView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +56,15 @@
 		EF3D6FDF1C7064740051DA24 /* CAHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAHomeViewController.swift; sourceTree = "<group>"; };
 		EF3D6FE11C70647C0051DA24 /* CAProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAProfileViewController.swift; sourceTree = "<group>"; };
 		EF3D6FE31C7064870051DA24 /* CACollectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACollectionsViewController.swift; sourceTree = "<group>"; };
-		EF3D6FE61C70CA300051DA24 /* CANavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CANavigationController.swift; sourceTree = "<group>"; };
 		EF3D6FE91C70D09A0051DA24 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		EF3D6FEA1C70D09A0051DA24 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		EFBC489C1C719DE500915AC7 /* CAWeatherSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAWeatherSectionView.swift; sourceTree = "<group>"; };
+		EFBC489E1C719DFF00915AC7 /* CAWeatherSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAWeatherSectionView.xib; sourceTree = "<group>"; };
+		EFBC48A41C72F6AF00915AC7 /* CAStudyLifeSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAStudyLifeSectionView.swift; sourceTree = "<group>"; };
+		EFBC48A61C72FA0400915AC7 /* CAStudyLifeSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAStudyLifeSectionView.xib; sourceTree = "<group>"; };
+		EFBC48A91C73377000915AC7 /* Macro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macro.swift; sourceTree = "<group>"; };
+		EFBC48B01C733C3100915AC7 /* CAAddMoreSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAAddMoreSectionView.swift; sourceTree = "<group>"; };
+		EFBC48B21C733C3D00915AC7 /* CAAddMoreSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAAddMoreSectionView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +128,7 @@
 			children = (
 				EF377C3E1C6F919B00B40D20 /* AppDelegate.swift */,
 				EF377C5E1C6F936900B40D20 /* CampusAssistant-Bridging-Header.h */,
+				EFBC48A81C73376300915AC7 /* Macro */,
 				EF3D6FE81C70D09A0051DA24 /* Font */,
 				EF377C8E1C7038F800B40D20 /* Extensions */,
 				EF377C8F1C7038F800B40D20 /* Models */,
@@ -155,7 +168,6 @@
 		EF377C901C7038F800B40D20 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				EF3D6FE51C70CA0E0051DA24 /* Navigation */,
 				EF3D6FDA1C7064260051DA24 /* Collections */,
 				EF3D6FDB1C7064260051DA24 /* Home */,
 				EF3D6FDC1C7064260051DA24 /* Profile */,
@@ -175,6 +187,9 @@
 		EF377C941C7038F800B40D20 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EFBC48AF1C733C1700915AC7 /* AddMore */,
+				EFBC489A1C719DA700915AC7 /* StudyLife */,
+				EFBC489B1C719DA700915AC7 /* Weather */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,14 +218,6 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		EF3D6FE51C70CA0E0051DA24 /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				EF3D6FE61C70CA300051DA24 /* CANavigationController.swift */,
-			);
-			path = Navigation;
-			sourceTree = "<group>";
-		};
 		EF3D6FE81C70D09A0051DA24 /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +225,41 @@
 				EF3D6FEA1C70D09A0051DA24 /* Montserrat-Regular.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		EFBC489A1C719DA700915AC7 /* StudyLife */ = {
+			isa = PBXGroup;
+			children = (
+				EFBC48A41C72F6AF00915AC7 /* CAStudyLifeSectionView.swift */,
+				EFBC48A61C72FA0400915AC7 /* CAStudyLifeSectionView.xib */,
+			);
+			path = StudyLife;
+			sourceTree = "<group>";
+		};
+		EFBC489B1C719DA700915AC7 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				EFBC489C1C719DE500915AC7 /* CAWeatherSectionView.swift */,
+				EFBC489E1C719DFF00915AC7 /* CAWeatherSectionView.xib */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		EFBC48A81C73376300915AC7 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				EFBC48A91C73377000915AC7 /* Macro.swift */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		EFBC48AF1C733C1700915AC7 /* AddMore */ = {
+			isa = PBXGroup;
+			children = (
+				EFBC48B01C733C3100915AC7 /* CAAddMoreSectionView.swift */,
+				EFBC48B21C733C3D00915AC7 /* CAAddMoreSectionView.xib */,
+			);
+			path = AddMore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,7 +352,10 @@
 				EF377C491C6F919B00B40D20 /* LaunchScreen.storyboard in Resources */,
 				EF377C461C6F919B00B40D20 /* Assets.xcassets in Resources */,
 				EF3D6FEC1C70D09A0051DA24 /* Montserrat-Regular.ttf in Resources */,
+				EFBC48B31C733C3D00915AC7 /* CAAddMoreSectionView.xib in Resources */,
+				EFBC48A71C72FA0400915AC7 /* CAStudyLifeSectionView.xib in Resources */,
 				EF377C441C6F919B00B40D20 /* Main.storyboard in Resources */,
+				EFBC489F1C719DFF00915AC7 /* CAWeatherSectionView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,10 +423,13 @@
 			files = (
 				EF3D6FE21C70647C0051DA24 /* CAProfileViewController.swift in Sources */,
 				EF377C951C7038F800B40D20 /* CATabBarController.swift in Sources */,
+				EFBC48B11C733C3100915AC7 /* CAAddMoreSectionView.swift in Sources */,
 				EF3D6FE41C7064870051DA24 /* CACollectionsViewController.swift in Sources */,
-				EF3D6FE71C70CA300051DA24 /* CANavigationController.swift in Sources */,
+				EFBC48A51C72F6AF00915AC7 /* CAStudyLifeSectionView.swift in Sources */,
 				EF377C3F1C6F919B00B40D20 /* AppDelegate.swift in Sources */,
 				EF3D6FE01C7064740051DA24 /* CAHomeViewController.swift in Sources */,
+				EFBC48AA1C73377000915AC7 /* Macro.swift in Sources */,
+				EFBC489D1C719DE500915AC7 /* CAWeatherSectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
