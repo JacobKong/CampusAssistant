@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6F1AFCA8B7D65EB81279C020 /* Pods_CampusAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDAE5CCA068A5DD1B1F3387 /* Pods_CampusAssistant.framework */; };
+		EF0C41721C758B820044B9C0 /* collections.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF0C41711C758B820044B9C0 /* collections.plist */; };
 		EF377C3F1C6F919B00B40D20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF377C3E1C6F919B00B40D20 /* AppDelegate.swift */; };
 		EF377C441C6F919B00B40D20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF377C421C6F919B00B40D20 /* Main.storyboard */; };
 		EF377C461C6F919B00B40D20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF377C451C6F919B00B40D20 /* Assets.xcassets */; };
@@ -26,6 +27,8 @@
 		EFBC48AA1C73377000915AC7 /* Macro.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC48A91C73377000915AC7 /* Macro.swift */; };
 		EFBC48B11C733C3100915AC7 /* CAAddMoreSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC48B01C733C3100915AC7 /* CAAddMoreSectionView.swift */; };
 		EFBC48B31C733C3D00915AC7 /* CAAddMoreSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFBC48B21C733C3D00915AC7 /* CAAddMoreSectionView.xib */; };
+		EFD4E8C21C7411A600727380 /* CAFunctionButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFD4E8C11C7411A600727380 /* CAFunctionButton.xib */; };
+		EFD4E8C61C7411E400727380 /* CAFunctionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD4E8C51C7411E400727380 /* CAFunctionButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,7 @@
 		2DDAE5CCA068A5DD1B1F3387 /* Pods_CampusAssistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampusAssistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BC4B34AD9E470E496F72F7F /* Pods-CampusAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusAssistant.release.xcconfig"; path = "Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant.release.xcconfig"; sourceTree = "<group>"; };
 		CA6FFB7B5B45A159BC91AAA8 /* Pods-CampusAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant.debug.xcconfig"; sourceTree = "<group>"; };
+		EF0C41711C758B820044B9C0 /* collections.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = collections.plist; sourceTree = "<group>"; };
 		EF377C3B1C6F919B00B40D20 /* CampusAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF377C3E1C6F919B00B40D20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF377C431C6F919B00B40D20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,6 +69,8 @@
 		EFBC48A91C73377000915AC7 /* Macro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macro.swift; sourceTree = "<group>"; };
 		EFBC48B01C733C3100915AC7 /* CAAddMoreSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAAddMoreSectionView.swift; sourceTree = "<group>"; };
 		EFBC48B21C733C3D00915AC7 /* CAAddMoreSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAAddMoreSectionView.xib; sourceTree = "<group>"; };
+		EFD4E8C11C7411A600727380 /* CAFunctionButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAFunctionButton.xib; sourceTree = "<group>"; };
+		EFD4E8C51C7411E400727380 /* CAFunctionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAFunctionButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EF0C41701C758B820044B9C0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EF0C41711C758B820044B9C0 /* collections.plist */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		EF377C321C6F919B00B40D20 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +142,7 @@
 			children = (
 				EF377C3E1C6F919B00B40D20 /* AppDelegate.swift */,
 				EF377C5E1C6F936900B40D20 /* CampusAssistant-Bridging-Header.h */,
+				EF0C41701C758B820044B9C0 /* Data */,
 				EFBC48A81C73376300915AC7 /* Macro */,
 				EF3D6FE81C70D09A0051DA24 /* Font */,
 				EF377C8E1C7038F800B40D20 /* Extensions */,
@@ -187,6 +202,7 @@
 		EF377C941C7038F800B40D20 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EFD4E8C01C7411A600727380 /* FunctionButton */,
 				EFBC48AF1C733C1700915AC7 /* AddMore */,
 				EFBC489A1C719DA700915AC7 /* StudyLife */,
 				EFBC489B1C719DA700915AC7 /* Weather */,
@@ -260,6 +276,15 @@
 				EFBC48B21C733C3D00915AC7 /* CAAddMoreSectionView.xib */,
 			);
 			path = AddMore;
+			sourceTree = "<group>";
+		};
+		EFD4E8C01C7411A600727380 /* FunctionButton */ = {
+			isa = PBXGroup;
+			children = (
+				EFD4E8C11C7411A600727380 /* CAFunctionButton.xib */,
+				EFD4E8C51C7411E400727380 /* CAFunctionButton.swift */,
+			);
+			path = FunctionButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,7 +377,9 @@
 				EF377C491C6F919B00B40D20 /* LaunchScreen.storyboard in Resources */,
 				EF377C461C6F919B00B40D20 /* Assets.xcassets in Resources */,
 				EF3D6FEC1C70D09A0051DA24 /* Montserrat-Regular.ttf in Resources */,
+				EF0C41721C758B820044B9C0 /* collections.plist in Resources */,
 				EFBC48B31C733C3D00915AC7 /* CAAddMoreSectionView.xib in Resources */,
+				EFD4E8C21C7411A600727380 /* CAFunctionButton.xib in Resources */,
 				EFBC48A71C72FA0400915AC7 /* CAStudyLifeSectionView.xib in Resources */,
 				EF377C441C6F919B00B40D20 /* Main.storyboard in Resources */,
 				EFBC489F1C719DFF00915AC7 /* CAWeatherSectionView.xib in Resources */,
@@ -424,6 +451,7 @@
 				EF3D6FE21C70647C0051DA24 /* CAProfileViewController.swift in Sources */,
 				EF377C951C7038F800B40D20 /* CATabBarController.swift in Sources */,
 				EFBC48B11C733C3100915AC7 /* CAAddMoreSectionView.swift in Sources */,
+				EFD4E8C61C7411E400727380 /* CAFunctionButton.swift in Sources */,
 				EF3D6FE41C7064870051DA24 /* CACollectionsViewController.swift in Sources */,
 				EFBC48A51C72F6AF00915AC7 /* CAStudyLifeSectionView.swift in Sources */,
 				EF377C3F1C6F919B00B40D20 /* AppDelegate.swift in Sources */,

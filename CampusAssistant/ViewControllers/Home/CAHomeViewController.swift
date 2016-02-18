@@ -43,6 +43,7 @@ class CAHomeViewController: UIViewController, UIScrollViewDelegate {
         self.view = scrollView
         scrollView.contentSize = CGSize(width:kScreenWidth, height: kScreenHeight+20)
         scrollView.scrollEnabled = true
+        scrollView.showsVerticalScrollIndicator = false
     }
     
 	private func setupWeatherSection() {
