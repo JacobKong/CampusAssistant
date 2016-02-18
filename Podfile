@@ -4,6 +4,7 @@ use_frameworks!
 
 def pods
     pod 'RDVTabBarController'
+    pod 'MJExtension'
 end
 
 target 'CampusAssistant' do

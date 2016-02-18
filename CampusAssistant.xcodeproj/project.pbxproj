@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6F1AFCA8B7D65EB81279C020 /* Pods_CampusAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDAE5CCA068A5DD1B1F3387 /* Pods_CampusAssistant.framework */; };
 		EF0C41721C758B820044B9C0 /* collections.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF0C41711C758B820044B9C0 /* collections.plist */; };
+		EF0C41871C75CA5F0044B9C0 /* CACollection.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0C41841C75CA5F0044B9C0 /* CACollection.m */; };
+		EF0C41881C75CA5F0044B9C0 /* CAFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0C41861C75CA5F0044B9C0 /* CAFunction.m */; };
 		EF377C3F1C6F919B00B40D20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF377C3E1C6F919B00B40D20 /* AppDelegate.swift */; };
 		EF377C441C6F919B00B40D20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF377C421C6F919B00B40D20 /* Main.storyboard */; };
 		EF377C461C6F919B00B40D20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF377C451C6F919B00B40D20 /* Assets.xcassets */; };
@@ -46,6 +48,10 @@
 		6BC4B34AD9E470E496F72F7F /* Pods-CampusAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusAssistant.release.xcconfig"; path = "Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant.release.xcconfig"; sourceTree = "<group>"; };
 		CA6FFB7B5B45A159BC91AAA8 /* Pods-CampusAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant.debug.xcconfig"; sourceTree = "<group>"; };
 		EF0C41711C758B820044B9C0 /* collections.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = collections.plist; sourceTree = "<group>"; };
+		EF0C41831C75CA5F0044B9C0 /* CACollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACollection.h; sourceTree = "<group>"; };
+		EF0C41841C75CA5F0044B9C0 /* CACollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACollection.m; sourceTree = "<group>"; };
+		EF0C41851C75CA5F0044B9C0 /* CAFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAFunction.h; sourceTree = "<group>"; };
+		EF0C41861C75CA5F0044B9C0 /* CAFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAFunction.m; sourceTree = "<group>"; };
 		EF377C3B1C6F919B00B40D20 /* CampusAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF377C3E1C6F919B00B40D20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF377C431C6F919B00B40D20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -176,6 +182,10 @@
 		EF377C8F1C7038F800B40D20 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EF0C41831C75CA5F0044B9C0 /* CACollection.h */,
+				EF0C41841C75CA5F0044B9C0 /* CACollection.m */,
+				EF0C41851C75CA5F0044B9C0 /* CAFunction.h */,
+				EF0C41861C75CA5F0044B9C0 /* CAFunction.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -457,7 +467,9 @@
 				EF377C3F1C6F919B00B40D20 /* AppDelegate.swift in Sources */,
 				EF3D6FE01C7064740051DA24 /* CAHomeViewController.swift in Sources */,
 				EFBC48AA1C73377000915AC7 /* Macro.swift in Sources */,
+				EF0C41881C75CA5F0044B9C0 /* CAFunction.m in Sources */,
 				EFBC489D1C719DE500915AC7 /* CAWeatherSectionView.swift in Sources */,
+				EF0C41871C75CA5F0044B9C0 /* CACollection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

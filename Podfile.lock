@@ -1,10 +1,13 @@
 PODS:
+  - MJExtension (3.0.10)
   - RDVTabBarController (1.1.9)
 
 DEPENDENCIES:
+  - MJExtension
   - RDVTabBarController
 
 SPEC CHECKSUMS:
+  MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
 
 COCOAPODS: 0.39.0

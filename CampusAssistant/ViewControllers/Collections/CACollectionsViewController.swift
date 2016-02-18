@@ -7,31 +7,31 @@
 //
 
 import UIKit
-
+import MJExtension
 class CACollectionsViewController: UIViewController {
-
+    var collections = NSMutableArray()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         self.title = "COLLECTIONS"
 //        self.title = "Collections"
+        // 告诉系统将operations字典数组转为模型数组
+        CACollection.mj_setupObjectClassInArray { () -> [NSObject : AnyObject]! in
+            return ["functions" : "CAFunction"]
+        }
+        
+        self.collections = CACollection.mj_objectArrayWithFilename("collections.plist")
     }
-
+    
+    private func setupSection1(){
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
