@@ -51,32 +51,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="X7B-Pb-xaE" kind="relationship" relationship="rootViewController" id="GZf-EL-C02"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ySU-TH-X0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1056" y="-569"/>
-        </scene>
-        <!--NEU CAMPUSS ASSISTANT-->
-        <scene sceneID="p0P-nC-SRb">
-            <objects>
-                <viewController title="NEU CAMPUSS ASSISTANT" id="X7B-Pb-xaE" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="91e-sv-A8j"/>
-                        <viewControllerLayoutGuide type="bottom" id="TZD-J0-R0W"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="RV2-6o-lMC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="06R-Vf-GUq"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Sc4-er-5Ho" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1781" y="-569"/>
         </scene>
         <!--Collections-->
         <scene sceneID="fjh-of-v1Q">
