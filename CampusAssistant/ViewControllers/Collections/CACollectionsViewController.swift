@@ -91,7 +91,6 @@ extension CACollectionsViewController:UICollectionViewDataSource, UICollectionVi
     func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
         let cell = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: collectionSectionHeaderCellIdentifier, forIndexPath: indexPath) as! CACollectionTitleHeader
         let collection = self.collections[indexPath.section]
-        print(collection.function_name)
         cell.titleLabel.text = collection.function_name
         return cell
     }

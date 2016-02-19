@@ -5,6 +5,7 @@ use_frameworks!
 def pods
     pod 'RDVTabBarController'
     pod 'MJExtension'
+    pod 'Alamofire', '~> 3.0'
 end
 
 target 'CampusAssistant' do
