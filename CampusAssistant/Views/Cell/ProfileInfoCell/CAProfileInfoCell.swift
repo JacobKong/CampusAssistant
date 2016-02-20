@@ -12,6 +12,8 @@ class CAProfileInfoCell: UITableViewCell {
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var subtitleLabel: UILabel!
+    var student:CAStudent!
+    
     class func instanceFromNib() -> UIView {
         return UINib(nibName: "CAProfileInfoCell", bundle: nil).instantiateWithOwner(nil, options: nil)[0] as! UIView
     }

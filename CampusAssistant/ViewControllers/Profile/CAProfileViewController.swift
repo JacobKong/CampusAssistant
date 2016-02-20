@@ -37,10 +37,16 @@ class CAProfileViewController: UIViewController {
     private func setupTableView(){
         self.tableView = UITableView.init(frame: CGRectMake(0, 0, kScreenWidth, kScreenHeight - 49 - 66), style: .Plain)
         self.profileHeader = CAProfileHeader.instanceFromNib() as! CAProfileHeader
-        self.tableView.backgroundColor = kRGBA(74, g: 144, b: 226, a: 100)
+//        self.tableView.backgroundColor = kRGBA(74, g: 144, b: 226, a: 100)
+        // 设置tableView的backgroundImage
+        let backImageView = UIImageView.init(frame: self.tableView.frame)
+        backImageView.image = UIImage(named: "profile_bg_image")
+        self.tableView.backgroundView = backImageView
+        
         self.tableView.tableHeaderView = profileHeader
         self.tableView.dataSource = self
         self.tableView.delegate = self
+        self.tableView.separatorInset = UIEdgeInsetsMake(0, 58, 0, 0)
         self.tableView!.registerNib(CAProfileInfoCell.nib(), forCellReuseIdentifier: profileCellIdentifier)
         self.view.addSubview(self.tableView)
     }
