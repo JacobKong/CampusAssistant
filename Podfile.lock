@@ -2,15 +2,20 @@ PODS:
   - Alamofire (3.2.0)
   - MJExtension (3.0.10)
   - RDVTabBarController (1.1.9)
+  - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - Alamofire (~> 3.0)
   - MJExtension
   - RDVTabBarController
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 4da478599fccddff361205c8929333d7fe18dceb
   MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: a91c8d1646186476116d7ea117ad4bfaf86cc5e8
+
+COCOAPODS: 1.0.0.beta.3

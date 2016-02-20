@@ -6,6 +6,7 @@ def pods
     pod 'RDVTabBarController'
     pod 'MJExtension'
     pod 'Alamofire', '~> 3.0'
+    pod 'SwiftyJSON'
 end
 
 target 'CampusAssistant' do

@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6F1AFCA8B7D65EB81279C020 /* Pods_CampusAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDAE5CCA068A5DD1B1F3387 /* Pods_CampusAssistant.framework */; };
+		C35912C857EB21BDF24880F7 /* Pods_CampusAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77B343ACF9B277C71FC6841 /* Pods_CampusAssistant.framework */; };
 		EF0C41721C758B820044B9C0 /* collections.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF0C41711C758B820044B9C0 /* collections.plist */; };
 		EF0C41871C75CA5F0044B9C0 /* CACollection.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0C41841C75CA5F0044B9C0 /* CACollection.m */; };
 		EF0C41881C75CA5F0044B9C0 /* CAFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0C41861C75CA5F0044B9C0 /* CAFunction.m */; };
-		EF0C41931C7617020044B9C0 /* CAFunctionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0C41911C7617020044B9C0 /* CAFunctionCell.swift */; };
-		EF0C41941C7617020044B9C0 /* CAFunctionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF0C41921C7617020044B9C0 /* CAFunctionCell.xib */; };
+		EF331FCC1C7861A200695A3B /* CAFunctionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF331FC91C7861A200695A3B /* CAFunctionCell.swift */; };
+		EF331FCD1C7861A200695A3B /* CAFunctionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF331FCA1C7861A200695A3B /* CAFunctionCell.xib */; };
+		EF331FCF1C7861C100695A3B /* CAProfileInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF331FCE1C7861C100695A3B /* CAProfileInfoCell.swift */; };
+		EF331FD11C7861D000695A3B /* CAProfileInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF331FD01C7861D000695A3B /* CAProfileInfoCell.xib */; };
+		EF331FD41C786C6600695A3B /* CAStudentTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF331FD31C786C6600695A3B /* CAStudentTool.swift */; };
 		EF377C3F1C6F919B00B40D20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF377C3E1C6F919B00B40D20 /* AppDelegate.swift */; };
 		EF377C441C6F919B00B40D20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF377C421C6F919B00B40D20 /* Main.storyboard */; };
 		EF377C461C6F919B00B40D20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF377C451C6F919B00B40D20 /* Assets.xcassets */; };
@@ -24,13 +27,15 @@
 		EF3D6FE41C7064870051DA24 /* CACollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D6FE31C7064870051DA24 /* CACollectionsViewController.swift */; };
 		EF3D6FEB1C70D09A0051DA24 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF3D6FE91C70D09A0051DA24 /* Montserrat-Bold.ttf */; };
 		EF3D6FEC1C70D09A0051DA24 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF3D6FEA1C70D09A0051DA24 /* Montserrat-Regular.ttf */; };
+		EF3DF2721C784A08002276A6 /* CAStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3DF2711C784A08002276A6 /* CAStudent.m */; };
+		EF3DF2741C784F0F002276A6 /* NSData+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3DF2731C784F0F002276A6 /* NSData+CA.swift */; };
 		EF50E7EA1C772A6700A0A5A5 /* CAProfileHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF50E7E91C772A6700A0A5A5 /* CAProfileHeader.xib */; };
 		EF50E7EE1C772CDC00A0A5A5 /* CACollectionTitleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50E7EC1C772CDC00A0A5A5 /* CACollectionTitleHeader.swift */; };
 		EF50E7EF1C772CDC00A0A5A5 /* CACollectionTitleHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF50E7ED1C772CDC00A0A5A5 /* CACollectionTitleHeader.xib */; };
 		EF50E7F11C773F0F00A0A5A5 /* CAProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50E7F01C773F0F00A0A5A5 /* CAProfileHeader.swift */; };
 		EF50E7F31C775C0A00A0A5A5 /* UIImage+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50E7F21C775C0A00A0A5A5 /* UIImage+CA.swift */; };
 		EF50E7F51C77621B00A0A5A5 /* UIImageView+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50E7F41C77621B00A0A5A5 /* UIImageView+CA.swift */; };
-		EF50E7F71C7766E300A0A5A5 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = EF50E7F61C7766E300A0A5A5 /* README.md */; };
+		EF50E7F91C776A7500A0A5A5 /* String+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50E7F81C776A7500A0A5A5 /* String+CA.swift */; };
 		EFBC489D1C719DE500915AC7 /* CAWeatherSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC489C1C719DE500915AC7 /* CAWeatherSectionView.swift */; };
 		EFBC489F1C719DFF00915AC7 /* CAWeatherSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFBC489E1C719DFF00915AC7 /* CAWeatherSectionView.xib */; };
 		EFBC48A51C72F6AF00915AC7 /* CAStudyLifeSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC48A41C72F6AF00915AC7 /* CAStudyLifeSectionView.swift */; };
@@ -51,16 +56,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2DDAE5CCA068A5DD1B1F3387 /* Pods_CampusAssistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampusAssistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BC4B34AD9E470E496F72F7F /* Pods-CampusAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusAssistant.release.xcconfig"; path = "Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant.release.xcconfig"; sourceTree = "<group>"; };
-		CA6FFB7B5B45A159BC91AAA8 /* Pods-CampusAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant.debug.xcconfig"; sourceTree = "<group>"; };
+		1235F2E648FC303DE461892D /* Pods-CampusAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant.debug.xcconfig"; sourceTree = "<group>"; };
+		1503BEBBEA8DD2D8E11AF8A8 /* Pods-CampusAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusAssistant.release.xcconfig"; path = "Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant.release.xcconfig"; sourceTree = "<group>"; };
+		E77B343ACF9B277C71FC6841 /* Pods_CampusAssistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampusAssistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF0C41711C758B820044B9C0 /* collections.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = collections.plist; sourceTree = "<group>"; };
 		EF0C41831C75CA5F0044B9C0 /* CACollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACollection.h; sourceTree = "<group>"; };
 		EF0C41841C75CA5F0044B9C0 /* CACollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACollection.m; sourceTree = "<group>"; };
 		EF0C41851C75CA5F0044B9C0 /* CAFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAFunction.h; sourceTree = "<group>"; };
 		EF0C41861C75CA5F0044B9C0 /* CAFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAFunction.m; sourceTree = "<group>"; };
-		EF0C41911C7617020044B9C0 /* CAFunctionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAFunctionCell.swift; sourceTree = "<group>"; };
-		EF0C41921C7617020044B9C0 /* CAFunctionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAFunctionCell.xib; sourceTree = "<group>"; };
+		EF331FC91C7861A200695A3B /* CAFunctionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAFunctionCell.swift; sourceTree = "<group>"; };
+		EF331FCA1C7861A200695A3B /* CAFunctionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAFunctionCell.xib; sourceTree = "<group>"; };
+		EF331FCE1C7861C100695A3B /* CAProfileInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAProfileInfoCell.swift; sourceTree = "<group>"; };
+		EF331FD01C7861D000695A3B /* CAProfileInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAProfileInfoCell.xib; sourceTree = "<group>"; };
+		EF331FD31C786C6600695A3B /* CAStudentTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAStudentTool.swift; sourceTree = "<group>"; };
 		EF377C3B1C6F919B00B40D20 /* CampusAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF377C3E1C6F919B00B40D20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF377C431C6F919B00B40D20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,13 +85,16 @@
 		EF3D6FE31C7064870051DA24 /* CACollectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACollectionsViewController.swift; sourceTree = "<group>"; };
 		EF3D6FE91C70D09A0051DA24 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		EF3D6FEA1C70D09A0051DA24 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		EF3DF2701C784A08002276A6 /* CAStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStudent.h; sourceTree = "<group>"; };
+		EF3DF2711C784A08002276A6 /* CAStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAStudent.m; sourceTree = "<group>"; };
+		EF3DF2731C784F0F002276A6 /* NSData+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+CA.swift"; sourceTree = "<group>"; };
 		EF50E7E91C772A6700A0A5A5 /* CAProfileHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAProfileHeader.xib; sourceTree = "<group>"; };
 		EF50E7EC1C772CDC00A0A5A5 /* CACollectionTitleHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACollectionTitleHeader.swift; sourceTree = "<group>"; };
 		EF50E7ED1C772CDC00A0A5A5 /* CACollectionTitleHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CACollectionTitleHeader.xib; sourceTree = "<group>"; };
 		EF50E7F01C773F0F00A0A5A5 /* CAProfileHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAProfileHeader.swift; sourceTree = "<group>"; };
 		EF50E7F21C775C0A00A0A5A5 /* UIImage+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CA.swift"; sourceTree = "<group>"; };
 		EF50E7F41C77621B00A0A5A5 /* UIImageView+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+CA.swift"; sourceTree = "<group>"; };
-		EF50E7F61C7766E300A0A5A5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EF50E7F81C776A7500A0A5A5 /* String+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+CA.swift"; sourceTree = "<group>"; };
 		EFBC489C1C719DE500915AC7 /* CAWeatherSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAWeatherSectionView.swift; sourceTree = "<group>"; };
 		EFBC489E1C719DFF00915AC7 /* CAWeatherSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAWeatherSectionView.xib; sourceTree = "<group>"; };
 		EFBC48A41C72F6AF00915AC7 /* CAStudyLifeSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAStudyLifeSectionView.swift; sourceTree = "<group>"; };
@@ -98,7 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F1AFCA8B7D65EB81279C020 /* Pods_CampusAssistant.framework in Frameworks */,
+				C35912C857EB21BDF24880F7 /* Pods_CampusAssistant.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,21 +123,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		92967FD6C2ABD89498A83797 /* Pods */ = {
+		4376008554A7E7E9C2BA4506 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CA6FFB7B5B45A159BC91AAA8 /* Pods-CampusAssistant.debug.xcconfig */,
-				6BC4B34AD9E470E496F72F7F /* Pods-CampusAssistant.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		CCA2EF2DD3471BA17A9D450B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2DDAE5CCA068A5DD1B1F3387 /* Pods_CampusAssistant.framework */,
+				E77B343ACF9B277C71FC6841 /* Pods_CampusAssistant.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C00230006B81691CB9DDBEF0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1235F2E648FC303DE461892D /* Pods-CampusAssistant.debug.xcconfig */,
+				1503BEBBEA8DD2D8E11AF8A8 /* Pods-CampusAssistant.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		EF0C41701C758B820044B9C0 /* Data */ = {
@@ -137,13 +148,39 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-		EF0C41901C7617020044B9C0 /* FunctionCell */ = {
+		EF331FC71C7861A200695A3B /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				EF0C41911C7617020044B9C0 /* CAFunctionCell.swift */,
-				EF0C41921C7617020044B9C0 /* CAFunctionCell.xib */,
+				EF331FC81C7861A200695A3B /* FunctionCell */,
+				EF331FCB1C7861A200695A3B /* ProfileInfoCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EF331FC81C7861A200695A3B /* FunctionCell */ = {
+			isa = PBXGroup;
+			children = (
+				EF331FC91C7861A200695A3B /* CAFunctionCell.swift */,
+				EF331FCA1C7861A200695A3B /* CAFunctionCell.xib */,
 			);
 			path = FunctionCell;
+			sourceTree = "<group>";
+		};
+		EF331FCB1C7861A200695A3B /* ProfileInfoCell */ = {
+			isa = PBXGroup;
+			children = (
+				EF331FCE1C7861C100695A3B /* CAProfileInfoCell.swift */,
+				EF331FD01C7861D000695A3B /* CAProfileInfoCell.xib */,
+			);
+			path = ProfileInfoCell;
+			sourceTree = "<group>";
+		};
+		EF331FD21C786C5500695A3B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				EF331FD31C786C6600695A3B /* CAStudentTool.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		EF377C321C6F919B00B40D20 = {
@@ -152,8 +189,8 @@
 				EF377C3D1C6F919B00B40D20 /* CampusAssistant */,
 				EF377C521C6F919B00B40D20 /* CampusAssistantTests */,
 				EF377C3C1C6F919B00B40D20 /* Products */,
-				92967FD6C2ABD89498A83797 /* Pods */,
-				CCA2EF2DD3471BA17A9D450B /* Frameworks */,
+				C00230006B81691CB9DDBEF0 /* Pods */,
+				4376008554A7E7E9C2BA4506 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,7 +208,7 @@
 			children = (
 				EF377C3E1C6F919B00B40D20 /* AppDelegate.swift */,
 				EF377C5E1C6F936900B40D20 /* CampusAssistant-Bridging-Header.h */,
-				EF50E7F61C7766E300A0A5A5 /* README.md */,
+				EF331FD21C786C5500695A3B /* Tools */,
 				EF0C41701C758B820044B9C0 /* Data */,
 				EFBC48A81C73376300915AC7 /* Macro */,
 				EF3D6FE81C70D09A0051DA24 /* Font */,
@@ -201,6 +238,8 @@
 			children = (
 				EF50E7F21C775C0A00A0A5A5 /* UIImage+CA.swift */,
 				EF50E7F41C77621B00A0A5A5 /* UIImageView+CA.swift */,
+				EF50E7F81C776A7500A0A5A5 /* String+CA.swift */,
+				EF3DF2731C784F0F002276A6 /* NSData+CA.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -212,6 +251,8 @@
 				EF0C41841C75CA5F0044B9C0 /* CACollection.m */,
 				EF0C41851C75CA5F0044B9C0 /* CAFunction.h */,
 				EF0C41861C75CA5F0044B9C0 /* CAFunction.m */,
+				EF3DF2701C784A08002276A6 /* CAStudent.h */,
+				EF3DF2711C784A08002276A6 /* CAStudent.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -238,9 +279,9 @@
 		EF377C941C7038F800B40D20 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EF331FC71C7861A200695A3B /* Cell */,
 				EF50E7EB1C772CDC00A0A5A5 /* CollectionTitleHeader */,
 				EF50E7E61C7729FC00A0A5A5 /* ProfileHeader */,
-				EF0C41901C7617020044B9C0 /* FunctionCell */,
 				EFBC48AF1C733C1700915AC7 /* AddMore */,
 				EFBC489A1C719DA700915AC7 /* StudyLife */,
 				EFBC489B1C719DA700915AC7 /* Weather */,
@@ -341,12 +382,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF377C581C6F919B00B40D20 /* Build configuration list for PBXNativeTarget "CampusAssistant" */;
 			buildPhases = (
-				DEE2614D6AE8D1CB537EB8C0 /* Check Pods Manifest.lock */,
+				89E4B2F18D792F2B377DADEB /* Check Pods Manifest.lock */,
 				EF377C371C6F919B00B40D20 /* Sources */,
 				EF377C381C6F919B00B40D20 /* Frameworks */,
 				EF377C391C6F919B00B40D20 /* Resources */,
-				C6E7D079CC35007FFE647EEA /* Embed Pods Frameworks */,
-				A492C3EB226AFA04064365EE /* Copy Pods Resources */,
+				F0B24A34BC7F1E158D1DD336 /* Embed Pods Frameworks */,
+				B159DA94C0E5A76086074A01 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -424,13 +465,14 @@
 				EF377C491C6F919B00B40D20 /* LaunchScreen.storyboard in Resources */,
 				EF50E7EA1C772A6700A0A5A5 /* CAProfileHeader.xib in Resources */,
 				EF377C461C6F919B00B40D20 /* Assets.xcassets in Resources */,
+				EF331FD11C7861D000695A3B /* CAProfileInfoCell.xib in Resources */,
 				EF3D6FEC1C70D09A0051DA24 /* Montserrat-Regular.ttf in Resources */,
 				EF0C41721C758B820044B9C0 /* collections.plist in Resources */,
-				EF0C41941C7617020044B9C0 /* CAFunctionCell.xib in Resources */,
 				EF50E7EF1C772CDC00A0A5A5 /* CACollectionTitleHeader.xib in Resources */,
 				EFBC48B31C733C3D00915AC7 /* CAAddMoreSectionView.xib in Resources */,
 				EFBC48A71C72FA0400915AC7 /* CAStudyLifeSectionView.xib in Resources */,
 				EF377C441C6F919B00B40D20 /* Main.storyboard in Resources */,
+				EF331FCD1C7861A200695A3B /* CAFunctionCell.xib in Resources */,
 				EFBC489F1C719DFF00915AC7 /* CAWeatherSectionView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,37 +487,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A492C3EB226AFA04064365EE /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C6E7D079CC35007FFE647EEA /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DEE2614D6AE8D1CB537EB8C0 /* Check Pods Manifest.lock */ = {
+		89E4B2F18D792F2B377DADEB /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -490,6 +502,36 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		B159DA94C0E5A76086074A01 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0B24A34BC7F1E158D1DD336 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -500,17 +542,21 @@
 				EF3D6FE21C70647C0051DA24 /* CAProfileViewController.swift in Sources */,
 				EF377C951C7038F800B40D20 /* CATabBarController.swift in Sources */,
 				EF50E7F11C773F0F00A0A5A5 /* CAProfileHeader.swift in Sources */,
+				EF331FCF1C7861C100695A3B /* CAProfileInfoCell.swift in Sources */,
 				EFBC48B11C733C3100915AC7 /* CAAddMoreSectionView.swift in Sources */,
-				EF0C41931C7617020044B9C0 /* CAFunctionCell.swift in Sources */,
+				EF3DF2721C784A08002276A6 /* CAStudent.m in Sources */,
 				EF3D6FE41C7064870051DA24 /* CACollectionsViewController.swift in Sources */,
+				EF3DF2741C784F0F002276A6 /* NSData+CA.swift in Sources */,
+				EF331FD41C786C6600695A3B /* CAStudentTool.swift in Sources */,
 				EFBC48A51C72F6AF00915AC7 /* CAStudyLifeSectionView.swift in Sources */,
 				EF377C3F1C6F919B00B40D20 /* AppDelegate.swift in Sources */,
 				EF3D6FE01C7064740051DA24 /* CAHomeViewController.swift in Sources */,
 				EFBC48AA1C73377000915AC7 /* Macro.swift in Sources */,
 				EF50E7F51C77621B00A0A5A5 /* UIImageView+CA.swift in Sources */,
-				EF50E7F71C7766E300A0A5A5 /* README.md in Sources */,
+				EF331FCC1C7861A200695A3B /* CAFunctionCell.swift in Sources */,
 				EF0C41881C75CA5F0044B9C0 /* CAFunction.m in Sources */,
 				EF50E7EE1C772CDC00A0A5A5 /* CACollectionTitleHeader.swift in Sources */,
+				EF50E7F91C776A7500A0A5A5 /* String+CA.swift in Sources */,
 				EFBC489D1C719DE500915AC7 /* CAWeatherSectionView.swift in Sources */,
 				EF50E7F31C775C0A00A0A5A5 /* UIImage+CA.swift in Sources */,
 				EF0C41871C75CA5F0044B9C0 /* CACollection.m in Sources */,
@@ -640,12 +686,13 @@
 		};
 		EF377C591C6F919B00B40D20 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA6FFB7B5B45A159BC91AAA8 /* Pods-CampusAssistant.debug.xcconfig */;
+			baseConfigurationReference = 1235F2E648FC303DE461892D /* Pods-CampusAssistant.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CampusAssistant/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-47124563-qq.com.CampusAssistant";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -656,12 +703,13 @@
 		};
 		EF377C5A1C6F919B00B40D20 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BC4B34AD9E470E496F72F7F /* Pods-CampusAssistant.release.xcconfig */;
+			baseConfigurationReference = 1503BEBBEA8DD2D8E11AF8A8 /* Pods-CampusAssistant.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CampusAssistant/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-47124563-qq.com.CampusAssistant";
 				PRODUCT_NAME = "$(TARGET_NAME)";
