@@ -12,12 +12,14 @@ import RDVTabBarController
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
-	let tabBarController: RDVTabBarController = RDVTabBarController()
+	let tabBarController = RDVTabBarController()
+    var tabbarY:CGFloat!
+    var tabbarW:CGFloat!
+    var tabbarH:CGFloat!
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		// Override point for customization after application launch.
 		self.window = UIWindow.init(frame: UIScreen.mainScreen().bounds)
-		self.window?.backgroundColor = UIColor.blueColor()
 		self.setupViewControllers()
 		if let window = self.window {
 			window.rootViewController = tabBarController
@@ -27,6 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         for subView in self.tabBarController.view.subviews{
             subView.backgroundColor = UIColor.clearColor()
         }
+        tabbarY = tabBarController.tabBar.frame.origin.y
+        tabbarW = tabBarController.tabBar.frame.size.width
+        tabbarH = tabBarController.tabBar.frame.size.height
 		return true
 	}
 
@@ -38,7 +43,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 		let homeNaviController: SlideNavigationController = SlideNavigationController.init(rootViewController: homeViewController)
         let slideMenuViewController: CARightSlideMenuViewController = CARightSlideMenuViewController()
-        SlideNavigationController.sharedInstance().rightMenu = slideMenuViewController        
+        SlideNavigationController.sharedInstance().rightMenu = slideMenuViewController
+        self.moveTabbarWhenSlideMenuReveal(homeNaviController)
+        
 		let collectionNaviController: UINavigationController = UINavigationController.init(rootViewController: collectionsViewController)
 		let profileNaviController: UINavigationController = UINavigationController.init(rootViewController: profileViewController)
 		self.tabBarController.viewControllers = [homeNaviController, collectionNaviController, profileNaviController]
@@ -48,9 +55,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	private func customizeTabBarForController(tabBarController: RDVTabBarController) {
 		let tabBarItemsImages = ["home", "collections", "profile"]
 		var index = 0
-//        var item:RDVTabBarItem = RDVTabBarItem()
 		let tabbarItems = tabBarController.tabBar.items as! [RDVTabBarItem]
-		for var item: RDVTabBarItem in tabbarItems {
+		for item: RDVTabBarItem in tabbarItems {
 			let selectedimage = UIImage.init(named: String.init(format: "%@_selected", tabBarItemsImages[index]))
 			let unselectedimage = UIImage.init(named: String.init(format: "%@_normal", tabBarItemsImages[index]))
 			item.setFinishedSelectedImage(selectedimage, withFinishedUnselectedImage: unselectedimage)
@@ -69,7 +75,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		navigationBarAppearance.titleTextAttributes = textAttributes as? [String : AnyObject]
 		UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: false)
 	}
+    
+    private func moveTabbarWhenSlideMenuReveal(slideNaviController: SlideNavigationController){
+        NSNotificationCenter.defaultCenter().addObserverForName(SlideNavigationControllerDidClose, object: nil, queue: nil) { (note) -> Void in
+            let menu = note.userInfo!["menu"]
+            print("Close", menu)
+            self.tabBarController.tabBar.frame = CGRectMake(slideNaviController.view.frame.origin.x, self.tabbarY, self.tabbarW, self.tabbarH)
+        }
+        NSNotificationCenter.defaultCenter().addObserverForName(SlideNavigationControllerDidOpen, object: nil, queue: nil) { (note) -> Void in
+            let menu = note.userInfo!["menu"]
+            print("Open", menu)
+            print(slideNaviController.view.frame)
+            self.tabBarController.tabBar.frame = CGRectMake(slideNaviController.view.frame.origin.x, self.tabbarY, self.tabbarW, self.tabbarH)
+        }
+        NSNotificationCenter.defaultCenter().addObserverForName(SlideNavigationControllerStartMove, object: nil, queue: nil) { (note) -> Void in
+            let menu = note.userInfo!["menu"]
+            print("Move", menu)
+            print(slideNaviController.view.frame)
+            self.tabBarController.tabBar.frame = CGRectMake(slideNaviController.view.frame.origin.x, self.tabbarY, self.tabbarW, self.tabbarH)
+        }
+        print("------------",SlideNavigationController.sharedInstance().panGestureSideOffset)
 
+    }
 	func applicationWillResignActive(application: UIApplication) {
 		// Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
 		// Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

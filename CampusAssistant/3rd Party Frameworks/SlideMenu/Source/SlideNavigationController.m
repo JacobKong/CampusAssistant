@@ -46,6 +46,7 @@ typedef enum {
 NSString * const SlideNavigationControllerDidOpen = @"SlideNavigationControllerDidOpen";
 NSString * const SlideNavigationControllerDidClose = @"SlideNavigationControllerDidClose";
 NSString  *const SlideNavigationControllerDidReveal = @"SlideNavigationControllerDidReveal";
+NSString  *const SlideNavigationControllerStartMove = @"SlideNavigationControllerStartMove";
 
 #define MENU_SLIDE_ANIMATION_DURATION .3
 #define MENU_SLIDE_ANIMATION_OPTION UIViewAnimationOptionCurveEaseOut
@@ -529,6 +530,7 @@ static SlideNavigationController *singletonInstance;
 	
     if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0"))
     {
+        [self postNotificationWithName:SlideNavigationControllerStartMove forMenu:(location > 0) ? MenuLeft : MenuRight];
         rect.origin.x = location;
         rect.origin.y = 0;
     }
@@ -709,12 +711,12 @@ static SlideNavigationController *singletonInstance;
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
 {
-	if (self.panGestureSideOffset == 0)
+    if (self.panGestureSideOffset == 0){
 		return YES;
+    }
 	
-	CGPoint pointInView = [touch locationInView:self.view];
-	CGFloat horizontalSize = [self horizontalSize];
-	
+    CGPoint pointInView = [touch locationInView:self.view];
+    CGFloat horizontalSize = [self horizontalSize];
 	return (pointInView.x <= self.panGestureSideOffset || pointInView.x >= horizontalSize - self.panGestureSideOffset)
 		? YES
 		: NO;
@@ -727,7 +729,6 @@ static SlideNavigationController *singletonInstance;
 	NSInteger movement = translation.x - self.draggingPoint.x;
 	
     Menu currentMenu;
-    
     if (self.horizontalLocation > 0)
         currentMenu = MenuLeft;
     else if (self.horizontalLocation < 0)
