@@ -11,3 +11,5 @@
 #import "CAStudent.h"
 #import "SlideNavigationController.h"
 #import "SlideNavigationContorllerAnimator.h"
+#import "SlideNavigationContorllerAnimatorSlide.h"
+#import "SlideNavigationContorllerAnimatorFade.h"

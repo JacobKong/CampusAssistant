@@ -17,9 +17,9 @@ class CAHomeViewController: UIViewController {
 		setupWeatherSection()
         setupStudyLifeSection()
         setupAddMoreSection()
+        setupSlideMenuAnimation()
 //        self.title = "NEU CAMPUS ASSISTANT"
 //        self.title = "NEU Campus Assistant"
-        
 	}
 
 	override func didReceiveMemoryWarning() {
@@ -64,6 +64,15 @@ class CAHomeViewController: UIViewController {
         let view:UIView = CAAddMoreSectionView.instanceFromNib()
         view.frame = CGRectMake(0, 450, kScreenWidth, 50)
         self.view.addSubview(view)
+    }
+    
+    private func setupSlideMenuAnimation(){
+        let revealAnimator = SlideNavigationContorllerAnimatorFade()
+        let animationDuration:CGFloat = 0.2
+        SlideNavigationController.sharedInstance().closeMenuWithCompletion { () -> Void in
+            SlideNavigationController.sharedInstance().menuRevealAnimator = revealAnimator
+            SlideNavigationController.sharedInstance().menuRevealAnimationDuration = animationDuration
+        }
     }
 }
 

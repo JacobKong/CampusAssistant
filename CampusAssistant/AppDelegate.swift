@@ -25,9 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		}
 		self.customizeInterface()
         for subView in self.tabBarController.view.subviews{
-            if (subView is UIView){
-                subView.backgroundColor = UIColor.clearColor()
-            }
+            subView.backgroundColor = UIColor.clearColor()
         }
 		return true
 	}
@@ -40,9 +38,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 		let homeNaviController: SlideNavigationController = SlideNavigationController.init(rootViewController: homeViewController)
         let slideMenuViewController: CARightSlideMenuViewController = CARightSlideMenuViewController()
-        SlideNavigationController.sharedInstance().rightMenu = slideMenuViewController
+        SlideNavigationController.sharedInstance().rightMenu = slideMenuViewController        
 		let collectionNaviController: UINavigationController = UINavigationController.init(rootViewController: collectionsViewController)
-
 		let profileNaviController: UINavigationController = UINavigationController.init(rootViewController: profileViewController)
 		self.tabBarController.viewControllers = [homeNaviController, collectionNaviController, profileNaviController]
 		self.customizeTabBarForController(tabBarController)
