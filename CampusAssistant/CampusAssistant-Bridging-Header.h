@@ -9,3 +9,5 @@
 #import "CACollection.h"
 #import "CAFunction.h"
 #import "CAStudent.h"
+#import "SlideNavigationController.h"
+#import "SlideNavigationContorllerAnimator.h"

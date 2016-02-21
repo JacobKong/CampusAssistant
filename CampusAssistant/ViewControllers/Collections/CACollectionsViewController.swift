@@ -18,6 +18,7 @@ class CACollectionsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         self.title = "COLLECTIONS"
+        self.view.backgroundColor = UIColor.whiteColor()
         setupCollectionsArray()
         setupCollectionView()
     }

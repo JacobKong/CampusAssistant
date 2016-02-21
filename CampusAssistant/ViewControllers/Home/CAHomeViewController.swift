@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CAHomeViewController: UIViewController, UIScrollViewDelegate {
+class CAHomeViewController: UIViewController {
     
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -19,6 +19,7 @@ class CAHomeViewController: UIViewController, UIScrollViewDelegate {
         setupAddMoreSection()
 //        self.title = "NEU CAMPUS ASSISTANT"
 //        self.title = "NEU Campus Assistant"
+        
 	}
 
 	override func didReceiveMemoryWarning() {
@@ -33,10 +34,10 @@ class CAHomeViewController: UIViewController, UIScrollViewDelegate {
 		rightBarBtn.setImage(UIImage(named: "navigationbar_side_menu"), forState: .Normal)
 		rightBarBtn.setImage(UIImage(named: "navigationbar_side_menu_highlight"), forState: .Highlighted)
 		rightBarBtn.frame = CGRectMake(0, 0, 25, 25)
-		rightBarBtn.addTarget(self, action: Selector("showRigthSideMenu"), forControlEvents: .TouchUpInside)
+		rightBarBtn.addTarget(SlideNavigationController.sharedInstance(), action: Selector("toggleRightMenu"), forControlEvents: .TouchUpInside)
 		let rightBarButton = UIBarButtonItem()
 		rightBarButton.customView = rightBarBtn
-		self.navigationItem.rightBarButtonItem = rightBarButton
+		SlideNavigationController.sharedInstance().rightBarButtonItem = rightBarButton
 	}
     private func setupScrollerView(){
         let scrollView = UIScrollView.init(frame: kScreenBounds)
@@ -44,6 +45,7 @@ class CAHomeViewController: UIViewController, UIScrollViewDelegate {
         scrollView.contentSize = CGSize(width:kScreenWidth, height: kScreenHeight+20)
         scrollView.scrollEnabled = true
         scrollView.showsVerticalScrollIndicator = false
+        scrollView.backgroundColor = UIColor.whiteColor()
     }
     
 	private func setupWeatherSection() {
@@ -63,7 +65,10 @@ class CAHomeViewController: UIViewController, UIScrollViewDelegate {
         view.frame = CGRectMake(0, 450, kScreenWidth, 50)
         self.view.addSubview(view)
     }
-	func showRigthSideMenu() {
-		print("clicked")
-	}
+}
+
+extension CAHomeViewController:SlideNavigationControllerDelegate{
+    func slideNavigationControllerShouldDisplayRightMenu() -> Bool{
+        return true
+    }
 }

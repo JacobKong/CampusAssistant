@@ -12,18 +12,23 @@ import RDVTabBarController
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
-	var viewController: UIViewController?
+	let tabBarController: RDVTabBarController = RDVTabBarController()
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		// Override point for customization after application launch.
 		self.window = UIWindow.init(frame: UIScreen.mainScreen().bounds)
-		self.window?.backgroundColor = UIColor.whiteColor()
+		self.window?.backgroundColor = UIColor.blueColor()
 		self.setupViewControllers()
 		if let window = self.window {
-			window.rootViewController = viewController
+			window.rootViewController = tabBarController
 			window.makeKeyAndVisible()
 		}
 		self.customizeInterface()
+        for subView in self.tabBarController.view.subviews{
+            if (subView is UIView){
+                subView.backgroundColor = UIColor.clearColor()
+            }
+        }
 		return true
 	}
 
@@ -33,14 +38,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		let collectionsViewController: CACollectionsViewController = CACollectionsViewController()
 		let profileViewController: CAProfileViewController = CAProfileViewController()
 
-		let homeNaviController: UINavigationController = UINavigationController.init(rootViewController: homeViewController)
-
+		let homeNaviController: SlideNavigationController = SlideNavigationController.init(rootViewController: homeViewController)
+        let slideMenuViewController: CARightSlideMenuViewController = CARightSlideMenuViewController()
+        SlideNavigationController.sharedInstance().rightMenu = slideMenuViewController
 		let collectionNaviController: UINavigationController = UINavigationController.init(rootViewController: collectionsViewController)
 
 		let profileNaviController: UINavigationController = UINavigationController.init(rootViewController: profileViewController)
-		let tabBarController: RDVTabBarController = RDVTabBarController()
-		tabBarController.viewControllers = [homeNaviController, collectionNaviController, profileNaviController]
-		self.viewController = tabBarController
+		self.tabBarController.viewControllers = [homeNaviController, collectionNaviController, profileNaviController]
 		self.customizeTabBarForController(tabBarController)
 	}
 

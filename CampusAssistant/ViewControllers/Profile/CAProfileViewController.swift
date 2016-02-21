@@ -23,6 +23,7 @@ class CAProfileViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         self.title = "PROFILE"
+        self.view.backgroundColor = UIColor.whiteColor()
         removeNavigationBarBorder()
         setupTableView()
         setupData()
