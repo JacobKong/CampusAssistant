@@ -17,7 +17,7 @@ class CAHomeViewController: UIViewController {
 		setupWeatherSection()
         setupStudyLifeSection()
         setupAddMoreSection()
-        setupSlideMenuAnimation()
+//        setupSlideMenuAnimation()
 //        self.title = "NEU CAMPUS ASSISTANT"
 //        self.title = "NEU Campus Assistant"
 	}
@@ -37,7 +37,8 @@ class CAHomeViewController: UIViewController {
 		rightBarBtn.addTarget(SlideNavigationController.sharedInstance(), action: Selector("toggleRightMenu"), forControlEvents: .TouchUpInside)
 		let rightBarButton = UIBarButtonItem()
 		rightBarButton.customView = rightBarBtn
-		SlideNavigationController.sharedInstance().rightBarButtonItem = rightBarButton
+//		SlideNavigationController.sharedInstance().rightBarButtonItem = rightBarButton
+        self.navigationItem.rightBarButtonItem = rightBarButton
 	}
     private func setupScrollerView(){
         let scrollView = UIScrollView.init(frame: kScreenBounds)
@@ -66,18 +67,18 @@ class CAHomeViewController: UIViewController {
         self.view.addSubview(view)
     }
     
-    private func setupSlideMenuAnimation(){
-        let revealAnimator = SlideNavigationContorllerAnimatorFade()
-        let animationDuration:CGFloat = 0.2
-        SlideNavigationController.sharedInstance().closeMenuWithCompletion { () -> Void in
-            SlideNavigationController.sharedInstance().menuRevealAnimator = revealAnimator
-            SlideNavigationController.sharedInstance().menuRevealAnimationDuration = animationDuration
-        }
-    }
+//    private func setupSlideMenuAnimation(){
+//        let revealAnimator = SlideNavigationContorllerAnimatorFade()
+//        let animationDuration:CGFloat = 0.2
+//        SlideNavigationController.sharedInstance().closeMenuWithCompletion { () -> Void in
+//            SlideNavigationController.sharedInstance().menuRevealAnimator = revealAnimator
+//            SlideNavigationController.sharedInstance().menuRevealAnimationDuration = animationDuration
+//        }
+//    }
 }
 
-extension CAHomeViewController:SlideNavigationControllerDelegate{
-    func slideNavigationControllerShouldDisplayRightMenu() -> Bool{
-        return true
-    }
-}
+//extension CAHomeViewController:SlideNavigationControllerDelegate{
+//    func slideNavigationControllerShouldDisplayRightMenu() -> Bool{
+//        return true
+//    }
+//}

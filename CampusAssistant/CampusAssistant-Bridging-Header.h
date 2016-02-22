@@ -5,11 +5,13 @@
 #import <RDVTabBarController/RDVTabBarController.h>
 #import <MJEXtension/MJExtension.h>
 #import <CommonCrypto/CommonCrypto.h>
+#import <LCTabBarController/LCTabBarController.h>
+#import <ECSlidingViewController/ECSlidingViewController.h>
 
 #import "CACollection.h"
 #import "CAFunction.h"
 #import "CAStudent.h"
+
 #import "SlideNavigationController.h"
-#import "SlideNavigationContorllerAnimator.h"
 #import "SlideNavigationContorllerAnimatorSlide.h"
 #import "SlideNavigationContorllerAnimatorFade.h"
