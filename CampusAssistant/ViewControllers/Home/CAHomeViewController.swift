@@ -17,7 +17,8 @@ class CAHomeViewController: UIViewController {
 		setupWeatherSection()
         setupStudyLifeSection()
         setupAddMoreSection()
-//        setupSlideMenuAnimation()
+        let revealController:SWRevealViewController = self.revealViewController()
+        self.view.addGestureRecognizer(revealController.panGestureRecognizer())
 //        self.title = "NEU CAMPUS ASSISTANT"
 //        self.title = "NEU Campus Assistant"
 	}
@@ -34,7 +35,7 @@ class CAHomeViewController: UIViewController {
 		rightBarBtn.setImage(UIImage(named: "navigationbar_side_menu"), forState: .Normal)
 		rightBarBtn.setImage(UIImage(named: "navigationbar_side_menu_highlight"), forState: .Highlighted)
 		rightBarBtn.frame = CGRectMake(0, 0, 25, 25)
-		rightBarBtn.addTarget(SlideNavigationController.sharedInstance(), action: Selector("toggleRightMenu"), forControlEvents: .TouchUpInside)
+		rightBarBtn.addTarget(self, action: Selector("rightRevealToggle:"), forControlEvents: .TouchUpInside)
 		let rightBarButton = UIBarButtonItem()
 		rightBarButton.customView = rightBarBtn
 //		SlideNavigationController.sharedInstance().rightBarButtonItem = rightBarButton
@@ -66,19 +67,4 @@ class CAHomeViewController: UIViewController {
         view.frame = CGRectMake(0, 450, kScreenWidth, 50)
         self.view.addSubview(view)
     }
-    
-//    private func setupSlideMenuAnimation(){
-//        let revealAnimator = SlideNavigationContorllerAnimatorFade()
-//        let animationDuration:CGFloat = 0.2
-//        SlideNavigationController.sharedInstance().closeMenuWithCompletion { () -> Void in
-//            SlideNavigationController.sharedInstance().menuRevealAnimator = revealAnimator
-//            SlideNavigationController.sharedInstance().menuRevealAnimationDuration = animationDuration
-//        }
-//    }
 }
-
-//extension CAHomeViewController:SlideNavigationControllerDelegate{
-//    func slideNavigationControllerShouldDisplayRightMenu() -> Bool{
-//        return true
-//    }
-//}

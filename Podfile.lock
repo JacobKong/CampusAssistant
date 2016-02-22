@@ -1,27 +1,21 @@
 PODS:
   - Alamofire (3.2.0)
-  - ECSlidingViewController (2.0.3)
   - LCTabBarController (1.2.7)
   - MJExtension (3.0.10)
-  - RDVTabBarController (1.1.9)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - Alamofire (~> 3.0)
-  - ECSlidingViewController (~> 2.0.3)
   - LCTabBarController
   - MJExtension
-  - RDVTabBarController
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 4da478599fccddff361205c8929333d7fe18dceb
-  ECSlidingViewController: 6485c14f23b4487e9946535421ca8f111f86cc53
   LCTabBarController: 8f65dd64fc3b8d0bfe97cf972145f5840e0b0470
   MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
-  RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 861df45f36cc8960e88e87419ed678d03f38124e
+PODFILE CHECKSUM: 9b53e86eafd15347b430fdc9d3421226c435ab5b
 
 COCOAPODS: 1.0.0.beta.3

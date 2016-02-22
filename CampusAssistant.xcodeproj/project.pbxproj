@@ -38,6 +38,7 @@
 		EF44E79E1C7AD71C00ADCC5E /* menu-button.png in Resources */ = {isa = PBXBuildFile; fileRef = EF44E7951C7AD71C00ADCC5E /* menu-button.png */; };
 		EF44E79F1C7AD71C00ADCC5E /* menu-button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF44E7961C7AD71C00ADCC5E /* menu-button@2x.png */; };
 		EF44E7A01C7AD71C00ADCC5E /* SlideNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF44E7981C7AD71C00ADCC5E /* SlideNavigationController.m */; };
+		EF44E7FD1C7AFE0F00ADCC5E /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF44E7FC1C7AFE0F00ADCC5E /* SWRevealViewController.m */; };
 		EF50E7EA1C772A6700A0A5A5 /* CAProfileHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF50E7E91C772A6700A0A5A5 /* CAProfileHeader.xib */; };
 		EF50E7EE1C772CDC00A0A5A5 /* CACollectionTitleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50E7EC1C772CDC00A0A5A5 /* CACollectionTitleHeader.swift */; };
 		EF50E7EF1C772CDC00A0A5A5 /* CACollectionTitleHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF50E7ED1C772CDC00A0A5A5 /* CACollectionTitleHeader.xib */; };
@@ -113,6 +114,8 @@
 		EF44E7961C7AD71C00ADCC5E /* menu-button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-button@2x.png"; sourceTree = "<group>"; };
 		EF44E7971C7AD71C00ADCC5E /* SlideNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideNavigationController.h; sourceTree = "<group>"; };
 		EF44E7981C7AD71C00ADCC5E /* SlideNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideNavigationController.m; sourceTree = "<group>"; };
+		EF44E7FB1C7AFE0F00ADCC5E /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		EF44E7FC1C7AFE0F00ADCC5E /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		EF50E7E91C772A6700A0A5A5 /* CAProfileHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAProfileHeader.xib; sourceTree = "<group>"; };
 		EF50E7EC1C772CDC00A0A5A5 /* CACollectionTitleHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACollectionTitleHeader.swift; sourceTree = "<group>"; };
 		EF50E7ED1C772CDC00A0A5A5 /* CACollectionTitleHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CACollectionTitleHeader.xib; sourceTree = "<group>"; };
@@ -295,6 +298,7 @@
 		EF377C901C7038F800B40D20 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				EF44E7FA1C7AFE0F00ADCC5E /* SWReveal */,
 				EF331FF11C7960E800695A3B /* SlideMenu */,
 				EF3D6FDC1C7064260051DA24 /* Profile */,
 				EF3D6FDA1C7064260051DA24 /* Collections */,
@@ -410,6 +414,15 @@
 				EF44E7961C7AD71C00ADCC5E /* menu-button@2x.png */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		EF44E7FA1C7AFE0F00ADCC5E /* SWReveal */ = {
+			isa = PBXGroup;
+			children = (
+				EF44E7FB1C7AFE0F00ADCC5E /* SWRevealViewController.h */,
+				EF44E7FC1C7AFE0F00ADCC5E /* SWRevealViewController.m */,
+			);
+			path = SWReveal;
 			sourceTree = "<group>";
 		};
 		EF50E7E61C7729FC00A0A5A5 /* ProfileHeader */ = {
@@ -654,6 +667,7 @@
 				EF44E79D1C7AD71C00ADCC5E /* SlideNavigationContorllerAnimatorSlideAndFade.m in Sources */,
 				EF50E7EE1C772CDC00A0A5A5 /* CACollectionTitleHeader.swift in Sources */,
 				EF44E79A1C7AD71C00ADCC5E /* SlideNavigationContorllerAnimatorScale.m in Sources */,
+				EF44E7FD1C7AFE0F00ADCC5E /* SWRevealViewController.m in Sources */,
 				EF50E7F91C776A7500A0A5A5 /* String+CA.swift in Sources */,
 				EFBC489D1C719DE500915AC7 /* CAWeatherSectionView.swift in Sources */,
 				EF50E7F31C775C0A00A0A5A5 /* UIImage+CA.swift in Sources */,

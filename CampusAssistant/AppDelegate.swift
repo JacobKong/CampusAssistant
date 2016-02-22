@@ -7,36 +7,23 @@
 //
 
 import UIKit
-import RDVTabBarController
 import LCTabBarController
-import ECSlidingViewController
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     let tabBarController = LCTabBarController()
-    var slidingViewController : ECSlidingViewController!
-    //    var tabbarY:CGFloat!
-    //    var tabbarW:CGFloat!
-    //    var tabbarH:CGFloat!
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         self.window = UIWindow.init(frame: UIScreen.mainScreen().bounds)
         self.setupViewControllers()
         if let window = self.window {
-            window.rootViewController = tabBarController
+//            window.rootViewController = tabBarController
             window.makeKeyAndVisible()
         }
         self.customizeInterface()
-        
-        //        for subView in self.tabBarController.view.subviews{
-        //            subView.backgroundColor = UIColor.clearColor()
-        //        }
-        //        tabbarY = tabBarController.tabBar.frame.origin.y
-        //        tabbarW = tabBarController.tabBar.frame.size.width
-        //        tabbarH = tabBarController.tabBar.frame.size.height
         return true
     }
     
@@ -54,52 +41,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         profileViewController.tabBarItem.image = UIImage(named: "profile_normal")
         profileViewController.tabBarItem.selectedImage = UIImage(named: "profile_selected")
         
-        //        let homeNaviController: SlideNavigationController = SlideNavigationController.init(rootViewController: homeViewController)
         let homeNaviController: UINavigationController = UINavigationController.init(rootViewController: homeViewController)
         let collectionNaviController: UINavigationController = UINavigationController.init(rootViewController: collectionsViewController)
         let profileNaviController: UINavigationController = UINavigationController.init(rootViewController: profileViewController)
         self.tabBarController.viewControllers = [homeNaviController, collectionNaviController, profileNaviController]
         
-//        let slideMenuViewController: CARightSlideMenuViewController = CARightSlideMenuViewController()
-//        self.slidingViewController = ECSlidingViewController.slidingWithTopViewController(homeNaviController)
-//        self.slidingViewController.underRightViewController = slideMenuViewController
-//        self.slidingViewController.anchorRightPeekAmount  = 100.0
-//        tabBarController.view.addGestureRecognizer(self.slidingViewController.panGesture)
-        
-        //        SlideNavigationController.sharedInstance().rightMenu = slideMenuViewController
-        //        self.moveTabbarWhenSlideMenuReveal(homeNaviController)
-        
+        let slideMenuViewController: CARightSlideMenuViewController = CARightSlideMenuViewController()
+        let revealController:SWRevealViewController = SWRevealViewController.init(rearViewController: slideMenuViewController, frontViewController: self.tabBarController)
+        revealController.rightViewController = slideMenuViewController
+        self.window?.rootViewController = revealController
     }
-    
-    
-    //	// MARK: - Methods
-    //	private func setupViewControllers() {
-    //		let homeViewController: CAHomeViewController = CAHomeViewController()
-    //		let collectionsViewController: CACollectionsViewController = CACollectionsViewController()
-    //		let profileViewController: CAProfileViewController = CAProfileViewController()
-    //
-    //		let homeNaviController: SlideNavigationController = SlideNavigationController.init(rootViewController: homeViewController)
-    //        let slideMenuViewController: CARightSlideMenuViewController = CARightSlideMenuViewController()
-    //        SlideNavigationController.sharedInstance().rightMenu = slideMenuViewController
-    //        self.moveTabbarWhenSlideMenuReveal(homeNaviController)
-    //
-    //		let collectionNaviController: UINavigationController = UINavigationController.init(rootViewController: collectionsViewController)
-    //		let profileNaviController: UINavigationController = UINavigationController.init(rootViewController: profileViewController)
-    //		self.tabBarController.viewControllers = [homeNaviController, collectionNaviController, profileNaviController]
-    //		self.customizeTabBarForController(tabBarController)
-    //	}
-    
-    //	private func customizeTabBarForController() {
-    //		let tabBarItemsImages = ["home", "collections", "profile"]
-    //		var index = 0
-    //		let tabbarItems = tabBarController.tabBar.items as! [RDVTabBarItem]
-    //		for item: RDVTabBarItem in tabbarItems {
-    //			let selectedimage = UIImage.init(named: String.init(format: "%@_selected", tabBarItemsImages[index]))
-    //			let unselectedimage = UIImage.init(named: String.init(format: "%@_normal", tabBarItemsImages[index]))
-    //			item.setFinishedSelectedImage(selectedimage, withFinishedUnselectedImage: unselectedimage)
-    //			index++
-    //		}
-    //	}
     
     // 修改NavigationBar和status bar color
     private func customizeInterface() {
