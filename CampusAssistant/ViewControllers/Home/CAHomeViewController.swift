@@ -35,7 +35,7 @@ class CAHomeViewController: UIViewController {
 		rightBarBtn.setImage(UIImage(named: "navigationbar_side_menu"), forState: .Normal)
 		rightBarBtn.setImage(UIImage(named: "navigationbar_side_menu_highlight"), forState: .Highlighted)
 		rightBarBtn.frame = CGRectMake(0, 0, 25, 25)
-		rightBarBtn.addTarget(self, action: Selector("rightRevealToggle:"), forControlEvents: .TouchUpInside)
+		rightBarBtn.addTarget(self.revealViewController(), action: Selector("rightRevealToggle:"), forControlEvents: .TouchUpInside)
 		let rightBarButton = UIBarButtonItem()
 		rightBarButton.customView = rightBarBtn
 //		SlideNavigationController.sharedInstance().rightBarButtonItem = rightBarButton

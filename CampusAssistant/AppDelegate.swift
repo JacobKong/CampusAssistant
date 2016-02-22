@@ -47,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.tabBarController.viewControllers = [homeNaviController, collectionNaviController, profileNaviController]
         
         let slideMenuViewController: CARightSlideMenuViewController = CARightSlideMenuViewController()
-        let revealController:SWRevealViewController = SWRevealViewController.init(rearViewController: slideMenuViewController, frontViewController: self.tabBarController)
+        let revealController:SWRevealViewController = SWRevealViewController.init(rearViewController: nil, frontViewController: self.tabBarController)
         revealController.rightViewController = slideMenuViewController
         self.window?.rootViewController = revealController
     }
@@ -64,27 +64,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: false)
     }
     
-    //    private func moveTabbarWhenSlideMenuReveal(slideNaviController: SlideNavigationController){
-    //        NSNotificationCenter.defaultCenter().addObserverForName(SlideNavigationControllerDidClose, object: nil, queue: nil) { (note) -> Void in
-    //            let menu = note.userInfo!["menu"]
-    //            print("Close", menu)
-    //            self.tabBarController.tabBar.frame = CGRectMake(slideNaviController.view.frame.origin.x, self.tabbarY, self.tabbarW, self.tabbarH)
-    //        }
-    //        NSNotificationCenter.defaultCenter().addObserverForName(SlideNavigationControllerDidOpen, object: nil, queue: nil) { (note) -> Void in
-    //            let menu = note.userInfo!["menu"]
-    //            print("Open", menu)
-    //            print(slideNaviController.view.frame)
-    //            self.tabBarController.tabBar.frame = CGRectMake(slideNaviController.view.frame.origin.x, self.tabbarY, self.tabbarW, self.tabbarH)
-    //        }
-    //        NSNotificationCenter.defaultCenter().addObserverForName(SlideNavigationControllerStartMove, object: nil, queue: nil) { (note) -> Void in
-    //            let menu = note.userInfo!["menu"]
-    //            print("Move", menu)
-    //            print(slideNaviController.view.frame)
-    //            self.tabBarController.tabBar.frame = CGRectMake(slideNaviController.view.frame.origin.x, self.tabbarY, self.tabbarW, self.tabbarH)
-    //        }
-    //        print("------------",SlideNavigationController.sharedInstance().panGestureSideOffset)
-    //
-    //    }
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
