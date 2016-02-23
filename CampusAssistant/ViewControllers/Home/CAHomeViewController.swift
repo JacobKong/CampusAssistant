@@ -17,8 +17,7 @@ class CAHomeViewController: UIViewController {
 		setupWeatherSection()
         setupStudyLifeSection()
         setupAddMoreSection()
-        let revealController:SWRevealViewController = self.revealViewController()
-        self.view.addGestureRecognizer(revealController.panGestureRecognizer())
+        setupRevealController()
 //        self.title = "NEU CAMPUS ASSISTANT"
 //        self.title = "NEU Campus Assistant"
 	}
@@ -66,5 +65,11 @@ class CAHomeViewController: UIViewController {
         let view:UIView = CAAddMoreSectionView.instanceFromNib()
         view.frame = CGRectMake(0, 450, kScreenWidth, 50)
         self.view.addSubview(view)
+    }
+    
+    private func setupRevealController(){
+        let revealController:SWRevealViewController = self.revealViewController()
+        self.view.addGestureRecognizer(revealController.panGestureRecognizer())
+        revealController.rightViewRevealWidth = kScreenWidth - 60
     }
 }
