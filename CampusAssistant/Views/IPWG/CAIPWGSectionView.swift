@@ -22,5 +22,6 @@ class CAIPWGSectionView: UIView {
 //        self.passwordTextField.leftView = UIImageView.init(image: UIImage(named: "slide_menu_password"))
         usernameTextField.leftImage = "slide_menu_username"
         passwordTextField.leftImage = "slide_menu_password"
+        self.passwordTextField.secureTextEntry = true
     }
 }

@@ -37,13 +37,13 @@
 		EF44E8071C7BFD1E00ADCC5E /* CAIPWGSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF44E8061C7BFD1E00ADCC5E /* CAIPWGSectionView.xib */; };
 		EF44E80A1C7C1FA600ADCC5E /* CALightAlphaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44E8091C7C1FA600ADCC5E /* CALightAlphaTextField.swift */; };
 		EF44E80C1C7C5DB300ADCC5E /* UIColor+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44E80B1C7C5DB300ADCC5E /* UIColor+CA.swift */; };
+		EF44E8101C7C8BC200ADCC5E /* String+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44E80F1C7C8BC200ADCC5E /* String+CA.swift */; };
 		EF50E7EA1C772A6700A0A5A5 /* CAProfileHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF50E7E91C772A6700A0A5A5 /* CAProfileHeader.xib */; };
 		EF50E7EE1C772CDC00A0A5A5 /* CACollectionTitleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50E7EC1C772CDC00A0A5A5 /* CACollectionTitleHeader.swift */; };
 		EF50E7EF1C772CDC00A0A5A5 /* CACollectionTitleHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF50E7ED1C772CDC00A0A5A5 /* CACollectionTitleHeader.xib */; };
 		EF50E7F11C773F0F00A0A5A5 /* CAProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50E7F01C773F0F00A0A5A5 /* CAProfileHeader.swift */; };
 		EF50E7F31C775C0A00A0A5A5 /* UIImage+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50E7F21C775C0A00A0A5A5 /* UIImage+CA.swift */; };
 		EF50E7F51C77621B00A0A5A5 /* UIImageView+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50E7F41C77621B00A0A5A5 /* UIImageView+CA.swift */; };
-		EF50E7F91C776A7500A0A5A5 /* String+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50E7F81C776A7500A0A5A5 /* String+CA.swift */; };
 		EFBC489D1C719DE500915AC7 /* CAWeatherSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC489C1C719DE500915AC7 /* CAWeatherSectionView.swift */; };
 		EFBC489F1C719DFF00915AC7 /* CAWeatherSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFBC489E1C719DFF00915AC7 /* CAWeatherSectionView.xib */; };
 		EFBC48A51C72F6AF00915AC7 /* CAStudyLifeSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC48A41C72F6AF00915AC7 /* CAStudyLifeSectionView.swift */; };
@@ -105,13 +105,13 @@
 		EF44E8061C7BFD1E00ADCC5E /* CAIPWGSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAIPWGSectionView.xib; sourceTree = "<group>"; };
 		EF44E8091C7C1FA600ADCC5E /* CALightAlphaTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALightAlphaTextField.swift; sourceTree = "<group>"; };
 		EF44E80B1C7C5DB300ADCC5E /* UIColor+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+CA.swift"; sourceTree = "<group>"; };
+		EF44E80F1C7C8BC200ADCC5E /* String+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+CA.swift"; sourceTree = "<group>"; };
 		EF50E7E91C772A6700A0A5A5 /* CAProfileHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAProfileHeader.xib; sourceTree = "<group>"; };
 		EF50E7EC1C772CDC00A0A5A5 /* CACollectionTitleHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACollectionTitleHeader.swift; sourceTree = "<group>"; };
 		EF50E7ED1C772CDC00A0A5A5 /* CACollectionTitleHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CACollectionTitleHeader.xib; sourceTree = "<group>"; };
 		EF50E7F01C773F0F00A0A5A5 /* CAProfileHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAProfileHeader.swift; sourceTree = "<group>"; };
 		EF50E7F21C775C0A00A0A5A5 /* UIImage+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CA.swift"; sourceTree = "<group>"; };
 		EF50E7F41C77621B00A0A5A5 /* UIImageView+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+CA.swift"; sourceTree = "<group>"; };
-		EF50E7F81C776A7500A0A5A5 /* String+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+CA.swift"; sourceTree = "<group>"; };
 		EFBC489C1C719DE500915AC7 /* CAWeatherSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAWeatherSectionView.swift; sourceTree = "<group>"; };
 		EFBC489E1C719DFF00915AC7 /* CAWeatherSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAWeatherSectionView.xib; sourceTree = "<group>"; };
 		EFBC48A41C72F6AF00915AC7 /* CAStudyLifeSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAStudyLifeSectionView.swift; sourceTree = "<group>"; };
@@ -262,9 +262,9 @@
 		EF377C8E1C7038F800B40D20 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				EF44E80F1C7C8BC200ADCC5E /* String+CA.swift */,
 				EF50E7F21C775C0A00A0A5A5 /* UIImage+CA.swift */,
 				EF50E7F41C77621B00A0A5A5 /* UIImageView+CA.swift */,
-				EF50E7F81C776A7500A0A5A5 /* String+CA.swift */,
 				EF3DF2731C784F0F002276A6 /* NSData+CA.swift */,
 				EF44E80B1C7C5DB300ADCC5E /* UIColor+CA.swift */,
 			);
@@ -619,6 +619,7 @@
 				EF3DF2741C784F0F002276A6 /* NSData+CA.swift in Sources */,
 				EF331FD41C786C6600695A3B /* CAStudentTool.swift in Sources */,
 				EFBC48A51C72F6AF00915AC7 /* CAStudyLifeSectionView.swift in Sources */,
+				EF44E8101C7C8BC200ADCC5E /* String+CA.swift in Sources */,
 				EF377C3F1C6F919B00B40D20 /* AppDelegate.swift in Sources */,
 				EF3D6FE01C7064740051DA24 /* CAHomeViewController.swift in Sources */,
 				EFBC48AA1C73377000915AC7 /* Macro.swift in Sources */,
@@ -628,7 +629,6 @@
 				EF18DAD31C79694200369F33 /* CARightSlideMenuViewController.swift in Sources */,
 				EF50E7EE1C772CDC00A0A5A5 /* CACollectionTitleHeader.swift in Sources */,
 				EF44E7FD1C7AFE0F00ADCC5E /* SWRevealViewController.m in Sources */,
-				EF50E7F91C776A7500A0A5A5 /* String+CA.swift in Sources */,
 				EF44E8051C7BFD0B00ADCC5E /* CAIPWGSectionView.swift in Sources */,
 				EFBC489D1C719DE500915AC7 /* CAWeatherSectionView.swift in Sources */,
 				EF50E7F31C775C0A00A0A5A5 /* UIImage+CA.swift in Sources */,

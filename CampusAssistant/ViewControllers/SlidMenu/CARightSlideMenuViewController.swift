@@ -8,11 +8,13 @@
 //
 
 import UIKit
+import TPKeyboardAvoiding
 
 class CARightSlideMenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupScrollerView()
         setupBgImage()
         setupAccountSection()
         setupIPWGSection()
@@ -24,6 +26,15 @@ class CARightSlideMenuViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    private func setupScrollerView(){
+        let scrollView = TPKeyboardAvoidingScrollView.init(frame: kScreenBounds)
+        self.view = scrollView
+        scrollView.contentSize = CGSize(width:kScreenWidth, height: kScreenHeight)
+        scrollView.scrollEnabled = true
+        scrollView.showsVerticalScrollIndicator = false
+        scrollView.backgroundColor = UIColor.whiteColor()
+    }
+    
     private func setupBgImage(){
         let imageView = UIImageView.init(frame: self.view.frame)
         imageView.image = UIImage(named: "slide_menu_bg")
