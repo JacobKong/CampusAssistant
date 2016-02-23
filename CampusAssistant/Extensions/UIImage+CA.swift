@@ -14,4 +14,13 @@ extension UIImage{
         return oldImage!
     }
     
+    class func resizeableImageWithName(name: String) -> UIImage{
+        let normal = UIImage(named: name)
+        
+        let w:CGFloat = normal!.size.width * 0.5
+        let h:CGFloat = normal!.size.height * 0.5
+        return (normal?.resizableImageWithCapInsets(UIEdgeInsetsMake(h, w, h, w)))!
+        
+    }
+    
 }

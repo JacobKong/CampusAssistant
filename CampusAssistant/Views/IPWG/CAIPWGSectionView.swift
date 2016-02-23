@@ -9,6 +9,8 @@
 import UIKit
 
 class CAIPWGSectionView: UIView {
+    @IBOutlet weak var disconnect_btn: UIButton!
+    @IBOutlet weak var connect_btn: UIButton!
     @IBOutlet weak var passwordTextField: CALightAlphaTextField!
     @IBOutlet weak var usernameTextField: CALightAlphaTextField!
     
@@ -18,10 +20,9 @@ class CAIPWGSectionView: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-//        self.usernameTextField.leftView = UIImageView.init(image: UIImage(named: "slide_menu_username"))
-//        self.passwordTextField.leftView = UIImageView.init(image: UIImage(named: "slide_menu_password"))
         usernameTextField.leftImage = "slide_menu_username"
         passwordTextField.leftImage = "slide_menu_password"
         self.passwordTextField.secureTextEntry = true
+    self.connect_btn.setBackgroundImage(UIImage.resizeableImageWithName("slide_menu_connect_btn_bg"), forState: UIControlState.Normal)
     }
 }
