@@ -7,6 +7,7 @@ def pods
     pod 'Alamofire', '~> 3.0'
     pod 'SwiftyJSON'
     pod "LCTabBarController"
+    pod 'TPKeyboardAvoiding'
 end
 
 target 'CampusAssistant' do

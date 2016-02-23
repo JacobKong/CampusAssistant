@@ -3,19 +3,22 @@ PODS:
   - LCTabBarController (1.2.7)
   - MJExtension (3.0.10)
   - SwiftyJSON (2.3.2)
+  - TPKeyboardAvoiding (1.2.11)
 
 DEPENDENCIES:
   - Alamofire (~> 3.0)
   - LCTabBarController
   - MJExtension
   - SwiftyJSON
+  - TPKeyboardAvoiding
 
 SPEC CHECKSUMS:
   Alamofire: 4da478599fccddff361205c8929333d7fe18dceb
   LCTabBarController: 8f65dd64fc3b8d0bfe97cf972145f5840e0b0470
   MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  TPKeyboardAvoiding: e5ce146b313de063957bfa75a13f1e9b0ff18ab7
 
-PODFILE CHECKSUM: 9b53e86eafd15347b430fdc9d3421226c435ab5b
+PODFILE CHECKSUM: 34693a5e9bbf5323f527673984977ad99941d4f8
 
 COCOAPODS: 1.0.0.beta.3
