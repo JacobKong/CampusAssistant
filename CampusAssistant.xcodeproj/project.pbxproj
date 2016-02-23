@@ -35,6 +35,8 @@
 		EF44E8031C7BFCEE00ADCC5E /* CAAccountSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF44E8021C7BFCEE00ADCC5E /* CAAccountSectionView.xib */; };
 		EF44E8051C7BFD0B00ADCC5E /* CAIPWGSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44E8041C7BFD0B00ADCC5E /* CAIPWGSectionView.swift */; };
 		EF44E8071C7BFD1E00ADCC5E /* CAIPWGSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF44E8061C7BFD1E00ADCC5E /* CAIPWGSectionView.xib */; };
+		EF44E80A1C7C1FA600ADCC5E /* CALightAlphaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44E8091C7C1FA600ADCC5E /* CALightAlphaTextField.swift */; };
+		EF44E80C1C7C5DB300ADCC5E /* UIColor+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44E80B1C7C5DB300ADCC5E /* UIColor+CA.swift */; };
 		EF50E7EA1C772A6700A0A5A5 /* CAProfileHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF50E7E91C772A6700A0A5A5 /* CAProfileHeader.xib */; };
 		EF50E7EE1C772CDC00A0A5A5 /* CACollectionTitleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50E7EC1C772CDC00A0A5A5 /* CACollectionTitleHeader.swift */; };
 		EF50E7EF1C772CDC00A0A5A5 /* CACollectionTitleHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF50E7ED1C772CDC00A0A5A5 /* CACollectionTitleHeader.xib */; };
@@ -101,6 +103,8 @@
 		EF44E8021C7BFCEE00ADCC5E /* CAAccountSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAAccountSectionView.xib; sourceTree = "<group>"; };
 		EF44E8041C7BFD0B00ADCC5E /* CAIPWGSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAIPWGSectionView.swift; sourceTree = "<group>"; };
 		EF44E8061C7BFD1E00ADCC5E /* CAIPWGSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAIPWGSectionView.xib; sourceTree = "<group>"; };
+		EF44E8091C7C1FA600ADCC5E /* CALightAlphaTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALightAlphaTextField.swift; sourceTree = "<group>"; };
+		EF44E80B1C7C5DB300ADCC5E /* UIColor+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+CA.swift"; sourceTree = "<group>"; };
 		EF50E7E91C772A6700A0A5A5 /* CAProfileHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAProfileHeader.xib; sourceTree = "<group>"; };
 		EF50E7EC1C772CDC00A0A5A5 /* CACollectionTitleHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACollectionTitleHeader.swift; sourceTree = "<group>"; };
 		EF50E7ED1C772CDC00A0A5A5 /* CACollectionTitleHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CACollectionTitleHeader.xib; sourceTree = "<group>"; };
@@ -262,6 +266,7 @@
 				EF50E7F41C77621B00A0A5A5 /* UIImageView+CA.swift */,
 				EF50E7F81C776A7500A0A5A5 /* String+CA.swift */,
 				EF3DF2731C784F0F002276A6 /* NSData+CA.swift */,
+				EF44E80B1C7C5DB300ADCC5E /* UIColor+CA.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -303,6 +308,7 @@
 		EF377C941C7038F800B40D20 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EF44E8081C7C1F4500ADCC5E /* TextField */,
 				EF44E7FE1C7BFCAF00ADCC5E /* Account */,
 				EF44E7FF1C7BFCAF00ADCC5E /* IPWG */,
 				EF331FC71C7861A200695A3B /* Cell */,
@@ -373,6 +379,14 @@
 				EF44E8061C7BFD1E00ADCC5E /* CAIPWGSectionView.xib */,
 			);
 			path = IPWG;
+			sourceTree = "<group>";
+		};
+		EF44E8081C7C1F4500ADCC5E /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				EF44E8091C7C1FA600ADCC5E /* CALightAlphaTextField.swift */,
+			);
+			path = TextField;
 			sourceTree = "<group>";
 		};
 		EF50E7E61C7729FC00A0A5A5 /* ProfileHeader */ = {
@@ -618,6 +632,8 @@
 				EF44E8051C7BFD0B00ADCC5E /* CAIPWGSectionView.swift in Sources */,
 				EFBC489D1C719DE500915AC7 /* CAWeatherSectionView.swift in Sources */,
 				EF50E7F31C775C0A00A0A5A5 /* UIImage+CA.swift in Sources */,
+				EF44E80C1C7C5DB300ADCC5E /* UIColor+CA.swift in Sources */,
+				EF44E80A1C7C1FA600ADCC5E /* CALightAlphaTextField.swift in Sources */,
 				EF0C41871C75CA5F0044B9C0 /* CACollection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

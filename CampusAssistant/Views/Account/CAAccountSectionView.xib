@@ -13,7 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="8ny-td-A5R" customClass="CAAccountSectionView" customModule="CampusAssistant" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="185"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="190"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slide_menu_account" id="t5A-vJ-iEa">
@@ -103,7 +103,7 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
                 <view alpha="0.10000000000000001" contentMode="scaleToFill" id="1EC-hn-pN5">
-                    <rect key="frame" x="0.0" y="183" width="320" height="2"/>
+                    <rect key="frame" x="0.0" y="188" width="320" height="2"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                 </view>
@@ -111,7 +111,7 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="517" y="181.5"/>
+            <point key="canvasLocation" x="517" y="184"/>
         </view>
     </objects>
     <resources>

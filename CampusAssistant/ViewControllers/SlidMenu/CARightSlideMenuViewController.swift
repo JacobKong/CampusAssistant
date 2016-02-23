@@ -35,7 +35,7 @@ class CARightSlideMenuViewController: UIViewController {
         let accountX:CGFloat = 60
         let accountY:CGFloat = 15
         let accountW:CGFloat = kScreenWidth - 60
-        let accountH:CGFloat = 185
+        let accountH:CGFloat = 190
         accountSection.frame = CGRectMake(accountX, accountY, accountW, accountH)
         self.view.addSubview(accountSection)
     }
