@@ -51,15 +51,15 @@ class CALightAlphaTextField: UITextField {
         }
     }
     
-    override func drawTextInRect(rect: CGRect) {
-        if self.text != nil{
-            let textColor = UIColor.whiteColor()
-            let font = UIFont(name: "Montserrat-Regular", size: 16)!
-            let textFontAttributes = [
-                NSFontAttributeName:font,
-                NSForegroundColorAttributeName:textColor
-            ]
-            self.text!.drawInRect(CGRectMake(0, rect.size.height*0.5 - 9, rect.size.width, rect.size.height), withAttributes: textFontAttributes)
-        }
-    }
+//    override func drawTextInRect(rect: CGRect) {
+//        if self.text != nil{
+//            let textColor = UIColor.whiteColor()
+//            let font = UIFont(name: "Montserrat-Regular", size: 16)!
+//            let textFontAttributes = [
+//                NSFontAttributeName:font,
+//                NSForegroundColorAttributeName:textColor
+//            ]
+//            self.text!.drawInRect(CGRectMake(0, rect.size.height*0.5 - 9, rect.size.width, rect.size.height), withAttributes: textFontAttributes)
+//        }
+//    }
 }

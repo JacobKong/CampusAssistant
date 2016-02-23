@@ -11,11 +11,11 @@ import UIKit
 import TPKeyboardAvoiding
 
 class CARightSlideMenuViewController: UIViewController {
-
+    var scrollView : TPKeyboardAvoidingScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupScrollerView()
         setupBgImage()
+        setupScrollerView()
         setupAccountSection()
         setupIPWGSection()
         // Do any additional setup after loading the view.
@@ -27,12 +27,12 @@ class CARightSlideMenuViewController: UIViewController {
     }
 
     private func setupScrollerView(){
-        let scrollView = TPKeyboardAvoidingScrollView.init(frame: kScreenBounds)
-        self.view = scrollView
-        scrollView.contentSize = CGSize(width:kScreenWidth, height: kScreenHeight)
-        scrollView.scrollEnabled = true
-        scrollView.showsVerticalScrollIndicator = false
-        scrollView.backgroundColor = UIColor.whiteColor()
+        self.scrollView = TPKeyboardAvoidingScrollView.init(frame: kScreenBounds)
+        self.scrollView.contentSize = CGSize(width:kScreenWidth, height: kScreenHeight)
+        self.scrollView.scrollEnabled = true
+        self.scrollView.showsVerticalScrollIndicator = false
+        self.view.addSubview(self.scrollView)
+//        self.view.backgroundColor = UIColor.blackColor()
     }
     
     private func setupBgImage(){
@@ -48,7 +48,7 @@ class CARightSlideMenuViewController: UIViewController {
         let accountW:CGFloat = kScreenWidth - 60
         let accountH:CGFloat = 190
         accountSection.frame = CGRectMake(accountX, accountY, accountW, accountH)
-        self.view.addSubview(accountSection)
+        self.scrollView.addSubview(accountSection)
     }
     
     private func setupIPWGSection(){
@@ -58,6 +58,6 @@ class CARightSlideMenuViewController: UIViewController {
         let IPWGW:CGFloat = kScreenWidth - 60
         let IPWGH:CGFloat = 170
         IPWGSection.frame = CGRectMake(IPWGX, IPWGY, IPWGW, IPWGH)
-        self.view.addSubview(IPWGSection)
+        self.scrollView.addSubview(IPWGSection)
     }
 }
