@@ -57,7 +57,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationBarAppearance = UINavigationBar.appearance()
         let backgroundImage = UIImage.init(named: "navigationbar_background_tall")
         let textAttributes: NSDictionary = [
-            NSFontAttributeName: UIFont(name: "Montserrat-Regular", size: 18)!, NSForegroundColorAttributeName: UIColor.whiteColor()
+            NSFontAttributeName: UIFont(name: "Montserrat-Regular", size: 17)!, NSForegroundColorAttributeName: UIColor.whiteColor()
         ]
         navigationBarAppearance.setBackgroundImage(backgroundImage, forBarMetrics: UIBarMetrics.Default)
         navigationBarAppearance.titleTextAttributes = textAttributes as? [String : AnyObject]

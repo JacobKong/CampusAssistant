@@ -31,8 +31,8 @@ class CAProfileViewController: UIViewController {
     }
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        self.setupTitleArray()
-        self.setupHeaderLabel()
+//        self.setupTitleArray()
+//        self.setupHeaderLabel()
     }
     
     private func setupTableView(){
@@ -108,7 +108,7 @@ extension CAProfileViewController:UITableViewDataSource, UITableViewDelegate{
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(profileCellIdentifier, forIndexPath: indexPath) as! CAProfileInfoCell
-        cell.titleLabel?.text = self.titleArray[indexPath.row]
+//        cell.titleLabel?.text = self.titleArray[indexPath.row]
         cell.subtitleLabel?.text = self.subtitleArray[indexPath.row]
         cell.iconImageView?.image = UIImage(named:String.init(format: "%@", self.iconImageArray[indexPath.row]))
         cell.contentView.backgroundColor = UIColor.whiteColor()

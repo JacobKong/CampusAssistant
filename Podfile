@@ -8,6 +8,7 @@ def pods
     pod 'SwiftyJSON'
     pod "LCTabBarController"
     pod 'TPKeyboardAvoiding'
+    pod 'ChameleonFramework/Swift'
 end
 
 target 'CampusAssistant' do

@@ -19,7 +19,6 @@
 		EF331FD41C786C6600695A3B /* CAStudentTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF331FD31C786C6600695A3B /* CAStudentTool.swift */; };
 		EF377C3F1C6F919B00B40D20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF377C3E1C6F919B00B40D20 /* AppDelegate.swift */; };
 		EF377C441C6F919B00B40D20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF377C421C6F919B00B40D20 /* Main.storyboard */; };
-		EF377C461C6F919B00B40D20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF377C451C6F919B00B40D20 /* Assets.xcassets */; };
 		EF377C491C6F919B00B40D20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF377C471C6F919B00B40D20 /* LaunchScreen.storyboard */; };
 		EF377C541C6F919B00B40D20 /* CampusAssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF377C531C6F919B00B40D20 /* CampusAssistantTests.swift */; };
 		EF377C951C7038F800B40D20 /* CATabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF377C921C7038F800B40D20 /* CATabBarController.swift */; };
@@ -44,6 +43,7 @@
 		EF50E7F11C773F0F00A0A5A5 /* CAProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50E7F01C773F0F00A0A5A5 /* CAProfileHeader.swift */; };
 		EF50E7F31C775C0A00A0A5A5 /* UIImage+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50E7F21C775C0A00A0A5A5 /* UIImage+CA.swift */; };
 		EF50E7F51C77621B00A0A5A5 /* UIImageView+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50E7F41C77621B00A0A5A5 /* UIImageView+CA.swift */; };
+		EF5DF8321C7D75F4003CF533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5DF8311C7D75F4003CF533 /* Assets.xcassets */; };
 		EFBC489D1C719DE500915AC7 /* CAWeatherSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC489C1C719DE500915AC7 /* CAWeatherSectionView.swift */; };
 		EFBC489F1C719DFF00915AC7 /* CAWeatherSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFBC489E1C719DFF00915AC7 /* CAWeatherSectionView.xib */; };
 		EFBC48A51C72F6AF00915AC7 /* CAStudyLifeSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC48A41C72F6AF00915AC7 /* CAStudyLifeSectionView.swift */; };
@@ -81,7 +81,6 @@
 		EF377C3B1C6F919B00B40D20 /* CampusAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF377C3E1C6F919B00B40D20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF377C431C6F919B00B40D20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EF377C451C6F919B00B40D20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF377C481C6F919B00B40D20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF377C4A1C6F919B00B40D20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF377C4F1C6F919B00B40D20 /* CampusAssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampusAssistantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +111,7 @@
 		EF50E7F01C773F0F00A0A5A5 /* CAProfileHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAProfileHeader.swift; sourceTree = "<group>"; };
 		EF50E7F21C775C0A00A0A5A5 /* UIImage+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CA.swift"; sourceTree = "<group>"; };
 		EF50E7F41C77621B00A0A5A5 /* UIImageView+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+CA.swift"; sourceTree = "<group>"; };
+		EF5DF8311C7D75F4003CF533 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFBC489C1C719DE500915AC7 /* CAWeatherSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAWeatherSectionView.swift; sourceTree = "<group>"; };
 		EFBC489E1C719DFF00915AC7 /* CAWeatherSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAWeatherSectionView.xib; sourceTree = "<group>"; };
 		EFBC48A41C72F6AF00915AC7 /* CAStudyLifeSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAStudyLifeSectionView.swift; sourceTree = "<group>"; };
@@ -243,8 +243,8 @@
 				EF377C901C7038F800B40D20 /* ViewControllers */,
 				EF377C941C7038F800B40D20 /* Views */,
 				EF377C421C6F919B00B40D20 /* Main.storyboard */,
-				EF377C451C6F919B00B40D20 /* Assets.xcassets */,
 				EF377C471C6F919B00B40D20 /* LaunchScreen.storyboard */,
+				EF5DF8311C7D75F4003CF533 /* Assets.xcassets */,
 				EF377C4A1C6F919B00B40D20 /* Info.plist */,
 			);
 			path = CampusAssistant;
@@ -531,7 +531,7 @@
 				EF3D6FEB1C70D09A0051DA24 /* Montserrat-Bold.ttf in Resources */,
 				EF377C491C6F919B00B40D20 /* LaunchScreen.storyboard in Resources */,
 				EF50E7EA1C772A6700A0A5A5 /* CAProfileHeader.xib in Resources */,
-				EF377C461C6F919B00B40D20 /* Assets.xcassets in Resources */,
+				EF5DF8321C7D75F4003CF533 /* Assets.xcassets in Resources */,
 				EF331FD11C7861D000695A3B /* CAProfileInfoCell.xib in Resources */,
 				EF3D6FEC1C70D09A0051DA24 /* Montserrat-Regular.ttf in Resources */,
 				EF0C41721C758B820044B9C0 /* collections.plist in Resources */,
