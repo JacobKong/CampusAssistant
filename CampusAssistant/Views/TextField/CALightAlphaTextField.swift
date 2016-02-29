@@ -23,7 +23,9 @@ class CALightAlphaTextField: UITextField {
     
     override func didMoveToWindow() {
         self.leftViewMode = UITextFieldViewMode.Always
-        self.leftView = UIImageView.init(image: UIImage(named: leftImage))
+        let leftImageView = UIImageView.init(image: UIImage(named: leftImage))
+        leftImageView.contentMode = UIViewContentMode.ScaleAspectFit
+        self.leftView = leftImageView
         self.bounds = CGRectMake(0, 0, kScreenWidth-90, 50)
     }
     

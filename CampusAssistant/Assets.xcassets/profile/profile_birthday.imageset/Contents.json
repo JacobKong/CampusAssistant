@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "profile_birthday.pdf",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "profile_birthday@2x.png",
       "scale" : "2x"
     },
     {

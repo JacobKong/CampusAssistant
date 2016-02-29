@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "navigationbar_cancle.pdf",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "navigationbar_side_menu_highlight@2x.png",
       "scale" : "2x"
     },
     {
