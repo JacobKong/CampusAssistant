@@ -8,7 +8,7 @@ def pods
     pod 'SwiftyJSON'
     pod "LCTabBarController"
     pod 'TPKeyboardAvoiding'
-    pod 'ChameleonFramework/Swift'
+    pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'
 end
 
 target 'CampusAssistant' do
