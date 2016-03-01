@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import Spring
 
 class CAHomeViewController: UIViewController {
+    var isOpen = false
     
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -30,15 +32,16 @@ class CAHomeViewController: UIViewController {
 	// 设置navigationBar
 	private func setupNavigationBar() {
 		self.title = "NEU"
-		let rightBarBtn = UIButton()
+		let rightBarBtn = DesignableButton()
 		rightBarBtn.setImage(UIImage(named: "navigationbar_side_menu"), forState: .Normal)
-		rightBarBtn.frame = CGRectMake(0, 0, 25, 25)
+		rightBarBtn.frame = CGRectMake(0, 0, 22, 22)
 		rightBarBtn.addTarget(self.revealViewController(), action: Selector("rightRevealToggle:"), forControlEvents: .TouchUpInside)
 		let rightBarButton = UIBarButtonItem()
 		rightBarButton.customView = rightBarBtn
-//		SlideNavigationController.sharedInstance().rightBarButtonItem = rightBarButton
+        self.revealViewController().delegate = self
         self.navigationItem.rightBarButtonItem = rightBarButton
 	}
+    
     private func setupScrollerView(){
         let scrollView = UIScrollView.init(frame: kScreenBounds)
         self.view = scrollView
@@ -71,4 +74,38 @@ class CAHomeViewController: UIViewController {
         self.view.addGestureRecognizer(revealController.panGestureRecognizer())
         revealController.rightViewRevealWidth = kScreenWidth - 60
     }
+    
+}
+
+extension CAHomeViewController:SWRevealViewControllerDelegate{
+    func revealController(revealController: SWRevealViewController!, didMoveToPosition position: FrontViewPosition) {
+        let rightBarItemButton = self.navigationItem.rightBarButtonItem?.customView as! DesignableButton
+        
+        if position == FrontViewPosition.Left{ // 关闭
+            rightBarItemButton.animation = "morph"
+            rightBarItemButton.curve = "linear"
+            rightBarItemButton.duration = 0.5
+            rightBarItemButton.setImage(UIImage(named: "navigationbar_side_menu"), forState: .Normal)
+            print("Left")
+        }else if position == FrontViewPosition.LeftSide{// 开启
+            rightBarItemButton.animation = "morph"
+            rightBarItemButton.curve = "linear"
+            rightBarItemButton.duration = 0.5
+            rightBarItemButton.setImage(UIImage(named: "navigationbar_cancle"), forState: .Normal)
+            print("LeftSide")
+        }
+        rightBarItemButton.animate()
+    }
+    
+//    func revealController(revealController: SWRevealViewController!, willMoveToPosition position: FrontViewPosition) {
+//        let rightBarItemButton = self.navigationItem.rightBarButtonItem?.customView as! DesignableButton
+//        if position == FrontViewPosition.Left{ // 关闭
+//            rightBarItemButton.setImage(UIImage(named: "navigationbar_side_menu"), forState: .Normal)
+//            print("Left")
+//        }else if position == FrontViewPosition.LeftSide{// 开启
+//            rightBarItemButton.setImage(UIImage(named: "navigationbar_cancle"), forState: .Normal)
+//            print("LeftSide")
+//        }
+//    }
+    
 }
