@@ -100,8 +100,8 @@ extension CACollectionsViewController:UICollectionViewDataSource, UICollectionVi
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         print(indexPath.section, indexPath.item)
-        let testVc = CAProfileViewController()
-        self.navigationController?.pushViewController(testVc, animated: true)
+//        let testVc = CAProfileViewController()
+//        self.navigationController?.pushViewController(testVc, animated: true)
     }
 
 }
