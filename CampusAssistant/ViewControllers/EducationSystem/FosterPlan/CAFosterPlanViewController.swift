@@ -13,6 +13,7 @@ class CAFosterPlanViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "培养计划"
+        self.view.backgroundColor = UIColor.whiteColor()
         // Do any additional setup after loading the view.
     }
 

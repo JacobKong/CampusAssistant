@@ -13,6 +13,7 @@ class CAEmptyRoomViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "空教室"
+        self.view.backgroundColor = UIColor.whiteColor()
         // Do any additional setup after loading the view.
     }
 

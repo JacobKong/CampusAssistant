@@ -13,7 +13,7 @@ class CACheckGradesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "查成绩"
-
+        self.view.backgroundColor = UIColor.whiteColor()
         // Do any additional setup after loading the view.
     }
 

@@ -58,9 +58,10 @@ class CAHomeViewController: UIViewController {
 	}
     
     private func setupStudyLifeSection(){
-        let view:UIView = CAStudyLifeSectionView.instanceFromNib()
+        let view = CAStudyLifeSectionView.instanceFromNib() as! CAStudyLifeSectionView
         view.frame = CGRectMake(0, 220, kScreenWidth, 230)
         self.view.addSubview(view)
+        view.delegate = self
     }
     
     private func setupAddMoreSection(){
@@ -108,4 +109,23 @@ extension CAHomeViewController:SWRevealViewControllerDelegate{
 //        }
 //    }
     
+}
+
+extension CAHomeViewController:StudyLifeSectionProtocol{
+    func classListButoonDidPressed(){
+        let classListVc = CAClassListViewController()
+        self.navigationController?.pushViewController(classListVc, animated: true)
+    }
+    func emptyRoomButtonDidPressed(){
+        let emptyRoomVc = CAEmptyRoomViewController()
+        self.navigationController?.pushViewController(emptyRoomVc, animated: true)
+    }
+    func checkGradeButtonDidPressed(){
+        let chechGradeVc = CACheckGradesViewController()
+        self.navigationController?.pushViewController(chechGradeVc, animated: true)
+    }
+    func examAgendaButtonDidPressed(){
+        let examAgendaVc = CAExamAgendaViewController()
+        self.navigationController?.pushViewController(examAgendaVc, animated: true)
+    }
 }

@@ -13,6 +13,7 @@ class CAClassListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "看课表"
+        self.view.backgroundColor = UIColor.whiteColor()
         // Do any additional setup after loading the view.
     }
 

@@ -13,6 +13,7 @@ class CAExamAgendaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "考试日程"
+        self.view.backgroundColor = UIColor.whiteColor()
         // Do any additional setup after loading the view.
     }
 
