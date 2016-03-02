@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Spring
 
-class CALightAlphaTextField: UITextField {
+class CALightAlphaTextField: DesignableTextField {
     var leftImage:String = ""
     
     override func didMoveToSuperview() {

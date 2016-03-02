@@ -21,7 +21,6 @@
 		EF377C441C6F919B00B40D20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF377C421C6F919B00B40D20 /* Main.storyboard */; };
 		EF377C491C6F919B00B40D20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF377C471C6F919B00B40D20 /* LaunchScreen.storyboard */; };
 		EF377C541C6F919B00B40D20 /* CampusAssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF377C531C6F919B00B40D20 /* CampusAssistantTests.swift */; };
-		EF377C951C7038F800B40D20 /* CATabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF377C921C7038F800B40D20 /* CATabBarController.swift */; };
 		EF3D6FE01C7064740051DA24 /* CAHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D6FDF1C7064740051DA24 /* CAHomeViewController.swift */; };
 		EF3D6FE21C70647C0051DA24 /* CAProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D6FE11C70647C0051DA24 /* CAProfileViewController.swift */; };
 		EF3D6FE41C7064870051DA24 /* CACollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D6FE31C7064870051DA24 /* CACollectionsViewController.swift */; };
@@ -37,6 +36,13 @@
 		EF44E80A1C7C1FA600ADCC5E /* CALightAlphaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44E8091C7C1FA600ADCC5E /* CALightAlphaTextField.swift */; };
 		EF44E80C1C7C5DB300ADCC5E /* UIColor+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44E80B1C7C5DB300ADCC5E /* UIColor+CA.swift */; };
 		EF44E8101C7C8BC200ADCC5E /* String+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44E80F1C7C8BC200ADCC5E /* String+CA.swift */; };
+		EF4E1DB21C85C23200680EF4 /* CANavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E1DB11C85C23200680EF4 /* CANavigationController.swift */; };
+		EF4E1DBB1C85CFE200680EF4 /* CACheckGradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E1DBA1C85CFE200680EF4 /* CACheckGradesViewController.swift */; };
+		EF4E1DBD1C85CFEE00680EF4 /* CAClassListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E1DBC1C85CFEE00680EF4 /* CAClassListViewController.swift */; };
+		EF4E1DBF1C85D07C00680EF4 /* CACreditWarningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E1DBE1C85D07C00680EF4 /* CACreditWarningViewController.swift */; };
+		EF4E1DC11C85D08D00680EF4 /* CAEmptyRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E1DC01C85D08D00680EF4 /* CAEmptyRoomViewController.swift */; };
+		EF4E1DC31C85D09700680EF4 /* CAExamAgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E1DC21C85D09700680EF4 /* CAExamAgendaViewController.swift */; };
+		EF4E1DC51C85D0A100680EF4 /* CAFosterPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E1DC41C85D0A100680EF4 /* CAFosterPlanViewController.swift */; };
 		EF50E7EA1C772A6700A0A5A5 /* CAProfileHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF50E7E91C772A6700A0A5A5 /* CAProfileHeader.xib */; };
 		EF50E7EE1C772CDC00A0A5A5 /* CACollectionTitleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50E7EC1C772CDC00A0A5A5 /* CACollectionTitleHeader.swift */; };
 		EF50E7EF1C772CDC00A0A5A5 /* CACollectionTitleHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF50E7ED1C772CDC00A0A5A5 /* CACollectionTitleHeader.xib */; };
@@ -87,7 +93,6 @@
 		EF377C531C6F919B00B40D20 /* CampusAssistantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusAssistantTests.swift; sourceTree = "<group>"; };
 		EF377C551C6F919B00B40D20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF377C5E1C6F936900B40D20 /* CampusAssistant-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CampusAssistant-Bridging-Header.h"; sourceTree = "<group>"; };
-		EF377C921C7038F800B40D20 /* CATabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CATabBarController.swift; sourceTree = "<group>"; };
 		EF3D6FDF1C7064740051DA24 /* CAHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAHomeViewController.swift; sourceTree = "<group>"; };
 		EF3D6FE11C70647C0051DA24 /* CAProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAProfileViewController.swift; sourceTree = "<group>"; };
 		EF3D6FE31C7064870051DA24 /* CACollectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACollectionsViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +110,13 @@
 		EF44E8091C7C1FA600ADCC5E /* CALightAlphaTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALightAlphaTextField.swift; sourceTree = "<group>"; };
 		EF44E80B1C7C5DB300ADCC5E /* UIColor+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+CA.swift"; sourceTree = "<group>"; };
 		EF44E80F1C7C8BC200ADCC5E /* String+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+CA.swift"; sourceTree = "<group>"; };
+		EF4E1DB11C85C23200680EF4 /* CANavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CANavigationController.swift; sourceTree = "<group>"; };
+		EF4E1DBA1C85CFE200680EF4 /* CACheckGradesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACheckGradesViewController.swift; sourceTree = "<group>"; };
+		EF4E1DBC1C85CFEE00680EF4 /* CAClassListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAClassListViewController.swift; sourceTree = "<group>"; };
+		EF4E1DBE1C85D07C00680EF4 /* CACreditWarningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACreditWarningViewController.swift; sourceTree = "<group>"; };
+		EF4E1DC01C85D08D00680EF4 /* CAEmptyRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAEmptyRoomViewController.swift; sourceTree = "<group>"; };
+		EF4E1DC21C85D09700680EF4 /* CAExamAgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAExamAgendaViewController.swift; sourceTree = "<group>"; };
+		EF4E1DC41C85D0A100680EF4 /* CAFosterPlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAFosterPlanViewController.swift; sourceTree = "<group>"; };
 		EF50E7E91C772A6700A0A5A5 /* CAProfileHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAProfileHeader.xib; sourceTree = "<group>"; };
 		EF50E7EC1C772CDC00A0A5A5 /* CACollectionTitleHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACollectionTitleHeader.swift; sourceTree = "<group>"; };
 		EF50E7ED1C772CDC00A0A5A5 /* CACollectionTitleHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CACollectionTitleHeader.xib; sourceTree = "<group>"; };
@@ -287,22 +299,15 @@
 		EF377C901C7038F800B40D20 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				EF4E1DB31C85CB8000680EF4 /* EducationSystem */,
+				EF4E1DB01C85C21400680EF4 /* Navigation */,
 				EF44E7FA1C7AFE0F00ADCC5E /* SWReveal */,
 				EF331FF11C7960E800695A3B /* SlideMenu */,
 				EF3D6FDC1C7064260051DA24 /* Profile */,
 				EF3D6FDA1C7064260051DA24 /* Collections */,
 				EF3D6FDB1C7064260051DA24 /* Home */,
-				EF377C911C7038F800B40D20 /* TabBar */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		EF377C911C7038F800B40D20 /* TabBar */ = {
-			isa = PBXGroup;
-			children = (
-				EF377C921C7038F800B40D20 /* CATabBarController.swift */,
-			);
-			path = TabBar;
 			sourceTree = "<group>";
 		};
 		EF377C941C7038F800B40D20 /* Views */ = {
@@ -387,6 +392,75 @@
 				EF44E8091C7C1FA600ADCC5E /* CALightAlphaTextField.swift */,
 			);
 			path = TextField;
+			sourceTree = "<group>";
+		};
+		EF4E1DB01C85C21400680EF4 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				EF4E1DB11C85C23200680EF4 /* CANavigationController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		EF4E1DB31C85CB8000680EF4 /* EducationSystem */ = {
+			isa = PBXGroup;
+			children = (
+				EF4E1DB41C85CB8000680EF4 /* CheckGrades */,
+				EF4E1DB51C85CB8000680EF4 /* ClassList */,
+				EF4E1DB61C85CB8000680EF4 /* CreditWarning */,
+				EF4E1DB71C85CB8000680EF4 /* EmptyRoom */,
+				EF4E1DB81C85CB8000680EF4 /* ExamAgenda */,
+				EF4E1DB91C85CB8000680EF4 /* FosterPlan */,
+			);
+			path = EducationSystem;
+			sourceTree = "<group>";
+		};
+		EF4E1DB41C85CB8000680EF4 /* CheckGrades */ = {
+			isa = PBXGroup;
+			children = (
+				EF4E1DBA1C85CFE200680EF4 /* CACheckGradesViewController.swift */,
+			);
+			path = CheckGrades;
+			sourceTree = "<group>";
+		};
+		EF4E1DB51C85CB8000680EF4 /* ClassList */ = {
+			isa = PBXGroup;
+			children = (
+				EF4E1DBC1C85CFEE00680EF4 /* CAClassListViewController.swift */,
+			);
+			path = ClassList;
+			sourceTree = "<group>";
+		};
+		EF4E1DB61C85CB8000680EF4 /* CreditWarning */ = {
+			isa = PBXGroup;
+			children = (
+				EF4E1DBE1C85D07C00680EF4 /* CACreditWarningViewController.swift */,
+			);
+			path = CreditWarning;
+			sourceTree = "<group>";
+		};
+		EF4E1DB71C85CB8000680EF4 /* EmptyRoom */ = {
+			isa = PBXGroup;
+			children = (
+				EF4E1DC01C85D08D00680EF4 /* CAEmptyRoomViewController.swift */,
+			);
+			path = EmptyRoom;
+			sourceTree = "<group>";
+		};
+		EF4E1DB81C85CB8000680EF4 /* ExamAgenda */ = {
+			isa = PBXGroup;
+			children = (
+				EF4E1DC21C85D09700680EF4 /* CAExamAgendaViewController.swift */,
+			);
+			path = ExamAgenda;
+			sourceTree = "<group>";
+		};
+		EF4E1DB91C85CB8000680EF4 /* FosterPlan */ = {
+			isa = PBXGroup;
+			children = (
+				EF4E1DC41C85D0A100680EF4 /* CAFosterPlanViewController.swift */,
+			);
+			path = FosterPlan;
 			sourceTree = "<group>";
 		};
 		EF50E7E61C7729FC00A0A5A5 /* ProfileHeader */ = {
@@ -609,25 +683,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF3D6FE21C70647C0051DA24 /* CAProfileViewController.swift in Sources */,
-				EF377C951C7038F800B40D20 /* CATabBarController.swift in Sources */,
 				EF50E7F11C773F0F00A0A5A5 /* CAProfileHeader.swift in Sources */,
 				EF331FCF1C7861C100695A3B /* CAProfileInfoCell.swift in Sources */,
+				EF4E1DB21C85C23200680EF4 /* CANavigationController.swift in Sources */,
 				EFBC48B11C733C3100915AC7 /* CAAddMoreSectionView.swift in Sources */,
 				EF3DF2721C784A08002276A6 /* CAStudent.m in Sources */,
 				EF44E8011C7BFCDE00ADCC5E /* CAAccountSectionView.swift in Sources */,
+				EF4E1DC51C85D0A100680EF4 /* CAFosterPlanViewController.swift in Sources */,
 				EF3D6FE41C7064870051DA24 /* CACollectionsViewController.swift in Sources */,
 				EF3DF2741C784F0F002276A6 /* NSData+CA.swift in Sources */,
 				EF331FD41C786C6600695A3B /* CAStudentTool.swift in Sources */,
 				EFBC48A51C72F6AF00915AC7 /* CAStudyLifeSectionView.swift in Sources */,
 				EF44E8101C7C8BC200ADCC5E /* String+CA.swift in Sources */,
 				EF377C3F1C6F919B00B40D20 /* AppDelegate.swift in Sources */,
+				EF4E1DBD1C85CFEE00680EF4 /* CAClassListViewController.swift in Sources */,
+				EF4E1DBB1C85CFE200680EF4 /* CACheckGradesViewController.swift in Sources */,
 				EF3D6FE01C7064740051DA24 /* CAHomeViewController.swift in Sources */,
 				EFBC48AA1C73377000915AC7 /* Macro.swift in Sources */,
 				EF50E7F51C77621B00A0A5A5 /* UIImageView+CA.swift in Sources */,
+				EF4E1DC31C85D09700680EF4 /* CAExamAgendaViewController.swift in Sources */,
+				EF4E1DC11C85D08D00680EF4 /* CAEmptyRoomViewController.swift in Sources */,
 				EF331FCC1C7861A200695A3B /* CAFunctionCell.swift in Sources */,
 				EF0C41881C75CA5F0044B9C0 /* CAFunction.m in Sources */,
 				EF18DAD31C79694200369F33 /* CARightSlideMenuViewController.swift in Sources */,
 				EF50E7EE1C772CDC00A0A5A5 /* CACollectionTitleHeader.swift in Sources */,
+				EF4E1DBF1C85D07C00680EF4 /* CACreditWarningViewController.swift in Sources */,
 				EF44E7FD1C7AFE0F00ADCC5E /* SWRevealViewController.m in Sources */,
 				EF44E8051C7BFD0B00ADCC5E /* CAIPWGSectionView.swift in Sources */,
 				EFBC489D1C719DE500915AC7 /* CAWeatherSectionView.swift in Sources */,

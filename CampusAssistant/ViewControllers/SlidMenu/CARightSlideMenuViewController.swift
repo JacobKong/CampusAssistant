@@ -12,6 +12,8 @@ import TPKeyboardAvoiding
 
 class CARightSlideMenuViewController: UIViewController {
     var scrollView : TPKeyboardAvoidingScrollView!
+//    var usernameTextField = CALightAlphaTextField()
+//    var passwordTextField = CALightAlphaTextField()
     override func viewDidLoad() {
         super.viewDidLoad()
         setupBgImage()
@@ -52,12 +54,27 @@ class CARightSlideMenuViewController: UIViewController {
     }
     
     private func setupIPWGSection(){
-        let IPWGSection = CAIPWGSectionView.instanceFromNib()
+        let IPWGSection = CAIPWGSectionView.instanceFromNib() as! CAIPWGSectionView
         let IPWGX:CGFloat = 60
         let IPWGY:CGFloat = 200
         let IPWGW:CGFloat = kScreenWidth - 60
         let IPWGH:CGFloat = 170
         IPWGSection.frame = CGRectMake(IPWGX, IPWGY, IPWGW, IPWGH)
+//        IPWGSection.usernameTextField.delegate = self
+//        IPWGSection.passwordTextField.delegate = self
+//        self.passwordTextField = IPWGSection.passwordTextField
+//        self.usernameTextField = IPWGSection.usernameTextField
         self.scrollView.addSubview(IPWGSection)
     }
 }
+
+//extension CARightSlideMenuViewController:UITextFieldDelegate{
+//    func textFieldDidBeginEditing(textField: UITextField) {
+//        if textField == self.usernameTextField {
+//            usernameTextField.image = UIImage(named: "icon-mail-active")
+//            emailImageView.animate()
+//        } else {
+//            emailImageView.image = UIImage(named: "icon-mail")
+//        }
+//    }
+//}

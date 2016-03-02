@@ -41,9 +41,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         profileViewController.tabBarItem.image = UIImage(named: "profile_normal")
         profileViewController.tabBarItem.selectedImage = UIImage(named: "profile_selected")
         
-        let homeNaviController: UINavigationController = UINavigationController.init(rootViewController: homeViewController)
-        let collectionNaviController: UINavigationController = UINavigationController.init(rootViewController: collectionsViewController)
-        let profileNaviController: UINavigationController = UINavigationController.init(rootViewController: profileViewController)
+        let homeNaviController: UINavigationController = CANavigationController.init(rootViewController: homeViewController)
+        let collectionNaviController: UINavigationController = CANavigationController.init(rootViewController: collectionsViewController)
+        let profileNaviController: UINavigationController = CANavigationController.init(rootViewController: profileViewController)
         self.tabBarController.viewControllers = [homeNaviController, collectionNaviController, profileNaviController]
         
         let slideMenuViewController: CARightSlideMenuViewController = CARightSlideMenuViewController()
@@ -54,13 +54,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // 修改NavigationBar和status bar color
     private func customizeInterface() {
-        let navigationBarAppearance = UINavigationBar.appearance()
-        let backgroundImage = UIImage.init(named: "navigationbar_background_tall")
-        let textAttributes: NSDictionary = [
-            NSFontAttributeName: UIFont(name: "Montserrat-Regular", size: 19)!, NSForegroundColorAttributeName: UIColor.whiteColor()
-        ]
-        navigationBarAppearance.setBackgroundImage(backgroundImage, forBarMetrics: UIBarMetrics.Default)
-        navigationBarAppearance.titleTextAttributes = textAttributes as? [String : AnyObject]
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: false)
     }
     
