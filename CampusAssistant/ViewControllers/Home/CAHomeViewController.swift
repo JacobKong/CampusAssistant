@@ -40,6 +40,8 @@ class CAHomeViewController: UIViewController {
 		rightBarButton.customView = rightBarBtn
         self.revealViewController().delegate = self
         self.navigationItem.rightBarButtonItem = rightBarButton
+//        let backItem = UIBarButtonItem.init(title: "", style: .Plain, target: nil, action: nil)
+//        self.navigationItem.backBarButtonItem = backItem
 	}
     
     private func setupScrollerView(){

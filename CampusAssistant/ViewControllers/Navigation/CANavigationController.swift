@@ -13,6 +13,8 @@ class CANavigationController: UINavigationController {
         if self.viewControllers.count > 0{
             viewController.hidesBottomBarWhenPushed = true
         }
+        let backItem = UIBarButtonItem.init(title: "", style: .Plain, target: nil, action: nil)
+        viewController.navigationItem.backBarButtonItem = backItem
         super.pushViewController(viewController, animated: animated)
     }
     
@@ -37,7 +39,7 @@ class CANavigationController: UINavigationController {
         let navigationBarAppearance = UINavigationBar.appearance()
         let backgroundImage = UIImage.init(named: "navigationbar_background_tall")
         let textAttributes: NSDictionary = [
-            NSFontAttributeName: UIFont(name: "Montserrat-Regular", size: 19)!, NSForegroundColorAttributeName: UIColor.whiteColor()
+            NSFontAttributeName: UIFont(name: "Montserrat-Bold", size: 19)!, NSForegroundColorAttributeName: UIColor.whiteColor()
         ]
         navigationBarAppearance.setBackgroundImage(backgroundImage, forBarMetrics: UIBarMetrics.Default)
         navigationBarAppearance.titleTextAttributes = textAttributes as? [String : AnyObject]
@@ -51,6 +53,5 @@ class CANavigationController: UINavigationController {
         ]
         buttonItem.setTitleTextAttributes(itemTextAttributes as? [String : AnyObject], forState: .Normal)
         buttonItem.setTitleTextAttributes(itemTextAttributes as? [String : AnyObject], forState: .Highlighted)
-//        buttonItem.setBackButtonTitlePositionAdjustment(UIOffsetMake(0, -100), forBarMetrics: .Default)
     }
 }

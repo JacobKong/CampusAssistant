@@ -19,6 +19,8 @@ class CACollectionsViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.title = "COLLECTIONS"
         self.view.backgroundColor = UIColor.whiteColor()
+//        let backItem = UIBarButtonItem.init(title: "", style: .Plain, target: nil, action: nil)
+//        self.navigationItem.backBarButtonItem = backItem
         setupCollectionsArray()
         setupCollectionView()
     }
@@ -98,8 +100,8 @@ extension CACollectionsViewController:UICollectionViewDataSource, UICollectionVi
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         print(indexPath.section, indexPath.item)
-//        let testVc = CAProfileViewController()
-//        self.navigationController?.pushViewController(testVc, animated: true)
+        let testVc = CAProfileViewController()
+        self.navigationController?.pushViewController(testVc, animated: true)
     }
 
 }
