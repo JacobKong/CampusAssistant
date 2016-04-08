@@ -10,5 +10,6 @@
 #import "CAFunction.h"
 #import "CAStudent.h"
 #import "SWRevealViewController.h"
-#import "MGCDayPlannerViewController.h"
-
+#import <EventKitUI/EventKitUI.h>
+#import "MGCDayPlannerEKViewController.h"
+#import "NSCalendar+MGCAdditions.h"

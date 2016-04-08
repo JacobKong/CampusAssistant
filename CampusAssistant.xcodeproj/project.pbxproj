@@ -83,6 +83,7 @@
 		EF5809441CB7D4CC00069EA2 /* NSCalendar+MGCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EF58090B1CB7D4CC00069EA2 /* NSCalendar+MGCAdditions.m */; };
 		EF5809451CB7D4CC00069EA2 /* OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = EF58090E1CB7D4CC00069EA2 /* OrderedDictionary.m */; };
 		EF5809461CB7D4CC00069EA2 /* OSCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5809111CB7D4CC00069EA2 /* OSCache.m */; };
+		EF5809501CB7D6D100069EA2 /* CAWeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF58094F1CB7D6D100069EA2 /* CAWeekViewController.swift */; };
 		EF5DF8321C7D75F4003CF533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5DF8311C7D75F4003CF533 /* Assets.xcassets */; };
 		EFBC489D1C719DE500915AC7 /* CAWeatherSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC489C1C719DE500915AC7 /* CAWeatherSectionView.swift */; };
 		EFBC489F1C719DFF00915AC7 /* CAWeatherSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFBC489E1C719DFF00915AC7 /* CAWeatherSectionView.xib */; };
@@ -226,6 +227,7 @@
 		EF58090E1CB7D4CC00069EA2 /* OrderedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderedDictionary.m; sourceTree = "<group>"; };
 		EF5809101CB7D4CC00069EA2 /* OSCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCache.h; sourceTree = "<group>"; };
 		EF5809111CB7D4CC00069EA2 /* OSCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCache.m; sourceTree = "<group>"; };
+		EF58094F1CB7D6D100069EA2 /* CAWeekViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAWeekViewController.swift; sourceTree = "<group>"; };
 		EF5DF8311C7D75F4003CF533 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFBC489C1C719DE500915AC7 /* CAWeatherSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAWeatherSectionView.swift; sourceTree = "<group>"; };
 		EFBC489E1C719DFF00915AC7 /* CAWeatherSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAWeatherSectionView.xib; sourceTree = "<group>"; };
@@ -531,6 +533,7 @@
 			isa = PBXGroup;
 			children = (
 				EF4E1DBC1C85CFEE00680EF4 /* CAClassListViewController.swift */,
+				EF58094F1CB7D6D100069EA2 /* CAWeekViewController.swift */,
 			);
 			path = ClassList;
 			sourceTree = "<group>";
@@ -901,6 +904,7 @@
 				EF3DF2721C784A08002276A6 /* CAStudent.m in Sources */,
 				EF5809271CB7D4CC00069EA2 /* MGCAllDayEventsViewLayout.m in Sources */,
 				EF5809281CB7D4CC00069EA2 /* MGCDateRange.m in Sources */,
+				EF5809501CB7D6D100069EA2 /* CAWeekViewController.swift in Sources */,
 				EF5809411CB7D4CC00069EA2 /* MGCYearCalendarMonthHeaderView.m in Sources */,
 				EF5809361CB7D4CC00069EA2 /* MGCMonthPlannerHeaderView.m in Sources */,
 				EF5809441CB7D4CC00069EA2 /* NSCalendar+MGCAdditions.m in Sources */,
