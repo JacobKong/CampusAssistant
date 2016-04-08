@@ -21,12 +21,13 @@ import UIKit
 class CAClassListViewController: MGCDayPlannerEKViewController {
 
     let dateFormatter = NSDateFormatter()
+    let currentDateLabel = UILabel()
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "看课表"
         self.view.backgroundColor = UIColor.whiteColor()
+        setupNavigationBar()
         setupDayPlannerView()
-        self.calendar = NSCalendar.currentCalendar()
+//        self.calendar = NSCalendar.currentCalendar()
         // Do any additional setup after loading the view.
     }
 
@@ -34,15 +35,25 @@ class CAClassListViewController: MGCDayPlannerEKViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    private func setupNavigationBar(){
+        self.title = "看课表"
+        currentDateLabel.frame = CGRectMake(0, 0, 50, 20)
+        currentDateLabel.text = "2016年4月"
+        self.navigationItem.rightBarButtonItem? = UIBarButtonItem.init(customView: currentDateLabel);
+//        currentDateLabel.text = String.init(format: "", <#T##arguments: CVarArgType...##CVarArgType#>)
+    }
     private func setupDayPlannerView(){
         self.dateFormatter.calendar = self.calendar
+        self.dateFormatter.locale = NSLocale.init(localeIdentifier: "zh-CN")
         self.dayPlannerView.backgroundColor = UIColor.whiteColor()
         self.dayPlannerView.backgroundView = UIView()
         self.dayPlannerView.backgroundView.backgroundColor = UIColor.whiteColor()
-        self.dayPlannerView.numberOfVisibleDays = 7
+        self.dayPlannerView.numberOfVisibleDays = 3
         self.dayPlannerView.timeColumnWidth = 50
-        self.dayPlannerView.hourRange = NSRange.init(location: 8, length: 14)
+        self.dayPlannerView.eventIndicatorDotColor = UIColor.caTintColor()
+        self.dayPlannerView.hourRange = NSRange.init(location: 7, length: 17)
+        self.dayPlannerView.dateFormat = "d eee"
         
     }
 

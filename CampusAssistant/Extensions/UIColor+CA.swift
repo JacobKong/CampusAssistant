@@ -24,4 +24,5 @@ extension UIColor{
     class func caLightAlphaTextFieldPlaceholderTextColor() -> UIColor{
         return kRGBA(255, g: 255, b: 255, a: 0.5)
     }
+    
 }
