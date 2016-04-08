@@ -10,7 +10,6 @@ def pods
     pod 'TPKeyboardAvoiding'
     pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'
     pod 'MSCollectionViewCalendarLayout'
-    pod "CalendarLib"
 end
 
 target 'CampusAssistant' do

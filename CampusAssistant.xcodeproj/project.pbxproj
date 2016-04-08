@@ -49,6 +49,40 @@
 		EF50E7F11C773F0F00A0A5A5 /* CAProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50E7F01C773F0F00A0A5A5 /* CAProfileHeader.swift */; };
 		EF50E7F31C775C0A00A0A5A5 /* UIImage+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50E7F21C775C0A00A0A5A5 /* UIImage+CA.swift */; };
 		EF50E7F51C77621B00A0A5A5 /* UIImageView+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50E7F41C77621B00A0A5A5 /* UIImageView+CA.swift */; };
+		EF5809251CB7D4CC00069EA2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF5808CB1CB7D4CC00069EA2 /* Localizable.strings */; };
+		EF5809261CB7D4CC00069EA2 /* MGCAlignedGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808CF1CB7D4CC00069EA2 /* MGCAlignedGeometry.m */; };
+		EF5809271CB7D4CC00069EA2 /* MGCAllDayEventsViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808D11CB7D4CC00069EA2 /* MGCAllDayEventsViewLayout.m */; };
+		EF5809281CB7D4CC00069EA2 /* MGCDateRange.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808D31CB7D4CC00069EA2 /* MGCDateRange.m */; };
+		EF5809291CB7D4CC00069EA2 /* MGCDayColumnCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808D51CB7D4CC00069EA2 /* MGCDayColumnCell.m */; };
+		EF58092A1CB7D4CC00069EA2 /* MGCDayPlannerEKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808D71CB7D4CC00069EA2 /* MGCDayPlannerEKViewController.m */; };
+		EF58092B1CB7D4CC00069EA2 /* MGCDayPlannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808D91CB7D4CC00069EA2 /* MGCDayPlannerView.m */; };
+		EF58092C1CB7D4CC00069EA2 /* MGCDayPlannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808DB1CB7D4CC00069EA2 /* MGCDayPlannerViewController.m */; };
+		EF58092D1CB7D4CC00069EA2 /* MGCEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808DD1CB7D4CC00069EA2 /* MGCEventCell.m */; };
+		EF58092E1CB7D4CC00069EA2 /* MGCEventCellLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808DF1CB7D4CC00069EA2 /* MGCEventCellLayoutAttributes.m */; };
+		EF58092F1CB7D4CC00069EA2 /* MGCEventKitSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808E11CB7D4CC00069EA2 /* MGCEventKitSupport.m */; };
+		EF5809301CB7D4CC00069EA2 /* MGCEventsRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808E31CB7D4CC00069EA2 /* MGCEventsRowView.m */; };
+		EF5809311CB7D4CC00069EA2 /* MGCEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808E51CB7D4CC00069EA2 /* MGCEventView.m */; };
+		EF5809321CB7D4CC00069EA2 /* MGCInteractiveEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808E71CB7D4CC00069EA2 /* MGCInteractiveEventView.m */; };
+		EF5809331CB7D4CC00069EA2 /* MGCMonthMiniCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808E91CB7D4CC00069EA2 /* MGCMonthMiniCalendarView.m */; };
+		EF5809341CB7D4CC00069EA2 /* MGCMonthPlannerBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808EB1CB7D4CC00069EA2 /* MGCMonthPlannerBackgroundView.m */; };
+		EF5809351CB7D4CC00069EA2 /* MGCMonthPlannerEKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808ED1CB7D4CC00069EA2 /* MGCMonthPlannerEKViewController.m */; };
+		EF5809361CB7D4CC00069EA2 /* MGCMonthPlannerHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808EF1CB7D4CC00069EA2 /* MGCMonthPlannerHeaderView.m */; };
+		EF5809371CB7D4CC00069EA2 /* MGCMonthPlannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808F11CB7D4CC00069EA2 /* MGCMonthPlannerView.m */; };
+		EF5809381CB7D4CC00069EA2 /* MGCMonthPlannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808F31CB7D4CC00069EA2 /* MGCMonthPlannerViewController.m */; };
+		EF5809391CB7D4CC00069EA2 /* MGCMonthPlannerViewDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808F51CB7D4CC00069EA2 /* MGCMonthPlannerViewDayCell.m */; };
+		EF58093A1CB7D4CC00069EA2 /* MGCMonthPlannerViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808F71CB7D4CC00069EA2 /* MGCMonthPlannerViewLayout.m */; };
+		EF58093B1CB7D4CC00069EA2 /* MGCMonthPlannerWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808F91CB7D4CC00069EA2 /* MGCMonthPlannerWeekView.m */; };
+		EF58093C1CB7D4CC00069EA2 /* MGCReusableObjectQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808FB1CB7D4CC00069EA2 /* MGCReusableObjectQueue.m */; };
+		EF58093D1CB7D4CC00069EA2 /* MGCStandardEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808FD1CB7D4CC00069EA2 /* MGCStandardEventView.m */; };
+		EF58093E1CB7D4CC00069EA2 /* MGCTimedEventsViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808FF1CB7D4CC00069EA2 /* MGCTimedEventsViewLayout.m */; };
+		EF58093F1CB7D4CC00069EA2 /* MGCTimeRowsView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5809011CB7D4CC00069EA2 /* MGCTimeRowsView.m */; };
+		EF5809401CB7D4CC00069EA2 /* MGCYearCalendarMonthCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5809031CB7D4CC00069EA2 /* MGCYearCalendarMonthCell.m */; };
+		EF5809411CB7D4CC00069EA2 /* MGCYearCalendarMonthHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5809051CB7D4CC00069EA2 /* MGCYearCalendarMonthHeaderView.m */; };
+		EF5809421CB7D4CC00069EA2 /* MGCYearCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5809071CB7D4CC00069EA2 /* MGCYearCalendarView.m */; };
+		EF5809431CB7D4CC00069EA2 /* NSAttributedString+MGCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5809091CB7D4CC00069EA2 /* NSAttributedString+MGCAdditions.m */; };
+		EF5809441CB7D4CC00069EA2 /* NSCalendar+MGCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EF58090B1CB7D4CC00069EA2 /* NSCalendar+MGCAdditions.m */; };
+		EF5809451CB7D4CC00069EA2 /* OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = EF58090E1CB7D4CC00069EA2 /* OrderedDictionary.m */; };
+		EF5809461CB7D4CC00069EA2 /* OSCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5809111CB7D4CC00069EA2 /* OSCache.m */; };
 		EF5DF8321C7D75F4003CF533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5DF8311C7D75F4003CF533 /* Assets.xcassets */; };
 		EFBC489D1C719DE500915AC7 /* CAWeatherSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC489C1C719DE500915AC7 /* CAWeatherSectionView.swift */; };
 		EFBC489F1C719DFF00915AC7 /* CAWeatherSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFBC489E1C719DFF00915AC7 /* CAWeatherSectionView.xib */; };
@@ -123,6 +157,75 @@
 		EF50E7F01C773F0F00A0A5A5 /* CAProfileHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAProfileHeader.swift; sourceTree = "<group>"; };
 		EF50E7F21C775C0A00A0A5A5 /* UIImage+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CA.swift"; sourceTree = "<group>"; };
 		EF50E7F41C77621B00A0A5A5 /* UIImageView+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+CA.swift"; sourceTree = "<group>"; };
+		EF5808CA1CB7D4CC00069EA2 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		EF5808CC1CB7D4CC00069EA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EF5808CD1CB7D4CC00069EA2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EF5808CE1CB7D4CC00069EA2 /* MGCAlignedGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCAlignedGeometry.h; sourceTree = "<group>"; };
+		EF5808CF1CB7D4CC00069EA2 /* MGCAlignedGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCAlignedGeometry.m; sourceTree = "<group>"; };
+		EF5808D01CB7D4CC00069EA2 /* MGCAllDayEventsViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCAllDayEventsViewLayout.h; sourceTree = "<group>"; };
+		EF5808D11CB7D4CC00069EA2 /* MGCAllDayEventsViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCAllDayEventsViewLayout.m; sourceTree = "<group>"; };
+		EF5808D21CB7D4CC00069EA2 /* MGCDateRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCDateRange.h; sourceTree = "<group>"; };
+		EF5808D31CB7D4CC00069EA2 /* MGCDateRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCDateRange.m; sourceTree = "<group>"; };
+		EF5808D41CB7D4CC00069EA2 /* MGCDayColumnCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCDayColumnCell.h; sourceTree = "<group>"; };
+		EF5808D51CB7D4CC00069EA2 /* MGCDayColumnCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCDayColumnCell.m; sourceTree = "<group>"; };
+		EF5808D61CB7D4CC00069EA2 /* MGCDayPlannerEKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCDayPlannerEKViewController.h; sourceTree = "<group>"; };
+		EF5808D71CB7D4CC00069EA2 /* MGCDayPlannerEKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCDayPlannerEKViewController.m; sourceTree = "<group>"; };
+		EF5808D81CB7D4CC00069EA2 /* MGCDayPlannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCDayPlannerView.h; sourceTree = "<group>"; };
+		EF5808D91CB7D4CC00069EA2 /* MGCDayPlannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCDayPlannerView.m; sourceTree = "<group>"; };
+		EF5808DA1CB7D4CC00069EA2 /* MGCDayPlannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCDayPlannerViewController.h; sourceTree = "<group>"; };
+		EF5808DB1CB7D4CC00069EA2 /* MGCDayPlannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCDayPlannerViewController.m; sourceTree = "<group>"; };
+		EF5808DC1CB7D4CC00069EA2 /* MGCEventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCEventCell.h; sourceTree = "<group>"; };
+		EF5808DD1CB7D4CC00069EA2 /* MGCEventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCEventCell.m; sourceTree = "<group>"; };
+		EF5808DE1CB7D4CC00069EA2 /* MGCEventCellLayoutAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCEventCellLayoutAttributes.h; sourceTree = "<group>"; };
+		EF5808DF1CB7D4CC00069EA2 /* MGCEventCellLayoutAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCEventCellLayoutAttributes.m; sourceTree = "<group>"; };
+		EF5808E01CB7D4CC00069EA2 /* MGCEventKitSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCEventKitSupport.h; sourceTree = "<group>"; };
+		EF5808E11CB7D4CC00069EA2 /* MGCEventKitSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCEventKitSupport.m; sourceTree = "<group>"; };
+		EF5808E21CB7D4CC00069EA2 /* MGCEventsRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCEventsRowView.h; sourceTree = "<group>"; };
+		EF5808E31CB7D4CC00069EA2 /* MGCEventsRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCEventsRowView.m; sourceTree = "<group>"; };
+		EF5808E41CB7D4CC00069EA2 /* MGCEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCEventView.h; sourceTree = "<group>"; };
+		EF5808E51CB7D4CC00069EA2 /* MGCEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCEventView.m; sourceTree = "<group>"; };
+		EF5808E61CB7D4CC00069EA2 /* MGCInteractiveEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCInteractiveEventView.h; sourceTree = "<group>"; };
+		EF5808E71CB7D4CC00069EA2 /* MGCInteractiveEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCInteractiveEventView.m; sourceTree = "<group>"; };
+		EF5808E81CB7D4CC00069EA2 /* MGCMonthMiniCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCMonthMiniCalendarView.h; sourceTree = "<group>"; };
+		EF5808E91CB7D4CC00069EA2 /* MGCMonthMiniCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCMonthMiniCalendarView.m; sourceTree = "<group>"; };
+		EF5808EA1CB7D4CC00069EA2 /* MGCMonthPlannerBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCMonthPlannerBackgroundView.h; sourceTree = "<group>"; };
+		EF5808EB1CB7D4CC00069EA2 /* MGCMonthPlannerBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCMonthPlannerBackgroundView.m; sourceTree = "<group>"; };
+		EF5808EC1CB7D4CC00069EA2 /* MGCMonthPlannerEKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCMonthPlannerEKViewController.h; sourceTree = "<group>"; };
+		EF5808ED1CB7D4CC00069EA2 /* MGCMonthPlannerEKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCMonthPlannerEKViewController.m; sourceTree = "<group>"; };
+		EF5808EE1CB7D4CC00069EA2 /* MGCMonthPlannerHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCMonthPlannerHeaderView.h; sourceTree = "<group>"; };
+		EF5808EF1CB7D4CC00069EA2 /* MGCMonthPlannerHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCMonthPlannerHeaderView.m; sourceTree = "<group>"; };
+		EF5808F01CB7D4CC00069EA2 /* MGCMonthPlannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCMonthPlannerView.h; sourceTree = "<group>"; };
+		EF5808F11CB7D4CC00069EA2 /* MGCMonthPlannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCMonthPlannerView.m; sourceTree = "<group>"; };
+		EF5808F21CB7D4CC00069EA2 /* MGCMonthPlannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCMonthPlannerViewController.h; sourceTree = "<group>"; };
+		EF5808F31CB7D4CC00069EA2 /* MGCMonthPlannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCMonthPlannerViewController.m; sourceTree = "<group>"; };
+		EF5808F41CB7D4CC00069EA2 /* MGCMonthPlannerViewDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCMonthPlannerViewDayCell.h; sourceTree = "<group>"; };
+		EF5808F51CB7D4CC00069EA2 /* MGCMonthPlannerViewDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCMonthPlannerViewDayCell.m; sourceTree = "<group>"; };
+		EF5808F61CB7D4CC00069EA2 /* MGCMonthPlannerViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCMonthPlannerViewLayout.h; sourceTree = "<group>"; };
+		EF5808F71CB7D4CC00069EA2 /* MGCMonthPlannerViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCMonthPlannerViewLayout.m; sourceTree = "<group>"; };
+		EF5808F81CB7D4CC00069EA2 /* MGCMonthPlannerWeekView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCMonthPlannerWeekView.h; sourceTree = "<group>"; };
+		EF5808F91CB7D4CC00069EA2 /* MGCMonthPlannerWeekView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCMonthPlannerWeekView.m; sourceTree = "<group>"; };
+		EF5808FA1CB7D4CC00069EA2 /* MGCReusableObjectQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCReusableObjectQueue.h; sourceTree = "<group>"; };
+		EF5808FB1CB7D4CC00069EA2 /* MGCReusableObjectQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCReusableObjectQueue.m; sourceTree = "<group>"; };
+		EF5808FC1CB7D4CC00069EA2 /* MGCStandardEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCStandardEventView.h; sourceTree = "<group>"; };
+		EF5808FD1CB7D4CC00069EA2 /* MGCStandardEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCStandardEventView.m; sourceTree = "<group>"; };
+		EF5808FE1CB7D4CC00069EA2 /* MGCTimedEventsViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCTimedEventsViewLayout.h; sourceTree = "<group>"; };
+		EF5808FF1CB7D4CC00069EA2 /* MGCTimedEventsViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCTimedEventsViewLayout.m; sourceTree = "<group>"; };
+		EF5809001CB7D4CC00069EA2 /* MGCTimeRowsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCTimeRowsView.h; sourceTree = "<group>"; };
+		EF5809011CB7D4CC00069EA2 /* MGCTimeRowsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCTimeRowsView.m; sourceTree = "<group>"; };
+		EF5809021CB7D4CC00069EA2 /* MGCYearCalendarMonthCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCYearCalendarMonthCell.h; sourceTree = "<group>"; };
+		EF5809031CB7D4CC00069EA2 /* MGCYearCalendarMonthCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCYearCalendarMonthCell.m; sourceTree = "<group>"; };
+		EF5809041CB7D4CC00069EA2 /* MGCYearCalendarMonthHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCYearCalendarMonthHeaderView.h; sourceTree = "<group>"; };
+		EF5809051CB7D4CC00069EA2 /* MGCYearCalendarMonthHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCYearCalendarMonthHeaderView.m; sourceTree = "<group>"; };
+		EF5809061CB7D4CC00069EA2 /* MGCYearCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCYearCalendarView.h; sourceTree = "<group>"; };
+		EF5809071CB7D4CC00069EA2 /* MGCYearCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCYearCalendarView.m; sourceTree = "<group>"; };
+		EF5809081CB7D4CC00069EA2 /* NSAttributedString+MGCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+MGCAdditions.h"; sourceTree = "<group>"; };
+		EF5809091CB7D4CC00069EA2 /* NSAttributedString+MGCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+MGCAdditions.m"; sourceTree = "<group>"; };
+		EF58090A1CB7D4CC00069EA2 /* NSCalendar+MGCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+MGCAdditions.h"; sourceTree = "<group>"; };
+		EF58090B1CB7D4CC00069EA2 /* NSCalendar+MGCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+MGCAdditions.m"; sourceTree = "<group>"; };
+		EF58090D1CB7D4CC00069EA2 /* OrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderedDictionary.h; sourceTree = "<group>"; };
+		EF58090E1CB7D4CC00069EA2 /* OrderedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderedDictionary.m; sourceTree = "<group>"; };
+		EF5809101CB7D4CC00069EA2 /* OSCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCache.h; sourceTree = "<group>"; };
+		EF5809111CB7D4CC00069EA2 /* OSCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCache.m; sourceTree = "<group>"; };
 		EF5DF8311C7D75F4003CF533 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFBC489C1C719DE500915AC7 /* CAWeatherSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAWeatherSectionView.swift; sourceTree = "<group>"; };
 		EFBC489E1C719DFF00915AC7 /* CAWeatherSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAWeatherSectionView.xib; sourceTree = "<group>"; };
@@ -246,6 +349,7 @@
 			children = (
 				EF377C3E1C6F919B00B40D20 /* AppDelegate.swift */,
 				EF377C5E1C6F936900B40D20 /* CampusAssistant-Bridging-Header.h */,
+				EF5808C81CB7D4CC00069EA2 /* 3rdPartFrameworks */,
 				EF331FD21C786C5500695A3B /* Tools */,
 				EF0C41701C758B820044B9C0 /* Data */,
 				EFBC48A81C73376300915AC7 /* Macro */,
@@ -481,6 +585,105 @@
 			path = CollectionTitleHeader;
 			sourceTree = "<group>";
 		};
+		EF5808C81CB7D4CC00069EA2 /* 3rdPartFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF5808C91CB7D4CC00069EA2 /* CalendarLib */,
+				EF58090C1CB7D4CC00069EA2 /* OrderedDictionary */,
+				EF58090F1CB7D4CC00069EA2 /* OSCache */,
+			);
+			path = 3rdPartFrameworks;
+			sourceTree = "<group>";
+		};
+		EF5808C91CB7D4CC00069EA2 /* CalendarLib */ = {
+			isa = PBXGroup;
+			children = (
+				EF5808CA1CB7D4CC00069EA2 /* Constant.h */,
+				EF5808CB1CB7D4CC00069EA2 /* Localizable.strings */,
+				EF5808CE1CB7D4CC00069EA2 /* MGCAlignedGeometry.h */,
+				EF5808CF1CB7D4CC00069EA2 /* MGCAlignedGeometry.m */,
+				EF5808D01CB7D4CC00069EA2 /* MGCAllDayEventsViewLayout.h */,
+				EF5808D11CB7D4CC00069EA2 /* MGCAllDayEventsViewLayout.m */,
+				EF5808D21CB7D4CC00069EA2 /* MGCDateRange.h */,
+				EF5808D31CB7D4CC00069EA2 /* MGCDateRange.m */,
+				EF5808D41CB7D4CC00069EA2 /* MGCDayColumnCell.h */,
+				EF5808D51CB7D4CC00069EA2 /* MGCDayColumnCell.m */,
+				EF5808D61CB7D4CC00069EA2 /* MGCDayPlannerEKViewController.h */,
+				EF5808D71CB7D4CC00069EA2 /* MGCDayPlannerEKViewController.m */,
+				EF5808D81CB7D4CC00069EA2 /* MGCDayPlannerView.h */,
+				EF5808D91CB7D4CC00069EA2 /* MGCDayPlannerView.m */,
+				EF5808DA1CB7D4CC00069EA2 /* MGCDayPlannerViewController.h */,
+				EF5808DB1CB7D4CC00069EA2 /* MGCDayPlannerViewController.m */,
+				EF5808DC1CB7D4CC00069EA2 /* MGCEventCell.h */,
+				EF5808DD1CB7D4CC00069EA2 /* MGCEventCell.m */,
+				EF5808DE1CB7D4CC00069EA2 /* MGCEventCellLayoutAttributes.h */,
+				EF5808DF1CB7D4CC00069EA2 /* MGCEventCellLayoutAttributes.m */,
+				EF5808E01CB7D4CC00069EA2 /* MGCEventKitSupport.h */,
+				EF5808E11CB7D4CC00069EA2 /* MGCEventKitSupport.m */,
+				EF5808E21CB7D4CC00069EA2 /* MGCEventsRowView.h */,
+				EF5808E31CB7D4CC00069EA2 /* MGCEventsRowView.m */,
+				EF5808E41CB7D4CC00069EA2 /* MGCEventView.h */,
+				EF5808E51CB7D4CC00069EA2 /* MGCEventView.m */,
+				EF5808E61CB7D4CC00069EA2 /* MGCInteractiveEventView.h */,
+				EF5808E71CB7D4CC00069EA2 /* MGCInteractiveEventView.m */,
+				EF5808E81CB7D4CC00069EA2 /* MGCMonthMiniCalendarView.h */,
+				EF5808E91CB7D4CC00069EA2 /* MGCMonthMiniCalendarView.m */,
+				EF5808EA1CB7D4CC00069EA2 /* MGCMonthPlannerBackgroundView.h */,
+				EF5808EB1CB7D4CC00069EA2 /* MGCMonthPlannerBackgroundView.m */,
+				EF5808EC1CB7D4CC00069EA2 /* MGCMonthPlannerEKViewController.h */,
+				EF5808ED1CB7D4CC00069EA2 /* MGCMonthPlannerEKViewController.m */,
+				EF5808EE1CB7D4CC00069EA2 /* MGCMonthPlannerHeaderView.h */,
+				EF5808EF1CB7D4CC00069EA2 /* MGCMonthPlannerHeaderView.m */,
+				EF5808F01CB7D4CC00069EA2 /* MGCMonthPlannerView.h */,
+				EF5808F11CB7D4CC00069EA2 /* MGCMonthPlannerView.m */,
+				EF5808F21CB7D4CC00069EA2 /* MGCMonthPlannerViewController.h */,
+				EF5808F31CB7D4CC00069EA2 /* MGCMonthPlannerViewController.m */,
+				EF5808F41CB7D4CC00069EA2 /* MGCMonthPlannerViewDayCell.h */,
+				EF5808F51CB7D4CC00069EA2 /* MGCMonthPlannerViewDayCell.m */,
+				EF5808F61CB7D4CC00069EA2 /* MGCMonthPlannerViewLayout.h */,
+				EF5808F71CB7D4CC00069EA2 /* MGCMonthPlannerViewLayout.m */,
+				EF5808F81CB7D4CC00069EA2 /* MGCMonthPlannerWeekView.h */,
+				EF5808F91CB7D4CC00069EA2 /* MGCMonthPlannerWeekView.m */,
+				EF5808FA1CB7D4CC00069EA2 /* MGCReusableObjectQueue.h */,
+				EF5808FB1CB7D4CC00069EA2 /* MGCReusableObjectQueue.m */,
+				EF5808FC1CB7D4CC00069EA2 /* MGCStandardEventView.h */,
+				EF5808FD1CB7D4CC00069EA2 /* MGCStandardEventView.m */,
+				EF5808FE1CB7D4CC00069EA2 /* MGCTimedEventsViewLayout.h */,
+				EF5808FF1CB7D4CC00069EA2 /* MGCTimedEventsViewLayout.m */,
+				EF5809001CB7D4CC00069EA2 /* MGCTimeRowsView.h */,
+				EF5809011CB7D4CC00069EA2 /* MGCTimeRowsView.m */,
+				EF5809021CB7D4CC00069EA2 /* MGCYearCalendarMonthCell.h */,
+				EF5809031CB7D4CC00069EA2 /* MGCYearCalendarMonthCell.m */,
+				EF5809041CB7D4CC00069EA2 /* MGCYearCalendarMonthHeaderView.h */,
+				EF5809051CB7D4CC00069EA2 /* MGCYearCalendarMonthHeaderView.m */,
+				EF5809061CB7D4CC00069EA2 /* MGCYearCalendarView.h */,
+				EF5809071CB7D4CC00069EA2 /* MGCYearCalendarView.m */,
+				EF5809081CB7D4CC00069EA2 /* NSAttributedString+MGCAdditions.h */,
+				EF5809091CB7D4CC00069EA2 /* NSAttributedString+MGCAdditions.m */,
+				EF58090A1CB7D4CC00069EA2 /* NSCalendar+MGCAdditions.h */,
+				EF58090B1CB7D4CC00069EA2 /* NSCalendar+MGCAdditions.m */,
+			);
+			path = CalendarLib;
+			sourceTree = "<group>";
+		};
+		EF58090C1CB7D4CC00069EA2 /* OrderedDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				EF58090D1CB7D4CC00069EA2 /* OrderedDictionary.h */,
+				EF58090E1CB7D4CC00069EA2 /* OrderedDictionary.m */,
+			);
+			path = OrderedDictionary;
+			sourceTree = "<group>";
+		};
+		EF58090F1CB7D4CC00069EA2 /* OSCache */ = {
+			isa = PBXGroup;
+			children = (
+				EF5809101CB7D4CC00069EA2 /* OSCache.h */,
+				EF5809111CB7D4CC00069EA2 /* OSCache.m */,
+			);
+			path = OSCache;
+			sourceTree = "<group>";
+		};
 		EFBC489A1C719DA700915AC7 /* StudyLife */ = {
 			isa = PBXGroup;
 			children = (
@@ -585,6 +788,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = EF377C321C6F919B00B40D20;
 			productRefGroup = EF377C3C1C6F919B00B40D20 /* Products */;
@@ -615,6 +819,7 @@
 				EFBC48A71C72FA0400915AC7 /* CAStudyLifeSectionView.xib in Resources */,
 				EF377C441C6F919B00B40D20 /* Main.storyboard in Resources */,
 				EF331FCD1C7861A200695A3B /* CAFunctionCell.xib in Resources */,
+				EF5809251CB7D4CC00069EA2 /* Localizable.strings in Resources */,
 				EF44E8031C7BFCEE00ADCC5E /* CAAccountSectionView.xib in Resources */,
 				EFBC489F1C719DFF00915AC7 /* CAWeatherSectionView.xib in Resources */,
 			);
@@ -684,10 +889,21 @@
 			files = (
 				EF3D6FE21C70647C0051DA24 /* CAProfileViewController.swift in Sources */,
 				EF50E7F11C773F0F00A0A5A5 /* CAProfileHeader.swift in Sources */,
+				EF5809341CB7D4CC00069EA2 /* MGCMonthPlannerBackgroundView.m in Sources */,
 				EF331FCF1C7861C100695A3B /* CAProfileInfoCell.swift in Sources */,
+				EF58092B1CB7D4CC00069EA2 /* MGCDayPlannerView.m in Sources */,
 				EF4E1DB21C85C23200680EF4 /* CANavigationController.swift in Sources */,
+				EF58092A1CB7D4CC00069EA2 /* MGCDayPlannerEKViewController.m in Sources */,
+				EF5809431CB7D4CC00069EA2 /* NSAttributedString+MGCAdditions.m in Sources */,
+				EF5809331CB7D4CC00069EA2 /* MGCMonthMiniCalendarView.m in Sources */,
 				EFBC48B11C733C3100915AC7 /* CAAddMoreSectionView.swift in Sources */,
+				EF58092E1CB7D4CC00069EA2 /* MGCEventCellLayoutAttributes.m in Sources */,
 				EF3DF2721C784A08002276A6 /* CAStudent.m in Sources */,
+				EF5809271CB7D4CC00069EA2 /* MGCAllDayEventsViewLayout.m in Sources */,
+				EF5809281CB7D4CC00069EA2 /* MGCDateRange.m in Sources */,
+				EF5809411CB7D4CC00069EA2 /* MGCYearCalendarMonthHeaderView.m in Sources */,
+				EF5809361CB7D4CC00069EA2 /* MGCMonthPlannerHeaderView.m in Sources */,
+				EF5809441CB7D4CC00069EA2 /* NSCalendar+MGCAdditions.m in Sources */,
 				EF44E8011C7BFCDE00ADCC5E /* CAAccountSectionView.swift in Sources */,
 				EF4E1DC51C85D0A100680EF4 /* CAFosterPlanViewController.swift in Sources */,
 				EF3D6FE41C7064870051DA24 /* CACollectionsViewController.swift in Sources */,
@@ -696,25 +912,47 @@
 				EFBC48A51C72F6AF00915AC7 /* CAStudyLifeSectionView.swift in Sources */,
 				EF44E8101C7C8BC200ADCC5E /* String+CA.swift in Sources */,
 				EF377C3F1C6F919B00B40D20 /* AppDelegate.swift in Sources */,
+				EF5809421CB7D4CC00069EA2 /* MGCYearCalendarView.m in Sources */,
+				EF58092F1CB7D4CC00069EA2 /* MGCEventKitSupport.m in Sources */,
+				EF58092D1CB7D4CC00069EA2 /* MGCEventCell.m in Sources */,
+				EF58093D1CB7D4CC00069EA2 /* MGCStandardEventView.m in Sources */,
 				EF4E1DBD1C85CFEE00680EF4 /* CAClassListViewController.swift in Sources */,
+				EF5809371CB7D4CC00069EA2 /* MGCMonthPlannerView.m in Sources */,
 				EF4E1DBB1C85CFE200680EF4 /* CACheckGradesViewController.swift in Sources */,
 				EF3D6FE01C7064740051DA24 /* CAHomeViewController.swift in Sources */,
+				EF5809291CB7D4CC00069EA2 /* MGCDayColumnCell.m in Sources */,
 				EFBC48AA1C73377000915AC7 /* Macro.swift in Sources */,
+				EF58093E1CB7D4CC00069EA2 /* MGCTimedEventsViewLayout.m in Sources */,
 				EF50E7F51C77621B00A0A5A5 /* UIImageView+CA.swift in Sources */,
 				EF4E1DC31C85D09700680EF4 /* CAExamAgendaViewController.swift in Sources */,
+				EF58093A1CB7D4CC00069EA2 /* MGCMonthPlannerViewLayout.m in Sources */,
+				EF5809301CB7D4CC00069EA2 /* MGCEventsRowView.m in Sources */,
 				EF4E1DC11C85D08D00680EF4 /* CAEmptyRoomViewController.swift in Sources */,
+				EF5809401CB7D4CC00069EA2 /* MGCYearCalendarMonthCell.m in Sources */,
 				EF331FCC1C7861A200695A3B /* CAFunctionCell.swift in Sources */,
 				EF0C41881C75CA5F0044B9C0 /* CAFunction.m in Sources */,
+				EF5809351CB7D4CC00069EA2 /* MGCMonthPlannerEKViewController.m in Sources */,
+				EF5809311CB7D4CC00069EA2 /* MGCEventView.m in Sources */,
 				EF18DAD31C79694200369F33 /* CARightSlideMenuViewController.swift in Sources */,
+				EF5809261CB7D4CC00069EA2 /* MGCAlignedGeometry.m in Sources */,
+				EF58093C1CB7D4CC00069EA2 /* MGCReusableObjectQueue.m in Sources */,
+				EF5809451CB7D4CC00069EA2 /* OrderedDictionary.m in Sources */,
 				EF50E7EE1C772CDC00A0A5A5 /* CACollectionTitleHeader.swift in Sources */,
 				EF4E1DBF1C85D07C00680EF4 /* CACreditWarningViewController.swift in Sources */,
 				EF44E7FD1C7AFE0F00ADCC5E /* SWRevealViewController.m in Sources */,
+				EF58093B1CB7D4CC00069EA2 /* MGCMonthPlannerWeekView.m in Sources */,
+				EF5809461CB7D4CC00069EA2 /* OSCache.m in Sources */,
 				EF44E8051C7BFD0B00ADCC5E /* CAIPWGSectionView.swift in Sources */,
 				EFBC489D1C719DE500915AC7 /* CAWeatherSectionView.swift in Sources */,
 				EF50E7F31C775C0A00A0A5A5 /* UIImage+CA.swift in Sources */,
+				EF5809381CB7D4CC00069EA2 /* MGCMonthPlannerViewController.m in Sources */,
+				EF5809391CB7D4CC00069EA2 /* MGCMonthPlannerViewDayCell.m in Sources */,
+				EF58092C1CB7D4CC00069EA2 /* MGCDayPlannerViewController.m in Sources */,
+				EF5809321CB7D4CC00069EA2 /* MGCInteractiveEventView.m in Sources */,
 				EF44E80C1C7C5DB300ADCC5E /* UIColor+CA.swift in Sources */,
 				EF44E80A1C7C1FA600ADCC5E /* CALightAlphaTextField.swift in Sources */,
 				EF0C41871C75CA5F0044B9C0 /* CACollection.m in Sources */,
+				EF58093F1CB7D4CC00069EA2 /* MGCTimeRowsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -751,6 +989,15 @@
 				EF377C481C6F919B00B40D20 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EF5808CB1CB7D4CC00069EA2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF5808CC1CB7D4CC00069EA2 /* en */,
+				EF5808CD1CB7D4CC00069EA2 /* fr */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

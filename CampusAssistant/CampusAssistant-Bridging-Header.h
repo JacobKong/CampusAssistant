@@ -10,3 +10,5 @@
 #import "CAFunction.h"
 #import "CAStudent.h"
 #import "SWRevealViewController.h"
+#import "MGCDayPlannerViewController.h"
+
