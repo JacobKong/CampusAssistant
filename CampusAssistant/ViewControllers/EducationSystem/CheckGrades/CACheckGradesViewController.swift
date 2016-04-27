@@ -9,17 +9,29 @@
 import UIKit
 
 class CACheckGradesViewController: UIViewController {
+    var tableView:UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "查成绩"
         self.view.backgroundColor = UIColor.whiteColor()
         // Do any additional setup after loading the view.
+        
+        initTableView();
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    private func initTableView(){
+        self.tableView = UITableView.init(frame: kScreenBounds, style: .Plain)
+        
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
+        
+        self.view.addSubview(tableView)
     }
     
 
@@ -33,4 +45,22 @@ class CACheckGradesViewController: UIViewController {
     }
     */
 
+}
+
+extension CACheckGradesViewController:UITableViewDataSource,UITableViewDelegate{
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 6
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell:UITableViewCell = UITableViewCell()
+        
+        cell.textLabel?.text = "123"
+        
+        return cell
+    }
 }
