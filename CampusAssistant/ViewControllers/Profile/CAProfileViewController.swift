@@ -112,6 +112,7 @@ extension CAProfileViewController:UITableViewDataSource, UITableViewDelegate{
         cell.subtitleLabel?.text = self.subtitleArray[indexPath.row]
         cell.iconImageView?.image = UIImage(named:String.init(format: "%@", self.iconImageArray[indexPath.row]))
         cell.contentView.backgroundColor = UIColor.whiteColor()
+        cell.selectionStyle = .None
         return cell
     }
 }
