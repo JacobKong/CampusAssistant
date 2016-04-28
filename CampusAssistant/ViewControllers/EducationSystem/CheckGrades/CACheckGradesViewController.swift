@@ -10,6 +10,9 @@ import UIKit
 
 class CACheckGradesViewController: UIViewController {
     var tableView:UITableView!
+    let courseArray:[String] = ["课程1","课程2","课程3","课程4","课程5","课程6"]
+    
+    private let gradeCellIdentifier = "GradeCell"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +33,8 @@ class CACheckGradesViewController: UIViewController {
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
+        
+        self.tableView!.registerNib(CAGradeCell.nib(), forCellReuseIdentifier: gradeCellIdentifier)
         
         self.view.addSubview(tableView)
     }
@@ -57,9 +62,9 @@ extension CACheckGradesViewController:UITableViewDataSource,UITableViewDelegate{
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell:UITableViewCell = UITableViewCell()
+        let cell = tableView.dequeueReusableCellWithIdentifier(gradeCellIdentifier, forIndexPath: indexPath) as! CAGradeCell
         
-        cell.textLabel?.text = "123"
+        cell.titleLabel.text = self.courseArray[indexPath.row]
         
         return cell
     }
