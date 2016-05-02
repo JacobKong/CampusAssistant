@@ -45,7 +45,6 @@ class CAClassListViewController: MGCDayPlannerEKViewController {
 
         self.dateFormatter.dateFormat = "yyyy.M"
         let currentMonth = dateFormatter.stringFromDate(NSDate())
-
         currentDateLabel.text = currentMonth
         currentDateLabel.textColor = UIColor.whiteColor()
         currentDateLabel.font = UIFont.systemFontOfSize(15)

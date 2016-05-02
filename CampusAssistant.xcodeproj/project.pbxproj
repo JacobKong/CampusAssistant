@@ -83,8 +83,9 @@
 		EF5809441CB7D4CC00069EA2 /* NSCalendar+MGCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EF58090B1CB7D4CC00069EA2 /* NSCalendar+MGCAdditions.m */; };
 		EF5809451CB7D4CC00069EA2 /* OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = EF58090E1CB7D4CC00069EA2 /* OrderedDictionary.m */; };
 		EF5809461CB7D4CC00069EA2 /* OSCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5809111CB7D4CC00069EA2 /* OSCache.m */; };
-		EF5809501CB7D6D100069EA2 /* CAWeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF58094F1CB7D6D100069EA2 /* CAWeekViewController.swift */; };
 		EF5DF8321C7D75F4003CF533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5DF8311C7D75F4003CF533 /* Assets.xcassets */; };
+		EF77F42F1CD22405000CA2F6 /* CARoomNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF77F42D1CD22405000CA2F6 /* CARoomNameCell.swift */; };
+		EF77F4301CD22405000CA2F6 /* CARoomNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF77F42E1CD22405000CA2F6 /* CARoomNameCell.xib */; };
 		EFBC489D1C719DE500915AC7 /* CAWeatherSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC489C1C719DE500915AC7 /* CAWeatherSectionView.swift */; };
 		EFBC489F1C719DFF00915AC7 /* CAWeatherSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFBC489E1C719DFF00915AC7 /* CAWeatherSectionView.xib */; };
 		EFBC48A51C72F6AF00915AC7 /* CAStudyLifeSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC48A41C72F6AF00915AC7 /* CAStudyLifeSectionView.swift */; };
@@ -227,8 +228,9 @@
 		EF58090E1CB7D4CC00069EA2 /* OrderedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderedDictionary.m; sourceTree = "<group>"; };
 		EF5809101CB7D4CC00069EA2 /* OSCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCache.h; sourceTree = "<group>"; };
 		EF5809111CB7D4CC00069EA2 /* OSCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCache.m; sourceTree = "<group>"; };
-		EF58094F1CB7D6D100069EA2 /* CAWeekViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAWeekViewController.swift; sourceTree = "<group>"; };
 		EF5DF8311C7D75F4003CF533 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF77F42D1CD22405000CA2F6 /* CARoomNameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CARoomNameCell.swift; sourceTree = "<group>"; };
+		EF77F42E1CD22405000CA2F6 /* CARoomNameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CARoomNameCell.xib; sourceTree = "<group>"; };
 		EFBC489C1C719DE500915AC7 /* CAWeatherSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAWeatherSectionView.swift; sourceTree = "<group>"; };
 		EFBC489E1C719DFF00915AC7 /* CAWeatherSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAWeatherSectionView.xib; sourceTree = "<group>"; };
 		EFBC48A41C72F6AF00915AC7 /* CAStudyLifeSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAStudyLifeSectionView.swift; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 		EF331FC71C7861A200695A3B /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				EF77F42A1CD223BA000CA2F6 /* RoomNameCell */,
 				EF331FC81C7861A200695A3B /* FunctionCell */,
 				EF331FCB1C7861A200695A3B /* ProfileInfoCell */,
 			);
@@ -533,7 +536,6 @@
 			isa = PBXGroup;
 			children = (
 				EF4E1DBC1C85CFEE00680EF4 /* CAClassListViewController.swift */,
-				EF58094F1CB7D6D100069EA2 /* CAWeekViewController.swift */,
 			);
 			path = ClassList;
 			sourceTree = "<group>";
@@ -687,6 +689,15 @@
 			path = OSCache;
 			sourceTree = "<group>";
 		};
+		EF77F42A1CD223BA000CA2F6 /* RoomNameCell */ = {
+			isa = PBXGroup;
+			children = (
+				EF77F42D1CD22405000CA2F6 /* CARoomNameCell.swift */,
+				EF77F42E1CD22405000CA2F6 /* CARoomNameCell.xib */,
+			);
+			path = RoomNameCell;
+			sourceTree = "<group>";
+		};
 		EFBC489A1C719DA700915AC7 /* StudyLife */ = {
 			isa = PBXGroup;
 			children = (
@@ -824,6 +835,7 @@
 				EF331FCD1C7861A200695A3B /* CAFunctionCell.xib in Resources */,
 				EF5809251CB7D4CC00069EA2 /* Localizable.strings in Resources */,
 				EF44E8031C7BFCEE00ADCC5E /* CAAccountSectionView.xib in Resources */,
+				EF77F4301CD22405000CA2F6 /* CARoomNameCell.xib in Resources */,
 				EFBC489F1C719DFF00915AC7 /* CAWeatherSectionView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -895,6 +907,7 @@
 				EF5809341CB7D4CC00069EA2 /* MGCMonthPlannerBackgroundView.m in Sources */,
 				EF331FCF1C7861C100695A3B /* CAProfileInfoCell.swift in Sources */,
 				EF58092B1CB7D4CC00069EA2 /* MGCDayPlannerView.m in Sources */,
+				EF77F42F1CD22405000CA2F6 /* CARoomNameCell.swift in Sources */,
 				EF4E1DB21C85C23200680EF4 /* CANavigationController.swift in Sources */,
 				EF58092A1CB7D4CC00069EA2 /* MGCDayPlannerEKViewController.m in Sources */,
 				EF5809431CB7D4CC00069EA2 /* NSAttributedString+MGCAdditions.m in Sources */,
@@ -904,7 +917,6 @@
 				EF3DF2721C784A08002276A6 /* CAStudent.m in Sources */,
 				EF5809271CB7D4CC00069EA2 /* MGCAllDayEventsViewLayout.m in Sources */,
 				EF5809281CB7D4CC00069EA2 /* MGCDateRange.m in Sources */,
-				EF5809501CB7D6D100069EA2 /* CAWeekViewController.swift in Sources */,
 				EF5809411CB7D4CC00069EA2 /* MGCYearCalendarMonthHeaderView.m in Sources */,
 				EF5809361CB7D4CC00069EA2 /* MGCMonthPlannerHeaderView.m in Sources */,
 				EF5809441CB7D4CC00069EA2 /* NSCalendar+MGCAdditions.m in Sources */,
