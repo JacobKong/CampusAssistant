@@ -11,7 +11,8 @@ import UIKit
 class CAEmptyRoomViewController: UIViewController {
     
     var collectionView:UICollectionView!
-    let functionCellIdentifier = "RoomNameCell"
+    private let roomNameCellIdentifier = "RoomNameCell"
+    private let emptyRoomHeaderCellIdentifier = "EmptyRoomHeadr"
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "空教室"
@@ -45,18 +46,19 @@ class CAEmptyRoomViewController: UIViewController {
         layout.itemSize = CGSizeMake(itemSizeW, itemSizeH)
         
         // 设置四周间距
-        layout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10)
+        layout.sectionInset = UIEdgeInsetsMake(0, 10, 10, 10)
         
         
         // 滚动方向
         layout.scrollDirection = UICollectionViewScrollDirection.Vertical
-        self.collectionView = UICollectionView.init(frame: CGRectMake(0, 0, kScreenWidth, kScreenHeight - 49 - 66), collectionViewLayout: layout)
+        self.collectionView = UICollectionView.init(frame: CGRectMake(0, 0, kScreenWidth, kScreenHeight-66), collectionViewLayout: layout)
         self.collectionView.showsVerticalScrollIndicator = false
         self.collectionView.backgroundColor = UIColor.whiteColor()
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
-        self.collectionView.registerNib(UINib(nibName: "CARoomNameCell", bundle: nil), forCellWithReuseIdentifier: functionCellIdentifier)
-//        self.collectionView.registerNib(CACollectionTitleHeader.nib(), forSupplementaryViewOfKind:UICollectionElementKindSectionHeader , withReuseIdentifier:collectionSectionHeaderCellIdentifier)
+        self.collectionView.registerNib(UINib(nibName: "CARoomNameCell", bundle: nil), forCellWithReuseIdentifier: roomNameCellIdentifier)
+        
+        self.collectionView.registerNib(CAEmptyRoomHeader.nib(), forSupplementaryViewOfKind:UICollectionElementKindSectionHeader , withReuseIdentifier:emptyRoomHeaderCellIdentifier)
         self.view.addSubview(collectionView)
         
     }
@@ -86,7 +88,7 @@ extension CAEmptyRoomViewController:UICollectionViewDataSource,UICollectionViewD
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(functionCellIdentifier, forIndexPath: indexPath) as! CARoomNameCell
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(roomNameCellIdentifier, forIndexPath: indexPath) as! CARoomNameCell
 //        let functionsArray = self.collections[indexPath.section].functions as! [CAFunction]
 //        let function = functionsArray[indexPath.item]
 //        cell.functionIcon.image = UIImage(named: function.icon)
@@ -94,21 +96,16 @@ extension CAEmptyRoomViewController:UICollectionViewDataSource,UICollectionViewD
         return cell
     }
     
-//    func collectionView(collectionView: UICollectionView, shouldHighlightItemAtIndexPath indexPath: NSIndexPath) -> Bool {
-//        return true
-//    }
+    func collectionView(_collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize{
+        return CGSizeMake(kScreenWidth, 40)
+    }
+
+    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
+        let cell = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: emptyRoomHeaderCellIdentifier, forIndexPath: indexPath) as! CAEmptyRoomHeader
+        return cell
+    }
+    
 //
-//    func collectionView(_collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize{
-//        return CGSizeMake(kScreenWidth, 40)
-//    }
-//    
-//    func collectionView(collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, atIndexPath indexPath: NSIndexPath) -> UICollectionReusableView {
-//        let cell = collectionView.dequeueReusableSupplementaryViewOfKind(kind, withReuseIdentifier: collectionSectionHeaderCellIdentifier, forIndexPath: indexPath) as! CACollectionTitleHeader
-//        let collection = self.collections[indexPath.section]
-//        cell.titleLabel.text = collection.function_name
-//        return cell
-//    }
-//    
 //    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
 //        print(indexPath.section, indexPath.item)
 //        //        let testVc = CAProfileViewController()

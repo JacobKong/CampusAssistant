@@ -10,7 +10,7 @@ import Foundation
 
 extension UIColor{
     class func caNavigationBarColor() -> UIColor {
-        return kRGBA(74, g: 144, b: 226, a: 1.0)
+        return kRGBA(0, g: 122, b: 255, a: 1.0)
     }
     
     class func caTintColor() -> UIColor {
@@ -24,5 +24,6 @@ extension UIColor{
     class func caLightAlphaTextFieldPlaceholderTextColor() -> UIColor{
         return kRGBA(255, g: 255, b: 255, a: 0.5)
     }
+    
     
 }
