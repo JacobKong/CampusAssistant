@@ -37,11 +37,14 @@ class CANavigationController: UINavigationController {
     
     private func setupNavBar(){
         let navigationBarAppearance = UINavigationBar.appearance()
-        let backgroundImage = UIImage.init(named: "navigationbar_background_tall")
+//        let backgroundImage = UIImage.init(named: "navigationbar_background_tall")
+        
         let textAttributes: NSDictionary = [
             NSFontAttributeName: UIFont(name: "Montserrat-Bold", size: 19)!, NSForegroundColorAttributeName: UIColor.whiteColor()
         ]
-        navigationBarAppearance.setBackgroundImage(backgroundImage, forBarMetrics: UIBarMetrics.Default)
+//        navigationBarAppearance.setBackgroundImage(backgroundImage, forBarMetrics: UIBarMetrics.Default)
+        navigationBarAppearance.barTintColor = UIColor.caNavigationBarColor()
+        navigationBarAppearance.translucent = false
         navigationBarAppearance.titleTextAttributes = textAttributes as? [String : AnyObject]
         navigationBarAppearance.tintColor = UIColor.whiteColor()
         navigationBarAppearance.backIndicatorImage = UIImage(named: "navigationbar_back_indicator")

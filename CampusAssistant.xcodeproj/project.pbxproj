@@ -18,6 +18,10 @@
 		EF2E42231CD8971A00146D4D /* CAProfileHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF2E421F1CD8971A00146D4D /* CAProfileHeader.xib */; };
 		EF2E42251CD8974F00146D4D /* CAEmptyRoomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E42241CD8974F00146D4D /* CAEmptyRoomHeader.swift */; };
 		EF2E42271CD8975A00146D4D /* CAEmptyRoomHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF2E42261CD8975A00146D4D /* CAEmptyRoomHeader.xib */; };
+		EF2E422E1CD8DCD500146D4D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = EF2E42291CD8DCD500146D4D /* LICENSE */; };
+		EF2E422F1CD8DCD500146D4D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = EF2E422A1CD8DCD500146D4D /* README.md */; };
+		EF2E42301CD8DCD500146D4D /* BTNavigationDropdownMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EF2E422C1CD8DCD500146D4D /* BTNavigationDropdownMenu.bundle */; };
+		EF2E42311CD8DCD500146D4D /* BTNavigationDropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E422D1CD8DCD500146D4D /* BTNavigationDropdownMenu.swift */; };
 		EF331FCC1C7861A200695A3B /* CAFunctionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF331FC91C7861A200695A3B /* CAFunctionCell.swift */; };
 		EF331FCD1C7861A200695A3B /* CAFunctionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF331FCA1C7861A200695A3B /* CAFunctionCell.xib */; };
 		EF331FCF1C7861C100695A3B /* CAProfileInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF331FCE1C7861C100695A3B /* CAProfileInfoCell.swift */; };
@@ -123,6 +127,10 @@
 		EF2E421F1CD8971A00146D4D /* CAProfileHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAProfileHeader.xib; sourceTree = "<group>"; };
 		EF2E42241CD8974F00146D4D /* CAEmptyRoomHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAEmptyRoomHeader.swift; sourceTree = "<group>"; };
 		EF2E42261CD8975A00146D4D /* CAEmptyRoomHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAEmptyRoomHeader.xib; sourceTree = "<group>"; };
+		EF2E42291CD8DCD500146D4D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		EF2E422A1CD8DCD500146D4D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EF2E422C1CD8DCD500146D4D /* BTNavigationDropdownMenu.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BTNavigationDropdownMenu.bundle; sourceTree = "<group>"; };
+		EF2E422D1CD8DCD500146D4D /* BTNavigationDropdownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTNavigationDropdownMenu.swift; sourceTree = "<group>"; };
 		EF331FC91C7861A200695A3B /* CAFunctionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAFunctionCell.swift; sourceTree = "<group>"; };
 		EF331FCA1C7861A200695A3B /* CAFunctionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAFunctionCell.xib; sourceTree = "<group>"; };
 		EF331FCE1C7861C100695A3B /* CAProfileInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAProfileInfoCell.swift; sourceTree = "<group>"; };
@@ -323,6 +331,25 @@
 				EF2E421F1CD8971A00146D4D /* CAProfileHeader.xib */,
 			);
 			path = ProfileHeader;
+			sourceTree = "<group>";
+		};
+		EF2E42281CD8DCD500146D4D /* BTNavigationDropdownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				EF2E42291CD8DCD500146D4D /* LICENSE */,
+				EF2E422A1CD8DCD500146D4D /* README.md */,
+				EF2E422B1CD8DCD500146D4D /* Source */,
+			);
+			path = BTNavigationDropdownMenu;
+			sourceTree = "<group>";
+		};
+		EF2E422B1CD8DCD500146D4D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				EF2E422C1CD8DCD500146D4D /* BTNavigationDropdownMenu.bundle */,
+				EF2E422D1CD8DCD500146D4D /* BTNavigationDropdownMenu.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 		EF331FC71C7861A200695A3B /* Cell */ = {
@@ -615,6 +642,7 @@
 		EF5808C81CB7D4CC00069EA2 /* 3rdPartFrameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF2E42281CD8DCD500146D4D /* BTNavigationDropdownMenu */,
 				EF5808C91CB7D4CC00069EA2 /* CalendarLib */,
 				EF58090C1CB7D4CC00069EA2 /* OrderedDictionary */,
 				EF58090F1CB7D4CC00069EA2 /* OSCache */,
@@ -853,6 +881,8 @@
 				EFBC48B31C733C3D00915AC7 /* CAAddMoreSectionView.xib in Resources */,
 				EF2E42211CD8971A00146D4D /* CACollectionTitleHeader.xib in Resources */,
 				EF44E8071C7BFD1E00ADCC5E /* CAIPWGSectionView.xib in Resources */,
+				EF2E42301CD8DCD500146D4D /* BTNavigationDropdownMenu.bundle in Resources */,
+				EF2E422E1CD8DCD500146D4D /* LICENSE in Resources */,
 				EFBC48A71C72FA0400915AC7 /* CAStudyLifeSectionView.xib in Resources */,
 				EF377C441C6F919B00B40D20 /* Main.storyboard in Resources */,
 				EF331FCD1C7861A200695A3B /* CAFunctionCell.xib in Resources */,
@@ -962,6 +992,7 @@
 				EF4E1DBB1C85CFE200680EF4 /* CACheckGradesViewController.swift in Sources */,
 				EF3D6FE01C7064740051DA24 /* CAHomeViewController.swift in Sources */,
 				EF5809291CB7D4CC00069EA2 /* MGCDayColumnCell.m in Sources */,
+				EF2E42311CD8DCD500146D4D /* BTNavigationDropdownMenu.swift in Sources */,
 				EFBC48AA1C73377000915AC7 /* Macro.swift in Sources */,
 				EF58093E1CB7D4CC00069EA2 /* MGCTimedEventsViewLayout.m in Sources */,
 				EF50E7F51C77621B00A0A5A5 /* UIImageView+CA.swift in Sources */,
@@ -979,6 +1010,7 @@
 				EF58093C1CB7D4CC00069EA2 /* MGCReusableObjectQueue.m in Sources */,
 				EF5809451CB7D4CC00069EA2 /* OrderedDictionary.m in Sources */,
 				EF4E1DBF1C85D07C00680EF4 /* CACreditWarningViewController.swift in Sources */,
+				EF2E422F1CD8DCD500146D4D /* README.md in Sources */,
 				EF44E7FD1C7AFE0F00ADCC5E /* SWRevealViewController.m in Sources */,
 				EF58093B1CB7D4CC00069EA2 /* MGCMonthPlannerWeekView.m in Sources */,
 				EF5809461CB7D4CC00069EA2 /* OSCache.m in Sources */,

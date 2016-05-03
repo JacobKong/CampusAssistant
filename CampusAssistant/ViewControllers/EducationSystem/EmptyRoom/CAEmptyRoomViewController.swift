@@ -8,9 +8,13 @@
 
 import UIKit
 
+
 class CAEmptyRoomViewController: UIViewController {
     
     var collectionView:UICollectionView!
+    var menuView: BTNavigationDropdownMenu!
+    
+    
     private let roomNameCellIdentifier = "RoomNameCell"
     private let emptyRoomHeaderCellIdentifier = "EmptyRoomHeadr"
     override func viewDidLoad() {
@@ -20,6 +24,7 @@ class CAEmptyRoomViewController: UIViewController {
         // Do any additional setup after loading the view.
 //        setupCollectionsArray()
         setupCollectionView()
+        setupNavigationBarDropDownMenu()
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,6 +66,31 @@ class CAEmptyRoomViewController: UIViewController {
         self.collectionView.registerNib(CAEmptyRoomHeader.nib(), forSupplementaryViewOfKind:UICollectionElementKindSectionHeader , withReuseIdentifier:emptyRoomHeaderCellIdentifier)
         self.view.addSubview(collectionView)
         
+    }
+    
+    private func setupNavigationBarDropDownMenu(){
+        let items = ["Most Popular", "Latest", "Trending", "Nearest", "Top Picks","Most Popular", "Latest", "Trending", "Nearest", "Top Picks", "Most Popular", "Latest", "Trending", "Nearest", "Top Picks"]
+//        self.selectedCellLabel.text = items.first
+        
+        menuView = BTNavigationDropdownMenu(navigationController: self.navigationController, title: "请选择教学楼", items: items)
+        menuView.cellHeight = 50
+        menuView.cellBackgroundColor = UIColor.caNavigationBarColor()
+        menuView.cellSelectionColor = UIColor.caDarkerNavigationBarColor()
+//        menuView.keepSelectedCellColor = true
+        menuView.cellTextLabelColor = UIColor.whiteColor()
+        menuView.cellTextLabelFont = UIFont(name: "Montserrat-Regular", size: 17)
+        menuView.cellTextLabelAlignment = .Left // .Center // .Right // .Left
+        menuView.arrowPadding = 15
+        menuView.animationDuration = 0.5
+        menuView.maskBackgroundColor = UIColor.blackColor()
+        menuView.maskBackgroundOpacity = 0.3
+        menuView.didSelectItemAtIndexHandler = {(indexPath: Int) -> () in
+            print("Did select item at index: \(indexPath)")
+//            self.selectedCellLabel.text = items[indexPath]
+        }
+        
+//        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: menuView)
+        self.navigationItem.titleView = menuView
     }
 
     /*
@@ -105,11 +135,8 @@ extension CAEmptyRoomViewController:UICollectionViewDataSource,UICollectionViewD
         return cell
     }
     
-//
-//    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-//        print(indexPath.section, indexPath.item)
-//        //        let testVc = CAProfileViewController()
-//        //        self.navigationController?.pushViewController(testVc, animated: true)
-//    }
+
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    }
 
 }
