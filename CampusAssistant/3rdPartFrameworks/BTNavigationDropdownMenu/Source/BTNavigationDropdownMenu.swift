@@ -259,6 +259,8 @@ public class BTNavigationDropdownMenu: UIView {
             self.layoutSubviews()
         }
         
+//        self.tableView.bounces = false
+        
         // Add background view & table view to container view
         self.menuWrapper.addSubview(self.backgroundView)
         self.menuWrapper.addSubview(self.tableView)

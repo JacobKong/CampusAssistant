@@ -21,15 +21,14 @@ class CAEmptyRoomViewController: UIViewController {
         super.viewDidLoad()
         self.title = "空教室"
         self.view.backgroundColor = UIColor.whiteColor()
-        // Do any additional setup after loading the view.
 //        setupCollectionsArray()
         setupCollectionView()
         setupNavigationBarDropDownMenu()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillDisappear(animated: Bool) {
+        menuView.animationDuration = 0.1
+        menuView.hide()
     }
     
     private func setupCollectionView(){
@@ -70,13 +69,10 @@ class CAEmptyRoomViewController: UIViewController {
     
     private func setupNavigationBarDropDownMenu(){
         let items = ["Most Popular", "Latest", "Trending", "Nearest", "Top Picks","Most Popular", "Latest", "Trending", "Nearest", "Top Picks", "Most Popular", "Latest", "Trending", "Nearest", "Top Picks"]
-//        self.selectedCellLabel.text = items.first
-        
         menuView = BTNavigationDropdownMenu(navigationController: self.navigationController, title: "请选择教学楼", items: items)
         menuView.cellHeight = 50
         menuView.cellBackgroundColor = UIColor.caNavigationBarColor()
         menuView.cellSelectionColor = UIColor.caDarkerNavigationBarColor()
-//        menuView.keepSelectedCellColor = true
         menuView.cellTextLabelColor = UIColor.whiteColor()
         menuView.cellTextLabelFont = UIFont(name: "Montserrat-Regular", size: 17)
         menuView.cellTextLabelAlignment = .Left // .Center // .Right // .Left
@@ -89,19 +85,9 @@ class CAEmptyRoomViewController: UIViewController {
 //            self.selectedCellLabel.text = items[indexPath]
         }
         
-//        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: menuView)
         self.navigationItem.titleView = menuView
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
