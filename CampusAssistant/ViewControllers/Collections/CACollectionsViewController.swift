@@ -8,6 +8,7 @@
 
 import UIKit
 import MJExtension
+import SVProgressHUD
 class CACollectionsViewController: UIViewController {
     var collections = NSMutableArray()
     var collectionView:UICollectionView!
@@ -99,10 +100,20 @@ extension CACollectionsViewController:UICollectionViewDataSource, UICollectionVi
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        print(indexPath.section, indexPath.item)
-        var className:String = NSStringFromClass(CAEmptyRoomViewController)
-        let testVc = NSClassFromString(className) as!UIViewController
-        self.navigationController?.pushViewController(testVc, animated: true)
+        let functionsArray = self.collections[indexPath.section].functions as! [CAFunction]
+        let function = functionsArray[indexPath.item]
+        let destvc_name = function.destvc_name!
+        if (destvc_name.length>0) {
+            let className = String.init(format: "CampusAssistant.%@", function.destvc_name)
+            let aClass = NSClassFromString(className) as!UIViewController.Type
+            let viewController = aClass.init()
+            self.navigationController?.pushViewController(viewController, animated: true)
+        }else{
+            SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.Black)
+            SVProgressHUD.setMinimumDismissTimeInterval(1.0)
+            SVProgressHUD.showErrorWithStatus("该功能暂未开放！")
+        }
+        
     }
 
 }

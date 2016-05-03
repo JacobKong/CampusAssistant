@@ -12,137 +12,175 @@
 				<string>ic_study_life_check_classes</string>
 				<key>name</key>
 				<string>课程表</string>
+				<key>destvc_name</key>
+				<string>CAClassListViewController</string>
 			</dict>
 			<dict>
 				<key>icon</key>
 				<string>ic_study_life_empty_classroom</string>
 				<key>name</key>
 				<string>空教室</string>
+                <key>destvc_name</key>
+                <string>CAEmptyRoomViewController</string>
 			</dict>
 			<dict>
 				<key>icon</key>
 				<string>ic_study_life_search_grade</string>
 				<key>name</key>
 				<string>成绩单</string>
+                <key>destvc_name</key>
+                <string>CACheckGradesViewController</string>
 			</dict>
 			<dict>
 				<key>icon</key>
 				<string>ic_study_life_test_agenda</string>
 				<key>name</key>
 				<string>考试日程</string>
+                <key>destvc_name</key>
+                <string>CAExamAgendaViewController</string>
 			</dict>
 			<dict>
 				<key>icon</key>
 				<string>ic_study_life_develop_plan</string>
 				<key>name</key>
 				<string>培养计划</string>
+                <key>destvc_name</key>
+                <string>CAFosterPlanViewController</string>
 			</dict>
 			<dict>
 				<key>icon</key>
 				<string>ic_study_life_credit</string>
 				<key>name</key>
 				<string>学分预警</string>
+                <key>destvc_name</key>
+                <string>CACreditWarningViewController</string>
 			</dict>
 		</array>
 	</dict>
-    <dict>
-        <key>function_name</key>
-        <string>图书馆</string>
-        <key>functions</key>
-        <array>
-            <dict>
-                <key>icon</key>
-                <string>ic_library_search</string>
-                <key>name</key>
-                <string>查找图书</string>
-            </dict>
-            <dict>
-                <key>icon</key>
-                <string>ic_library_info</string>
-                <key>name</key>
-                <string>我的信息</string>
-            </dict>
-            <dict>
-                <key>icon</key>
-                <string>ic_library_my_borrowing</string>
-                <key>name</key>
-                <string>我的外借</string>
-            </dict>
-            <dict>
-                <key>icon</key>
-                <string>ic_library_history</string>
-                <key>name</key>
-                <string>借阅历史</string>
-            </dict>
-        </array>
-    </dict>
-    <dict>
-        <key>function_name</key>
-        <string>校园卡</string>
-        <key>functions</key>
-        <array>
-            <dict>
-                <key>icon</key>
-                <string>ic_ecard_info</string>
-                <key>name</key>
-                <string>我的信息</string>
-            </dict>
-            <dict>
-                <key>icon</key>
-                <string>ic_ecard_balance</string>
-                <key>name</key>
-                <string>存款信息</string>
-            </dict>
-            <dict>
-                <key>icon</key>
-                <string>ic_ecard_consumption</string>
-                <key>name</key>
-                <string>消费信息</string>
-            </dict>
-            <dict>
-                <key>icon</key>
-                <string>ic_ecard_report</string>
-                <key>name</key>
-                <string>自助挂失</string>
-            </dict>
-        </array>
-    </dict>
-    <dict>
-        <key>function_name</key>
-        <string>校园服务</string>
-        <key>functions</key>
-        <array>
-            <dict>
-                <key>icon</key>
-                <string>ic_service_cet</string>
-                <key>name</key>
-                <string>四六级</string>
-            </dict>
-            <dict>
-                <key>icon</key>
-                <string>ic_service_delivery</string>
-                <key>name</key>
-                <string>查快递</string>
-            </dict>
-            <dict>
-                <key>icon</key>
-                <string>ic_service_lost</string>
-                <key>name</key>
-                <string>寻失物</string>
-            </dict>
-            <dict>
-                <key>icon</key>
-                <string>ic_service_calendar</string>
-                <key>name</key>
-                <string>看校历</string>
-            </dict>
-            <dict>
-                <key>icon</key>
-                <string>ic_service_map</string>
-                <key>name</key>
-                <string>校园地图</string>
-            </dict>
-        </array>
-    </dict>
+	<dict>
+		<key>function_name</key>
+		<string>图书馆</string>
+		<key>functions</key>
+		<array>
+			<dict>
+				<key>icon</key>
+				<string>ic_library_search</string>
+				<key>name</key>
+				<string>查找图书</string>
+                <key>destvc_name</key>
+                <string></string>
+			</dict>
+			<dict>
+				<key>icon</key>
+				<string>ic_library_info</string>
+				<key>name</key>
+				<string>我的信息</string>
+                <key>destvc_name</key>
+                <string></string>
+			</dict>
+			<dict>
+				<key>icon</key>
+				<string>ic_library_my_borrowing</string>
+				<key>name</key>
+				<string>我的外借</string>
+                <key>destvc_name</key>
+                <string></string>
+			</dict>
+			<dict>
+				<key>icon</key>
+				<string>ic_library_history</string>
+				<key>name</key>
+				<string>借阅历史</string>
+                <key>destvc_name</key>
+                <string></string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>function_name</key>
+		<string>校园卡</string>
+		<key>functions</key>
+		<array>
+			<dict>
+				<key>icon</key>
+				<string>ic_ecard_info</string>
+				<key>name</key>
+				<string>我的信息</string>
+                <key>destvc_name</key>
+                <string></string>
+			</dict>
+			<dict>
+				<key>icon</key>
+				<string>ic_ecard_balance</string>
+				<key>name</key>
+				<string>存款信息</string>
+                <key>destvc_name</key>
+                <string></string>
+			</dict>
+			<dict>
+				<key>icon</key>
+				<string>ic_ecard_consumption</string>
+				<key>name</key>
+				<string>消费信息</string>
+                <key>destvc_name</key>
+                <string></string>
+			</dict>
+			<dict>
+				<key>icon</key>
+				<string>ic_ecard_report</string>
+				<key>name</key>
+				<string>自助挂失</string>
+                <key>destvc_name</key>
+                <string></string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>function_name</key>
+		<string>校园服务</string>
+		<key>functions</key>
+		<array>
+			<dict>
+				<key>icon</key>
+				<string>ic_service_cet</string>
+				<key>name</key>
+				<string>四六级</string>
+                <key>destvc_name</key>
+                <string></string>
+			</dict>
+			<dict>
+				<key>icon</key>
+				<string>ic_service_delivery</string>
+				<key>name</key>
+				<string>查快递</string>
+                <key>destvc_name</key>
+                <string></string>
+			</dict>
+			<dict>
+				<key>icon</key>
+				<string>ic_service_lost</string>
+				<key>name</key>
+				<string>寻失物</string>
+                <key>destvc_name</key>
+                <string></string>
+			</dict>
+			<dict>
+				<key>icon</key>
+				<string>ic_service_calendar</string>
+				<key>name</key>
+				<string>看校历</string>
+                <key>destvc_name</key>
+                <string></string>
+			</dict>
+			<dict>
+				<key>icon</key>
+				<string>ic_service_map</string>
+				<key>name</key>
+				<string>校园地图</string>
+                <key>destvc_name</key>
+                <string></string>
+			</dict>
+		</array>
+	</dict>
 </array>
 </plist>

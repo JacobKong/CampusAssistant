@@ -4,6 +4,7 @@ PODS:
   - MJExtension (3.0.10)
   - MSCollectionViewCalendarLayout (0.1.5)
   - Spring (1.0.3)
+  - SVProgressHUD (2.0.3)
   - SwiftyJSON (2.3.2)
   - TPKeyboardAvoiding (1.2.11)
 
@@ -13,6 +14,7 @@ DEPENDENCIES:
   - MJExtension
   - MSCollectionViewCalendarLayout
   - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift2`)
+  - SVProgressHUD
   - SwiftyJSON
   - TPKeyboardAvoiding
 
@@ -32,9 +34,10 @@ SPEC CHECKSUMS:
   MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
   MSCollectionViewCalendarLayout: 9c52894930d6b712951f18873618fc32c00cd4fa
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   TPKeyboardAvoiding: e5ce146b313de063957bfa75a13f1e9b0ff18ab7
 
-PODFILE CHECKSUM: c4b1bd9484980754b00778c96213e57ddcda9da7
+PODFILE CHECKSUM: cb711598890f514b3282d0b251e06087a6322847
 
 COCOAPODS: 1.0.0.beta.6
