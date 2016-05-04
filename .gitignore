@@ -62,3 +62,7 @@ fastlane/report.xml
 fastlane/screenshots
 
 .DS_Store
+CampusAssistant.xcodeproj/project_BASE_50703.pbxproj
+CampusAssistant.xcodeproj/project_LOCAL_50703.pbxproj
+CampusAssistant.xcodeproj/project_BACKUP_50703.pbxproj
+CampusAssistant.xcodeproj/project_REMOTE_50703.pbxproj
