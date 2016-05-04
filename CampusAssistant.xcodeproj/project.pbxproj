@@ -890,7 +890,6 @@
 				EF377C491C6F919B00B40D20 /* LaunchScreen.storyboard in Resources */,
 				EF2E42231CD8971A00146D4D /* CAProfileHeader.xib in Resources */,
 				ED8BE6FC1CD0BA0500286E4D /* CAGradeCell.xib in Resources */,
-				EF50E7EA1C772A6700A0A5A5 /* CAProfileHeader.xib in Resources */,
 				EF5DF8321C7D75F4003CF533 /* Assets.xcassets in Resources */,
 				EF331FD11C7861D000695A3B /* CAProfileInfoCell.xib in Resources */,
 				EF3D6FEC1C70D09A0051DA24 /* Montserrat-Regular.ttf in Resources */,
