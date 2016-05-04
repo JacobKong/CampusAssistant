@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C35912C857EB21BDF24880F7 /* Pods_CampusAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77B343ACF9B277C71FC6841 /* Pods_CampusAssistant.framework */; };
+		ED8BE6FC1CD0BA0500286E4D /* CAGradeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED8BE6FB1CD0BA0500286E4D /* CAGradeCell.xib */; };
+		ED8BE7021CD0BBD700286E4D /* CAGradeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8BE7011CD0BBD700286E4D /* CAGradeCell.swift */; };
 		EF0C41721C758B820044B9C0 /* collections.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF0C41711C758B820044B9C0 /* collections.plist */; };
 		EF0C41871C75CA5F0044B9C0 /* CACollection.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0C41841C75CA5F0044B9C0 /* CACollection.m */; };
 		EF0C41881C75CA5F0044B9C0 /* CAFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0C41861C75CA5F0044B9C0 /* CAFunction.m */; };
@@ -115,6 +117,8 @@
 		1235F2E648FC303DE461892D /* Pods-CampusAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant.debug.xcconfig"; sourceTree = "<group>"; };
 		1503BEBBEA8DD2D8E11AF8A8 /* Pods-CampusAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusAssistant.release.xcconfig"; path = "Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant.release.xcconfig"; sourceTree = "<group>"; };
 		E77B343ACF9B277C71FC6841 /* Pods_CampusAssistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampusAssistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED8BE6FB1CD0BA0500286E4D /* CAGradeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CAGradeCell.xib; path = GradeCell/CAGradeCell.xib; sourceTree = "<group>"; };
+		ED8BE7011CD0BBD700286E4D /* CAGradeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CAGradeCell.swift; path = GradeCell/CAGradeCell.swift; sourceTree = "<group>"; };
 		EF0C41711C758B820044B9C0 /* collections.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = collections.plist; sourceTree = "<group>"; };
 		EF0C41831C75CA5F0044B9C0 /* CACollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACollection.h; sourceTree = "<group>"; };
 		EF0C41841C75CA5F0044B9C0 /* CACollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACollection.m; sourceTree = "<group>"; };
@@ -288,6 +292,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		ED8BE6FA1CD0B9BA00286E4D /* GradeCell */ = {
+			isa = PBXGroup;
+			children = (
+				ED8BE7011CD0BBD700286E4D /* CAGradeCell.swift */,
+				ED8BE6FB1CD0BA0500286E4D /* CAGradeCell.xib */,
+			);
+			name = GradeCell;
+			sourceTree = "<group>";
+		};
 		EF0C41701C758B820044B9C0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -356,6 +369,7 @@
 			isa = PBXGroup;
 			children = (
 				EF77F42A1CD223BA000CA2F6 /* RoomNameCell */,
+				ED8BE6FA1CD0B9BA00286E4D /* GradeCell */,
 				EF331FC81C7861A200695A3B /* FunctionCell */,
 				EF331FCB1C7861A200695A3B /* ProfileInfoCell */,
 			);
@@ -796,6 +810,7 @@
 				EF377C391C6F919B00B40D20 /* Resources */,
 				F0B24A34BC7F1E158D1DD336 /* 📦 Embed Pods Frameworks */,
 				B159DA94C0E5A76086074A01 /* 📦 Copy Pods Resources */,
+				C7F2BBBD667A4CF9912D87C6 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -874,6 +889,8 @@
 				EF2E42271CD8975A00146D4D /* CAEmptyRoomHeader.xib in Resources */,
 				EF377C491C6F919B00B40D20 /* LaunchScreen.storyboard in Resources */,
 				EF2E42231CD8971A00146D4D /* CAProfileHeader.xib in Resources */,
+				ED8BE6FC1CD0BA0500286E4D /* CAGradeCell.xib in Resources */,
+				EF50E7EA1C772A6700A0A5A5 /* CAProfileHeader.xib in Resources */,
 				EF5DF8321C7D75F4003CF533 /* Assets.xcassets in Resources */,
 				EF331FD11C7861D000695A3B /* CAProfileInfoCell.xib in Resources */,
 				EF3D6FEC1C70D09A0051DA24 /* Montserrat-Regular.ttf in Resources */,
@@ -933,6 +950,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C7F2BBBD667A4CF9912D87C6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F0B24A34BC7F1E158D1DD336 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -957,6 +989,7 @@
 			files = (
 				EF3D6FE21C70647C0051DA24 /* CAProfileViewController.swift in Sources */,
 				EF5809341CB7D4CC00069EA2 /* MGCMonthPlannerBackgroundView.m in Sources */,
+				ED8BE7021CD0BBD700286E4D /* CAGradeCell.swift in Sources */,
 				EF331FCF1C7861C100695A3B /* CAProfileInfoCell.swift in Sources */,
 				EF58092B1CB7D4CC00069EA2 /* MGCDayPlannerView.m in Sources */,
 				EF77F42F1CD22405000CA2F6 /* CARoomNameCell.swift in Sources */,
