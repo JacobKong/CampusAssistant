@@ -40,9 +40,12 @@ class CAProfileViewController: UIViewController {
         self.profileHeader = CAProfileHeader.instanceFromNib() as! CAProfileHeader
 //        self.tableView.backgroundColor = kRGBA(74, g: 144, b: 226, a: 100)
         // 设置tableView的backgroundImage
-        let backImageView = UIImageView.init(frame: self.tableView.frame)
-        backImageView.image = UIImage(named: "profile_bg_image")
-        self.tableView.backgroundView = backImageView
+        let bgView = UIView.init(frame: self.tableView.frame)
+        bgView.backgroundColor = UIColor.whiteColor()
+        let bgColorView = UIView.init(frame:CGRectMake(0, 0, kScreenWidth, kScreenHeight*0.5))
+        bgColorView.backgroundColor = UIColor.caNavigationBarColor()
+        bgView.addSubview(bgColorView)
+        self.tableView.backgroundView = bgView
         
         self.tableView.tableHeaderView = profileHeader
         self.tableView.dataSource = self
@@ -112,6 +115,7 @@ extension CAProfileViewController:UITableViewDataSource, UITableViewDelegate{
         cell.subtitleLabel?.text = self.subtitleArray[indexPath.row]
         cell.iconImageView?.image = UIImage(named:String.init(format: "%@", self.iconImageArray[indexPath.row]))
         cell.contentView.backgroundColor = UIColor.whiteColor()
+        cell.selectionStyle = .None
         return cell
     }
 }

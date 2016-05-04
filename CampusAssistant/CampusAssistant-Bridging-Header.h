@@ -13,3 +13,5 @@
 #import <EventKitUI/EventKitUI.h>
 #import "MGCDayPlannerEKViewController.h"
 #import "NSCalendar+MGCAdditions.h"
+#import "SVProgressHUD/SVIndefiniteAnimatedView.h"
+#import "SVProgressHUD/SVProgressHUD.h"

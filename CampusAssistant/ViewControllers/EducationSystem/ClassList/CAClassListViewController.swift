@@ -21,7 +21,8 @@ import UIKit
 class CAClassListViewController: MGCDayPlannerEKViewController {
 
     let dateFormatter = NSDateFormatter()
-    let currentDateLabel = UILabel()
+    let currentDateLabel =  UILabel()
+//    let currentDateButton = UIButton.init(type: UIButtonType.Custom)
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
@@ -38,10 +39,20 @@ class CAClassListViewController: MGCDayPlannerEKViewController {
     
     private func setupNavigationBar(){
         self.title = "看课表"
-        currentDateLabel.frame = CGRectMake(0, 0, 50, 20)
-        currentDateLabel.text = "2016年4月"
-        self.navigationItem.rightBarButtonItem? = UIBarButtonItem.init(customView: currentDateLabel);
-//        currentDateLabel.text = String.init(format: "", <#T##arguments: CVarArgType...##CVarArgType#>)
+//        let rightBarBtn = currentDateButton
+//        rightBarBtn.setImage(UIImage(named: "navigationbar_side_menu"), forState: .Normal)
+//        rightBarBtn.frame = CGRectMake(0, 0, 22, 22)
+
+        self.dateFormatter.dateFormat = "yyyy.M"
+        let currentMonth = dateFormatter.stringFromDate(NSDate())
+        currentDateLabel.text = currentMonth
+        currentDateLabel.textColor = UIColor.whiteColor()
+        currentDateLabel.font = UIFont.systemFontOfSize(15)
+        currentDateLabel.sizeToFit()
+        let rightBarButton = UIBarButtonItem()
+        rightBarButton.customView = currentDateLabel
+        self.navigationItem.rightBarButtonItem = rightBarButton
+
     }
     private func setupDayPlannerView(){
         self.dateFormatter.calendar = self.calendar
@@ -49,14 +60,21 @@ class CAClassListViewController: MGCDayPlannerEKViewController {
         self.dayPlannerView.backgroundColor = UIColor.whiteColor()
         self.dayPlannerView.backgroundView = UIView()
         self.dayPlannerView.backgroundView.backgroundColor = UIColor.whiteColor()
-        self.dayPlannerView.numberOfVisibleDays = 3
+        self.dayPlannerView.numberOfVisibleDays = 5
         self.dayPlannerView.timeColumnWidth = 50
         self.dayPlannerView.eventIndicatorDotColor = UIColor.caTintColor()
         self.dayPlannerView.hourRange = NSRange.init(location: 7, length: 17)
         self.dayPlannerView.dateFormat = "d eee"
         
     }
-
+    
+    override func dayPlannerView(view: MGCDayPlannerView!, willDisplayDate date: NSDate!) {
+        self.dateFormatter.dateFormat = "yyyy.M"
+        let currentMonth = dateFormatter.stringFromDate(date)
+        print(currentMonth)
+        currentDateLabel.text = currentMonth
+        currentDateLabel.sizeToFit()
+    }
     /*
     // MARK: - Navigation
 

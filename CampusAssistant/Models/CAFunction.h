@@ -11,4 +11,5 @@
 @interface CAFunction : NSObject
 @property (copy, nonatomic) NSString *icon;
 @property (copy, nonatomic) NSString *name;
+@property (copy, nonatomic) NSString *destvc_name;
 @end
