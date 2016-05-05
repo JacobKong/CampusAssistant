@@ -31,7 +31,6 @@ class CACreditWarningViewController: UIViewController {
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
-        self.tableView.separatorInset = UIEdgeInsetsMake(0, 58, 0, 0)
         self.tableView.rowHeight = 82
         self.tableView!.registerNib(CACreditCell.nib(), forCellReuseIdentifier: creditWarningCellIdentifier)
         self.view.addSubview(self.tableView)

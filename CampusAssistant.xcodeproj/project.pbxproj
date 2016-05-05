@@ -52,6 +52,8 @@
 		EF44E8101C7C8BC200ADCC5E /* String+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44E80F1C7C8BC200ADCC5E /* String+CA.swift */; };
 		EF489D581CDB6A400017C32E /* CACreditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF489D571CDB6A400017C32E /* CACreditCell.swift */; };
 		EF489D5A1CDB6A4E0017C32E /* CACreditCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF489D591CDB6A4E0017C32E /* CACreditCell.xib */; };
+		EF489D5E1CDB9B9A0017C32E /* CAFosterPlanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF489D5C1CDB9B9A0017C32E /* CAFosterPlanCell.swift */; };
+		EF489D5F1CDB9B9A0017C32E /* CAFosterPlanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF489D5D1CDB9B9A0017C32E /* CAFosterPlanCell.xib */; };
 		EF4E1DB21C85C23200680EF4 /* CANavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E1DB11C85C23200680EF4 /* CANavigationController.swift */; };
 		EF4E1DBB1C85CFE200680EF4 /* CACheckGradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E1DBA1C85CFE200680EF4 /* CACheckGradesViewController.swift */; };
 		EF4E1DBD1C85CFEE00680EF4 /* CAClassListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E1DBC1C85CFEE00680EF4 /* CAClassListViewController.swift */; };
@@ -96,6 +98,8 @@
 		EF5809451CB7D4CC00069EA2 /* OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = EF58090E1CB7D4CC00069EA2 /* OrderedDictionary.m */; };
 		EF5809461CB7D4CC00069EA2 /* OSCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5809111CB7D4CC00069EA2 /* OSCache.m */; };
 		EF5DF8321C7D75F4003CF533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5DF8311C7D75F4003CF533 /* Assets.xcassets */; };
+		EF656D3E1CDB9E810077FF10 /* CAFosterPlanHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF656D3D1CDB9E810077FF10 /* CAFosterPlanHeader.swift */; };
+		EF656D401CDB9E910077FF10 /* CAFosterPlanHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF656D3F1CDB9E910077FF10 /* CAFosterPlanHeader.xib */; };
 		EF77F42F1CD22405000CA2F6 /* CARoomNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF77F42D1CD22405000CA2F6 /* CARoomNameCell.swift */; };
 		EF77F4301CD22405000CA2F6 /* CARoomNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF77F42E1CD22405000CA2F6 /* CARoomNameCell.xib */; };
 		EFBC489D1C719DE500915AC7 /* CAWeatherSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC489C1C719DE500915AC7 /* CAWeatherSectionView.swift */; };
@@ -174,6 +178,8 @@
 		EF44E80F1C7C8BC200ADCC5E /* String+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+CA.swift"; sourceTree = "<group>"; };
 		EF489D571CDB6A400017C32E /* CACreditCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACreditCell.swift; sourceTree = "<group>"; };
 		EF489D591CDB6A4E0017C32E /* CACreditCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CACreditCell.xib; sourceTree = "<group>"; };
+		EF489D5C1CDB9B9A0017C32E /* CAFosterPlanCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAFosterPlanCell.swift; sourceTree = "<group>"; };
+		EF489D5D1CDB9B9A0017C32E /* CAFosterPlanCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAFosterPlanCell.xib; sourceTree = "<group>"; };
 		EF4E1DB11C85C23200680EF4 /* CANavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CANavigationController.swift; sourceTree = "<group>"; };
 		EF4E1DBA1C85CFE200680EF4 /* CACheckGradesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACheckGradesViewController.swift; sourceTree = "<group>"; };
 		EF4E1DBC1C85CFEE00680EF4 /* CAClassListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAClassListViewController.swift; sourceTree = "<group>"; };
@@ -253,6 +259,8 @@
 		EF5809101CB7D4CC00069EA2 /* OSCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCache.h; sourceTree = "<group>"; };
 		EF5809111CB7D4CC00069EA2 /* OSCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCache.m; sourceTree = "<group>"; };
 		EF5DF8311C7D75F4003CF533 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF656D3D1CDB9E810077FF10 /* CAFosterPlanHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAFosterPlanHeader.swift; sourceTree = "<group>"; };
+		EF656D3F1CDB9E910077FF10 /* CAFosterPlanHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAFosterPlanHeader.xib; sourceTree = "<group>"; };
 		EF77F42D1CD22405000CA2F6 /* CARoomNameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CARoomNameCell.swift; sourceTree = "<group>"; };
 		EF77F42E1CD22405000CA2F6 /* CARoomNameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CARoomNameCell.xib; sourceTree = "<group>"; };
 		EFBC489C1C719DE500915AC7 /* CAWeatherSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAWeatherSectionView.swift; sourceTree = "<group>"; };
@@ -329,6 +337,7 @@
 		EF2E42181CD8971A00146D4D /* Header */ = {
 			isa = PBXGroup;
 			children = (
+				EF489D601CDB9E070017C32E /* FosterPlanHeader */,
 				EF2E42191CD8971A00146D4D /* CollectionTitleHeader */,
 				EF2E421C1CD8971A00146D4D /* EmptyRoomHeader */,
 				EF2E421D1CD8971A00146D4D /* ProfileHeader */,
@@ -385,6 +394,7 @@
 		EF331FC71C7861A200695A3B /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				EF489D5B1CDB9B7B0017C32E /* FosterPlanCell */,
 				EF489D561CDB6A2F0017C32E /* CreditCell */,
 				EF77F42A1CD223BA000CA2F6 /* RoomNameCell */,
 				ED77A2BB1CD8A1F000F43DC1 /* ExamCell */,
@@ -610,6 +620,24 @@
 				EF489D591CDB6A4E0017C32E /* CACreditCell.xib */,
 			);
 			path = CreditCell;
+			sourceTree = "<group>";
+		};
+		EF489D5B1CDB9B7B0017C32E /* FosterPlanCell */ = {
+			isa = PBXGroup;
+			children = (
+				EF489D5C1CDB9B9A0017C32E /* CAFosterPlanCell.swift */,
+				EF489D5D1CDB9B9A0017C32E /* CAFosterPlanCell.xib */,
+			);
+			path = FosterPlanCell;
+			sourceTree = "<group>";
+		};
+		EF489D601CDB9E070017C32E /* FosterPlanHeader */ = {
+			isa = PBXGroup;
+			children = (
+				EF656D3D1CDB9E810077FF10 /* CAFosterPlanHeader.swift */,
+				EF656D3F1CDB9E910077FF10 /* CAFosterPlanHeader.xib */,
+			);
+			path = FosterPlanHeader;
 			sourceTree = "<group>";
 		};
 		EF4E1DB01C85C21400680EF4 /* Navigation */ = {
@@ -920,6 +948,7 @@
 				EF2E42231CD8971A00146D4D /* CAProfileHeader.xib in Resources */,
 				ED8BE6FC1CD0BA0500286E4D /* CAGradeCell.xib in Resources */,
 				EF5DF8321C7D75F4003CF533 /* Assets.xcassets in Resources */,
+				EF489D5F1CDB9B9A0017C32E /* CAFosterPlanCell.xib in Resources */,
 				EF331FD11C7861D000695A3B /* CAProfileInfoCell.xib in Resources */,
 				ED77A2BF1CD8A25D00F43DC1 /* CAExamCell.xib in Resources */,
 				EF3D6FEC1C70D09A0051DA24 /* Montserrat-Regular.ttf in Resources */,
@@ -929,6 +958,7 @@
 				EF44E8071C7BFD1E00ADCC5E /* CAIPWGSectionView.xib in Resources */,
 				EF2E42301CD8DCD500146D4D /* BTNavigationDropdownMenu.bundle in Resources */,
 				EF2E422E1CD8DCD500146D4D /* LICENSE in Resources */,
+				EF656D401CDB9E910077FF10 /* CAFosterPlanHeader.xib in Resources */,
 				EFBC48A71C72FA0400915AC7 /* CAStudyLifeSectionView.xib in Resources */,
 				EF377C441C6F919B00B40D20 /* Main.storyboard in Resources */,
 				EF331FCD1C7861A200695A3B /* CAFunctionCell.xib in Resources */,
@@ -1069,6 +1099,7 @@
 				EF0C41881C75CA5F0044B9C0 /* CAFunction.m in Sources */,
 				EF5809351CB7D4CC00069EA2 /* MGCMonthPlannerEKViewController.m in Sources */,
 				EF5809311CB7D4CC00069EA2 /* MGCEventView.m in Sources */,
+				EF489D5E1CDB9B9A0017C32E /* CAFosterPlanCell.swift in Sources */,
 				EF18DAD31C79694200369F33 /* CARightSlideMenuViewController.swift in Sources */,
 				EF5809261CB7D4CC00069EA2 /* MGCAlignedGeometry.m in Sources */,
 				EF58093C1CB7D4CC00069EA2 /* MGCReusableObjectQueue.m in Sources */,
@@ -1084,6 +1115,7 @@
 				EF5809381CB7D4CC00069EA2 /* MGCMonthPlannerViewController.m in Sources */,
 				EF5809391CB7D4CC00069EA2 /* MGCMonthPlannerViewDayCell.m in Sources */,
 				EF58092C1CB7D4CC00069EA2 /* MGCDayPlannerViewController.m in Sources */,
+				EF656D3E1CDB9E810077FF10 /* CAFosterPlanHeader.swift in Sources */,
 				EF5809321CB7D4CC00069EA2 /* MGCInteractiveEventView.m in Sources */,
 				EF44E80C1C7C5DB300ADCC5E /* UIColor+CA.swift in Sources */,
 				EF44E80A1C7C1FA600ADCC5E /* CALightAlphaTextField.swift in Sources */,
