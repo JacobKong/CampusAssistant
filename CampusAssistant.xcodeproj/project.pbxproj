@@ -866,7 +866,7 @@
 				TargetAttributes = {
 					EF377C3A1C6F919B00B40D20 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = TFZ4X5269Y;
+						DevelopmentTeam = 733C233Y34;
 					};
 					EF377C4E1C6F919B00B40D20 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -904,7 +904,6 @@
 				EF377C491C6F919B00B40D20 /* LaunchScreen.storyboard in Resources */,
 				EF2E42231CD8971A00146D4D /* CAProfileHeader.xib in Resources */,
 				ED8BE6FC1CD0BA0500286E4D /* CAGradeCell.xib in Resources */,
-				EF50E7EA1C772A6700A0A5A5 /* CAProfileHeader.xib in Resources */,
 				EF5DF8321C7D75F4003CF533 /* Assets.xcassets in Resources */,
 				EF331FD11C7861D000695A3B /* CAProfileInfoCell.xib in Resources */,
 				ED77A2BF1CD8A25D00F43DC1 /* CAExamCell.xib in Resources */,
@@ -1218,7 +1217,7 @@
 				INFOPLIST_FILE = CampusAssistant/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-ncode.xii-gmail.com.CampusAssistant";
+				PRODUCT_BUNDLE_IDENTIFIER = "-acob947124563-gmail.com.CampusAssistant";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "CampusAssistant/CampusAssistant-Bridging-Header.h";
@@ -1237,7 +1236,7 @@
 				INFOPLIST_FILE = CampusAssistant/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-ncode.xii-gmail.com.CampusAssistant";
+				PRODUCT_BUNDLE_IDENTIFIER = "-acob947124563-gmail.com.CampusAssistant";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "CampusAssistant/CampusAssistant-Bridging-Header.h";
