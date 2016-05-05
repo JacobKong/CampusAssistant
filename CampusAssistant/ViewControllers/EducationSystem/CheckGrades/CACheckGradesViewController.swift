@@ -31,6 +31,11 @@ class CACheckGradesViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        menuView.animationDuration = 0.1
+        menuView.hide()
+    }
+
     private func initView(){
         initGPALabel()
         initTableView()
