@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C35912C857EB21BDF24880F7 /* Pods_CampusAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77B343ACF9B277C71FC6841 /* Pods_CampusAssistant.framework */; };
+		ED77A2BE1CD8A25D00F43DC1 /* CAExamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED77A2BC1CD8A25D00F43DC1 /* CAExamCell.swift */; };
+		ED77A2BF1CD8A25D00F43DC1 /* CAExamCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED77A2BD1CD8A25D00F43DC1 /* CAExamCell.xib */; };
 		ED8BE6FC1CD0BA0500286E4D /* CAGradeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED8BE6FB1CD0BA0500286E4D /* CAGradeCell.xib */; };
 		ED8BE7021CD0BBD700286E4D /* CAGradeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8BE7011CD0BBD700286E4D /* CAGradeCell.swift */; };
 		EF0C41721C758B820044B9C0 /* collections.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF0C41711C758B820044B9C0 /* collections.plist */; };
@@ -117,6 +119,8 @@
 		1235F2E648FC303DE461892D /* Pods-CampusAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant.debug.xcconfig"; sourceTree = "<group>"; };
 		1503BEBBEA8DD2D8E11AF8A8 /* Pods-CampusAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusAssistant.release.xcconfig"; path = "Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant.release.xcconfig"; sourceTree = "<group>"; };
 		E77B343ACF9B277C71FC6841 /* Pods_CampusAssistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampusAssistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED77A2BC1CD8A25D00F43DC1 /* CAExamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CAExamCell.swift; path = ExamCell/CAExamCell.swift; sourceTree = "<group>"; };
+		ED77A2BD1CD8A25D00F43DC1 /* CAExamCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CAExamCell.xib; path = ExamCell/CAExamCell.xib; sourceTree = "<group>"; };
 		ED8BE6FB1CD0BA0500286E4D /* CAGradeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CAGradeCell.xib; path = GradeCell/CAGradeCell.xib; sourceTree = "<group>"; };
 		ED8BE7011CD0BBD700286E4D /* CAGradeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CAGradeCell.swift; path = GradeCell/CAGradeCell.swift; sourceTree = "<group>"; };
 		EF0C41711C758B820044B9C0 /* collections.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = collections.plist; sourceTree = "<group>"; };
@@ -292,6 +296,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		ED77A2BB1CD8A1F000F43DC1 /* ExamCell */ = {
+			isa = PBXGroup;
+			children = (
+				ED77A2BC1CD8A25D00F43DC1 /* CAExamCell.swift */,
+				ED77A2BD1CD8A25D00F43DC1 /* CAExamCell.xib */,
+			);
+			name = ExamCell;
+			sourceTree = "<group>";
+		};
 		ED8BE6FA1CD0B9BA00286E4D /* GradeCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,6 +382,7 @@
 			isa = PBXGroup;
 			children = (
 				EF77F42A1CD223BA000CA2F6 /* RoomNameCell */,
+				ED77A2BB1CD8A1F000F43DC1 /* ExamCell */,
 				ED8BE6FA1CD0B9BA00286E4D /* GradeCell */,
 				EF331FC81C7861A200695A3B /* FunctionCell */,
 				EF331FCB1C7861A200695A3B /* ProfileInfoCell */,
@@ -892,6 +906,7 @@
 				ED8BE6FC1CD0BA0500286E4D /* CAGradeCell.xib in Resources */,
 				EF5DF8321C7D75F4003CF533 /* Assets.xcassets in Resources */,
 				EF331FD11C7861D000695A3B /* CAProfileInfoCell.xib in Resources */,
+				ED77A2BF1CD8A25D00F43DC1 /* CAExamCell.xib in Resources */,
 				EF3D6FEC1C70D09A0051DA24 /* Montserrat-Regular.ttf in Resources */,
 				EF0C41721C758B820044B9C0 /* collections.plist in Resources */,
 				EFBC48B31C733C3D00915AC7 /* CAAddMoreSectionView.xib in Resources */,
@@ -1015,6 +1030,7 @@
 				EF2E42201CD8971A00146D4D /* CACollectionTitleHeader.swift in Sources */,
 				EF44E8101C7C8BC200ADCC5E /* String+CA.swift in Sources */,
 				EF377C3F1C6F919B00B40D20 /* AppDelegate.swift in Sources */,
+				ED77A2BE1CD8A25D00F43DC1 /* CAExamCell.swift in Sources */,
 				EF5809421CB7D4CC00069EA2 /* MGCYearCalendarView.m in Sources */,
 				EF58092F1CB7D4CC00069EA2 /* MGCEventKitSupport.m in Sources */,
 				EF58092D1CB7D4CC00069EA2 /* MGCEventCell.m in Sources */,
