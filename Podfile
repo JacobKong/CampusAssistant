@@ -11,6 +11,7 @@ def pods
     pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'
     pod 'MSCollectionViewCalendarLayout'
     pod 'SVProgressHUD'
+    pod 'SCLAlertView'
 end
 
 target 'CampusAssistant' do
