@@ -97,6 +97,8 @@ class CACheckGradesViewController: UIViewController {
             print("Did select item at index: \(indexPath)")
             //            self.selectedCellLabel.text = items[indexPath]
         }
+        
+        self.navigationItem.titleView = menuView
     }
 
 
