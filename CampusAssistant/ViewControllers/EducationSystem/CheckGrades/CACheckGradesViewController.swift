@@ -12,6 +12,7 @@ class CACheckGradesViewController: UIViewController {
     var tableView:UITableView!
     var gpaLabel:UILabel!
     let courseArray:[String] = ["课程1","课程2","课程3","课程4","课程5","课程6"]
+    var menuView: BTNavigationDropdownMenu!
     
     private let gradeCellIdentifier = "GradeCell"
 
@@ -22,6 +23,7 @@ class CACheckGradesViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         initView()
+        setupNavigationBarDropDownMenu();
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,6 +31,11 @@ class CACheckGradesViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillDisappear(animated: Bool) {
+        menuView.animationDuration = 0.1
+        menuView.hide()
+    }
+
     private func initView(){
         initGPALabel()
         initTableView()
@@ -78,6 +85,27 @@ class CACheckGradesViewController: UIViewController {
         }
     }
     
+    private func setupNavigationBarDropDownMenu(){
+        let items = ["Most Popular", "Latest", "Trending", "Nearest", "Top Picks","Most Popular", "Latest", "Trending", "Nearest", "Top Picks", "Most Popular", "Latest", "Trending", "Nearest", "Top Picks"]
+        menuView = BTNavigationDropdownMenu(navigationController: self.navigationController, title: "请选择学期", items: items)
+        menuView.cellHeight = 50
+        menuView.cellBackgroundColor = UIColor.caNavigationBarColor()
+        menuView.cellSelectionColor = UIColor.caDarkerNavigationBarColor()
+        menuView.cellTextLabelColor = UIColor.whiteColor()
+        menuView.cellTextLabelFont = UIFont(name: "Montserrat-Regular", size: 17)
+        menuView.cellTextLabelAlignment = .Left // .Center // .Right // .Left
+        menuView.arrowPadding = 15
+        menuView.animationDuration = 0.5
+        menuView.maskBackgroundColor = UIColor.blackColor()
+        menuView.maskBackgroundOpacity = 0.3
+        menuView.didSelectItemAtIndexHandler = {(indexPath: Int) -> () in
+            print("Did select item at index: \(indexPath)")
+            //            self.selectedCellLabel.text = items[indexPath]
+        }
+        
+        self.navigationItem.titleView = menuView
+    }
+
 
     /*
     // MARK: - Navigation
