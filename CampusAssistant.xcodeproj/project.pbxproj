@@ -50,6 +50,8 @@
 		EF44E80A1C7C1FA600ADCC5E /* CALightAlphaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44E8091C7C1FA600ADCC5E /* CALightAlphaTextField.swift */; };
 		EF44E80C1C7C5DB300ADCC5E /* UIColor+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44E80B1C7C5DB300ADCC5E /* UIColor+CA.swift */; };
 		EF44E8101C7C8BC200ADCC5E /* String+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44E80F1C7C8BC200ADCC5E /* String+CA.swift */; };
+		EF489D581CDB6A400017C32E /* CACreditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF489D571CDB6A400017C32E /* CACreditCell.swift */; };
+		EF489D5A1CDB6A4E0017C32E /* CACreditCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF489D591CDB6A4E0017C32E /* CACreditCell.xib */; };
 		EF4E1DB21C85C23200680EF4 /* CANavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E1DB11C85C23200680EF4 /* CANavigationController.swift */; };
 		EF4E1DBB1C85CFE200680EF4 /* CACheckGradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E1DBA1C85CFE200680EF4 /* CACheckGradesViewController.swift */; };
 		EF4E1DBD1C85CFEE00680EF4 /* CAClassListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E1DBC1C85CFEE00680EF4 /* CAClassListViewController.swift */; };
@@ -170,6 +172,8 @@
 		EF44E8091C7C1FA600ADCC5E /* CALightAlphaTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALightAlphaTextField.swift; sourceTree = "<group>"; };
 		EF44E80B1C7C5DB300ADCC5E /* UIColor+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+CA.swift"; sourceTree = "<group>"; };
 		EF44E80F1C7C8BC200ADCC5E /* String+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+CA.swift"; sourceTree = "<group>"; };
+		EF489D571CDB6A400017C32E /* CACreditCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACreditCell.swift; sourceTree = "<group>"; };
+		EF489D591CDB6A4E0017C32E /* CACreditCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CACreditCell.xib; sourceTree = "<group>"; };
 		EF4E1DB11C85C23200680EF4 /* CANavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CANavigationController.swift; sourceTree = "<group>"; };
 		EF4E1DBA1C85CFE200680EF4 /* CACheckGradesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACheckGradesViewController.swift; sourceTree = "<group>"; };
 		EF4E1DBC1C85CFEE00680EF4 /* CAClassListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAClassListViewController.swift; sourceTree = "<group>"; };
@@ -381,6 +385,7 @@
 		EF331FC71C7861A200695A3B /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				EF489D561CDB6A2F0017C32E /* CreditCell */,
 				EF77F42A1CD223BA000CA2F6 /* RoomNameCell */,
 				ED77A2BB1CD8A1F000F43DC1 /* ExamCell */,
 				ED8BE6FA1CD0B9BA00286E4D /* GradeCell */,
@@ -596,6 +601,15 @@
 				EF44E8091C7C1FA600ADCC5E /* CALightAlphaTextField.swift */,
 			);
 			path = TextField;
+			sourceTree = "<group>";
+		};
+		EF489D561CDB6A2F0017C32E /* CreditCell */ = {
+			isa = PBXGroup;
+			children = (
+				EF489D571CDB6A400017C32E /* CACreditCell.swift */,
+				EF489D591CDB6A4E0017C32E /* CACreditCell.xib */,
+			);
+			path = CreditCell;
 			sourceTree = "<group>";
 		};
 		EF4E1DB01C85C21400680EF4 /* Navigation */ = {
@@ -901,6 +915,7 @@
 			files = (
 				EF3D6FEB1C70D09A0051DA24 /* Montserrat-Bold.ttf in Resources */,
 				EF2E42271CD8975A00146D4D /* CAEmptyRoomHeader.xib in Resources */,
+				EF489D5A1CDB6A4E0017C32E /* CACreditCell.xib in Resources */,
 				EF377C491C6F919B00B40D20 /* LaunchScreen.storyboard in Resources */,
 				EF2E42231CD8971A00146D4D /* CAProfileHeader.xib in Resources */,
 				ED8BE6FC1CD0BA0500286E4D /* CAGradeCell.xib in Resources */,
@@ -1028,6 +1043,7 @@
 				EF331FD41C786C6600695A3B /* CAStudentTool.swift in Sources */,
 				EFBC48A51C72F6AF00915AC7 /* CAStudyLifeSectionView.swift in Sources */,
 				EF2E42201CD8971A00146D4D /* CACollectionTitleHeader.swift in Sources */,
+				EF489D581CDB6A400017C32E /* CACreditCell.swift in Sources */,
 				EF44E8101C7C8BC200ADCC5E /* String+CA.swift in Sources */,
 				EF377C3F1C6F919B00B40D20 /* AppDelegate.swift in Sources */,
 				ED77A2BE1CD8A25D00F43DC1 /* CAExamCell.swift in Sources */,

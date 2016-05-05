@@ -260,6 +260,7 @@ public class BTNavigationDropdownMenu: UIView {
         }
         
 //        self.tableView.bounces = false
+        self.tableView.showsVerticalScrollIndicator = false
         
         // Add background view & table view to container view
         self.menuWrapper.addSubview(self.backgroundView)
