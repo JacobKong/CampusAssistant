@@ -26,7 +26,6 @@ class CAHomeViewController: UIViewController {
 
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
 	}
 
 	// 设置navigationBar
@@ -35,7 +34,7 @@ class CAHomeViewController: UIViewController {
 		let rightBarBtn = DesignableButton()
 		rightBarBtn.setImage(UIImage(named: "navigationbar_side_menu"), forState: .Normal)
 		rightBarBtn.frame = CGRectMake(0, 0, 22, 22)
-		rightBarBtn.addTarget(self.revealViewController(), action: Selector("rightRevealToggle:"), forControlEvents: .TouchUpInside)
+        rightBarBtn.addTarget(self.revealViewController(), action: #selector(self.revealViewController().rightRevealToggle), forControlEvents: .TouchUpInside)
 		let rightBarButton = UIBarButtonItem()
 		rightBarButton.customView = rightBarBtn
         self.revealViewController().delegate = self
@@ -99,17 +98,6 @@ extension CAHomeViewController:SWRevealViewControllerDelegate{
         }
         rightBarItemButton.animate()
     }
-    
-//    func revealController(revealController: SWRevealViewController!, willMoveToPosition position: FrontViewPosition) {
-//        let rightBarItemButton = self.navigationItem.rightBarButtonItem?.customView as! DesignableButton
-//        if position == FrontViewPosition.Left{ // 关闭
-//            rightBarItemButton.setImage(UIImage(named: "navigationbar_side_menu"), forState: .Normal)
-//            print("Left")
-//        }else if position == FrontViewPosition.LeftSide{// 开启
-//            rightBarItemButton.setImage(UIImage(named: "navigationbar_cancle"), forState: .Normal)
-//            print("LeftSide")
-//        }
-//    }
     
 }
 

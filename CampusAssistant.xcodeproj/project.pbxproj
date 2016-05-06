@@ -43,8 +43,6 @@
 		EF3DF2721C784A08002276A6 /* CAStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3DF2711C784A08002276A6 /* CAStudent.m */; };
 		EF3DF2741C784F0F002276A6 /* NSData+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3DF2731C784F0F002276A6 /* NSData+CA.swift */; };
 		EF44E7FD1C7AFE0F00ADCC5E /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF44E7FC1C7AFE0F00ADCC5E /* SWRevealViewController.m */; };
-		EF44E8011C7BFCDE00ADCC5E /* CAAccountSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44E8001C7BFCDE00ADCC5E /* CAAccountSectionView.swift */; };
-		EF44E8031C7BFCEE00ADCC5E /* CAAccountSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF44E8021C7BFCEE00ADCC5E /* CAAccountSectionView.xib */; };
 		EF44E8051C7BFD0B00ADCC5E /* CAIPWGSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44E8041C7BFD0B00ADCC5E /* CAIPWGSectionView.swift */; };
 		EF44E8071C7BFD1E00ADCC5E /* CAIPWGSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF44E8061C7BFD1E00ADCC5E /* CAIPWGSectionView.xib */; };
 		EF44E80A1C7C1FA600ADCC5E /* CALightAlphaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44E8091C7C1FA600ADCC5E /* CALightAlphaTextField.swift */; };
@@ -109,6 +107,8 @@
 		EFBC48AA1C73377000915AC7 /* Macro.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC48A91C73377000915AC7 /* Macro.swift */; };
 		EFBC48B11C733C3100915AC7 /* CAAddMoreSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC48B01C733C3100915AC7 /* CAAddMoreSectionView.swift */; };
 		EFBC48B31C733C3D00915AC7 /* CAAddMoreSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFBC48B21C733C3D00915AC7 /* CAAddMoreSectionView.xib */; };
+		EFE736721CDC8B73004CB989 /* CAAccountSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE736701CDC8B73004CB989 /* CAAccountSectionView.swift */; };
+		EFE736731CDC8B73004CB989 /* CAAccountSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE736711CDC8B73004CB989 /* CAAccountSectionView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,8 +169,6 @@
 		EF3DF2731C784F0F002276A6 /* NSData+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+CA.swift"; sourceTree = "<group>"; };
 		EF44E7FB1C7AFE0F00ADCC5E /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		EF44E7FC1C7AFE0F00ADCC5E /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
-		EF44E8001C7BFCDE00ADCC5E /* CAAccountSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAAccountSectionView.swift; sourceTree = "<group>"; };
-		EF44E8021C7BFCEE00ADCC5E /* CAAccountSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAAccountSectionView.xib; sourceTree = "<group>"; };
 		EF44E8041C7BFD0B00ADCC5E /* CAIPWGSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAIPWGSectionView.swift; sourceTree = "<group>"; };
 		EF44E8061C7BFD1E00ADCC5E /* CAIPWGSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAIPWGSectionView.xib; sourceTree = "<group>"; };
 		EF44E8091C7C1FA600ADCC5E /* CALightAlphaTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALightAlphaTextField.swift; sourceTree = "<group>"; };
@@ -270,6 +268,8 @@
 		EFBC48A91C73377000915AC7 /* Macro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macro.swift; sourceTree = "<group>"; };
 		EFBC48B01C733C3100915AC7 /* CAAddMoreSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAAddMoreSectionView.swift; sourceTree = "<group>"; };
 		EFBC48B21C733C3D00915AC7 /* CAAddMoreSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAAddMoreSectionView.xib; sourceTree = "<group>"; };
+		EFE736701CDC8B73004CB989 /* CAAccountSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAAccountSectionView.swift; sourceTree = "<group>"; };
+		EFE736711CDC8B73004CB989 /* CAAccountSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAAccountSectionView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -590,8 +590,8 @@
 		EF44E7FE1C7BFCAF00ADCC5E /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				EF44E8001C7BFCDE00ADCC5E /* CAAccountSectionView.swift */,
-				EF44E8021C7BFCEE00ADCC5E /* CAAccountSectionView.xib */,
+				EFE736701CDC8B73004CB989 /* CAAccountSectionView.swift */,
+				EFE736711CDC8B73004CB989 /* CAAccountSectionView.xib */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -941,6 +941,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFE736731CDC8B73004CB989 /* CAAccountSectionView.xib in Resources */,
 				EF3D6FEB1C70D09A0051DA24 /* Montserrat-Bold.ttf in Resources */,
 				EF2E42271CD8975A00146D4D /* CAEmptyRoomHeader.xib in Resources */,
 				EF489D5A1CDB6A4E0017C32E /* CACreditCell.xib in Resources */,
@@ -963,7 +964,6 @@
 				EF377C441C6F919B00B40D20 /* Main.storyboard in Resources */,
 				EF331FCD1C7861A200695A3B /* CAFunctionCell.xib in Resources */,
 				EF5809251CB7D4CC00069EA2 /* Localizable.strings in Resources */,
-				EF44E8031C7BFCEE00ADCC5E /* CAAccountSectionView.xib in Resources */,
 				EF77F4301CD22405000CA2F6 /* CARoomNameCell.xib in Resources */,
 				EFBC489F1C719DFF00915AC7 /* CAWeatherSectionView.xib in Resources */,
 			);
@@ -1046,6 +1046,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFE736721CDC8B73004CB989 /* CAAccountSectionView.swift in Sources */,
 				EF3D6FE21C70647C0051DA24 /* CAProfileViewController.swift in Sources */,
 				EF5809341CB7D4CC00069EA2 /* MGCMonthPlannerBackgroundView.m in Sources */,
 				ED8BE7021CD0BBD700286E4D /* CAGradeCell.swift in Sources */,
@@ -1064,7 +1065,6 @@
 				EF5809411CB7D4CC00069EA2 /* MGCYearCalendarMonthHeaderView.m in Sources */,
 				EF5809361CB7D4CC00069EA2 /* MGCMonthPlannerHeaderView.m in Sources */,
 				EF5809441CB7D4CC00069EA2 /* NSCalendar+MGCAdditions.m in Sources */,
-				EF44E8011C7BFCDE00ADCC5E /* CAAccountSectionView.swift in Sources */,
 				EF2E42221CD8971A00146D4D /* CAProfileHeader.swift in Sources */,
 				EF2E42251CD8974F00146D4D /* CAEmptyRoomHeader.swift in Sources */,
 				EF4E1DC51C85D0A100680EF4 /* CAFosterPlanViewController.swift in Sources */,
@@ -1288,6 +1288,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "CampusAssistant/CampusAssistant-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};

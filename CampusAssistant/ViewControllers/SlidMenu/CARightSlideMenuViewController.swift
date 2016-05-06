@@ -9,7 +9,7 @@
 
 import UIKit
 import TPKeyboardAvoiding
-
+import SCLAlertView
 class CARightSlideMenuViewController: UIViewController {
     var scrollView : TPKeyboardAvoidingScrollView!
 //    var usernameTextField = CALightAlphaTextField()
@@ -44,12 +44,13 @@ class CARightSlideMenuViewController: UIViewController {
     }
     
     private func setupAccountSection(){
-        let accountSection = CAAccountSectionView.instanceFromNib()
+        let accountSection = CAAccountSectionView.instanceFromNib() as! CAAccountSectionView
         let accountX:CGFloat = 60
         let accountY:CGFloat = 15
         let accountW:CGFloat = kScreenWidth - 60
         let accountH:CGFloat = 190
         accountSection.frame = CGRectMake(accountX, accountY, accountW, accountH)
+        accountSection.delegate = self
         self.scrollView.addSubview(accountSection)
     }
     
@@ -68,13 +69,20 @@ class CARightSlideMenuViewController: UIViewController {
     }
 }
 
-//extension CARightSlideMenuViewController:UITextFieldDelegate{
-//    func textFieldDidBeginEditing(textField: UITextField) {
-//        if textField == self.usernameTextField {
-//            usernameTextField.image = UIImage(named: "icon-mail-active")
-//            emailImageView.animate()
-//        } else {
-//            emailImageView.image = UIImage(named: "icon-mail")
-//        }
-//    }
-//}
+
+extension CARightSlideMenuViewController:CAAccountSectionViewDelegate{
+    func bindDeanAccountButtonDidCliked() {
+        let alertViewResponder: SCLAlertViewResponder = SCLAlertView().showSuccess("Hello World", subTitle: "This is a more descriptive text.")
+        print("binddean")
+    }
+    
+    func bindLibraryAccountButtonDidCliked(){
+        print("bindlibrary")
+        
+    }
+    
+    func bindEcardAccountButtonDidCliked(){
+        print("bindecard")
+        
+    }
+}
