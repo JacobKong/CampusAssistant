@@ -1,5 +1,5 @@
 //
-//  CAHomeViewController.swift
+//  CAHomeViewController.swift/Users/Encode_X/XcodeProjects/CampusAssistant/CampusAssistant/Tools/CARegexTool.swift
 //  CampusAssistant
 //
 //  Created by JacobKong on 16/2/14.
@@ -8,9 +8,11 @@
 
 import UIKit
 import Spring
+import Alamofire
 
 class CAHomeViewController: UIViewController {
     var isOpen = false
+    var input:UITextField!
     
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -22,6 +24,9 @@ class CAHomeViewController: UIViewController {
         setupRevealController()
 //        self.title = "NEU CAMPUS ASSISTANT"
 //        self.title = "NEU Campus Assistant"
+        
+        // 测试 添加登录功能
+        setupTestLogin()
 	}
 
 	override func didReceiveMemoryWarning() {
@@ -76,6 +81,67 @@ class CAHomeViewController: UIViewController {
         let revealController:SWRevealViewController = self.revealViewController()
         self.view.addGestureRecognizer(revealController.panGestureRecognizer())
         revealController.rightViewRevealWidth = kScreenWidth - 60
+    }
+    
+    // 测试 登录功能
+    private func setupTestLogin(){
+        let view:UIImageView = UIImageView.init(frame: CGRectMake(0, 500, kScreenWidth/2, 40))
+        input = UITextField.init(frame: CGRectMake(kScreenWidth/2, 500, kScreenWidth/2, 40))
+        
+        self.hideKeyboardWhenTappedAround()
+        
+        self.view.addSubview(view)
+        self.view.addSubview(input)
+        
+        if let url = NSURL(string: "http://202.118.31.197/ACTIONVALIDATERANDOMPICTURE.APPPROCESS") {
+            if let data = NSData(contentsOfURL: url) {
+                view.image = UIImage(data: data)
+            }
+        }
+    }
+    
+    private func testLogin(){
+        let paras:[String:AnyObject]=[
+            "WebUserNO" : "20134649",
+            "Password" : "950426",
+            "Agnomen" : input.text!
+        ]
+        
+        Alamofire.request(.POST, "http://202.118.31.197/ACTIONLOGON.APPPROCESS?mode=4", parameters: paras).validate().responseString { (response) in
+            switch response.result{
+                case .Success:
+                    print("\(response.result.value)\n")
+                    
+                    let url = NSURL(string: "http://202.118.31.197")
+                    
+                    print("\(NSHTTPCookieStorage.sharedHTTPCookieStorage().cookiesForURL(url!))\n")
+                    
+                    Alamofire.request(.GET, "http://202.118.31.197/ACTIONQUERYSTUDENTSCHEDULEBYSELF.APPPROCESS").validate().responseString { (response) in
+                        switch response.result{
+                        case .Success:
+                            var r_result:[[String]] = CARegexTool.parseCourseTable(response.result.value!)
+                            print("\n")
+                        case .Failure(let error):
+                            print(error)
+                        }
+                        
+                }
+                case .Failure(let error):
+                    print(error)
+            }
+        }
+    }
+    
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
+
+        // 改成按钮
+        testLogin()
     }
     
 }

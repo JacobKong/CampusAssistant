@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69D98655E4D8CE8C090158E1 /* CAGrade.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D984513E26B38002EF8736 /* CAGrade.m */; };
 		C35912C857EB21BDF24880F7 /* Pods_CampusAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77B343ACF9B277C71FC6841 /* Pods_CampusAssistant.framework */; };
+		ED4B25271CE2C7A800891428 /* CARegexTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4B25261CE2C7A800891428 /* CARegexTool.swift */; };
 		ED77A2BE1CD8A25D00F43DC1 /* CAExamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED77A2BC1CD8A25D00F43DC1 /* CAExamCell.swift */; };
 		ED77A2BF1CD8A25D00F43DC1 /* CAExamCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED77A2BD1CD8A25D00F43DC1 /* CAExamCell.xib */; };
 		ED8BE6FC1CD0BA0500286E4D /* CAGradeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED8BE6FB1CD0BA0500286E4D /* CAGradeCell.xib */; };
@@ -118,7 +120,10 @@
 /* Begin PBXFileReference section */
 		1235F2E648FC303DE461892D /* Pods-CampusAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant.debug.xcconfig"; sourceTree = "<group>"; };
 		1503BEBBEA8DD2D8E11AF8A8 /* Pods-CampusAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusAssistant.release.xcconfig"; path = "Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant.release.xcconfig"; sourceTree = "<group>"; };
+		69D9824D5BA22F340AC94276 /* CAGrade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAGrade.h; sourceTree = "<group>"; };
+		69D984513E26B38002EF8736 /* CAGrade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAGrade.m; sourceTree = "<group>"; };
 		E77B343ACF9B277C71FC6841 /* Pods_CampusAssistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampusAssistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED4B25261CE2C7A800891428 /* CARegexTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CARegexTool.swift; sourceTree = "<group>"; };
 		ED77A2BC1CD8A25D00F43DC1 /* CAExamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CAExamCell.swift; path = ExamCell/CAExamCell.swift; sourceTree = "<group>"; };
 		ED77A2BD1CD8A25D00F43DC1 /* CAExamCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CAExamCell.xib; path = ExamCell/CAExamCell.xib; sourceTree = "<group>"; };
 		ED8BE6FB1CD0BA0500286E4D /* CAGradeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CAGradeCell.xib; path = GradeCell/CAGradeCell.xib; sourceTree = "<group>"; };
@@ -412,6 +417,7 @@
 			isa = PBXGroup;
 			children = (
 				EF331FD31C786C6600695A3B /* CAStudentTool.swift */,
+				ED4B25261CE2C7A800891428 /* CARegexTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -497,6 +503,8 @@
 				EF0C41861C75CA5F0044B9C0 /* CAFunction.m */,
 				EF3DF2701C784A08002276A6 /* CAStudent.h */,
 				EF3DF2711C784A08002276A6 /* CAStudent.m */,
+				69D984513E26B38002EF8736 /* CAGrade.m */,
+				69D9824D5BA22F340AC94276 /* CAGrade.h */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -818,12 +826,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF377C581C6F919B00B40D20 /* Build configuration list for PBXNativeTarget "CampusAssistant" */;
 			buildPhases = (
-				89E4B2F18D792F2B377DADEB /* 📦 Check Pods Manifest.lock */,
+				89E4B2F18D792F2B377DADEB /* uD83DuDCE6 Check Pods Manifest.lock */,
 				EF377C371C6F919B00B40D20 /* Sources */,
 				EF377C381C6F919B00B40D20 /* Frameworks */,
 				EF377C391C6F919B00B40D20 /* Resources */,
-				F0B24A34BC7F1E158D1DD336 /* 📦 Embed Pods Frameworks */,
-				B159DA94C0E5A76086074A01 /* 📦 Copy Pods Resources */,
+				F0B24A34BC7F1E158D1DD336 /* uD83DuDCE6 Embed Pods Frameworks */,
+				B159DA94C0E5A76086074A01 /* uD83DuDCE6 Copy Pods Resources */,
 				C7F2BBBD667A4CF9912D87C6 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -934,14 +942,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		89E4B2F18D792F2B377DADEB /* 📦 Check Pods Manifest.lock */ = {
+		89E4B2F18D792F2B377DADEB /* uD83DuDCE6 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "uD83DuDCE6 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -949,14 +957,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		B159DA94C0E5A76086074A01 /* 📦 Copy Pods Resources */ = {
+		B159DA94C0E5A76086074A01 /* uD83DuDCE6 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "uD83DuDCE6 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -979,14 +987,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F0B24A34BC7F1E158D1DD336 /* 📦 Embed Pods Frameworks */ = {
+		F0B24A34BC7F1E158D1DD336 /* uD83DuDCE6 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "uD83DuDCE6 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1026,6 +1034,7 @@
 				EF3D6FE41C7064870051DA24 /* CACollectionsViewController.swift in Sources */,
 				EF3DF2741C784F0F002276A6 /* NSData+CA.swift in Sources */,
 				EF331FD41C786C6600695A3B /* CAStudentTool.swift in Sources */,
+				ED4B25271CE2C7A800891428 /* CARegexTool.swift in Sources */,
 				EFBC48A51C72F6AF00915AC7 /* CAStudyLifeSectionView.swift in Sources */,
 				EF2E42201CD8971A00146D4D /* CACollectionTitleHeader.swift in Sources */,
 				EF44E8101C7C8BC200ADCC5E /* String+CA.swift in Sources */,
@@ -1073,6 +1082,7 @@
 				EF44E80A1C7C1FA600ADCC5E /* CALightAlphaTextField.swift in Sources */,
 				EF0C41871C75CA5F0044B9C0 /* CACollection.m in Sources */,
 				EF58093F1CB7D4CC00069EA2 /* MGCTimeRowsView.m in Sources */,
+				69D98655E4D8CE8C090158E1 /* CAGrade.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
