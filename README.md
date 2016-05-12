@@ -515,7 +515,7 @@ http://202.118.31.197/ACTIONQUERYCLASSROOMUSEBYWEEKDAYSECTION.APPPROCESS?mode=2
 
 POST 需要参数
 
-YearTermNO|WeekdayID|StartSection|EndSection|STORYNO|ClassroomNO
+YearTermNO\*|WeekdayID|StartSection\*|EndSection\*|STORYNO|ClassroomNO\*
 ---|---|---|---|---|---
 学期|星期|开始节|结束节|教学楼|教室
 
@@ -562,7 +562,7 @@ YearTermNO|WeekdayID|StartSection|EndSection|STORYNO|ClassroomNO
 
 ```
 ((?<=color-row">)|(?<=color-rowNext">))[\s\S]+?(?=</tr>) 获取单条上课信息
-(?<=>).*?(?=</td>) 取出单条内数据
+(?<=>).+?(?=</td>) 取出单条内数据
 若单条考试信息首条数据为 &nbsp; 跳过
 若否 将所有&nbsp;删除
 ```
@@ -582,7 +582,7 @@ GET
 
 ```
 ((?<=color-row">)|(?<=color-rowNext">))[\s\S]+?(?=</tr>) 取出单条
-((?<=>)).*?(?=</td>)|(?<=>\n).+?(?=\n.+</a>) 取出单条内数据
+((?<=>)).+?(?=</td>)|(?<=\">\\r\\n).+?(?=\\r\\n.+</a>) 取出单条内数据
 后续处理需要去除空白
 ```
 

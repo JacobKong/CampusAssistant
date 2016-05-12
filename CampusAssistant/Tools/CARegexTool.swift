@@ -72,4 +72,290 @@ class CARegexTool: NSObject {
         
         return r_result
     }
+
+    class func parseGradeTermList(response:String)->[[String]]{
+        var r_result:[[String]] = Array()
+        let r_value:String = response
+        var r_pattern:Regex = Regex("(?<=(<option value=\")).+?((?=\" selected>)|(?=\">))")
+        var r_matches:[MatchResult] = r_pattern.allMatches(r_value)
+
+        for(var i=0;i<r_matches.count;i+=1){
+            r_result.append(Array())
+            r_result[i].append(r_matches[i].matchedString)
+        }
+        
+        r_pattern = Regex("((?<=(\">))|(?<=(selected>))).+?(?=</option>)")
+        r_matches = r_pattern.allMatches(r_value)
+        
+        for(var i=0;i<r_matches.count;i+=1){
+            r_result[i].append(r_matches[i].matchedString)
+        }
+
+        return r_result
+    }
+
+    class func parseGradeTable(response:String)->[[String]]{
+        var r_result:[[String]] = Array()
+        let r_value:String = response
+        var r_pattern:Regex = Regex("(?<=平均学分绩点：).+")
+        var r_matches:[MatchResult] = r_pattern.allMatches(r_value)
+        
+        r_result.append(Array())
+        r_result[0].append(r_matches[0].matchedString)
+        
+        /*\
+            ↑GPA↑
+            ↓表单↓
+        \*/
+        
+        r_pattern = Regex("((?<=color-row\">)|(?<=color-rowNext\">))[\\s\\S]+?(?=</tr>)")
+        r_matches = r_pattern.allMatches(r_value)
+        
+        r_pattern = Regex("((?<=p;)|(?<=r\" nowrap>)).*?(?=</td>)")
+        
+        for(var i=0;i<r_matches.count;i+=1){
+            let t_string = r_matches[i].matchedString
+            var t_matches:[MatchResult] = r_pattern.allMatches(t_string)
+            
+            if(t_matches[0].matchedString=="&nbsp;"){
+                continue
+            }
+            
+            r_result.append(Array())
+            
+            for(var j=0;j<t_matches.count;j+=1){
+                r_result[i+1].append(t_matches[j].matchedString)
+            }
+        }
+
+        return r_result
+    }
+    
+    class func parseExamTable(response:String)->[[String]]{
+        var r_result:[[String]] = Array()
+        let r_value:String = response
+        var r_pattern:Regex = Regex("((?<=color-row\">)|(?<=color-rowNext\">))[\\s\\S]+?(?=</tr>)")
+        var r_matches:[MatchResult] = r_pattern.allMatches(r_value)
+        
+        r_pattern = Regex("(?<=>).*?(?=</td>)")
+        
+        for(var i=0;i<r_matches.count;i+=1){
+            var t_string = r_matches[i].matchedString
+            var t_matches:[MatchResult] = r_pattern.allMatches(t_string)
+            
+            if(t_matches[0].matchedString=="&nbsp;"){
+                continue
+            }
+            
+            r_result.append(Array())
+            
+            for(var j=0;j<t_matches.count;j+=1){
+                t_string = t_matches[j].matchedString
+                t_string.replaceAllMatching("&nbsp;", with: "")
+                
+                r_result[i].append(t_string)
+            }
+        }
+        
+        return r_result
+    }
+    
+    class func parseCreditTable(response:String)->[[String]]{
+        var r_result:[[String]] = Array()
+        let r_value:String = response
+        var r_pattern:Regex = Regex("((?<=color-row\">)|(?<=color-rowNext\">))[\\s\\S]+?(?=</tr>)")
+        var r_matches:[MatchResult] = r_pattern.allMatches(r_value)
+        
+        r_pattern = Regex("((?<=>)).+?(?=</td>)|(?<=\">\\r\\n).+?(?=\\r\\n.+</a>)")
+        
+        for(var i=0;i<r_matches.count;i+=1){
+            var t_string = r_matches[i].matchedString
+            var t_matches:[MatchResult] = r_pattern.allMatches(t_string)
+            
+            r_result.append(Array())
+            
+            for(var j=0;j<t_matches.count;j+=1){
+                t_string = t_matches[j].matchedString
+                t_string.replaceAllMatching("[\\n\\r\\s]", with: "")
+                
+                r_result[i].append(t_string)
+            }
+        }
+        
+        return r_result
+    }
+    
+    class func parseEmptyClassroomTable(response:String)->[[String]]{
+        var r_result:[[String]] = Array()
+        let r_value:String = response
+        var r_pattern:Regex = Regex("((?<=color-row\">)|(?<=color-rowNext\">))[\\s\\S]+?(?=</tr>)")
+        var r_matches:[MatchResult] = r_pattern.allMatches(r_value)
+        
+        r_pattern = Regex("(?<=>).*?(?=</td>)")
+        
+        for(var i=0;i<r_matches.count;i+=1){
+            var t_string = r_matches[i].matchedString
+            var t_matches:[MatchResult] = r_pattern.allMatches(t_string)
+            
+            if(t_matches[0].matchedString=="&nbsp;"){
+                continue
+            }
+            
+            r_result.append(Array())
+            
+            for(var j=0;j<t_matches.count;j+=1){
+                t_string = t_matches[j].matchedString
+                t_string.replaceAllMatching("&nbsp;", with: "")
+                
+                r_result[i].append(t_string)
+            }
+        }
+        
+        return r_result
+    }
+    
+    class func parseEptClsrmTermList(response:String)->[[String]]{
+        var r_result:[[String]] = Array()
+        var r_value:String = response
+        var r_pattern:Regex = Regex("<td.+学年学期</td>[\\s\\S]+?</td>")
+        var r_matches:[MatchResult] = r_pattern.allMatches(r_value)
+        
+        r_value = r_matches[0].matchedString
+        r_pattern = Regex("(?<=<option value=\").+?((?=\">)|(?=\" selected>))")
+        r_matches = r_pattern.allMatches(r_value)
+        
+        for(var i=0;i<r_matches.count;i+=1){
+            r_result.append(Array())
+            r_result[i].append(r_matches[i].matchedString)
+        }
+        
+        r_pattern = Regex("((?<=\\d\" selected>)|(?<=\\d\">)).+?(?=</option>)")
+        r_matches = r_pattern.allMatches(r_value)
+        
+        for(var i=0;i<r_matches.count;i+=1){
+            r_result[i].append(r_matches[i].matchedString)
+        }
+        
+        return r_result
+    }
+    
+    class func parseEptClsrmStoryList(response:String)->[[String]]{
+        var r_result:[[String]] = Array()
+        var r_value:String = response
+        var r_pattern:Regex = Regex("<td.+教.+学.+楼</td>[\\s\\S]+?</td>")
+        var r_matches:[MatchResult] = r_pattern.allMatches(r_value)
+        
+        r_value = r_matches[0].matchedString
+        r_pattern = Regex("(?<=<option value=\").+?((?=\">)|(?=\" selected>))")
+        r_matches = r_pattern.allMatches(r_value)
+        
+        for(var i=0;i<r_matches.count;i+=1){
+            r_result.append(Array())
+            r_result[i].append(r_matches[i].matchedString)
+        }
+        
+        r_pattern = Regex("((?<=\\d\" selected>)|(?<=\\d\">)).+?(?=</option>)")
+        r_matches = r_pattern.allMatches(r_value)
+        
+        for(var i=0;i<r_matches.count;i+=1){
+            r_result[i].append(r_matches[i].matchedString)
+        }
+        
+        return r_result
+    }
+    
+    class func parseEptClsrmClsrmList(response:String)->[[String]]{
+        var r_result:[[String]] = Array()
+        var r_value:String = response
+        var r_pattern:Regex = Regex("<td.+教.+室</td>[\\s\\S]+?</td>")
+        var r_matches:[MatchResult] = r_pattern.allMatches(r_value)
+        
+        r_value = r_matches[0].matchedString
+        r_pattern = Regex("(?<=<option value=\").+?((?=\">)|(?=\" selected>))")
+        r_matches = r_pattern.allMatches(r_value)
+        
+        for(var i=0;i<r_matches.count;i+=1){
+            r_result.append(Array())
+            r_result[i].append(r_matches[i].matchedString)
+        }
+        
+        r_pattern = Regex("((?<=\\d\" selected>)|(?<=\\d\">)).+?(?=</option>)")
+        r_matches = r_pattern.allMatches(r_value)
+        
+        for(var i=0;i<r_matches.count;i+=1){
+            r_result[i].append(r_matches[i].matchedString)
+        }
+        
+        return r_result
+    }
+    
+    class func parsePersonalInfoTable(response:String)->[String]{
+        var r_result:[String] = Array()
+        var r_value:String = response
+        var r_pattern:Regex = Regex("<span class=\"style3\">学号</span></td>[\\s\\S]+?</td>")
+        var r_matches:[MatchResult] = r_pattern.allMatches(r_value)
+        var r_match:String = r_matches[0].matchedString
+        
+        r_pattern = Regex("(?<=&nbsp;)\\d+")
+        r_matches = r_pattern.allMatches(r_match)
+        r_result.append(r_matches[0].matchedString)
+        
+        r_pattern = Regex("<span class=\"style3\">姓名</span></td>[\\s\\S]+?</td>")
+        r_matches = r_pattern.allMatches(r_value)
+        r_match = r_matches[0].matchedString
+        r_pattern = Regex("(?<=&nbsp;).+(?=</td>)")
+        r_matches = r_pattern.allMatches(r_match)
+        r_result.append(r_matches[0].matchedString)
+        
+        r_pattern = Regex("<span class=\"style3\">性别</span></td>[\\s\\S]+?</td>")
+        r_matches = r_pattern.allMatches(r_value)
+        r_match = r_matches[0].matchedString
+        r_pattern = Regex("(?<=&nbsp;).+(?=</td>)")
+        r_matches = r_pattern.allMatches(r_match)
+        r_result.append(r_matches[0].matchedString)
+        
+        r_pattern = Regex("<span class=\"style3\">院系</span></td>[\\s\\S]+?</td>")
+        r_matches = r_pattern.allMatches(r_value)
+        r_match = r_matches[0].matchedString
+        r_pattern = Regex("(?<=&nbsp;).+(?=</td>)")
+        r_matches = r_pattern.allMatches(r_match)
+        r_result.append(r_matches[0].matchedString)
+        
+        r_pattern = Regex("<span class=\"style3\">入学年</span></td>[\\s\\S]+?</td>")
+        r_matches = r_pattern.allMatches(r_value)
+        r_match = r_matches[0].matchedString
+        r_pattern = Regex("(?<=&nbsp;).+(?=</td>)")
+        r_matches = r_pattern.allMatches(r_match)
+        r_result.append(r_matches[0].matchedString)
+        
+        r_pattern = Regex("<span class=\"style3\">专业</span></td>[\\s\\S]+?</td>")
+        r_matches = r_pattern.allMatches(r_value)
+        r_match = r_matches[0].matchedString
+        r_pattern = Regex("(?<=&nbsp;).+(?=</td>)")
+        r_matches = r_pattern.allMatches(r_match)
+        r_result.append(r_matches[0].matchedString)
+        
+        r_pattern = Regex("<span class=\"style3\">年级</span></td>[\\s\\S]+?</td>")
+        r_matches = r_pattern.allMatches(r_value)
+        r_match = r_matches[0].matchedString
+        r_pattern = Regex("(?<=&nbsp;).+(?=</td>)")
+        r_matches = r_pattern.allMatches(r_match)
+        r_result.append(r_matches[0].matchedString)
+        
+        r_pattern = Regex("<span class=\"style3\">班级</span></td>[\\s\\S]+?</td>")
+        r_matches = r_pattern.allMatches(r_value)
+        r_match = r_matches[0].matchedString
+        r_pattern = Regex("(?<=&nbsp;).+(?=</td>)")
+        r_matches = r_pattern.allMatches(r_match)
+        r_result.append(r_matches[0].matchedString)
+        
+        r_pattern = Regex("<span class=\"style3\">培养层次</span></td>[\\s\\S]+?</td>")
+        r_matches = r_pattern.allMatches(r_value)
+        r_match = r_matches[0].matchedString
+        r_pattern = Regex("(?<=&nbsp;).+(?=</td>)")
+        r_matches = r_pattern.allMatches(r_match)
+        r_result.append(r_matches[0].matchedString)
+        
+        return r_result
+    }
 }
