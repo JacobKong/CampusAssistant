@@ -12,6 +12,7 @@ def pods
     pod 'MSCollectionViewCalendarLayout'
     pod 'SVProgressHUD'
     pod "STRegex", "~> 0.3.0"
+    pod 'SCLAlertView'
 end
 
 target 'CampusAssistant' do

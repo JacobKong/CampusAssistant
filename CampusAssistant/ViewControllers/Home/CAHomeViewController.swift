@@ -1,5 +1,5 @@
 //
-//  CAHomeViewController.swift/Users/Encode_X/XcodeProjects/CampusAssistant/CampusAssistant/Tools/CARegexTool.swift
+//  CAHomeViewController.swift
 //  CampusAssistant
 //
 //  Created by JacobKong on 16/2/14.
@@ -111,7 +111,7 @@ class CAHomeViewController: UIViewController {
             (response) in
             switch response.result {
             case .Success:
-                
+
                 // 课程表
 //                Alamofire.request(.GET, "http://202.118.31.197/ACTIONQUERYSTUDENTSCHEDULEBYSELF.APPPROCESS").validate().responseString {
 //                    (response) in
@@ -137,16 +137,16 @@ class CAHomeViewController: UIViewController {
                     case .Success:
                         var r_result: [[String]] = CARegexTool.parseGradeTermList(response.result.value!)
                         r_result = CARegexTool.parseGradeTable(response.result.value!)
-                        
+
                         print(r_result)
                     case .Failure(let error):
                         print(error)
                     }
 
                 }
-                
+
                 // 考试日程
-                
+
 //                Alamofire.request(.GET, "http://202.118.31.197/ACTIONQUERYEXAMTIMETABLEBYSTUDENT.APPPROCESS?mode=2").validate().responseString {
 //                    (response) in
 //                    switch response.result {
@@ -156,11 +156,11 @@ class CAHomeViewController: UIViewController {
 //                    case .Failure(let error):
 //                        print(error)
 //                    }
-//                    
+//
 //                }
-                
+
 //                 学业预警
-//                
+//
 //                Alamofire.request(.GET, "http://202.118.31.197/ACTIONQUERYBASESTUDENTINFO.APPPROCESS?mode=3").validate().responseString {
 //                    (response) in
 //                    switch response.result {
@@ -170,11 +170,11 @@ class CAHomeViewController: UIViewController {
 //                    case .Failure(let error):
 //                        print(error)
 //                    }
-//                    
+//
 //                }
-                
+
                 // 空闲教室
-                
+
 //                let para: [String:AnyObject] = [
 //                    "YearTermNO": "14",                   // todo 以后改为先用GET获取学期列表
 //                    "WeekdayID":"1",
@@ -182,7 +182,7 @@ class CAHomeViewController: UIViewController {
 //                    "EndSection":"12",
 //                    "ClassroomNO":"000107101"             // todo 选定教学楼后获取教室列表
 //                ]
-//                
+//
 //                Alamofire.request(.POST, "http://202.118.31.197/ACTIONQUERYCLASSROOMUSEBYWEEKDAYSECTION.APPPROCESS?mode=2", parameters: para).validate().responseString {
 //                    (response) in
 //                    switch response.result {
@@ -192,11 +192,11 @@ class CAHomeViewController: UIViewController {
 //                    case .Failure(let error):
 //                        print(error)
 //                    }
-//                    
+//
 //                }
-                
+
                 // 空闲教室相关参数变量获取
-                
+
 //                let par: [String:AnyObject] = [
 //                    "YearTermNO": "14",                   // todo 以后改为先用GET获取学期列表
 //                    "WeekdayID":"1",
@@ -205,7 +205,7 @@ class CAHomeViewController: UIViewController {
 //                    "STORYNO":"0001",                     // todo 选定教室刷新
 //                    "ClassroomNO":"000107101"             // todo 选定教学楼后获取教室列表
 //                ]
-//                
+//
 //                Alamofire.request(.POST, "http://202.118.31.197/ACTIONQUERYCLASSROOMNOUSE.APPPROCESS", parameters: par).validate().responseString {
 //                    (response) in
 //                    switch response.result {
@@ -217,11 +217,11 @@ class CAHomeViewController: UIViewController {
 //                    case .Failure(let error):
 //                        print(error)
 //                    }
-//                    
+//
 //                }
-                
+
                 // 个人信息
-                
+
 //                Alamofire.request(.GET, "http://202.118.31.197/ACTIONFINDSTUDENTINFO.APPPROCESS?mode=1&showMsg=").validate().responseString {
 //                    (response) in
 //                    switch response.result {
@@ -231,14 +231,14 @@ class CAHomeViewController: UIViewController {
 //                    case .Failure(let error):
 //                        print(error)
 //                    }
-//                    
+//
 //                }
             case .Failure(let error):
                 print(error)
             }
         }
     }
-    
+
     // 此处设定了弹出键盘时点击别处收起键盘
 
     func hideKeyboardWhenTappedAround() {
@@ -276,17 +276,6 @@ extension CAHomeViewController: SWRevealViewControllerDelegate {
         }
         rightBarItemButton.animate()
     }
-
-//    func revealController(revealController: SWRevealViewController!, willMoveToPosition position: FrontViewPosition) {
-//        let rightBarItemButton = self.navigationItem.rightBarButtonItem?.customView as! DesignableButton
-//        if position == FrontViewPosition.Left{ // 关闭
-//            rightBarItemButton.setImage(UIImage(named: "navigationbar_side_menu"), forState: .Normal)
-//            print("Left")
-//        }else if position == FrontViewPosition.LeftSide{// 开启
-//            rightBarItemButton.setImage(UIImage(named: "navigationbar_cancle"), forState: .Normal)
-//            print("LeftSide")
-//        }
-//    }
 
 }
 
