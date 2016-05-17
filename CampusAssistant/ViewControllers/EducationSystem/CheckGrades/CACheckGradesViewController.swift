@@ -12,8 +12,11 @@ import Alamofire
 class CACheckGradesViewController: UIViewController {
     var tableView: UITableView!
     var gpaLabel: UILabel!
-    let courseArray: [String] = ["课程1", "课程2", "课程3", "课程4", "课程5", "课程6"]
+    var courseArray: [[String]] = Array()
     var menuView: BTNavigationDropdownMenu!
+    
+    
+    var semesterList:[[String]] = [["Most Popular"]]
 
     private let gradeCellIdentifier = "GradeCell"
 
@@ -88,8 +91,7 @@ class CACheckGradesViewController: UIViewController {
     }
 
     private func setupNavigationBarDropDownMenu() {
-        let items = ["Most Popular", "Latest", "Trending", "Nearest", "Top Picks", "Most Popular", "Latest", "Trending", "Nearest", "Top Picks", "Most Popular", "Latest", "Trending", "Nearest", "Top Picks"]
-        menuView = BTNavigationDropdownMenu(navigationController: self.navigationController, title: "请选择学期", items: items)
+        menuView = BTNavigationDropdownMenu(navigationController: self.navigationController, title: "请选择学期", items: semesterList)
         menuView.cellHeight = 50
         menuView.cellBackgroundColor = UIColor.caNavigationBarColor()
         menuView.cellSelectionColor = UIColor.caDarkerNavigationBarColor()
@@ -104,6 +106,39 @@ class CACheckGradesViewController: UIViewController {
             (indexPath: Int) -> () in
             print("Did select item at index: \(indexPath)")
             //            self.selectedCellLabel.text = items[indexPath]
+            self.menuView.setMenuTitle(self.semesterList[indexPath][1])
+            
+            let para: [String:AnyObject] = [
+                "YearTermNO": self.semesterList[indexPath][0]
+            ]
+            
+            Alamofire.request(.POST, "http://202.118.31.197/ACTIONQUERYSTUDENTSCORE.APPPROCESS", parameters: para).validate().responseString {
+                (response) in
+                switch response.result {
+                case .Success:
+                    var r_result: [[String]] = CARegexTool.parseGradeTable(response.result.value!)
+                    
+                    self.courseArray.removeAll()
+                    
+                    self.gpaLabel.text = "目前绩点: \(r_result[0][0])"
+                    
+                    for i in 0 ..< r_result.count {
+                        self.courseArray.append(Array())
+                        self.courseArray[i].append(r_result[i+1][2])
+                        self.courseArray[i].append(r_result[i+1][7])
+                        self.courseArray[i].append(r_result[i+1][8])
+                        self.courseArray[i].append(r_result[i+1][9])
+                        self.courseArray[i].append(r_result[i+1][10])
+                    }
+                    
+                    self.tableView.reloadData()
+                    
+                    print(r_result)
+                case .Failure(let error):
+                    print(error)
+                }
+                
+            }
         }
 
         self.navigationItem.titleView = menuView
@@ -111,23 +146,44 @@ class CACheckGradesViewController: UIViewController {
 
     private func setupTermList() {
         print("Setup Data")
-        Alamofire.request(.GET, "http://202.118.31.241:8080/api/v1/termList?token=201602192328181600003301580").validate()
-        .responseString {
-            response in
+//        Alamofire.request(.GET, "http://202.118.31.241:8080/api/v1/termList?token=201602192328181600003301580").validate()
+//        .responseString {
+//            response in
+//            switch response.result {
+//            case .Success:
+//                if let value = response.result.value {
+//                    let data: NSData = value.dataUsingEncoding(NSUTF8StringEncoding)!
+//                    let json = NSData.NSDataToJSON(data)
+//                    let termData = json!["data"] as! [AnyObject]
+////                    print(termData!["termName"] as! [String:AnyObject])
+////                    let studentDictionary = studentArray[0] as! [String:AnyObject]
+////                    let student = CAStudent.mj_objectWithKeyValues(studentDictionary) as CAStudent
+////                    CAStudentTool.saveStudent(self.student)
+//                }
+//            case .Failure(let error):
+//                print(error)
+//            }
+//        }
+        
+        CANetworkTool.setAAOCookies("X6PE7ChMH5Qse23R2HRvQP98u3uUyj8zJ0j7PISoJYU0ugqriXey!1269920556")
+        
+        Alamofire.request(.GET, "http://202.118.31.197/ACTIONQUERYSTUDENTSCORE.APPPROCESS").validate().responseString {
+            (response) in
             switch response.result {
             case .Success:
-                if let value = response.result.value {
-                    let data: NSData = value.dataUsingEncoding(NSUTF8StringEncoding)!
-                    let json = NSData.NSDataToJSON(data)
-                    let termData = json!["data"] as! [AnyObject]
-//                    print(termData!["termName"] as! [String:AnyObject])
-//                    let studentDictionary = studentArray[0] as! [String:AnyObject]
-//                    let student = CAStudent.mj_objectWithKeyValues(studentDictionary) as CAStudent
-//                    CAStudentTool.saveStudent(self.student)
+                let r_result: [[String]] = CARegexTool.parseGradeTermList(response.result.value!)
+                self.semesterList.removeAll()
+                self.menuView.tableView.items.removeAll()
+                for result in r_result{
+                    self.semesterList.append(result)
+                    self.menuView.tableView.items.append(result[1])
                 }
+                self.menuView.tableView.reloadData()
+                print(r_result)
             case .Failure(let error):
                 print(error)
             }
+            
         }
     }
 
@@ -150,13 +206,15 @@ extension CACheckGradesViewController: UITableViewDataSource, UITableViewDelegat
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return self.courseArray.count
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(gradeCellIdentifier, forIndexPath: indexPath) as! CAGradeCell
 
-        cell.titleLabel.text = self.courseArray[indexPath.row]
+        cell.titleLabel.text = self.courseArray[indexPath.row][0]
+        cell.detailLabel.text = "平时: \(self.courseArray[indexPath.row][1]) 期中: \(self.courseArray[indexPath.row][2]) 期末: \(self.courseArray[indexPath.row][3])"
+        cell.scoreLabel.text = self.courseArray[indexPath.row][4]
 
         return cell
     }

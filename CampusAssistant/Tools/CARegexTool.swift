@@ -25,46 +25,46 @@ class CARegexTool: NSObject {
         
         rg = Regex("<td valign=\"top\"(.+?)</td>")
         
-        for(var i=0;i<r_second.count;i+=1){
+        for i in 0..<r_second.count {
             r_set.append(r_second[i].matchedString)
             r_set[i].replaceAllMatching("\\\\", with: "")
             
             let r_m = rg.allMatches(r_set[i])
-            for(var j=0;j<r_m.count;j += 1){
+            for j in 0..<r_m.count {
                 r_third.append(r_m[j].matchedString)
             }
         }
         
-        for(var i=0;i<42;i += 1){
+        for i in 0...41 {
             r_third[i].replaceAllMatching("<td valign=\"top\".+?>|</td>", with: "")
         }
         
         rg = Regex("^.+?节(?=<br>)|(?<=<br>).+?节(?=<br>)|(?<=<br>).+?节$|^.+?节$")
         
-        for(var i=0;i<42;i += 1){
+        for i in 0...41 {
             r_result.append(Array())
             if(r_third[i] == "&nbsp;"){
                 continue
             }
             
             r_second = rg.allMatches(r_third[i])
-            for(var j=0;j<r_second.count;j += 1){
+            for j in 0 ..< r_second.count {
                 r_result[i].append(r_second[j].matchedString)
             }
         }
         
         rg = Regex("^.+?(?=<br>)|(?<=<br>).+?(?=<br>)|(?<=<br>).+?$")
         
-        for(var i=0;i<42;i++){
+        for i in 0...41 {
             if(r_result[i].count==0){
                 continue
             }
             
             let c = r_result[i].count
-            for(var j=0;j<c;j++){
+            for _ in 0..<c{
                 r_second = rg.allMatches(r_result[i][0])
-                for(var k=0;k<r_second.count;k++){
-                    r_result[i].append(r_second[k].matchedString)
+                for j in 0..<r_second.count {
+                    r_result[i].append(r_second[j].matchedString)
                 }
                 r_result[i].removeFirst()
             }
@@ -79,7 +79,7 @@ class CARegexTool: NSObject {
         var r_pattern:Regex = Regex("(?<=(<option value=\")).+?((?=\" selected>)|(?=\">))")
         var r_matches:[MatchResult] = r_pattern.allMatches(r_value)
 
-        for(var i=0;i<r_matches.count;i+=1){
+        for i in 0..<r_matches.count {
             r_result.append(Array())
             r_result[i].append(r_matches[i].matchedString)
         }
@@ -87,7 +87,7 @@ class CARegexTool: NSObject {
         r_pattern = Regex("((?<=(\">))|(?<=(selected>))).+?(?=</option>)")
         r_matches = r_pattern.allMatches(r_value)
         
-        for(var i=0;i<r_matches.count;i+=1){
+        for i in 0..<r_matches.count {
             r_result[i].append(r_matches[i].matchedString)
         }
 
@@ -113,17 +113,17 @@ class CARegexTool: NSObject {
         
         r_pattern = Regex("((?<=p;)|(?<=r\" nowrap>)).*?(?=</td>)")
         
-        for(var i=0;i<r_matches.count;i+=1){
+        for i in 0..<r_matches.count {
             let t_string = r_matches[i].matchedString
             var t_matches:[MatchResult] = r_pattern.allMatches(t_string)
             
-            if(t_matches[0].matchedString=="&nbsp;"){
+            if(t_matches[0].matchedString=="&nbsp;" || t_matches[0].matchedString==""){
                 continue
             }
             
             r_result.append(Array())
             
-            for(var j=0;j<t_matches.count;j+=1){
+            for j in 0..<t_matches.count {
                 r_result[i+1].append(t_matches[j].matchedString)
             }
         }
@@ -139,7 +139,7 @@ class CARegexTool: NSObject {
         
         r_pattern = Regex("(?<=>).*?(?=</td>)")
         
-        for(var i=0;i<r_matches.count;i+=1){
+        for i in 0..<r_matches.count {
             var t_string = r_matches[i].matchedString
             var t_matches:[MatchResult] = r_pattern.allMatches(t_string)
             
@@ -149,7 +149,7 @@ class CARegexTool: NSObject {
             
             r_result.append(Array())
             
-            for(var j=0;j<t_matches.count;j+=1){
+            for j in 0..<t_matches.count {
                 t_string = t_matches[j].matchedString
                 t_string.replaceAllMatching("&nbsp;", with: "")
                 
@@ -168,13 +168,13 @@ class CARegexTool: NSObject {
         
         r_pattern = Regex("((?<=>)).+?(?=</td>)|(?<=\">\\r\\n).+?(?=\\r\\n.+</a>)")
         
-        for(var i=0;i<r_matches.count;i+=1){
+        for i in 0..<r_matches.count {
             var t_string = r_matches[i].matchedString
             var t_matches:[MatchResult] = r_pattern.allMatches(t_string)
             
             r_result.append(Array())
             
-            for(var j=0;j<t_matches.count;j+=1){
+            for j in 0..<t_matches.count {
                 t_string = t_matches[j].matchedString
                 t_string.replaceAllMatching("[\\n\\r\\s]", with: "")
                 
@@ -193,7 +193,7 @@ class CARegexTool: NSObject {
         
         r_pattern = Regex("(?<=>).*?(?=</td>)")
         
-        for(var i=0;i<r_matches.count;i+=1){
+        for i in 0..<r_matches.count {
             var t_string = r_matches[i].matchedString
             var t_matches:[MatchResult] = r_pattern.allMatches(t_string)
             
@@ -203,7 +203,7 @@ class CARegexTool: NSObject {
             
             r_result.append(Array())
             
-            for(var j=0;j<t_matches.count;j+=1){
+            for j in 0..<t_matches.count {
                 t_string = t_matches[j].matchedString
                 t_string.replaceAllMatching("&nbsp;", with: "")
                 
@@ -224,7 +224,7 @@ class CARegexTool: NSObject {
         r_pattern = Regex("(?<=<option value=\").+?((?=\">)|(?=\" selected>))")
         r_matches = r_pattern.allMatches(r_value)
         
-        for(var i=0;i<r_matches.count;i+=1){
+        for i in 0..<r_matches.count {
             r_result.append(Array())
             r_result[i].append(r_matches[i].matchedString)
         }
@@ -232,7 +232,7 @@ class CARegexTool: NSObject {
         r_pattern = Regex("((?<=\\d\" selected>)|(?<=\\d\">)).+?(?=</option>)")
         r_matches = r_pattern.allMatches(r_value)
         
-        for(var i=0;i<r_matches.count;i+=1){
+        for i in 0..<r_matches.count {
             r_result[i].append(r_matches[i].matchedString)
         }
         
@@ -249,7 +249,7 @@ class CARegexTool: NSObject {
         r_pattern = Regex("(?<=<option value=\").+?((?=\">)|(?=\" selected>))")
         r_matches = r_pattern.allMatches(r_value)
         
-        for(var i=0;i<r_matches.count;i+=1){
+        for i in 0..<r_matches.count {
             r_result.append(Array())
             r_result[i].append(r_matches[i].matchedString)
         }
@@ -257,7 +257,7 @@ class CARegexTool: NSObject {
         r_pattern = Regex("((?<=\\d\" selected>)|(?<=\\d\">)).+?(?=</option>)")
         r_matches = r_pattern.allMatches(r_value)
         
-        for(var i=0;i<r_matches.count;i+=1){
+        for i in 0..<r_matches.count {
             r_result[i].append(r_matches[i].matchedString)
         }
         
@@ -274,7 +274,7 @@ class CARegexTool: NSObject {
         r_pattern = Regex("(?<=<option value=\").+?((?=\">)|(?=\" selected>))")
         r_matches = r_pattern.allMatches(r_value)
         
-        for(var i=0;i<r_matches.count;i+=1){
+        for i in 0..<r_matches.count {
             r_result.append(Array())
             r_result[i].append(r_matches[i].matchedString)
         }
@@ -282,7 +282,7 @@ class CARegexTool: NSObject {
         r_pattern = Regex("((?<=\\d\" selected>)|(?<=\\d\">)).+?(?=</option>)")
         r_matches = r_pattern.allMatches(r_value)
         
-        for(var i=0;i<r_matches.count;i+=1){
+        for i in 0..<r_matches.count {
             r_result[i].append(r_matches[i].matchedString)
         }
         
@@ -291,7 +291,7 @@ class CARegexTool: NSObject {
     
     class func parsePersonalInfoTable(response:String)->[String]{
         var r_result:[String] = Array()
-        var r_value:String = response
+        let r_value:String = response
         var r_pattern:Regex = Regex("<span class=\"style3\">学号</span></td>[\\s\\S]+?</td>")
         var r_matches:[MatchResult] = r_pattern.allMatches(r_value)
         var r_match:String = r_matches[0].matchedString

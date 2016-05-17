@@ -26,7 +26,7 @@ class CAHomeViewController: UIViewController {
 //        self.title = "NEU Campus Assistant"
 
         // 测试 添加登录功能
-        setupTestLogin()
+//        setupTestLogin()
     }
 
     override func didReceiveMemoryWarning() {
@@ -111,6 +111,7 @@ class CAHomeViewController: UIViewController {
             (response) in
             switch response.result {
             case .Success:
+                
                 // 课程表
 //                Alamofire.request(.GET, "http://202.118.31.197/ACTIONQUERYSTUDENTSCHEDULEBYSELF.APPPROCESS").validate().responseString {
 //                    (response) in
@@ -126,22 +127,23 @@ class CAHomeViewController: UIViewController {
 
                 // 成绩
 
-//                let para: [String:AnyObject] = [
-//                    "YearTermNO": "13"                   // todo 以后改为先用GET获取学期列表
-//                ]
-//
-//                Alamofire.request(.POST, "http://202.118.31.197/ACTIONQUERYSTUDENTSCORE.APPPROCESS", parameters: para).validate().responseString {
-//                    (response) in
-//                    switch response.result {
-//                    case .Success:
-//                        var r_result: [[String]] = CARegexTool.parseGradeTermList(response.result.value!)
-//                        r_result = CARegexTool.parseGradeTable(response.result.value!)
-//                        print("\n")
-//                    case .Failure(let error):
-//                        print(error)
-//                    }
-//
-//                }
+                let para: [String:AnyObject] = [
+                    "YearTermNO": "13"                   // todo 以后改为先用GET获取学期列表
+                ]
+
+                Alamofire.request(.POST, "http://202.118.31.197/ACTIONQUERYSTUDENTSCORE.APPPROCESS", parameters: para).validate().responseString {
+                    (response) in
+                    switch response.result {
+                    case .Success:
+                        var r_result: [[String]] = CARegexTool.parseGradeTermList(response.result.value!)
+                        r_result = CARegexTool.parseGradeTable(response.result.value!)
+                        
+                        print(r_result)
+                    case .Failure(let error):
+                        print(error)
+                    }
+
+                }
                 
                 // 考试日程
                 
@@ -220,22 +222,24 @@ class CAHomeViewController: UIViewController {
                 
                 // 个人信息
                 
-                Alamofire.request(.GET, "http://202.118.31.197/ACTIONFINDSTUDENTINFO.APPPROCESS?mode=1&showMsg=").validate().responseString {
-                    (response) in
-                    switch response.result {
-                    case .Success:
-                        var r_result: [String] = CARegexTool.parsePersonalInfoTable(response.result.value!)
-                        print("\n")
-                    case .Failure(let error):
-                        print(error)
-                    }
-                    
-                }
+//                Alamofire.request(.GET, "http://202.118.31.197/ACTIONFINDSTUDENTINFO.APPPROCESS?mode=1&showMsg=").validate().responseString {
+//                    (response) in
+//                    switch response.result {
+//                    case .Success:
+//                        var r_result: [String] = CARegexTool.parsePersonalInfoTable(response.result.value!)
+//                        print("\n")
+//                    case .Failure(let error):
+//                        print(error)
+//                    }
+//                    
+//                }
             case .Failure(let error):
                 print(error)
             }
         }
     }
+    
+    // 此处设定了弹出键盘时点击别处收起键盘
 
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")

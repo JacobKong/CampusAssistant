@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		69D98655E4D8CE8C090158E1 /* CAGrade.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D984513E26B38002EF8736 /* CAGrade.m */; };
 		C35912C857EB21BDF24880F7 /* Pods_CampusAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77B343ACF9B277C71FC6841 /* Pods_CampusAssistant.framework */; };
+		ED4A363F1CEB2F610032014F /* CANetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4A363E1CEB2F610032014F /* CANetworkTool.swift */; };
 		ED4B25271CE2C7A800891428 /* CARegexTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4B25261CE2C7A800891428 /* CARegexTool.swift */; };
 		ED77A2BE1CD8A25D00F43DC1 /* CAExamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED77A2BC1CD8A25D00F43DC1 /* CAExamCell.swift */; };
 		ED77A2BF1CD8A25D00F43DC1 /* CAExamCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED77A2BD1CD8A25D00F43DC1 /* CAExamCell.xib */; };
@@ -123,6 +124,7 @@
 		69D9824D5BA22F340AC94276 /* CAGrade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAGrade.h; sourceTree = "<group>"; };
 		69D984513E26B38002EF8736 /* CAGrade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAGrade.m; sourceTree = "<group>"; };
 		E77B343ACF9B277C71FC6841 /* Pods_CampusAssistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampusAssistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED4A363E1CEB2F610032014F /* CANetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CANetworkTool.swift; sourceTree = "<group>"; };
 		ED4B25261CE2C7A800891428 /* CARegexTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CARegexTool.swift; sourceTree = "<group>"; };
 		ED77A2BC1CD8A25D00F43DC1 /* CAExamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CAExamCell.swift; path = ExamCell/CAExamCell.swift; sourceTree = "<group>"; };
 		ED77A2BD1CD8A25D00F43DC1 /* CAExamCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CAExamCell.xib; path = ExamCell/CAExamCell.xib; sourceTree = "<group>"; };
@@ -418,6 +420,7 @@
 			children = (
 				EF331FD31C786C6600695A3B /* CAStudentTool.swift */,
 				ED4B25261CE2C7A800891428 /* CARegexTool.swift */,
+				ED4A363E1CEB2F610032014F /* CANetworkTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -1068,6 +1071,7 @@
 				EF5809451CB7D4CC00069EA2 /* OrderedDictionary.m in Sources */,
 				EF4E1DBF1C85D07C00680EF4 /* CACreditWarningViewController.swift in Sources */,
 				EF2E422F1CD8DCD500146D4D /* README.md in Sources */,
+				ED4A363F1CEB2F610032014F /* CANetworkTool.swift in Sources */,
 				EF44E7FD1C7AFE0F00ADCC5E /* SWRevealViewController.m in Sources */,
 				EF58093B1CB7D4CC00069EA2 /* MGCMonthPlannerWeekView.m in Sources */,
 				EF5809461CB7D4CC00069EA2 /* OSCache.m in Sources */,
