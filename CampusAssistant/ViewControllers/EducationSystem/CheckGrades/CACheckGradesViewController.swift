@@ -122,7 +122,7 @@ class CACheckGradesViewController: UIViewController {
                     
                     self.gpaLabel.text = "目前绩点: \(r_result[0][0])"
                     
-                    for i in 0 ..< r_result.count {
+                    for i in 0 ..< r_result.count-1 {
                         self.courseArray.append(Array())
                         self.courseArray[i].append(r_result[i+1][2])
                         self.courseArray[i].append(r_result[i+1][7])
