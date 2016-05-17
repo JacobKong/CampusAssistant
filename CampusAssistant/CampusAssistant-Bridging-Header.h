@@ -15,3 +15,5 @@
 #import "NSCalendar+MGCAdditions.h"
 #import "SVProgressHUD/SVIndefiniteAnimatedView.h"
 #import "SVProgressHUD/SVProgressHUD.h"
+#import "CustomIOSAlertView/CustomIOSAlertView.h"
+

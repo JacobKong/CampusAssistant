@@ -9,9 +9,13 @@
 
 import UIKit
 import TPKeyboardAvoiding
-import SCLAlertView
+import CustomIOSAlertView
+
 class CARightSlideMenuViewController: UIViewController {
+    var studentNoTextField:UITextField!
+    var passwordtextField:UITextField!
     var scrollView : TPKeyboardAvoidingScrollView!
+    var alertView : CustomIOSAlertView!
 //    var usernameTextField = CALightAlphaTextField()
 //    var passwordTextField = CALightAlphaTextField()
     override func viewDidLoad() {
@@ -72,8 +76,15 @@ class CARightSlideMenuViewController: UIViewController {
 
 extension CARightSlideMenuViewController:CAAccountSectionViewDelegate{
     func bindDeanAccountButtonDidCliked() {
-        let alertViewResponder: SCLAlertViewResponder = SCLAlertView().showSuccess("Hello World", subTitle: "This is a more descriptive text.")
-        print("binddean")
+        alertView = CustomIOSAlertView.init(parentView: self.view.window)
+        let loginAlertView = CALoginAlertView.instanceFromNib()
+        loginAlertView.frame = CGRectMake(0, 0, 290, 196)
+        alertView.containerView = loginAlertView
+        alertView.buttonTitles = ["登录", "取消"];
+        alertView.delegate = self
+        alertView.useMotionEffects = true
+        alertView.show()
+        
     }
     
     func bindLibraryAccountButtonDidCliked(){
@@ -84,5 +95,11 @@ extension CARightSlideMenuViewController:CAAccountSectionViewDelegate{
     func bindEcardAccountButtonDidCliked(){
         print("bindecard")
         
+    }
+}
+
+extension CARightSlideMenuViewController:CustomIOSAlertViewDelegate{
+    func customIOS7dialogButtonTouchUpInside(alertView: AnyObject!, clickedButtonAtIndex buttonIndex: Int) {
+        alertView.close()
     }
 }
