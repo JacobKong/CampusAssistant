@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import LCTabBarController
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

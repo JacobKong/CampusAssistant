@@ -71,6 +71,8 @@ class CARightSlideMenuViewController: UIViewController {
 //        self.usernameTextField = IPWGSection.usernameTextField
         self.scrollView.addSubview(IPWGSection)
     }
+    
+
 }
 
 
@@ -78,7 +80,7 @@ extension CARightSlideMenuViewController:CAAccountSectionViewDelegate{
     func bindDeanAccountButtonDidCliked() {
         alertView = CustomIOSAlertView.init(parentView: self.view.window)
         let loginAlertView = CALoginAlertView.instanceFromNib()
-        loginAlertView.frame = CGRectMake(0, 0, 290, 196)
+        loginAlertView.frame = CGRectMake(0, 0, 290, 203)
         alertView.containerView = loginAlertView
         alertView.buttonTitles = ["登录", "取消"];
         alertView.delegate = self
@@ -100,6 +102,10 @@ extension CARightSlideMenuViewController:CAAccountSectionViewDelegate{
 
 extension CARightSlideMenuViewController:CustomIOSAlertViewDelegate{
     func customIOS7dialogButtonTouchUpInside(alertView: AnyObject!, clickedButtonAtIndex buttonIndex: Int) {
-        alertView.close()
+        if buttonIndex==0 {
+            
+        }else{
+            alertView.close()
+        }
     }
 }

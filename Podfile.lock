@@ -1,9 +1,9 @@
 PODS:
   - Alamofire (3.2.0)
   - CustomIOSAlertView (0.9.3)
-  - LCTabBarController (1.2.7)
   - MJExtension (3.0.10)
   - MSCollectionViewCalendarLayout (0.1.5)
+  - SCLAlertView (0.5.1)
   - Spring (1.0.3)
   - STRegex (0.3.1)
   - SVProgressHUD (2.0.3)
@@ -13,9 +13,9 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 3.0)
   - CustomIOSAlertView (~> 0.9.3)
-  - LCTabBarController
   - MJExtension
   - MSCollectionViewCalendarLayout
+  - SCLAlertView
   - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift2`)
   - STRegex (~> 0.3.0)
   - SVProgressHUD
@@ -35,15 +35,15 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: 4da478599fccddff361205c8929333d7fe18dceb
   CustomIOSAlertView: 94d2401e34fcfb0ac0134679d6947f5e251b0446
-  LCTabBarController: 8f65dd64fc3b8d0bfe97cf972145f5840e0b0470
   MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
   MSCollectionViewCalendarLayout: 9c52894930d6b712951f18873618fc32c00cd4fa
+  SCLAlertView: 3ac39a863d3e10fc165662b1228b03402297aea9
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
   STRegex: 4c27ffabad2c8b603f050d28e6c794eb72a13608
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
   TPKeyboardAvoiding: e5ce146b313de063957bfa75a13f1e9b0ff18ab7
 
-PODFILE CHECKSUM: 605e930ec203c6ed815749acc6c857d38aa595d2
+PODFILE CHECKSUM: 3ff9d02e87f15086f4131fd12e4085157691fd2a
 
 COCOAPODS: 1.0.0.beta.6

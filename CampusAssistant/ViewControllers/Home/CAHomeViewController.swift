@@ -40,7 +40,7 @@ class CAHomeViewController: UIViewController {
         let rightBarBtn = DesignableButton()
         rightBarBtn.setImage(UIImage(named: "navigationbar_side_menu"), forState: .Normal)
         rightBarBtn.frame = CGRectMake(0, 0, 22, 22)
-        rightBarBtn.addTarget(self.revealViewController(), action: Selector("rightRevealToggle:"), forControlEvents: .TouchUpInside)
+        rightBarBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.rightRevealToggle(_:)), forControlEvents: .TouchUpInside)
         let rightBarButton = UIBarButtonItem()
         rightBarButton.customView = rightBarBtn
         self.revealViewController().delegate = self
@@ -242,7 +242,7 @@ class CAHomeViewController: UIViewController {
     // 此处设定了弹出键盘时点击别处收起键盘
 
     func hideKeyboardWhenTappedAround() {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(CAHomeViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
     }
 
