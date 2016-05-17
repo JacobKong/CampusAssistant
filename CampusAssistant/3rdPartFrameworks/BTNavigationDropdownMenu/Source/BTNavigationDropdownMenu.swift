@@ -180,8 +180,8 @@ public class BTNavigationDropdownMenu: UIView {
     private var menuTitle: UILabel!
     private var menuArrow: UIImageView!
     private var backgroundView: UIView!
-    private var tableView: BTTableView!
-    private var items: [AnyObject]!
+    var tableView: BTTableView!
+    var items: [AnyObject]!
     private var menuWrapper: UIView!
     
     required public init?(coder aDecoder: NSCoder) {
@@ -254,7 +254,6 @@ public class BTNavigationDropdownMenu: UIView {
         
         self.tableView.selectRowAtIndexPathHandler = { (indexPath: Int) -> () in
             self.didSelectItemAtIndexHandler!(indexPath: indexPath)
-            self.setMenuTitle("\(items[indexPath])")
             self.hideMenu()
             self.layoutSubviews()
         }
@@ -455,7 +454,7 @@ class BTTableView: UITableView, UITableViewDelegate, UITableViewDataSource {
     var selectRowAtIndexPathHandler: ((indexPath: Int) -> ())?
     
     // Private properties
-    private var items: [AnyObject]!
+    var items: [AnyObject]!
     private var selectedIndexPath: Int!
     
     required init?(coder aDecoder: NSCoder) {

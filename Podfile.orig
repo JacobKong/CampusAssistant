@@ -11,9 +11,12 @@ def pods
     pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift2'
     pod 'MSCollectionViewCalendarLayout'
     pod 'SVProgressHUD'
+<<<<<<< HEAD
     pod 'CustomIOSAlertView', '~> 0.9.3'
+=======
     pod "STRegex", "~> 0.3.0"
     pod 'SCLAlertView'
+>>>>>>> origin/Encode.X
 end
 
 target 'CampusAssistant' do

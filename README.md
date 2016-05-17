@@ -390,3 +390,244 @@ http://202.118.31.241:8080/api/v1/schoolRoll
 * etc.
 
 更新时有视觉刷新提示
+
+## 教务系统（网页版）接口
+
+### 登录
+
+需要首先从
+
+http://202.118.31.197/ACTIONVALIDATERANDOMPICTURE.APPPROCESS
+
+获取验证码
+
+#### 接口
+
+http://202.118.31.197/ACTIONLOGON.APPPROCESS?mode=4
+
+POST
+
+#### 参数
+
+WebUserNO 学号
+
+Password 密码
+
+Agnomen 验证码
+
+### 课程表
+
+http://202.118.31.197/ACTIONQUERYSTUDENTSCHEDULEBYSELF.APPPROCESS?m=1
+
+GET
+
+仅需要Cookie
+
+#### 解析方式
+
+```
+首先替换<br style="mso-data-placement:same-cell">为<br>
+
+替换 (<br>)+ 为 <br>
+
+使用 <tr style="height:100px">([\s\S]*?)</tr> 选出每一小节 （一周课表）
+
+使用 <td valign="top".+?</td> 选出每一小节 （每节课程 共42条）
+
+替换 <td valign="top".+?> 为空（删除）
+
+替换 </td> 为空（删除）
+
+使用 ^.+?节(?=<br>)|(?<=<br>).+?节(?=<br>)|(?<=<br>).+?节$|^.+?节$ 取出每节课（一节可能存在复数门课）
+
+使用^.+?(?=<br>)|(?<=<br>).+?(?=<br>)|(?<=<br>).+?$存储各节课信息
+```
+
+### 成绩
+
+http://202.118.31.197/ACTIONQUERYSTUDENTSCORE.APPPROCESS
+
+GET 仅需要Cookie
+
+POST 需要参数 YearTermNO 以指定学期索引
+
+#### HTML解析
+
+##### 学期列表
+
+```
+(?<=(<option value=")).+?((?=" selected>)|(?=">)) 以选出学期索引
+((?<=(">))|(?<=(selected>))).+?(?=</option>) 以选出学期名称
+```
+
+##### 成绩
+
+**数据构成：**
+
+课程性质|课程号|课程名称|考试类型|学时|学分|成绩类型|平时成绩|期中成绩|期末成绩|总成绩
+---|---|---|---|---|---|---|---|---|---|---
+
+```
+GPA：
+(?<=平均学分绩点：).+
+成绩：
+((?<=color-row">)|(?<=color-rowNext">))[\s\S]+?(?=</tr>) 取出单条课程成绩
+((?<=p;)|(?<=r" nowrap>)).*?(?=</td>) 	取出成绩信息（注意：结果中包含空字符串）
+```
+
+### 考试日程
+
+http://202.118.31.197/ACTIONQUERYEXAMTIMETABLEBYSTUDENT.APPPROCESS?mode=2
+
+GET
+
+#### HTML解析
+
+**数据构成**
+
+课程号|课程名|开课模式|考试时间|教学楼|教室|座号|考场
+---|---|---|---|---|---|---|---
+
+```
+((?<=color-row">)|(?<=color-rowNext">))[\s\S]+?(?=</tr>) 取出单条考试
+(?<=>).*?(?=</td>) 取出考试信息
+若单条考试信息首条数据为 &nbsp; 跳过
+替换所有&nbsp;为空
+```
+
+### 教室占用查询
+
+获取各种需要参数
+
+http://202.118.31.197/ACTIONQUERYCLASSROOMNOUSE.APPPROCESS
+
+GET
+
+POST 需要参数 \*为必选 下表相同
+
+YearTermNO\*|WeekdayID|StartSection\*|EndSection\*|STORYNO|ClassroomNO
+---|---|---|---|---|---
+学期|星期|开始节|结束节|教学楼|教室
+
+获取占用信息
+
+http://202.118.31.197/ACTIONQUERYCLASSROOMUSEBYWEEKDAYSECTION.APPPROCESS?mode=2
+
+POST 需要参数
+
+YearTermNO\*|WeekdayID|StartSection\*|EndSection\*|STORYNO|ClassroomNO\*
+---|---|---|---|---|---
+学期|星期|开始节|结束节|教学楼|教室
+
+#### HTML解析
+
+##### 学期列表
+
+```
+<td.+学年学期</td>[\s\S]+?</td> 取出数据块
+((?<=\d" selected>)|(?<=\d">)).+?(?=</option>) 取出学期名称
+(?<=<option value=").+?((?=">)|(?=" selected>)) 取出学期索引
+```
+
+##### 星期
+
+星期一 ~ 星期日 分别为 1~7
+
+##### 节次
+
+节次包含 1~12
+
+##### 教学楼
+
+```
+<td.+教.+学.+楼</td>[\s\S]+?</td> 取出数据块
+((?<=\d" selected>)|(?<=\d">)).+?(?=</option>) 取出教学楼名称
+(?<=<option value=").+?((?=">)|(?=" selected>)) 取出教学楼索引
+```
+
+##### 教室
+
+```
+<td.+教.+室</td>[\s\S]+?</td> 取出数据块
+((?<=\d" selected>)|(?<=\d">)).+?(?=</option>) 取出教室名称
+(?<=<option value=").+?((?=">)|(?=" selected>)) 取出教室索引
+```
+
+##### 上课信息
+
+数据构成
+
+星期|节次|教学楼|教室类型|教室|课程名|教师|上课对象|开课周
+---|---|---|---|---|---|---|---|---
+
+```
+((?<=color-row">)|(?<=color-rowNext">))[\s\S]+?(?=</tr>) 获取单条上课信息
+(?<=>).+?(?=</td>) 取出单条内数据
+若单条考试信息首条数据为 &nbsp; 跳过
+若否 将所有&nbsp;删除
+```
+
+### 学业预警
+
+http://202.118.31.197/ACTIONQUERYBASESTUDENTINFO.APPPROCESS?mode=3
+
+GET
+
+#### HTML解析
+
+数据构成
+
+编号|课群名称|计划学分|已修学分|学分差|不及格学分和
+---|---|---|---|---|---
+
+```
+((?<=color-row">)|(?<=color-rowNext">))[\s\S]+?(?=</tr>) 取出单条
+((?<=>)).+?(?=</td>)|(?<=\">\\r\\n).+?(?=\\r\\n.+</a>) 取出单条内数据
+后续处理需要去除空白
+```
+
+### 个人信息
+
+http://202.118.31.197/ACTIONFINDSTUDENTINFO.APPPROCESS?mode=1&showMsg=
+
+GET
+
+#### HTML解析
+
+```
+学号：
+<span class="style3">学号</span></td>[\s\S]+?</td> 
+(?<=&nbsp;)\d+
+
+姓名：
+<span class="style3">姓名</span></td>[\s\S]+?</td> 
+(?<=&nbsp;).+(?=</td>)
+
+性别：
+<span class="style3">性别</span></td>[\s\S]+?</td> 
+(?<=&nbsp;).+(?=</td>)
+
+院系：
+<span class="style3">院系</span></td>[\s\S]+?</td> 
+(?<=&nbsp;).+(?=</td>)
+
+入学年：
+<span class="style3">入学年</span></td>[\s\S]+?</td> 
+(?<=&nbsp;).+(?=</td>)
+
+专业：
+<span class="style3">专业</span></td>[\s\S]+?</td> 
+(?<=&nbsp;).+(?=</td>)
+
+年级：
+<span class="style3">年级</span></td>[\s\S]+?</td> 
+(?<=&nbsp;).+(?=</td>)
+
+班级：
+<span class="style3">班级</span></td>[\s\S]+?</td> 
+(?<=&nbsp;).+(?=</td>)
+
+培养层次：
+<span class="style3">培养层次</span></td>[\s\S]+?</td> 
+(?<=&nbsp;).+(?=</td>)
+```
