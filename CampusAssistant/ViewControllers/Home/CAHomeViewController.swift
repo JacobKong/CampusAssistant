@@ -88,7 +88,7 @@ class CAHomeViewController: UIViewController {
         let view: UIImageView = UIImageView.init(frame: CGRectMake(0, 500, kScreenWidth / 2, 40))
         input = UITextField.init(frame: CGRectMake(kScreenWidth / 2, 500, kScreenWidth / 2, 40))
 
-        self.hideKeyboardWhenTappedAround()
+//        self.hideKeyboardWhenTappedAround()
 
         self.view.addSubview(view)
         self.view.addSubview(input)
@@ -241,17 +241,17 @@ class CAHomeViewController: UIViewController {
 
     // 此处设定了弹出键盘时点击别处收起键盘
 
-    func hideKeyboardWhenTappedAround() {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
-        view.addGestureRecognizer(tap)
-    }
-
-    func dismissKeyboard() {
-        view.endEditing(true)
-
-        // 改成按钮
-        testLogin()
-    }
+//    func hideKeyboardWhenTappedAround() {
+//        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+//        view.addGestureRecognizer(tap)
+//    }
+//
+//    func dismissKeyboard() {
+//        view.endEditing(true)
+//
+//        // 改成按钮
+//        testLogin()
+//    }
 
 }
 
