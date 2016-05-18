@@ -28,8 +28,23 @@ class CARegexTool: NSObject {
         }else{
             return "学号错误"
         }
-        return "";
     }
+    
+    class func parseCookieExpried(response:String) -> Bool{
+        let r_value:String! = response
+        let r_pattern:Regex = Regex("登录用户不能为空")
+        let r_matches:[MatchResult] = r_pattern.allMatches(r_value)
+        
+        if r_matches.count>0 {
+            return true // 过期
+        }else if r_matches.count==0{
+            return false // 未过期
+        }else{
+            return false
+        }
+        
+    }
+
     
     class func parseCourseTable(response:String) -> [[String]]{
         var r_value:String! = response

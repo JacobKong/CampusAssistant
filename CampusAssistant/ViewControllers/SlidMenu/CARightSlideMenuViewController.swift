@@ -37,6 +37,13 @@ class CARightSlideMenuViewController: UIViewController {
         setupScrollerView()
         setupAccountSection()
         setupIPWGSection()
+        if CADeanAccountTool.isExistAccountData(){
+            self.accountSection.deanBindState.text = "已绑定"
+            self.accountSection.deanBindState.textColor = UIColor.caNavigationBarColor()
+        }else{
+            self.accountSection.deanBindState.text = "未绑定"
+            self.accountSection.deanBindState.textColor = UIColor.whiteColor()
+        }
         // Do any additional setup after loading the view.
     }
 
@@ -124,6 +131,8 @@ extension CARightSlideMenuViewController:CAAccountSectionViewDelegate{
             let deanAccount = CADeanAccountTool.deanAccount()
             self.esusernameTextfield.text = deanAccount.username
             self.espasswordTextfield.text = deanAccount.password
+            self.esusername = self.esusernameTextfield.text
+            self.espassword = self.espasswordTextfield.text
             self.accountSection.deanBindState.text = "已绑定"
             self.accountSection.deanBindState.textColor = UIColor.caNavigationBarColor()
             alertView.buttonTitles = ["登录", "解绑", "取消"];
@@ -166,9 +175,6 @@ extension CARightSlideMenuViewController:CAAccountSectionViewDelegate{
     }
 }
 
-extension CARightSlideMenuViewController:UITextFieldDelegate{
-}
-
 extension CARightSlideMenuViewController:CustomIOSAlertViewDelegate{
     func customIOS7dialogButtonTouchUpInside(alertView: AnyObject!, clickedButtonAtIndex buttonIndex: Int) {
         if buttonIndex==0 {
@@ -195,12 +201,14 @@ extension CARightSlideMenuViewController:CustomIOSAlertViewDelegate{
                             SVProgressHUD.showSuccessMessage(loginResult)
                             self.accountSection.deanBindState.text = "已绑定"
                             self.accountSection.deanBindState.textColor = UIColor.caNavigationBarColor()
+                            let cookieDic = CANetworkTool.getAAOCookies()
+                            let cookie = cookieDic?.value
+                            CANetworkTool.setAAOCookies(cookie!)
                             let deanAccount = CADeanAccount()
                             deanAccount.username = self.esusername
                             deanAccount.password = self.espassword
+                            deanAccount.cookie = cookie
                             CADeanAccountTool.saveAccount(deanAccount)
-                            
-                            let cookie = CANetworkTool.getAAOCookies()
                             print(cookie)
                             alertView.close()
                         }else if loginResult == "请输入正确的附加码"{

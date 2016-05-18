@@ -11,4 +11,5 @@
 @interface CADeanAccount : NSObject
 @property (copy, nonatomic) NSString *username;
 @property (copy, nonatomic) NSString *password;
+@property (copy, nonatomic) NSString *cookie;
 @end
