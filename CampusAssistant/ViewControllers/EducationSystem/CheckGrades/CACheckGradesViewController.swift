@@ -164,7 +164,7 @@ class CACheckGradesViewController: UIViewController {
 //            }
 //        }
         
-        CANetworkTool.setAAOCookies("X6PE7ChMH5Qse23R2HRvQP98u3uUyj8zJ0j7PISoJYU0ugqriXey!1269920556")
+        CANetworkTool.setAAOCookies("X7WZPtqSvgAnzEzwcnjKOUNDtytBK2bHlhcsVWfNhplMU2v3N0Aq!1269920556")
         
         Alamofire.request(.GET, "http://202.118.31.197/ACTIONQUERYSTUDENTSCORE.APPPROCESS").validate().responseString {
             (response) in
@@ -179,6 +179,7 @@ class CACheckGradesViewController: UIViewController {
                 }
                 self.menuView.tableView.reloadData()
                 print(r_result)
+                self.menuView.tableView.tableView(self.menuView.tableView, didSelectRowAtIndexPath: NSIndexPath(forRow: self.termList.count - 1, inSection: 0))
             case .Failure(let error):
                 print(error)
             }

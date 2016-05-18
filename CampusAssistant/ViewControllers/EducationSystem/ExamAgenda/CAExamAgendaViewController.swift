@@ -47,7 +47,7 @@ class CAExamAgendaViewController: UIViewController {
     }
     
     private func setupExamList(){
-        CANetworkTool.setAAOCookies("X7C2EqWL5vvrQVodOUuM2IBSdjywGr9beZ9uqypeEjQNd02rUDDL!1269920556")
+        CANetworkTool.setAAOCookies("X7WZPtqSvgAnzEzwcnjKOUNDtytBK2bHlhcsVWfNhplMU2v3N0Aq!1269920556")
         
         Alamofire.request(.GET, "http://202.118.31.197/ACTIONQUERYEXAMTIMETABLEBYSTUDENT.APPPROCESS?mode=2").validate().responseString {
             (response) in
