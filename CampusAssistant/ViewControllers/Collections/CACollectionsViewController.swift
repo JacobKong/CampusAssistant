@@ -109,9 +109,7 @@ extension CACollectionsViewController:UICollectionViewDataSource, UICollectionVi
             let viewController = aClass.init()
             self.navigationController?.pushViewController(viewController, animated: true)
         }else{
-            SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.Black)
-            SVProgressHUD.setMinimumDismissTimeInterval(1.0)
-            SVProgressHUD.showErrorWithStatus("该功能暂未开放！")
+            SVProgressHUD.showErrorMessage("该功能暂未开放！")
         }
         
     }

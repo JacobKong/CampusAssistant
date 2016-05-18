@@ -110,6 +110,7 @@
 		EF89D4BD1CEB672F00B2458C /* LCTabBarController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EF89D4B61CEB672F00B2458C /* LCTabBarController.bundle */; };
 		EF89D4BE1CEB672F00B2458C /* LCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89D4B81CEB672F00B2458C /* LCTabBarController.m */; };
 		EF89D4BF1CEB672F00B2458C /* LCTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89D4BA1CEB672F00B2458C /* LCTabBarItem.m */; };
+		EF89D4C11CEB807500B2458C /* SVProgressHUD+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89D4C01CEB807500B2458C /* SVProgressHUD+CA.swift */; };
 		EFBC489D1C719DE500915AC7 /* CAWeatherSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC489C1C719DE500915AC7 /* CAWeatherSectionView.swift */; };
 		EFBC489F1C719DFF00915AC7 /* CAWeatherSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFBC489E1C719DFF00915AC7 /* CAWeatherSectionView.xib */; };
 		EFBC48A51C72F6AF00915AC7 /* CAStudyLifeSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC48A41C72F6AF00915AC7 /* CAStudyLifeSectionView.swift */; };
@@ -287,6 +288,7 @@
 		EF89D4B81CEB672F00B2458C /* LCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBarController.m; sourceTree = "<group>"; };
 		EF89D4B91CEB672F00B2458C /* LCTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarItem.h; sourceTree = "<group>"; };
 		EF89D4BA1CEB672F00B2458C /* LCTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBarItem.m; sourceTree = "<group>"; };
+		EF89D4C01CEB807500B2458C /* SVProgressHUD+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SVProgressHUD+CA.swift"; sourceTree = "<group>"; };
 		EFBC489C1C719DE500915AC7 /* CAWeatherSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAWeatherSectionView.swift; sourceTree = "<group>"; };
 		EFBC489E1C719DFF00915AC7 /* CAWeatherSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAWeatherSectionView.xib; sourceTree = "<group>"; };
 		EFBC48A41C72F6AF00915AC7 /* CAStudyLifeSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAStudyLifeSectionView.swift; sourceTree = "<group>"; };
@@ -527,6 +529,7 @@
 				EF50E7F41C77621B00A0A5A5 /* UIImageView+CA.swift */,
 				EF3DF2731C784F0F002276A6 /* NSData+CA.swift */,
 				EF44E80B1C7C5DB300ADCC5E /* UIColor+CA.swift */,
+				EF89D4C01CEB807500B2458C /* SVProgressHUD+CA.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1181,6 +1184,7 @@
 				EF4E1DC31C85D09700680EF4 /* CAExamAgendaViewController.swift in Sources */,
 				EF58093A1CB7D4CC00069EA2 /* MGCMonthPlannerViewLayout.m in Sources */,
 				EF5809301CB7D4CC00069EA2 /* MGCEventsRowView.m in Sources */,
+				EF89D4C11CEB807500B2458C /* SVProgressHUD+CA.swift in Sources */,
 				EF4E1DC11C85D08D00680EF4 /* CAEmptyRoomViewController.swift in Sources */,
 				EF5809401CB7D4CC00069EA2 /* MGCYearCalendarMonthCell.m in Sources */,
 				EF0BCE261CEB0B1E007F34FD /* CALoginAlertView.swift in Sources */,

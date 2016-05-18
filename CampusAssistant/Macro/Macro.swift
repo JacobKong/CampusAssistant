@@ -19,6 +19,8 @@ let kScreenHeight = UIScreen.mainScreen().bounds.size.height
 // 屏幕尺寸
 let kScreenBounds = UIScreen.mainScreen().bounds
 
+// 网络错误信息
+let kErrorMessage = "网络连接错误"
 /**
  *   除了一些简单的属性直接用常量表达,更推荐用全局函数来定义替代宏
  */

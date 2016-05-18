@@ -12,7 +12,7 @@ def pods
     pod 'SVProgressHUD'
     pod 'CustomIOSAlertView', '~> 0.9.3'
     pod "STRegex", "~> 0.3.0"
-    pod 'SCLAlertView'
+    pod 'ReactiveCocoa'
 end
 
 target 'CampusAssistant' do

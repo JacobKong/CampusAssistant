@@ -10,12 +10,25 @@
 import UIKit
 import TPKeyboardAvoiding
 import CustomIOSAlertView
+import ReactiveCocoa
+import SVProgressHUD
+import Alamofire
+import Regex
 
 class CARightSlideMenuViewController: UIViewController {
+    var accountSection:CAAccountSectionView!
     var studentNoTextField:UITextField!
     var passwordtextField:UITextField!
     var scrollView : TPKeyboardAvoidingScrollView!
     var alertView : CustomIOSAlertView!
+    var loginAlertView : CALoginAlertView!
+    var esusernameTextfield : UITextField!
+    var espasswordTextfield : UITextField!
+    var esverifycodeTextfield : UITextField!
+    
+    var esusername:String!
+    var espassword:String!
+    var esverigyCode:String!
 //    var usernameTextField = CALightAlphaTextField()
 //    var passwordTextField = CALightAlphaTextField()
     override func viewDidLoad() {
@@ -48,7 +61,7 @@ class CARightSlideMenuViewController: UIViewController {
     }
     
     private func setupAccountSection(){
-        let accountSection = CAAccountSectionView.instanceFromNib() as! CAAccountSectionView
+        accountSection = CAAccountSectionView.instanceFromNib() as! CAAccountSectionView
         let accountX:CGFloat = 60
         let accountY:CGFloat = 15
         let accountW:CGFloat = kScreenWidth - 60
@@ -79,12 +92,50 @@ class CARightSlideMenuViewController: UIViewController {
 extension CARightSlideMenuViewController:CAAccountSectionViewDelegate{
     func bindDeanAccountButtonDidCliked() {
         alertView = CustomIOSAlertView.init(parentView: self.view.window)
-        let loginAlertView = CALoginAlertView.instanceFromNib()
+        loginAlertView = CALoginAlertView.instanceFromNib()
         loginAlertView.frame = CGRectMake(0, 0, 290, 203)
+        self.esusernameTextfield = loginAlertView.usernameTextField
+        self.espasswordTextfield = loginAlertView.passwordTextField
+        self.esverifycodeTextfield = loginAlertView.verifyCodeTextField
+        
+        loginAlertView.usernameTextField.rac_textSignal().subscribeNext {  (next:AnyObject!) -> () in
+            if let text = next as? String {
+                self.esusername = text
+            }
+        }
+        
+        loginAlertView.passwordTextField.rac_textSignal().subscribeNext {  (next:AnyObject!) -> () in
+            if let text = next as? String {
+                self.espassword = text
+            }
+        }
+        
+        loginAlertView.verifyCodeTextField.rac_textSignal().subscribeNext {  (next:AnyObject!) -> () in
+            if let text = next as? String {
+                self.esverigyCode = text
+            }
+        }
+        
+        // 异步加载验证码
+        Alamofire.request(.GET,"http://202.118.31.197/ACTIONVALIDATERANDOMPICTURE.APPPROCESS").responseData { (response) in
+            switch response.result {
+            case .Success:
+                let image = UIImage(data: response.data! as NSData)
+                self.loginAlertView.verifyCodeImageView.image = image
+                break
+            case .Failure(let error):
+                print(error)
+                SVProgressHUD.showErrorMessage(kErrorMessage)
+                break
+            }
+
+        }
+        
         alertView.containerView = loginAlertView
         alertView.buttonTitles = ["登录", "取消"];
         alertView.delegate = self
         alertView.useMotionEffects = true
+        
         alertView.show()
         
     }
@@ -100,12 +151,54 @@ extension CARightSlideMenuViewController:CAAccountSectionViewDelegate{
     }
 }
 
+extension CARightSlideMenuViewController:UITextFieldDelegate{
+}
+
 extension CARightSlideMenuViewController:CustomIOSAlertViewDelegate{
     func customIOS7dialogButtonTouchUpInside(alertView: AnyObject!, clickedButtonAtIndex buttonIndex: Int) {
         if buttonIndex==0 {
-            
+            if esusername.length==0 {
+                SVProgressHUD.showErrorMessage("请输入学号")
+            }else if espassword.length == 0{
+                SVProgressHUD.showErrorMessage("请输入密码")
+            }else if esverigyCode.length == 0{
+                SVProgressHUD.showErrorMessage("请输入验证码")
+            }else{
+                
+                let paras: [String:AnyObject] = [
+                    "WebUserNO": esusername,
+                    "Password": espassword,
+                    "Agnomen": esverigyCode!
+                ]
+                
+                Alamofire.request(.POST, "http://202.118.31.197/ACTIONLOGON.APPPROCESS?mode=4", parameters: paras).validate().responseString {
+                    (response) in
+                    switch response.result {
+                    case .Success:
+                        let loginResult = CARegexTool.parseLogin(response.result.value!)
+                        if loginResult=="登陆成功"{
+                            SVProgressHUD.showSuccessMessage(loginResult)
+                            self.accountSection.deanBindState.text = "已绑定"
+                            self.accountSection.deanBindState.textColor = UIColor.caNavigationBarColor()
+                            
+                            let cookie = CANetworkTool.getAAOCookies()
+                            print(cookie)
+                            alertView.close()
+                        }else{
+                            SVProgressHUD.showErrorMessage(loginResult)
+                        }
+                        
+                    case .Failure(let error):
+                        print(error)
+                        SVProgressHUD.showErrorMessage(kErrorMessage)
+                    }
+                }
+                
+            }
         }else{
             alertView.close()
         }
     }
+
+    
 }
