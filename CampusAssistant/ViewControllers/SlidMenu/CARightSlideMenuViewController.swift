@@ -94,9 +94,12 @@ extension CARightSlideMenuViewController:CAAccountSectionViewDelegate{
         alertView = CustomIOSAlertView.init(parentView: self.view.window)
         loginAlertView = CALoginAlertView.instanceFromNib()
         loginAlertView.frame = CGRectMake(0, 0, 290, 203)
+        
         self.esusernameTextfield = loginAlertView.usernameTextField
         self.espasswordTextfield = loginAlertView.passwordTextField
         self.esverifycodeTextfield = loginAlertView.verifyCodeTextField
+        
+        loadVerifyCode()
         
         loginAlertView.usernameTextField.rac_textSignal().subscribeNext {  (next:AnyObject!) -> () in
             if let text = next as? String {
@@ -116,26 +119,21 @@ extension CARightSlideMenuViewController:CAAccountSectionViewDelegate{
             }
         }
         
-        // 异步加载验证码
-        Alamofire.request(.GET,"http://202.118.31.197/ACTIONVALIDATERANDOMPICTURE.APPPROCESS").responseData { (response) in
-            switch response.result {
-            case .Success:
-                let image = UIImage(data: response.data! as NSData)
-                self.loginAlertView.verifyCodeImageView.image = image
-                break
-            case .Failure(let error):
-                print(error)
-                SVProgressHUD.showErrorMessage(kErrorMessage)
-                break
-            }
-
-        }
         
+        if CADeanAccountTool.isExistAccountData(){
+            let deanAccount = CADeanAccountTool.deanAccount()
+            self.esusernameTextfield.text = deanAccount.username
+            self.espasswordTextfield.text = deanAccount.password
+            self.accountSection.deanBindState.text = "已绑定"
+            self.accountSection.deanBindState.textColor = UIColor.caNavigationBarColor()
+            alertView.buttonTitles = ["登录", "解绑", "取消"];
+        }else{
+            alertView.buttonTitles = ["登录", "取消"];
+        }
+
         alertView.containerView = loginAlertView
-        alertView.buttonTitles = ["登录", "取消"];
         alertView.delegate = self
         alertView.useMotionEffects = true
-        
         alertView.show()
         
     }
@@ -148,6 +146,23 @@ extension CARightSlideMenuViewController:CAAccountSectionViewDelegate{
     func bindEcardAccountButtonDidCliked(){
         print("bindecard")
         
+    }
+    
+    private func loadVerifyCode(){
+        // 异步加载验证码
+        Alamofire.request(.GET,"http://202.118.31.197/ACTIONVALIDATERANDOMPICTURE.APPPROCESS").responseData { (response) in
+            switch response.result {
+            case .Success:
+                let image = UIImage(data: response.data! as NSData)
+                self.loginAlertView.verifyCodeImageView.image = image
+                break
+            case .Failure(let error):
+                print(error)
+                SVProgressHUD.showErrorMessage(kErrorMessage)
+                break
+            }
+            
+        }
     }
 }
 
@@ -180,11 +195,16 @@ extension CARightSlideMenuViewController:CustomIOSAlertViewDelegate{
                             SVProgressHUD.showSuccessMessage(loginResult)
                             self.accountSection.deanBindState.text = "已绑定"
                             self.accountSection.deanBindState.textColor = UIColor.caNavigationBarColor()
+                            let deanAccount = CADeanAccount()
+                            deanAccount.username = self.esusername
+                            deanAccount.password = self.espassword
+                            CADeanAccountTool.saveAccount(deanAccount)
                             
                             let cookie = CANetworkTool.getAAOCookies()
                             print(cookie)
                             alertView.close()
-                        }else{
+                        }else if loginResult == "请输入正确的附加码"{
+                            self.loadVerifyCode() // 重新加载图片
                             SVProgressHUD.showErrorMessage(loginResult)
                         }
                         
@@ -195,10 +215,24 @@ extension CARightSlideMenuViewController:CustomIOSAlertViewDelegate{
                 }
                 
             }
+        }else if buttonIndex==1{
+            let actionSheet = UIActionSheet.init(title: "您确定取消绑定吗？", delegate: self, cancelButtonTitle: "取消", destructiveButtonTitle: "确定")
+            actionSheet.showInView(self.view.window!)
+            
         }else{
             alertView.close()
         }
     }
+}
 
-    
+extension CARightSlideMenuViewController:UIActionSheetDelegate{
+    func actionSheet(actionSheet: UIActionSheet, clickedButtonAtIndex buttonIndex: Int) {
+        if buttonIndex==0 {
+            CADeanAccountTool.removeAccount()
+            SVProgressHUD.showSuccessMessage("解绑成功")
+            self.accountSection.deanBindState.text = "未绑定"
+            self.accountSection.deanBindState.textColor = UIColor.whiteColor()
+            alertView.close()
+        }
+    }
 }

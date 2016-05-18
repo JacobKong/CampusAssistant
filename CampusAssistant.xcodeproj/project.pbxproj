@@ -111,6 +111,8 @@
 		EF89D4BE1CEB672F00B2458C /* LCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89D4B81CEB672F00B2458C /* LCTabBarController.m */; };
 		EF89D4BF1CEB672F00B2458C /* LCTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89D4BA1CEB672F00B2458C /* LCTabBarItem.m */; };
 		EF89D4C11CEB807500B2458C /* SVProgressHUD+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89D4C01CEB807500B2458C /* SVProgressHUD+CA.swift */; };
+		EF89D4C61CEC0F4700B2458C /* CADeanAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89D4C51CEC0F4700B2458C /* CADeanAccount.m */; };
+		EF89D4C81CEC107600B2458C /* CADeanAccountTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89D4C71CEC107600B2458C /* CADeanAccountTool.swift */; };
 		EFBC489D1C719DE500915AC7 /* CAWeatherSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC489C1C719DE500915AC7 /* CAWeatherSectionView.swift */; };
 		EFBC489F1C719DFF00915AC7 /* CAWeatherSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFBC489E1C719DFF00915AC7 /* CAWeatherSectionView.xib */; };
 		EFBC48A51C72F6AF00915AC7 /* CAStudyLifeSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC48A41C72F6AF00915AC7 /* CAStudyLifeSectionView.swift */; };
@@ -289,6 +291,9 @@
 		EF89D4B91CEB672F00B2458C /* LCTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarItem.h; sourceTree = "<group>"; };
 		EF89D4BA1CEB672F00B2458C /* LCTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBarItem.m; sourceTree = "<group>"; };
 		EF89D4C01CEB807500B2458C /* SVProgressHUD+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SVProgressHUD+CA.swift"; sourceTree = "<group>"; };
+		EF89D4C41CEC0F4700B2458C /* CADeanAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADeanAccount.h; sourceTree = "<group>"; };
+		EF89D4C51CEC0F4700B2458C /* CADeanAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADeanAccount.m; sourceTree = "<group>"; };
+		EF89D4C71CEC107600B2458C /* CADeanAccountTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CADeanAccountTool.swift; sourceTree = "<group>"; };
 		EFBC489C1C719DE500915AC7 /* CAWeatherSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAWeatherSectionView.swift; sourceTree = "<group>"; };
 		EFBC489E1C719DFF00915AC7 /* CAWeatherSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAWeatherSectionView.xib; sourceTree = "<group>"; };
 		EFBC48A41C72F6AF00915AC7 /* CAStudyLifeSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAStudyLifeSectionView.swift; sourceTree = "<group>"; };
@@ -457,6 +462,7 @@
 				EF331FD31C786C6600695A3B /* CAStudentTool.swift */,
 				ED4B25261CE2C7A800891428 /* CARegexTool.swift */,
 				ED4A363E1CEB2F610032014F /* CANetworkTool.swift */,
+				EF89D4C71CEC107600B2458C /* CADeanAccountTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -545,6 +551,8 @@
 				EF3DF2711C784A08002276A6 /* CAStudent.m */,
 				69D984513E26B38002EF8736 /* CAGrade.m */,
 				69D9824D5BA22F340AC94276 /* CAGrade.h */,
+				EF89D4C41CEC0F4700B2458C /* CADeanAccount.h */,
+				EF89D4C51CEC0F4700B2458C /* CADeanAccount.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1152,11 +1160,13 @@
 				EF5809281CB7D4CC00069EA2 /* MGCDateRange.m in Sources */,
 				EF5809411CB7D4CC00069EA2 /* MGCYearCalendarMonthHeaderView.m in Sources */,
 				EF5809361CB7D4CC00069EA2 /* MGCMonthPlannerHeaderView.m in Sources */,
+				EF89D4C81CEC107600B2458C /* CADeanAccountTool.swift in Sources */,
 				EF5809441CB7D4CC00069EA2 /* NSCalendar+MGCAdditions.m in Sources */,
 				EF2E42221CD8971A00146D4D /* CAProfileHeader.swift in Sources */,
 				EF2E42251CD8974F00146D4D /* CAEmptyRoomHeader.swift in Sources */,
 				EF89D4BF1CEB672F00B2458C /* LCTabBarItem.m in Sources */,
 				EF4E1DC51C85D0A100680EF4 /* CAFosterPlanViewController.swift in Sources */,
+				EF89D4C61CEC0F4700B2458C /* CADeanAccount.m in Sources */,
 				EF3D6FE41C7064870051DA24 /* CACollectionsViewController.swift in Sources */,
 				EF3DF2741C784F0F002276A6 /* NSData+CA.swift in Sources */,
 				EF331FD41C786C6600695A3B /* CAStudentTool.swift in Sources */,

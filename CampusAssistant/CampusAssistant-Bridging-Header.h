@@ -9,6 +9,7 @@
 #import "CACollection.h"
 #import "CAFunction.h"
 #import "CAStudent.h"
+
 #import "SWRevealViewController.h"
 #import <EventKitUI/EventKitUI.h>
 #import "MGCDayPlannerEKViewController.h"
@@ -17,5 +18,6 @@
 #import "SVProgressHUD/SVProgressHUD.h"
 #import "CustomIOSAlertView/CustomIOSAlertView.h"
 #import "LCTabBarController.h"
+#import "CADeanAccount.h"
 
 
