@@ -24,6 +24,7 @@ class CAHomeViewController: UIViewController {
         setupStudyLifeSection()
         setupAddMoreSection()
         setupRevealController()
+        setupWeedNoTextview()
 //        self.title = "NEU CAMPUS ASSISTANT"
 //        self.title = "NEU Campus Assistant"
 
@@ -31,6 +32,7 @@ class CAHomeViewController: UIViewController {
 //        setupTestLogin()
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -65,6 +67,7 @@ class CAHomeViewController: UIViewController {
         weatherView.frame = CGRectMake(0, 0, kScreenWidth, 220)
         self.view.addSubview(weatherView)
         self.obtainCurrentWeatherInfo()
+        self.obtainDaliyWeather()
     }
 
     private func setupStudyLifeSection() {
@@ -91,7 +94,6 @@ class CAHomeViewController: UIViewController {
             switch response.result {
             case .Success:
                 let json = JSON(response.result.value!)
-                print(json)
                 let main = json["main"]
                 let temp = main["temp"].intValue
                 let humidity = main["humidity"].stringValue
@@ -100,7 +102,6 @@ class CAHomeViewController: UIViewController {
                 self.weatherView.pressureLabel.text = "湿度: \(humidity)% 压力: \(pressure) hpa"
                 
                 let icon = json["weather"][0]["icon"].stringValue
-                print(icon)
                 self.weatherView.currentWeatherImage.image = UIImage.init(named:  "weather_\(icon)")
                 break
             case .Failure(let error):
@@ -111,6 +112,37 @@ class CAHomeViewController: UIViewController {
         }
     }
     
+    private func obtainDaliyWeather(){
+        Alamofire.request(.GET, "http://api.openweathermap.org/data/2.5/forecast/daily?id=2034937&cnt=3&units=metric&APPID=66e616f33710e6af3c0f25b185001dde").validate().responseJSON { (response) in
+            switch response.result {
+            case .Success:
+                let json = JSON(response.result.value!)
+                let weatherArray = json["list"]
+                for i in 0 ..< weatherArray.count{
+                    let jsonObject = weatherArray[i]
+                    let tempObject = jsonObject["temp"]
+                    let minTemp = tempObject["min"].intValue
+                    let maxTemp = tempObject["max"].intValue
+                    let weatherObject = jsonObject["weather"][0]
+                    let icon = weatherObject["icon"].stringValue
+                    self.weatherView.setupTemperature(i, min: minTemp, max: maxTemp)
+                    self.weatherView.setupWeatherIcon(i, iconName: icon)
+                }
+                break
+            case .Failure(let error):
+                print(error)
+                SVProgressHUD.showErrorMessage(kErrorMessage)
+                break;
+            }
+        }
+    }
+    
+    private func setupWeedNoTextview(){
+        let todayDate = NSDate()
+        let todayNo = todayDate.dayOfWeek()
+        self.weatherView.setupWeedNoTextview(todayNo)
+        
+    }
     // 测试 登录功能
     private func setupTestLogin() {
         let view: UIImageView = UIImageView.init(frame: CGRectMake(0, 500, kScreenWidth / 2, 40))
