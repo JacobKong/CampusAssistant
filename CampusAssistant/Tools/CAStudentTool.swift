@@ -10,6 +10,13 @@ import UIKit
 
 class CAStudentTool: NSObject {
     static let CAStudentFile = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0].stringByAppendingPathComponent("student.data")
+    
+    class func isExistStudentData() -> Bool{
+        let fileMgr = NSFileManager.defaultManager()
+        let exist:Bool = fileMgr.fileExistsAtPath(CAStudentFile)
+        return exist
+    }
+    
     class func student() -> CAStudent{
         return NSKeyedUnarchiver.unarchiveObjectWithFile(CAStudentFile) as! CAStudent
     }

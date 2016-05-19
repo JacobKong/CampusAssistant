@@ -29,23 +29,22 @@
  "endDate": "2017-06"
  */
 @interface CAStudent : NSObject
-@property (copy, nonatomic) NSString *examId;
 @property (copy, nonatomic) NSString *StudentId;
 @property (copy, nonatomic) NSString *StudentName;
 @property (copy, nonatomic) NSString *englishName;
 @property (copy, nonatomic) NSString *sex;
-@property (copy, nonatomic) NSString *birth;
-@property (copy, nonatomic) NSString *idCard;
-@property (copy, nonatomic) NSString *political;
-@property (copy, nonatomic) NSString *nation;
-@property (copy, nonatomic) NSString *professionId;
+//@property (copy, nonatomic) NSString *birth;
+//@property (copy, nonatomic) NSString *idCard;
+//@property (copy, nonatomic) NSString *political;
+//@property (copy, nonatomic) NSString *nation;
+//@property (copy, nonatomic) NSString *professionId;
 @property (copy, nonatomic) NSString *professionName;
 @property (copy, nonatomic) NSString *collegeName;
-@property (copy, nonatomic) NSString *professionType;
+//@property (copy, nonatomic) NSString *professionType;
 @property (copy, nonatomic) NSString *className;
-@property (copy, nonatomic) NSString *level;
+//@property (copy, nonatomic) NSString *level;
 @property (copy, nonatomic) NSString *StudyForm;
-@property (copy, nonatomic) NSString *standard;
+//@property (copy, nonatomic) NSString *standard;
 @property (copy, nonatomic) NSString *startDate;
-@property (copy, nonatomic) NSString *endDate;
+//@property (copy, nonatomic) NSString *endDate;
 @end
