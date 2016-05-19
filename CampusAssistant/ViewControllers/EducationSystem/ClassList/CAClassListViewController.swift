@@ -122,7 +122,7 @@ class CAClassListViewController: MGCDayPlannerEKViewController {
 //            }
 //        }
         
-        CANetworkTool.setAAOCookies("X82067xK1syLDBSJ4MrV2IuQxS125KlY53wamfL4NKruPYklCtNt!1269920556")
+//        CANetworkTool.setAAOCookies("X82067xK1syLDBSJ4MrV2IuQxS125KlY53wamfL4NKruPYklCtNt!1269920556")
         Alamofire.request(.GET, "http://202.118.31.197/ACTIONQUERYSTUDENTSCHEDULEBYSELF.APPPROCESS").validate().responseString {
             (response) in
             switch response.result {
