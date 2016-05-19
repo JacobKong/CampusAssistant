@@ -10,6 +10,42 @@ import UIKit
 import Regex
 
 class CARegexTool: NSObject {
+    class func parseLogin(response:String) -> String{
+        let r_value:String! = response
+        let r_pattern1:Regex = Regex("欢迎登录教务处网络平台")
+        let r_pattern2:Regex = Regex("您的密码不正确")
+        let r_pattern3:Regex = Regex("请输入正确的附加码")
+        
+        let r_matches1:[MatchResult] = r_pattern1.allMatches(r_value)
+        let r_matches2:[MatchResult] = r_pattern2.allMatches(r_value)
+        let r_matches3:[MatchResult] = r_pattern3.allMatches(r_value)
+        if r_matches1.count>0 {
+            return "登陆成功"
+        }else if r_matches2.count>0{
+            return "密码错误"
+        }else if r_matches3.count>0{
+            return "请输入正确的附加码"
+        }else{
+            return "学号错误"
+        }
+    }
+    
+    class func parseCookieExpried(response:String) -> Bool{
+        let r_value:String! = response
+        let r_pattern:Regex = Regex("登录用户不能为空")
+        let r_matches:[MatchResult] = r_pattern.allMatches(r_value)
+        
+        if r_matches.count>0 {
+            return true // 过期
+        }else if r_matches.count==0{
+            return false // 未过期
+        }else{
+            return false
+        }
+        
+    }
+
+    
     class func parseCourseTable(response:String) -> [[String]]{
         var r_value:String! = response
         

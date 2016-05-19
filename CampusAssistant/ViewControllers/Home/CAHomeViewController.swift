@@ -9,11 +9,13 @@
 import UIKit
 import Spring
 import Alamofire
+import SVProgressHUD
+import SwiftyJSON
 
 class CAHomeViewController: UIViewController {
     var isOpen = false
     var input: UITextField!
-
+    var weatherView: CAWeatherSectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigationBar()
@@ -40,7 +42,7 @@ class CAHomeViewController: UIViewController {
         let rightBarBtn = DesignableButton()
         rightBarBtn.setImage(UIImage(named: "navigationbar_side_menu"), forState: .Normal)
         rightBarBtn.frame = CGRectMake(0, 0, 22, 22)
-        rightBarBtn.addTarget(self.revealViewController(), action: Selector("rightRevealToggle:"), forControlEvents: .TouchUpInside)
+        rightBarBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.rightRevealToggle(_:)), forControlEvents: .TouchUpInside)
         let rightBarButton = UIBarButtonItem()
         rightBarButton.customView = rightBarBtn
         self.revealViewController().delegate = self
@@ -59,9 +61,10 @@ class CAHomeViewController: UIViewController {
     }
 
     private func setupWeatherSection() {
-        let view: UIView = CAWeatherSectionView.instanceFromNib()
-        view.frame = CGRectMake(0, 0, kScreenWidth, 220)
-        self.view.addSubview(view)
+        weatherView = CAWeatherSectionView.instanceFromNib() as! CAWeatherSectionView
+        weatherView.frame = CGRectMake(0, 0, kScreenWidth, 220)
+        self.view.addSubview(weatherView)
+        self.obtainCurrentWeatherInfo()
     }
 
     private func setupStudyLifeSection() {
@@ -83,6 +86,31 @@ class CAHomeViewController: UIViewController {
         revealController.rightViewRevealWidth = kScreenWidth - 60
     }
 
+    private func obtainCurrentWeatherInfo(){
+        Alamofire.request(.GET, "http://api.openweathermap.org/data/2.5/weather?id=2034937&units=metric&APPID=66e616f33710e6af3c0f25b185001dde").validate().responseJSON { (response) in
+            switch response.result {
+            case .Success:
+                let json = JSON(response.result.value!)
+                print(json)
+                let main = json["main"]
+                let temp = main["temp"].intValue
+                let humidity = main["humidity"].stringValue
+                let pressure = main["pressure"].stringValue
+                self.weatherView.currentTempLabel.text = "\(temp)"
+                self.weatherView.pressureLabel.text = "湿度: \(humidity)% 压力: \(pressure) hpa"
+                
+                let icon = json["weather"][0]["icon"].stringValue
+                print(icon)
+                self.weatherView.currentWeatherImage.image = UIImage.init(named:  "weather_\(icon)")
+                break
+            case .Failure(let error):
+                print(error)
+                SVProgressHUD.showErrorMessage(kErrorMessage)
+                break;
+            }
+        }
+    }
+    
     // 测试 登录功能
     private func setupTestLogin() {
         let view: UIImageView = UIImageView.init(frame: CGRectMake(0, 500, kScreenWidth / 2, 40))
@@ -100,6 +128,7 @@ class CAHomeViewController: UIViewController {
         }
     }
 
+    
     private func testLogin() {
         let paras: [String:AnyObject] = [
                 "WebUserNO": "20134649",

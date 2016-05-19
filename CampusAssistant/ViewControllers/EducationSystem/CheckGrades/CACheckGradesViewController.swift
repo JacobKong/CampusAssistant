@@ -164,8 +164,6 @@ class CACheckGradesViewController: UIViewController {
 //            }
 //        }
         
-        CANetworkTool.setAAOCookies("X7WZPtqSvgAnzEzwcnjKOUNDtytBK2bHlhcsVWfNhplMU2v3N0Aq!1269920556")
-        
         Alamofire.request(.GET, "http://202.118.31.197/ACTIONQUERYSTUDENTSCORE.APPPROCESS").validate().responseString {
             (response) in
             switch response.result {

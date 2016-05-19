@@ -106,6 +106,14 @@
 		EF656D401CDB9E910077FF10 /* CAFosterPlanHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF656D3F1CDB9E910077FF10 /* CAFosterPlanHeader.xib */; };
 		EF77F42F1CD22405000CA2F6 /* CARoomNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF77F42D1CD22405000CA2F6 /* CARoomNameCell.swift */; };
 		EF77F4301CD22405000CA2F6 /* CARoomNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF77F42E1CD22405000CA2F6 /* CARoomNameCell.xib */; };
+		EF89D4BB1CEB672F00B2458C /* LCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89D4B21CEB672F00B2458C /* LCTabBar.m */; };
+		EF89D4BC1CEB672F00B2458C /* LCTabBarBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89D4B41CEB672F00B2458C /* LCTabBarBadge.m */; };
+		EF89D4BD1CEB672F00B2458C /* LCTabBarController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EF89D4B61CEB672F00B2458C /* LCTabBarController.bundle */; };
+		EF89D4BE1CEB672F00B2458C /* LCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89D4B81CEB672F00B2458C /* LCTabBarController.m */; };
+		EF89D4BF1CEB672F00B2458C /* LCTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89D4BA1CEB672F00B2458C /* LCTabBarItem.m */; };
+		EF89D4C11CEB807500B2458C /* SVProgressHUD+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89D4C01CEB807500B2458C /* SVProgressHUD+CA.swift */; };
+		EF89D4C61CEC0F4700B2458C /* CADeanAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89D4C51CEC0F4700B2458C /* CADeanAccount.m */; };
+		EF89D4C81CEC107600B2458C /* CADeanAccountTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89D4C71CEC107600B2458C /* CADeanAccountTool.swift */; };
 		EFBC489D1C719DE500915AC7 /* CAWeatherSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC489C1C719DE500915AC7 /* CAWeatherSectionView.swift */; };
 		EFBC489F1C719DFF00915AC7 /* CAWeatherSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFBC489E1C719DFF00915AC7 /* CAWeatherSectionView.xib */; };
 		EFBC48A51C72F6AF00915AC7 /* CAStudyLifeSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC48A41C72F6AF00915AC7 /* CAStudyLifeSectionView.swift */; };
@@ -274,6 +282,20 @@
 		EF656D3F1CDB9E910077FF10 /* CAFosterPlanHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAFosterPlanHeader.xib; sourceTree = "<group>"; };
 		EF77F42D1CD22405000CA2F6 /* CARoomNameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CARoomNameCell.swift; sourceTree = "<group>"; };
 		EF77F42E1CD22405000CA2F6 /* CARoomNameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CARoomNameCell.xib; sourceTree = "<group>"; };
+		EF89D4B11CEB672F00B2458C /* LCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBar.h; sourceTree = "<group>"; };
+		EF89D4B21CEB672F00B2458C /* LCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBar.m; sourceTree = "<group>"; };
+		EF89D4B31CEB672F00B2458C /* LCTabBarBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarBadge.h; sourceTree = "<group>"; };
+		EF89D4B41CEB672F00B2458C /* LCTabBarBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBarBadge.m; sourceTree = "<group>"; };
+		EF89D4B51CEB672F00B2458C /* LCTabBarCONST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarCONST.h; sourceTree = "<group>"; };
+		EF89D4B61CEB672F00B2458C /* LCTabBarController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LCTabBarController.bundle; sourceTree = "<group>"; };
+		EF89D4B71CEB672F00B2458C /* LCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarController.h; sourceTree = "<group>"; };
+		EF89D4B81CEB672F00B2458C /* LCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBarController.m; sourceTree = "<group>"; };
+		EF89D4B91CEB672F00B2458C /* LCTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarItem.h; sourceTree = "<group>"; };
+		EF89D4BA1CEB672F00B2458C /* LCTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBarItem.m; sourceTree = "<group>"; };
+		EF89D4C01CEB807500B2458C /* SVProgressHUD+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SVProgressHUD+CA.swift"; sourceTree = "<group>"; };
+		EF89D4C41CEC0F4700B2458C /* CADeanAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADeanAccount.h; sourceTree = "<group>"; };
+		EF89D4C51CEC0F4700B2458C /* CADeanAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADeanAccount.m; sourceTree = "<group>"; };
+		EF89D4C71CEC107600B2458C /* CADeanAccountTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CADeanAccountTool.swift; sourceTree = "<group>"; };
 		EFBC489C1C719DE500915AC7 /* CAWeatherSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAWeatherSectionView.swift; sourceTree = "<group>"; };
 		EFBC489E1C719DFF00915AC7 /* CAWeatherSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAWeatherSectionView.xib; sourceTree = "<group>"; };
 		EFBC48A41C72F6AF00915AC7 /* CAStudyLifeSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAStudyLifeSectionView.swift; sourceTree = "<group>"; };
@@ -443,6 +465,7 @@
 				ED4B25261CE2C7A800891428 /* CARegexTool.swift */,
 				ED4A363E1CEB2F610032014F /* CANetworkTool.swift */,
 				EDA814A61CEC8E5B00758ED5 /* CACalendarTool.swift */,
+				EF89D4C71CEC107600B2458C /* CADeanAccountTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -515,6 +538,7 @@
 				EF50E7F41C77621B00A0A5A5 /* UIImageView+CA.swift */,
 				EF3DF2731C784F0F002276A6 /* NSData+CA.swift */,
 				EF44E80B1C7C5DB300ADCC5E /* UIColor+CA.swift */,
+				EF89D4C01CEB807500B2458C /* SVProgressHUD+CA.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -530,6 +554,8 @@
 				EF3DF2711C784A08002276A6 /* CAStudent.m */,
 				69D984513E26B38002EF8736 /* CAGrade.m */,
 				69D9824D5BA22F340AC94276 /* CAGrade.h */,
+				EF89D4C41CEC0F4700B2458C /* CADeanAccount.h */,
+				EF89D4C51CEC0F4700B2458C /* CADeanAccount.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -732,6 +758,7 @@
 		EF5808C81CB7D4CC00069EA2 /* 3rdPartFrameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF89D4B01CEB672F00B2458C /* LCTabBarController */,
 				EF2E42281CD8DCD500146D4D /* BTNavigationDropdownMenu */,
 				EF5808C91CB7D4CC00069EA2 /* CalendarLib */,
 				EF58090C1CB7D4CC00069EA2 /* OrderedDictionary */,
@@ -838,6 +865,23 @@
 			path = RoomNameCell;
 			sourceTree = "<group>";
 		};
+		EF89D4B01CEB672F00B2458C /* LCTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				EF89D4B11CEB672F00B2458C /* LCTabBar.h */,
+				EF89D4B21CEB672F00B2458C /* LCTabBar.m */,
+				EF89D4B31CEB672F00B2458C /* LCTabBarBadge.h */,
+				EF89D4B41CEB672F00B2458C /* LCTabBarBadge.m */,
+				EF89D4B51CEB672F00B2458C /* LCTabBarCONST.h */,
+				EF89D4B61CEB672F00B2458C /* LCTabBarController.bundle */,
+				EF89D4B71CEB672F00B2458C /* LCTabBarController.h */,
+				EF89D4B81CEB672F00B2458C /* LCTabBarController.m */,
+				EF89D4B91CEB672F00B2458C /* LCTabBarItem.h */,
+				EF89D4BA1CEB672F00B2458C /* LCTabBarItem.m */,
+			);
+			path = LCTabBarController;
+			sourceTree = "<group>";
+		};
 		EFBC489A1C719DA700915AC7 /* StudyLife */ = {
 			isa = PBXGroup;
 			children = (
@@ -880,13 +924,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF377C581C6F919B00B40D20 /* Build configuration list for PBXNativeTarget "CampusAssistant" */;
 			buildPhases = (
+				CEC9C2D35EA2517C0A7D8E0E /* 📦 Check Pods Manifest.lock */,
 				89E4B2F18D792F2B377DADEB /* uD83DuDCE6 Check Pods Manifest.lock */,
 				EF377C371C6F919B00B40D20 /* Sources */,
 				EF377C381C6F919B00B40D20 /* Frameworks */,
 				EF377C391C6F919B00B40D20 /* Resources */,
 				F0B24A34BC7F1E158D1DD336 /* uD83DuDCE6 Embed Pods Frameworks */,
 				B159DA94C0E5A76086074A01 /* uD83DuDCE6 Copy Pods Resources */,
-				C7F2BBBD667A4CF9912D87C6 /* Embed Pods Frameworks */,
+				C7F2BBBD667A4CF9912D87C6 /* 📦 Embed Pods Frameworks */,
+				8A7BD2D8655C5B6656AF412D /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -971,6 +1017,7 @@
 				EF5DF8321C7D75F4003CF533 /* Assets.xcassets in Resources */,
 				EF489D5F1CDB9B9A0017C32E /* CAFosterPlanCell.xib in Resources */,
 				EF331FD11C7861D000695A3B /* CAProfileInfoCell.xib in Resources */,
+				EF89D4BD1CEB672F00B2458C /* LCTabBarController.bundle in Resources */,
 				ED77A2BF1CD8A25D00F43DC1 /* CAExamCell.xib in Resources */,
 				EF3D6FEC1C70D09A0051DA24 /* Montserrat-Regular.ttf in Resources */,
 				EF0C41721C758B820044B9C0 /* collections.plist in Resources */,
@@ -1015,6 +1062,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		8A7BD2D8655C5B6656AF412D /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B159DA94C0E5A76086074A01 /* uD83DuDCE6 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1030,19 +1092,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C7F2BBBD667A4CF9912D87C6 /* Embed Pods Frameworks */ = {
+		C7F2BBBD667A4CF9912D87C6 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEC9C2D35EA2517C0A7D8E0E /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		F0B24A34BC7F1E158D1DD336 /* uD83DuDCE6 Embed Pods Frameworks */ = {
@@ -1067,6 +1144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF89D4BE1CEB672F00B2458C /* LCTabBarController.m in Sources */,
 				EFE736721CDC8B73004CB989 /* CAAccountSectionView.swift in Sources */,
 				EF3D6FE21C70647C0051DA24 /* CAProfileViewController.swift in Sources */,
 				EF5809341CB7D4CC00069EA2 /* MGCMonthPlannerBackgroundView.m in Sources */,
@@ -1085,10 +1163,13 @@
 				EF5809281CB7D4CC00069EA2 /* MGCDateRange.m in Sources */,
 				EF5809411CB7D4CC00069EA2 /* MGCYearCalendarMonthHeaderView.m in Sources */,
 				EF5809361CB7D4CC00069EA2 /* MGCMonthPlannerHeaderView.m in Sources */,
+				EF89D4C81CEC107600B2458C /* CADeanAccountTool.swift in Sources */,
 				EF5809441CB7D4CC00069EA2 /* NSCalendar+MGCAdditions.m in Sources */,
 				EF2E42221CD8971A00146D4D /* CAProfileHeader.swift in Sources */,
 				EF2E42251CD8974F00146D4D /* CAEmptyRoomHeader.swift in Sources */,
+				EF89D4BF1CEB672F00B2458C /* LCTabBarItem.m in Sources */,
 				EF4E1DC51C85D0A100680EF4 /* CAFosterPlanViewController.swift in Sources */,
+				EF89D4C61CEC0F4700B2458C /* CADeanAccount.m in Sources */,
 				EF3D6FE41C7064870051DA24 /* CACollectionsViewController.swift in Sources */,
 				EF3DF2741C784F0F002276A6 /* NSData+CA.swift in Sources */,
 				EF331FD41C786C6600695A3B /* CAStudentTool.swift in Sources */,
@@ -1099,6 +1180,7 @@
 				EF44E8101C7C8BC200ADCC5E /* String+CA.swift in Sources */,
 				EF377C3F1C6F919B00B40D20 /* AppDelegate.swift in Sources */,
 				ED77A2BE1CD8A25D00F43DC1 /* CAExamCell.swift in Sources */,
+				EF89D4BB1CEB672F00B2458C /* LCTabBar.m in Sources */,
 				EF5809421CB7D4CC00069EA2 /* MGCYearCalendarView.m in Sources */,
 				EF58092F1CB7D4CC00069EA2 /* MGCEventKitSupport.m in Sources */,
 				EF58092D1CB7D4CC00069EA2 /* MGCEventCell.m in Sources */,
@@ -1115,6 +1197,7 @@
 				EF4E1DC31C85D09700680EF4 /* CAExamAgendaViewController.swift in Sources */,
 				EF58093A1CB7D4CC00069EA2 /* MGCMonthPlannerViewLayout.m in Sources */,
 				EF5809301CB7D4CC00069EA2 /* MGCEventsRowView.m in Sources */,
+				EF89D4C11CEB807500B2458C /* SVProgressHUD+CA.swift in Sources */,
 				EF4E1DC11C85D08D00680EF4 /* CAEmptyRoomViewController.swift in Sources */,
 				EF5809401CB7D4CC00069EA2 /* MGCYearCalendarMonthCell.m in Sources */,
 				EF0BCE261CEB0B1E007F34FD /* CALoginAlertView.swift in Sources */,
@@ -1138,6 +1221,7 @@
 				EF50E7F31C775C0A00A0A5A5 /* UIImage+CA.swift in Sources */,
 				EF5809381CB7D4CC00069EA2 /* MGCMonthPlannerViewController.m in Sources */,
 				EF5809391CB7D4CC00069EA2 /* MGCMonthPlannerViewDayCell.m in Sources */,
+				EF89D4BC1CEB672F00B2458C /* LCTabBarBadge.m in Sources */,
 				EF58092C1CB7D4CC00069EA2 /* MGCDayPlannerViewController.m in Sources */,
 				EF656D3E1CDB9E810077FF10 /* CAFosterPlanHeader.swift in Sources */,
 				EF5809321CB7D4CC00069EA2 /* MGCInteractiveEventView.m in Sources */,
