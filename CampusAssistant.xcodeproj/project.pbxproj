@@ -7,316 +7,318 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0098C11D18B2D8BB70AA0CFC12A5B228 /* MGCAllDayEventsViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ED17945742BAC1BD562A31B7A5615F /* MGCAllDayEventsViewLayout.m */; };
-		02D56E612B43012F400A0C7CC081D0EA /* CAAddMoreSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F28FF246742DCBE7995D6E6E37256E34 /* CAAddMoreSectionView.xib */; };
-		02F19612C1D4243E42BF33984AFC7178 /* CACollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC29A51EDEDD810D8A9448FA2273F9 /* CACollectionsViewController.swift */; };
-		05B81EDEC09E9F678DB5AEA5CF288BB7 /* CACollection.m in Sources */ = {isa = PBXBuildFile; fileRef = FCBF22B48CE6EAF92536C7E8A0AAB3B6 /* CACollection.m */; };
-		06106800666B8ED4EEFDC2D03F292287 /* CAFosterPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B2D536D9BA6BDB9BF9BEDDE55FDAA4 /* CAFosterPlanViewController.swift */; };
-		07291722F0E3C1CADF8C762F40480D68 /* CAExamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4264C3A90C07662A16FC24BA622F0C /* CAExamCell.swift */; };
-		094CC3E2520686B95F28111EDC751639 /* CARoomNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C72082A7DFF930AC1252BBD1C9E5D9 /* CARoomNameCell.swift */; };
-		0B727ED2990399802A8AD15672EA14A2 /* CANetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD5C69680A6C39E8CBEEAFC14D6F867 /* CANetworkTool.swift */; };
-		0E0C9F3A893E7D02ABEA85A1498027BC /* BTNavigationDropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6F29AA9ABE0AF8D425B03C8E2BDB5E /* BTNavigationDropdownMenu.swift */; };
-		0E76064D307E6A6436397D664ED681BE /* UIImage+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = F593BD7771160A867529B659883DBA76 /* UIImage+CA.swift */; };
-		102A8DBF2FE407A938F5B90CEA375C28 /* CAGradeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E4DD7BB87D9ED5763761DEDF4ED034 /* CAGradeCell.swift */; };
-		11D9A1B3BEC3F4F7E9B74D6791469B35 /* CAGrade.m in Sources */ = {isa = PBXBuildFile; fileRef = E24AEDA9E2D17AB8821AA7790D256BB6 /* CAGrade.m */; };
-		12BE6FBFE5EE0F6A64E8BB4BEBC42346 /* MGCEventsRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 959BCC9602D59255D50B2748928A04D8 /* MGCEventsRowView.m */; };
-		1459F44DA6AC9148F58BF7DA607B321D /* MGCDayColumnCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A96B04E1291C6A9ABCB3725BB2B913 /* MGCDayColumnCell.m */; };
-		161FA9F4E73F6C869782D9E41AA7E87C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855FA5915041EC67B83B2F64B889E731 /* LaunchScreen.storyboard */; };
-		18AAEC73E9122C551DE037E9A3F6A25C /* CANavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 265BDF53355DF3569F298336EF88B0D2 /* CANavigationController.swift */; };
-		1D2E38EC4C2A4A17AED87C35F02274BB /* MGCMonthPlannerEKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0DB49540D6EA0DFEDE7389D038E37E /* MGCMonthPlannerEKViewController.m */; };
-		1F2E9D4B0BEC161CF1BE0AEF6DDA2169 /* CAFosterPlanHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AA8087B0F9E6EE440C1AFACD12EE22 /* CAFosterPlanHeader.swift */; };
-		1FD06B6F3FB4FC3A04EAFE93E820EE04 /* MGCMonthPlannerViewDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6144190C2207335E4500E7DF1B3E4B29 /* MGCMonthPlannerViewDayCell.m */; };
-		220A3C5430928F26F06684A1D22C95AE /* MGCDayPlannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48532EE0EF5C3C420C7C46511C1613B1 /* MGCDayPlannerViewController.m */; };
-		22308702FD02A90F90C5C55B64A96D38 /* CAStudyLifeSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE868DE78061E734E00A8840A883833 /* CAStudyLifeSectionView.swift */; };
-		228C9BB2F35A015249F691B26B0BE834 /* MGCEventCellLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A23552E0AA44A82851103C1261DE75B /* MGCEventCellLayoutAttributes.m */; };
-		24C29771828F4127A9107AB54BCBD224 /* CARightSlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABDBAE8A678A0D84CFBA975A47B32E5 /* CARightSlideMenuViewController.swift */; };
-		25D7E4469157654F0554203DAD7CF26F /* MGCReusableObjectQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5750F294EA67D460EA3B09ACB0D16BF6 /* MGCReusableObjectQueue.m */; };
-		2DD2026211843AD0B638EB2B06C5E347 /* collections.plist in Resources */ = {isa = PBXBuildFile; fileRef = 38F06F678E6C820FC6157A3187FEA0EB /* collections.plist */; };
-		2E1CA902944599B953DE6759B0A33568 /* CALoginAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054600359DA4F2FC0180DC8787DC9B9D /* CALoginAlertView.swift */; };
-		3706196D95F6EF095885618EE12337CF /* NSAttributedString+MGCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D118AEE0F752BC9DB87AC5556C9AED1 /* NSAttributedString+MGCAdditions.m */; };
-		3857C97F9BC1D7CB8116E23B8CEE366A /* LCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FA23E2DDE8B817C4D83A66E44D00CC /* LCTabBar.m */; };
-		38F6F1BE86CCF82A7DA41686C5C5E835 /* CAFosterPlanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4A0DEC7D629EA816738B7A0E832F58F /* CAFosterPlanCell.xib */; };
-		3C353B948681FCD6F1CF69D9717B8619 /* BTNavigationDropdownMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A3AD05E52B1B879B7D3831102E8B2281 /* BTNavigationDropdownMenu.bundle */; };
-		3CB5C11E1F2E033C3BCC134B365DCA35 /* MGCMonthPlannerWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D749F0067B1E23801AC0669100E3AE7 /* MGCMonthPlannerWeekView.m */; };
-		3F0B6AFF9C9D3B1780A16A51CEF254A8 /* MGCDayPlannerEKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F83D7DD5D7502BBEC483D85CE9B8E91C /* MGCDayPlannerEKViewController.m */; };
-		409561800AEDE30A4E444C14E7ECFE78 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 76054D856969822F4FFC561D7C706025 /* Localizable.strings */; };
-		4098AF27C4088DC538177DC4F2BF64F0 /* CAStudyLifeSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC2144E8FAB021BD27BD9AD9C2EC7914 /* CAStudyLifeSectionView.xib */; };
-		410CED7B8D8B8CC3B41FBBB28F1AD33B /* MGCEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65BD90F247711A8A24973A29619EC3E0 /* MGCEventView.m */; };
-		49F0E25E2829431109D1CF0F00E04C49 /* CAGradeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C9F7AE1B0F2FB1CA6A70036E47C850D /* CAGradeCell.xib */; };
-		4ED80EBF6269B84E2D00A16529D54293 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1415C27CFCB31014FF1CC140F5E17667 /* Main.storyboard */; };
-		54CD467761855668DDA1968B18C75ED0 /* MGCMonthPlannerHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98BD6662A8C747D097E1E6EC20873C1B /* MGCMonthPlannerHeaderView.m */; };
-		596116FCE679071FDF31570A304942A3 /* MGCMonthPlannerViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 00464BA829A95EBC5D88C01F755C6167 /* MGCMonthPlannerViewLayout.m */; };
-		5DD0179D008E1EADE66E126F69DD915F /* CALightAlphaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E40F8914D0BF9BEC8DA5FB79853AFD /* CALightAlphaTextField.swift */; };
-		5DD2A096FAF70C94F087A51CC4F24B9B /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94F046E25806BE589E78DD188BE0CE64 /* Montserrat-Bold.ttf */; };
-		5E920B8B6E2DF96308ADDC87113F040A /* CAEmptyRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6BE1B0CDDB7BA3308FBE3531A28D06 /* CAEmptyRoomViewController.swift */; };
-		5F171F91151B7D1FB9A882725BD20D87 /* CAHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2141E3024690018F175F57A7288138A /* CAHomeViewController.swift */; };
-		60D2CEF5AFA16D993CC4CB32D440B5A5 /* NSCalendar+MGCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DCF3D921A4E95680C74826DE0B2979 /* NSCalendar+MGCAdditions.m */; };
-		63390BE41B3AEB9257388961FF6C2D4B /* CAFunctionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381D0F569965F2CF4DE186202AF3F225 /* CAFunctionCell.swift */; };
-		64B44C33D18F3EDCFE2DC3866FBFCBC0 /* MGCMonthPlannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E50A9A45FC29A548FE9F0F28C7B2A4 /* MGCMonthPlannerView.m */; };
-		6A704070C1F1D586A9ABE899443EBBC0 /* MGCMonthPlannerBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBDBB2351E43E27C8052235C30595C97 /* MGCMonthPlannerBackgroundView.m */; };
-		6A82D41C794FBD05BB1D9C1D26685981 /* CAAddMoreSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1027C594E634AE20697ED1DCEF38D11 /* CAAddMoreSectionView.swift */; };
-		6B51931558AECD941403DF5DF3DAB284 /* CAFosterPlanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729D95919EA70BF27C2B1F2EEE810263 /* CAFosterPlanCell.swift */; };
-		6BDDAF07D18F46AD670C8EADE1B9514E /* CACollectionTitleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5927EDC8EF898AC750C85BAF003FFA /* CACollectionTitleHeader.swift */; };
-		6C05D1F59DA459B5F5D6C6FDDDDB7B35 /* NSData+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0D5ACFACB400572B96EA14C03CBE89 /* NSData+CA.swift */; };
-		6C8EA77F7DDF63CA57F634F815C96C2A /* CAEmptyRoomHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13DCCF4EA4672AD7A0EEEDE4F5563128 /* CAEmptyRoomHeader.xib */; };
-		6EA923F37F83852735D198D55F98033E /* CARoomNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD9D57BAF62FDB51EAB943C55FDA02E7 /* CARoomNameCell.xib */; };
-		7024883BCBB89CEB0630DBEE529361BF /* CACreditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B510AD1F4C269FB2BA6D10C77E67333 /* CACreditCell.swift */; };
-		7346F254322A1F7E3585662D5ED7E0D5 /* CAFunctionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8281489A75A0141F57ED17ECD19585C /* CAFunctionCell.xib */; };
-		77553E8976116366616809F95A53DA29 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE18CEB78E02F6EAA45AD82E922FF78 /* SWRevealViewController.m */; };
-		7793AB717D85699CE69D6D95D821A915 /* MGCTimeRowsView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F8C7936F76E3B7E808941EE01B98BB /* MGCTimeRowsView.m */; };
-		77B62421F6B13D2B63534E1A9A6B0404 /* CAProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F258E878AF831B064BFD14BD8D8A0BFF /* CAProfileViewController.swift */; };
-		78277A2C95AF6A84C018FCF8E4C8F8C5 /* MGCYearCalendarMonthHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3708CD9DD5D4FA9FCC3810D601107DE /* MGCYearCalendarMonthHeaderView.m */; };
-		7AB95D09AAE389AC418106011A55C262 /* CACreditWarningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0DA692759363D2037A9021100F8F4E /* CACreditWarningViewController.swift */; };
-		7BF7E7D75F9AA71D87E59B50A89FB766 /* MGCDateRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D3850FFC73A4545868A8B6C0B357446 /* MGCDateRange.m */; };
-		7E4A608050327BBB6C90E49538BBEE7A /* UIColor+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192F177E7525563A9512E2B3043EAA34 /* UIColor+CA.swift */; };
-		810EF31E56A0E63880E4C8FD19E89F0F /* CAIPWGSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A58993663A4FFBA5C1133602998ADA4 /* CAIPWGSectionView.swift */; };
-		83402D9E241AA99C9205D85FACCE0490 /* String+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0B46BF3F4BD8D1836A16278196B05E /* String+CA.swift */; };
-		85DAAE718D226501BFD309319ADCEEEA /* Pods_CampusAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7E24107DC38B0B32E74007BBBB6BEC /* Pods_CampusAssistant.framework */; };
-		86C9090DF66D958D67BEA84E06C507F5 /* CAProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96989C053D79C29096365E431B521064 /* CAProfileHeader.swift */; };
-		8B194B61241CD94B265674AC6F12E252 /* CAProfileInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85378AA0D9F994F8A11270C86C09600 /* CAProfileInfoCell.swift */; };
-		96AA3295035832948E55473F0F13382E /* CAWeatherSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0774203643274E877B6A73ACFB409F /* CAWeatherSectionView.swift */; };
-		989688B35ACC184276DAD4FBEBE57DD1 /* CAExamCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5879553B84E56F5F0B9D790611FC19E4 /* CAExamCell.xib */; };
-		98DD290133BE2B9B05A0F47908B96E6D /* MGCStandardEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6F280106A5F84F96FCAD885D02C521 /* MGCStandardEventView.m */; };
-		99DC0E47A9EF8554684D3001BABC5353 /* LCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3AAC11B3362AF88EA643954575ED620 /* LCTabBarController.m */; };
-		A32E3B02E82200DB99E4C1AB629F0A1C /* CAClassListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80F7C0F395547E44A3C0513D761AA12 /* CAClassListViewController.swift */; };
-		A425B50C0CA7666D4D32C0DF1EBCABE8 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 6FD6D7320D470D12F9D161DAB2CB590B /* LICENSE */; };
-		A5E1FD871DC13EF94461FD10F41BECA3 /* MGCYearCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45AFCEE36A61D55E3F7096062A379410 /* MGCYearCalendarView.m */; };
-		AB3B83CA5BE26A3A766297DE7378946D /* CAAccountSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A254F448ABD87C12B4890FA3D89ED42E /* CAAccountSectionView.swift */; };
-		AB40E38EC2C62AB9CE13C07171220F9E /* CACheckGradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD70DF669D38EAE7DCA42A8A1BF492AF /* CACheckGradesViewController.swift */; };
-		AE9C59541CB81243D94E29D44B5C0CDD /* CALoginAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A264754247CDB278BABAF1B29ECD8AFD /* CALoginAlertView.xib */; };
-		AFF4200505914DD1A20B63160507C4D8 /* NSDate+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9113ADD45A2B23906E2488D907320B7 /* NSDate+CA.swift */; };
-		B0822EF80B6DBC79653C52312F1041FF /* CARegexTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E709D72399B546F2F786A8D653BA52D1 /* CARegexTool.swift */; };
-		B189B9CC6CDE9A4222A8B1A3ECFC3D21 /* OSCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 208351479CE571D78E4DA8AC89C6FEB1 /* OSCache.m */; };
-		B21F265F0B16021ABDFE6E323F24FD7D /* Macro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312A4ED13E3BA8B9469668726A4CDABC /* Macro.swift */; };
-		B2C2B75C1BF536A1B4DB9B891B2C8C13 /* MGCMonthPlannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D82A475468E8DDD8DC6DB1883B83A0A0 /* MGCMonthPlannerViewController.m */; };
-		B31309350C3108DC081C04BD3FC0B7E9 /* CAEmptyRoomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA2554D425C0AA9DCE2B768A48DACE1 /* CAEmptyRoomHeader.swift */; };
-		B53F38813102C1C02BFD4B95CB3E73E5 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72C3A33161FE4F3E2F5F334395FC735E /* Montserrat-Regular.ttf */; };
-		B6B6A271A9E8020D470E764D91BE48BC /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 61332C3B6E921FEE8D7FD3C454FE21FF /* README.md */; };
-		B9612839924C7BF64BEBF4E2BD82B3CE /* CAWeatherSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EF2E170226744C52444FE8DDD3F940D /* CAWeatherSectionView.xib */; };
-		BA1FC6833E382FC0AE94B2B29ABA465E /* CampusAssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A78F0C95BC404AF6FC4EB67A71D9F62 /* CampusAssistantTests.swift */; };
-		BD0E8166D6E15BBCA2B9D37C26516958 /* CAFosterPlanHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF6A9850B25CF863753A6EE2E8A5B0EF /* CAFosterPlanHeader.xib */; };
-		BE30A7E742AA4B17326AF99E99F6D53C /* CADeanAccountTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CF16FB6ADF3B4F44BB9DB2536353C7 /* CADeanAccountTool.swift */; };
-		BF98484F6204823F7A04409481115C1E /* CAIPWGSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9D456C38009F204429FBEC845255265B /* CAIPWGSectionView.xib */; };
-		C34FD390EC34D23F879281DF2383948F /* CACreditCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FC472EA37968B37DD67B253DC7CF8F6 /* CACreditCell.xib */; };
-		C3B4E4F208E766879AD54E84D8F5357D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B8D6BF66C4F3FD632E5B31C60D9C2BD /* Assets.xcassets */; };
-		C45BBC1F91A953F01C229BBB8A49BAF9 /* CAProfileHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22CA5C8E67D84026B0D95218C6CCA531 /* CAProfileHeader.xib */; };
-		C66DEBE2CD4E8BC2C3F2F3514F05650E /* LCTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 931BE761B858490A86116AFEAF398FD7 /* LCTabBarItem.m */; };
-		C6F086DAB32F2CB7E3DADFCE27E4BABC /* CAStudentTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40DDCB1F47D547D3588688866A0DE31 /* CAStudentTool.swift */; };
-		C74A83DABE58A2F21B6F67E12B3C48D7 /* MGCEventKitSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DC4221F9D5B1CFF707BB3575F15BA79 /* MGCEventKitSupport.m */; };
-		C9C7FF1F40C4B0D0E33E8A78F6EDEF84 /* MGCDayPlannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DE988DE3C2708342723BA067BD88B16 /* MGCDayPlannerView.m */; };
-		C9F17F90400E7C8510720CFEA2F8ACD2 /* CACollectionTitleHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9777A187879CE4CFC6E8201C5C1E30FA /* CACollectionTitleHeader.xib */; };
-		CA35EE9ED063361EA64C25B8917604F7 /* CAAccountSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81A47542A046E5C528DABE3257692F4B /* CAAccountSectionView.xib */; };
-		CD7D2ACC6E7F14440EC3314EF48726F8 /* OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 847DD7AD3244A5E109FC9A7C3DFB7562 /* OrderedDictionary.m */; };
-		CE1DCE4F77F8BA43D4064353EED43016 /* CAStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B883906AC156C61D25A155FB33E2BD /* CAStudent.m */; };
-		D0C407ECB6464037AB730C5961295B44 /* MGCAlignedGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA44D9C8721F31FF8EC461DB554177F /* MGCAlignedGeometry.m */; };
-		D3C6173939A8A1D5BC145450F9F8211A /* LCTabBarController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7F4E6BE3D5B5AB3560027D61BAB9B158 /* LCTabBarController.bundle */; };
-		DB5CD47BFD77F76F8B9B4DC480A2F43F /* MGCYearCalendarMonthCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABDA019C0F269DF0E8005E05DB24E8A /* MGCYearCalendarMonthCell.m */; };
-		DCAED03543FE177E83056AB334271F8E /* MGCMonthMiniCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF93E8B5C2B7512F257DBB89FB92D4C /* MGCMonthMiniCalendarView.m */; };
-		E229516DAFE527261DDF246260E8F883 /* CAProfileInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4156162D6C0081BBF0941D6064A86DBF /* CAProfileInfoCell.xib */; };
-		E323B8E2F4E8FE575B22A190D1EAABB0 /* UIImageView+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7394DB2AAFE1B1B4119E579E42F534BE /* UIImageView+CA.swift */; };
-		E59B5CD6EEEAA0870F6AEACF36A7191F /* MGCTimedEventsViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172026978448F58CDC9B35F1DA8CFE8 /* MGCTimedEventsViewLayout.m */; };
-		E64A466432276E1D7D831B596DC106F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158B54BF4D6CAFF449AC6A0C6CD9F0DF /* AppDelegate.swift */; };
-		E93C8609A8B19322B0C44FC8CCB30FC7 /* MGCInteractiveEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 254EAF51FECB87385C43E06C37805E6A /* MGCInteractiveEventView.m */; };
-		EB5543F31EBBC953874C3475D8864997 /* CAExamAgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55D9ED8C44E4A10BA085A820E63121A /* CAExamAgendaViewController.swift */; };
-		F476099200B4090CEB52BF8443815D1D /* SVProgressHUD+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6CA60828A6C44CB88D1DB7A556E73C /* SVProgressHUD+CA.swift */; };
-		F6D6B24D823E3C41B6D0FC3728634DA7 /* CADeanAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 846CD011F5A70ED42C48B726B97437C9 /* CADeanAccount.m */; };
-		F82D736AC76F0A6126256E3F9F32AD71 /* MGCEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FEA24361F73809320E8D999B4420E8 /* MGCEventCell.m */; };
-		FD7D32FF06E2199608831A2C38CF6B70 /* CAFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B662261F160E34CE6B849E8E942C7B /* CAFunction.m */; };
-		FDE77181F4283DF47CD415C3D081AB4F /* LCTabBarBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCDDD2ED5BD309C99ABF2D593B329A7 /* LCTabBarBadge.m */; };
+		69D98655E4D8CE8C090158E1 /* CAGrade.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D984513E26B38002EF8736 /* CAGrade.m */; };
+		EC4584CD9F482D614B8AA32D /* Pods_CampusAssistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F04C9821C1B738753002A42 /* Pods_CampusAssistant.framework */; };
+		ED4A363F1CEB2F610032014F /* CANetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4A363E1CEB2F610032014F /* CANetworkTool.swift */; };
+		ED4B25271CE2C7A800891428 /* CARegexTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4B25261CE2C7A800891428 /* CARegexTool.swift */; };
+		ED77A2BE1CD8A25D00F43DC1 /* CAExamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED77A2BC1CD8A25D00F43DC1 /* CAExamCell.swift */; };
+		ED77A2BF1CD8A25D00F43DC1 /* CAExamCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED77A2BD1CD8A25D00F43DC1 /* CAExamCell.xib */; };
+		ED8BE6FC1CD0BA0500286E4D /* CAGradeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED8BE6FB1CD0BA0500286E4D /* CAGradeCell.xib */; };
+		ED8BE7021CD0BBD700286E4D /* CAGradeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8BE7011CD0BBD700286E4D /* CAGradeCell.swift */; };
+		EDA814A71CEC8E5B00758ED5 /* CACalendarTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA814A61CEC8E5B00758ED5 /* CACalendarTool.swift */; };
+		EF0BCE261CEB0B1E007F34FD /* CALoginAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0BCE251CEB0B1E007F34FD /* CALoginAlertView.swift */; };
+		EF0BCE281CEB0B28007F34FD /* CALoginAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF0BCE271CEB0B28007F34FD /* CALoginAlertView.xib */; };
+		EF0C41721C758B820044B9C0 /* collections.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF0C41711C758B820044B9C0 /* collections.plist */; };
+		EF0C41871C75CA5F0044B9C0 /* CACollection.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0C41841C75CA5F0044B9C0 /* CACollection.m */; };
+		EF0C41881C75CA5F0044B9C0 /* CAFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0C41861C75CA5F0044B9C0 /* CAFunction.m */; };
+		EF18DAD31C79694200369F33 /* CARightSlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF18DAD21C79694200369F33 /* CARightSlideMenuViewController.swift */; };
+		EF2E42201CD8971A00146D4D /* CACollectionTitleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E421A1CD8971A00146D4D /* CACollectionTitleHeader.swift */; };
+		EF2E42211CD8971A00146D4D /* CACollectionTitleHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF2E421B1CD8971A00146D4D /* CACollectionTitleHeader.xib */; };
+		EF2E42221CD8971A00146D4D /* CAProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E421E1CD8971A00146D4D /* CAProfileHeader.swift */; };
+		EF2E42231CD8971A00146D4D /* CAProfileHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF2E421F1CD8971A00146D4D /* CAProfileHeader.xib */; };
+		EF2E42251CD8974F00146D4D /* CAEmptyRoomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E42241CD8974F00146D4D /* CAEmptyRoomHeader.swift */; };
+		EF2E42271CD8975A00146D4D /* CAEmptyRoomHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF2E42261CD8975A00146D4D /* CAEmptyRoomHeader.xib */; };
+		EF2E422E1CD8DCD500146D4D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = EF2E42291CD8DCD500146D4D /* LICENSE */; };
+		EF2E422F1CD8DCD500146D4D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = EF2E422A1CD8DCD500146D4D /* README.md */; };
+		EF2E42301CD8DCD500146D4D /* BTNavigationDropdownMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EF2E422C1CD8DCD500146D4D /* BTNavigationDropdownMenu.bundle */; };
+		EF2E42311CD8DCD500146D4D /* BTNavigationDropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF2E422D1CD8DCD500146D4D /* BTNavigationDropdownMenu.swift */; };
+		EF331FCC1C7861A200695A3B /* CAFunctionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF331FC91C7861A200695A3B /* CAFunctionCell.swift */; };
+		EF331FCD1C7861A200695A3B /* CAFunctionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF331FCA1C7861A200695A3B /* CAFunctionCell.xib */; };
+		EF331FCF1C7861C100695A3B /* CAProfileInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF331FCE1C7861C100695A3B /* CAProfileInfoCell.swift */; };
+		EF331FD11C7861D000695A3B /* CAProfileInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF331FD01C7861D000695A3B /* CAProfileInfoCell.xib */; };
+		EF331FD41C786C6600695A3B /* CAStudentTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF331FD31C786C6600695A3B /* CAStudentTool.swift */; };
+		EF377C3F1C6F919B00B40D20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF377C3E1C6F919B00B40D20 /* AppDelegate.swift */; };
+		EF377C441C6F919B00B40D20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF377C421C6F919B00B40D20 /* Main.storyboard */; };
+		EF377C491C6F919B00B40D20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF377C471C6F919B00B40D20 /* LaunchScreen.storyboard */; };
+		EF377C541C6F919B00B40D20 /* CampusAssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF377C531C6F919B00B40D20 /* CampusAssistantTests.swift */; };
+		EF3D6FE01C7064740051DA24 /* CAHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D6FDF1C7064740051DA24 /* CAHomeViewController.swift */; };
+		EF3D6FE21C70647C0051DA24 /* CAProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D6FE11C70647C0051DA24 /* CAProfileViewController.swift */; };
+		EF3D6FE41C7064870051DA24 /* CACollectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D6FE31C7064870051DA24 /* CACollectionsViewController.swift */; };
+		EF3D6FEB1C70D09A0051DA24 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF3D6FE91C70D09A0051DA24 /* Montserrat-Bold.ttf */; };
+		EF3D6FEC1C70D09A0051DA24 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF3D6FEA1C70D09A0051DA24 /* Montserrat-Regular.ttf */; };
+		EF3DF2721C784A08002276A6 /* CAStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = EF3DF2711C784A08002276A6 /* CAStudent.m */; };
+		EF3DF2741C784F0F002276A6 /* NSData+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3DF2731C784F0F002276A6 /* NSData+CA.swift */; };
+		EF44E7FD1C7AFE0F00ADCC5E /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF44E7FC1C7AFE0F00ADCC5E /* SWRevealViewController.m */; };
+		EF44E8051C7BFD0B00ADCC5E /* CAIPWGSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44E8041C7BFD0B00ADCC5E /* CAIPWGSectionView.swift */; };
+		EF44E8071C7BFD1E00ADCC5E /* CAIPWGSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF44E8061C7BFD1E00ADCC5E /* CAIPWGSectionView.xib */; };
+		EF44E80A1C7C1FA600ADCC5E /* CALightAlphaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44E8091C7C1FA600ADCC5E /* CALightAlphaTextField.swift */; };
+		EF44E80C1C7C5DB300ADCC5E /* UIColor+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44E80B1C7C5DB300ADCC5E /* UIColor+CA.swift */; };
+		EF44E8101C7C8BC200ADCC5E /* String+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF44E80F1C7C8BC200ADCC5E /* String+CA.swift */; };
+		EF489D581CDB6A400017C32E /* CACreditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF489D571CDB6A400017C32E /* CACreditCell.swift */; };
+		EF489D5A1CDB6A4E0017C32E /* CACreditCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF489D591CDB6A4E0017C32E /* CACreditCell.xib */; };
+		EF489D5E1CDB9B9A0017C32E /* CAFosterPlanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF489D5C1CDB9B9A0017C32E /* CAFosterPlanCell.swift */; };
+		EF489D5F1CDB9B9A0017C32E /* CAFosterPlanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF489D5D1CDB9B9A0017C32E /* CAFosterPlanCell.xib */; };
+		EF4E1DB21C85C23200680EF4 /* CANavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E1DB11C85C23200680EF4 /* CANavigationController.swift */; };
+		EF4E1DBB1C85CFE200680EF4 /* CACheckGradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E1DBA1C85CFE200680EF4 /* CACheckGradesViewController.swift */; };
+		EF4E1DBD1C85CFEE00680EF4 /* CAClassListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E1DBC1C85CFEE00680EF4 /* CAClassListViewController.swift */; };
+		EF4E1DBF1C85D07C00680EF4 /* CACreditWarningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E1DBE1C85D07C00680EF4 /* CACreditWarningViewController.swift */; };
+		EF4E1DC11C85D08D00680EF4 /* CAEmptyRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E1DC01C85D08D00680EF4 /* CAEmptyRoomViewController.swift */; };
+		EF4E1DC31C85D09700680EF4 /* CAExamAgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E1DC21C85D09700680EF4 /* CAExamAgendaViewController.swift */; };
+		EF4E1DC51C85D0A100680EF4 /* CAFosterPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4E1DC41C85D0A100680EF4 /* CAFosterPlanViewController.swift */; };
+		EF50E7F31C775C0A00A0A5A5 /* UIImage+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50E7F21C775C0A00A0A5A5 /* UIImage+CA.swift */; };
+		EF50E7F51C77621B00A0A5A5 /* UIImageView+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50E7F41C77621B00A0A5A5 /* UIImageView+CA.swift */; };
+		EF5809251CB7D4CC00069EA2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF5808CB1CB7D4CC00069EA2 /* Localizable.strings */; };
+		EF5809261CB7D4CC00069EA2 /* MGCAlignedGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808CF1CB7D4CC00069EA2 /* MGCAlignedGeometry.m */; };
+		EF5809271CB7D4CC00069EA2 /* MGCAllDayEventsViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808D11CB7D4CC00069EA2 /* MGCAllDayEventsViewLayout.m */; };
+		EF5809281CB7D4CC00069EA2 /* MGCDateRange.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808D31CB7D4CC00069EA2 /* MGCDateRange.m */; };
+		EF5809291CB7D4CC00069EA2 /* MGCDayColumnCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808D51CB7D4CC00069EA2 /* MGCDayColumnCell.m */; };
+		EF58092A1CB7D4CC00069EA2 /* MGCDayPlannerEKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808D71CB7D4CC00069EA2 /* MGCDayPlannerEKViewController.m */; };
+		EF58092B1CB7D4CC00069EA2 /* MGCDayPlannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808D91CB7D4CC00069EA2 /* MGCDayPlannerView.m */; };
+		EF58092C1CB7D4CC00069EA2 /* MGCDayPlannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808DB1CB7D4CC00069EA2 /* MGCDayPlannerViewController.m */; };
+		EF58092D1CB7D4CC00069EA2 /* MGCEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808DD1CB7D4CC00069EA2 /* MGCEventCell.m */; };
+		EF58092E1CB7D4CC00069EA2 /* MGCEventCellLayoutAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808DF1CB7D4CC00069EA2 /* MGCEventCellLayoutAttributes.m */; };
+		EF58092F1CB7D4CC00069EA2 /* MGCEventKitSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808E11CB7D4CC00069EA2 /* MGCEventKitSupport.m */; };
+		EF5809301CB7D4CC00069EA2 /* MGCEventsRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808E31CB7D4CC00069EA2 /* MGCEventsRowView.m */; };
+		EF5809311CB7D4CC00069EA2 /* MGCEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808E51CB7D4CC00069EA2 /* MGCEventView.m */; };
+		EF5809321CB7D4CC00069EA2 /* MGCInteractiveEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808E71CB7D4CC00069EA2 /* MGCInteractiveEventView.m */; };
+		EF5809331CB7D4CC00069EA2 /* MGCMonthMiniCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808E91CB7D4CC00069EA2 /* MGCMonthMiniCalendarView.m */; };
+		EF5809341CB7D4CC00069EA2 /* MGCMonthPlannerBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808EB1CB7D4CC00069EA2 /* MGCMonthPlannerBackgroundView.m */; };
+		EF5809351CB7D4CC00069EA2 /* MGCMonthPlannerEKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808ED1CB7D4CC00069EA2 /* MGCMonthPlannerEKViewController.m */; };
+		EF5809361CB7D4CC00069EA2 /* MGCMonthPlannerHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808EF1CB7D4CC00069EA2 /* MGCMonthPlannerHeaderView.m */; };
+		EF5809371CB7D4CC00069EA2 /* MGCMonthPlannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808F11CB7D4CC00069EA2 /* MGCMonthPlannerView.m */; };
+		EF5809381CB7D4CC00069EA2 /* MGCMonthPlannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808F31CB7D4CC00069EA2 /* MGCMonthPlannerViewController.m */; };
+		EF5809391CB7D4CC00069EA2 /* MGCMonthPlannerViewDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808F51CB7D4CC00069EA2 /* MGCMonthPlannerViewDayCell.m */; };
+		EF58093A1CB7D4CC00069EA2 /* MGCMonthPlannerViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808F71CB7D4CC00069EA2 /* MGCMonthPlannerViewLayout.m */; };
+		EF58093B1CB7D4CC00069EA2 /* MGCMonthPlannerWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808F91CB7D4CC00069EA2 /* MGCMonthPlannerWeekView.m */; };
+		EF58093C1CB7D4CC00069EA2 /* MGCReusableObjectQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808FB1CB7D4CC00069EA2 /* MGCReusableObjectQueue.m */; };
+		EF58093D1CB7D4CC00069EA2 /* MGCStandardEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808FD1CB7D4CC00069EA2 /* MGCStandardEventView.m */; };
+		EF58093E1CB7D4CC00069EA2 /* MGCTimedEventsViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5808FF1CB7D4CC00069EA2 /* MGCTimedEventsViewLayout.m */; };
+		EF58093F1CB7D4CC00069EA2 /* MGCTimeRowsView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5809011CB7D4CC00069EA2 /* MGCTimeRowsView.m */; };
+		EF5809401CB7D4CC00069EA2 /* MGCYearCalendarMonthCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5809031CB7D4CC00069EA2 /* MGCYearCalendarMonthCell.m */; };
+		EF5809411CB7D4CC00069EA2 /* MGCYearCalendarMonthHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5809051CB7D4CC00069EA2 /* MGCYearCalendarMonthHeaderView.m */; };
+		EF5809421CB7D4CC00069EA2 /* MGCYearCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5809071CB7D4CC00069EA2 /* MGCYearCalendarView.m */; };
+		EF5809431CB7D4CC00069EA2 /* NSAttributedString+MGCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5809091CB7D4CC00069EA2 /* NSAttributedString+MGCAdditions.m */; };
+		EF5809441CB7D4CC00069EA2 /* NSCalendar+MGCAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = EF58090B1CB7D4CC00069EA2 /* NSCalendar+MGCAdditions.m */; };
+		EF5809451CB7D4CC00069EA2 /* OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = EF58090E1CB7D4CC00069EA2 /* OrderedDictionary.m */; };
+		EF5809461CB7D4CC00069EA2 /* OSCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5809111CB7D4CC00069EA2 /* OSCache.m */; };
+		EF5DF8321C7D75F4003CF533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5DF8311C7D75F4003CF533 /* Assets.xcassets */; };
+		EF656D3E1CDB9E810077FF10 /* CAFosterPlanHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF656D3D1CDB9E810077FF10 /* CAFosterPlanHeader.swift */; };
+		EF656D401CDB9E910077FF10 /* CAFosterPlanHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF656D3F1CDB9E910077FF10 /* CAFosterPlanHeader.xib */; };
+		EF77F42F1CD22405000CA2F6 /* CARoomNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF77F42D1CD22405000CA2F6 /* CARoomNameCell.swift */; };
+		EF77F4301CD22405000CA2F6 /* CARoomNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF77F42E1CD22405000CA2F6 /* CARoomNameCell.xib */; };
+		EF89D4BB1CEB672F00B2458C /* LCTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89D4B21CEB672F00B2458C /* LCTabBar.m */; };
+		EF89D4BC1CEB672F00B2458C /* LCTabBarBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89D4B41CEB672F00B2458C /* LCTabBarBadge.m */; };
+		EF89D4BD1CEB672F00B2458C /* LCTabBarController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EF89D4B61CEB672F00B2458C /* LCTabBarController.bundle */; };
+		EF89D4BE1CEB672F00B2458C /* LCTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89D4B81CEB672F00B2458C /* LCTabBarController.m */; };
+		EF89D4BF1CEB672F00B2458C /* LCTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89D4BA1CEB672F00B2458C /* LCTabBarItem.m */; };
+		EF89D4C11CEB807500B2458C /* SVProgressHUD+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89D4C01CEB807500B2458C /* SVProgressHUD+CA.swift */; };
+		EF89D4C61CEC0F4700B2458C /* CADeanAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = EF89D4C51CEC0F4700B2458C /* CADeanAccount.m */; };
+		EF89D4C81CEC107600B2458C /* CADeanAccountTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF89D4C71CEC107600B2458C /* CADeanAccountTool.swift */; };
+		EF8FB9E41CED61320009171C /* NSDate+CA.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8FB9E31CED61320009171C /* NSDate+CA.swift */; };
+		EFBC489D1C719DE500915AC7 /* CAWeatherSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC489C1C719DE500915AC7 /* CAWeatherSectionView.swift */; };
+		EFBC489F1C719DFF00915AC7 /* CAWeatherSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFBC489E1C719DFF00915AC7 /* CAWeatherSectionView.xib */; };
+		EFBC48A51C72F6AF00915AC7 /* CAStudyLifeSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC48A41C72F6AF00915AC7 /* CAStudyLifeSectionView.swift */; };
+		EFBC48A71C72FA0400915AC7 /* CAStudyLifeSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFBC48A61C72FA0400915AC7 /* CAStudyLifeSectionView.xib */; };
+		EFBC48AA1C73377000915AC7 /* Macro.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC48A91C73377000915AC7 /* Macro.swift */; };
+		EFBC48B11C733C3100915AC7 /* CAAddMoreSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBC48B01C733C3100915AC7 /* CAAddMoreSectionView.swift */; };
+		EFBC48B31C733C3D00915AC7 /* CAAddMoreSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFBC48B21C733C3D00915AC7 /* CAAddMoreSectionView.xib */; };
+		EFE736721CDC8B73004CB989 /* CAAccountSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE736701CDC8B73004CB989 /* CAAccountSectionView.swift */; };
+		EFE736731CDC8B73004CB989 /* CAAccountSectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE736711CDC8B73004CB989 /* CAAccountSectionView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		366F804F179ACD1CEE26C26CC61AE192 /* PBXContainerItemProxy */ = {
+		EF377C501C6F919B00B40D20 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = CF97754877FDE098510277AD94F346EE /* Project object */;
+			containerPortal = EF377C331C6F919B00B40D20 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5DF70F916E07BEB51CB83FF5A12140EF;
+			remoteGlobalIDString = EF377C3A1C6F919B00B40D20;
 			remoteInfo = CampusAssistant;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00464BA829A95EBC5D88C01F755C6167 /* MGCMonthPlannerViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCMonthPlannerViewLayout.m; sourceTree = "<group>"; };
-		014691F7CBFAC0C0A0C29E62F7D1F48F /* MGCMonthPlannerHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCMonthPlannerHeaderView.h; sourceTree = "<group>"; };
-		024BB74694F462C6B0FBD356B45D822A /* MGCAlignedGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCAlignedGeometry.h; sourceTree = "<group>"; };
-		03B2D536D9BA6BDB9BF9BEDDE55FDAA4 /* CAFosterPlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAFosterPlanViewController.swift; sourceTree = "<group>"; };
-		04E50A9A45FC29A548FE9F0F28C7B2A4 /* MGCMonthPlannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCMonthPlannerView.m; sourceTree = "<group>"; };
-		054600359DA4F2FC0180DC8787DC9B9D /* CALoginAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALoginAlertView.swift; sourceTree = "<group>"; };
-		09B883906AC156C61D25A155FB33E2BD /* CAStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAStudent.m; sourceTree = "<group>"; };
-		0A23552E0AA44A82851103C1261DE75B /* MGCEventCellLayoutAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCEventCellLayoutAttributes.m; sourceTree = "<group>"; };
-		0A78F0C95BC404AF6FC4EB67A71D9F62 /* CampusAssistantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusAssistantTests.swift; sourceTree = "<group>"; };
-		0A7E24107DC38B0B32E74007BBBB6BEC /* Pods_CampusAssistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampusAssistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0DC4221F9D5B1CFF707BB3575F15BA79 /* MGCEventKitSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCEventKitSupport.m; sourceTree = "<group>"; };
-		1172026978448F58CDC9B35F1DA8CFE8 /* MGCTimedEventsViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCTimedEventsViewLayout.m; sourceTree = "<group>"; };
-		13DCCF4EA4672AD7A0EEEDE4F5563128 /* CAEmptyRoomHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAEmptyRoomHeader.xib; sourceTree = "<group>"; };
-		158B54BF4D6CAFF449AC6A0C6CD9F0DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		16AD8CDF1AD1D415A512522F3ACFC617 /* LCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarController.h; sourceTree = "<group>"; };
-		18E67C79C79AD79BE69A9D35EEFEF838 /* NSCalendar+MGCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+MGCAdditions.h"; sourceTree = "<group>"; };
-		18ED17945742BAC1BD562A31B7A5615F /* MGCAllDayEventsViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCAllDayEventsViewLayout.m; sourceTree = "<group>"; };
-		192F177E7525563A9512E2B3043EAA34 /* UIColor+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+CA.swift"; sourceTree = "<group>"; };
-		1ABDBAE8A678A0D84CFBA975A47B32E5 /* CARightSlideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CARightSlideMenuViewController.swift; sourceTree = "<group>"; };
-		1C74A463E8ADBCC092A2C733907DD426 /* LCTabBarCONST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarCONST.h; sourceTree = "<group>"; };
-		1F3DCE257977731D177453B9C9689519 /* MGCYearCalendarMonthHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCYearCalendarMonthHeaderView.h; sourceTree = "<group>"; };
-		208351479CE571D78E4DA8AC89C6FEB1 /* OSCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCache.m; sourceTree = "<group>"; };
-		22CA5C8E67D84026B0D95218C6CCA531 /* CAProfileHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAProfileHeader.xib; sourceTree = "<group>"; };
-		254EAF51FECB87385C43E06C37805E6A /* MGCInteractiveEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCInteractiveEventView.m; sourceTree = "<group>"; };
-		25C72082A7DFF930AC1252BBD1C9E5D9 /* CARoomNameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CARoomNameCell.swift; sourceTree = "<group>"; };
-		265BDF53355DF3569F298336EF88B0D2 /* CANavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CANavigationController.swift; sourceTree = "<group>"; };
-		2B8D6BF66C4F3FD632E5B31C60D9C2BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2CAEC91D91560C6F1621C02A432B006A /* MGCInteractiveEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCInteractiveEventView.h; sourceTree = "<group>"; };
-		2D118AEE0F752BC9DB87AC5556C9AED1 /* NSAttributedString+MGCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+MGCAdditions.m"; sourceTree = "<group>"; };
-		2EF2E170226744C52444FE8DDD3F940D /* CAWeatherSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAWeatherSectionView.xib; sourceTree = "<group>"; };
-		30DCF3D921A4E95680C74826DE0B2979 /* NSCalendar+MGCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+MGCAdditions.m"; sourceTree = "<group>"; };
-		312A4ED13E3BA8B9469668726A4CDABC /* Macro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macro.swift; sourceTree = "<group>"; };
-		3145E7CB29220EC8C9DD2063562A728D /* MGCDayPlannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCDayPlannerViewController.h; sourceTree = "<group>"; };
-		352C23B51E9DAF6D779EFE17D463E6A6 /* CAStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStudent.h; sourceTree = "<group>"; };
-		381D0F569965F2CF4DE186202AF3F225 /* CAFunctionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAFunctionCell.swift; sourceTree = "<group>"; };
-		38F06F678E6C820FC6157A3187FEA0EB /* collections.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = collections.plist; sourceTree = "<group>"; };
-		3908677E08C1F05BAD7ED68D983034F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A58993663A4FFBA5C1133602998ADA4 /* CAIPWGSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAIPWGSectionView.swift; sourceTree = "<group>"; };
-		3D7058C470A3452F0B9629001CD52893 /* Pods-CampusAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant.debug.xcconfig"; sourceTree = "<group>"; };
-		4110854ECBD444C85B357F3C2BDAF4D8 /* MGCYearCalendarMonthCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCYearCalendarMonthCell.h; sourceTree = "<group>"; };
-		4156162D6C0081BBF0941D6064A86DBF /* CAProfileInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAProfileInfoCell.xib; sourceTree = "<group>"; };
-		427847B5A59FA92B9C011FE859B81AB8 /* MGCEventsRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCEventsRowView.h; sourceTree = "<group>"; };
-		45AFCEE36A61D55E3F7096062A379410 /* MGCYearCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCYearCalendarView.m; sourceTree = "<group>"; };
-		48532EE0EF5C3C420C7C46511C1613B1 /* MGCDayPlannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCDayPlannerViewController.m; sourceTree = "<group>"; };
-		4BB60DDADEF84883590DFB38AC29CC2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		4BC626D0E660D04851325218EE3E5C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C5ADD94B489C87224298BC33AB475EA /* OrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderedDictionary.h; sourceTree = "<group>"; };
-		4C8610DD7A924BDDFDAE39AD727D115A /* CampusAssistant-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CampusAssistant-Bridging-Header.h"; sourceTree = "<group>"; };
-		4D749F0067B1E23801AC0669100E3AE7 /* MGCMonthPlannerWeekView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCMonthPlannerWeekView.m; sourceTree = "<group>"; };
-		4EE868DE78061E734E00A8840A883833 /* CAStudyLifeSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAStudyLifeSectionView.swift; sourceTree = "<group>"; };
-		4F5927EDC8EF898AC750C85BAF003FFA /* CACollectionTitleHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACollectionTitleHeader.swift; sourceTree = "<group>"; };
-		4F6CA60828A6C44CB88D1DB7A556E73C /* SVProgressHUD+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SVProgressHUD+CA.swift"; sourceTree = "<group>"; };
-		5398298F1014593B6115C03E50B4F324 /* CAFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAFunction.h; sourceTree = "<group>"; };
-		544266F4CCEACC949F4FDD72A5CFD5AB /* MGCMonthPlannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCMonthPlannerView.h; sourceTree = "<group>"; };
-		551A65E61FDF9D08109FBFDDE950D530 /* MGCReusableObjectQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCReusableObjectQueue.h; sourceTree = "<group>"; };
-		5750F294EA67D460EA3B09ACB0D16BF6 /* MGCReusableObjectQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCReusableObjectQueue.m; sourceTree = "<group>"; };
-		57AA9DA0A3DBC1FD83AFE30FD15CD2F8 /* MGCEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCEventView.h; sourceTree = "<group>"; };
-		5879553B84E56F5F0B9D790611FC19E4 /* CAExamCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CAExamCell.xib; path = ExamCell/CAExamCell.xib; sourceTree = "<group>"; };
-		5ABDA019C0F269DF0E8005E05DB24E8A /* MGCYearCalendarMonthCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCYearCalendarMonthCell.m; sourceTree = "<group>"; };
-		5FC472EA37968B37DD67B253DC7CF8F6 /* CACreditCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CACreditCell.xib; sourceTree = "<group>"; };
-		5FD5C69680A6C39E8CBEEAFC14D6F867 /* CANetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CANetworkTool.swift; sourceTree = "<group>"; };
-		61332C3B6E921FEE8D7FD3C454FE21FF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		6144190C2207335E4500E7DF1B3E4B29 /* MGCMonthPlannerViewDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCMonthPlannerViewDayCell.m; sourceTree = "<group>"; };
-		61AA8087B0F9E6EE440C1AFACD12EE22 /* CAFosterPlanHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAFosterPlanHeader.swift; sourceTree = "<group>"; };
-		64AC3C5D5CD84B76867A9C3923E2A5E2 /* MGCDayPlannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCDayPlannerView.h; sourceTree = "<group>"; };
-		65BD90F247711A8A24973A29619EC3E0 /* MGCEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCEventView.m; sourceTree = "<group>"; };
-		67D29DF51C1BAE9995CDDF21A61DA673 /* CampusAssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampusAssistantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		68FA34F09356480D635CB49559668D0F /* MGCDateRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCDateRange.h; sourceTree = "<group>"; };
-		6C0DB49540D6EA0DFEDE7389D038E37E /* MGCMonthPlannerEKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCMonthPlannerEKViewController.m; sourceTree = "<group>"; };
-		6FD6D7320D470D12F9D161DAB2CB590B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		729D95919EA70BF27C2B1F2EEE810263 /* CAFosterPlanCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAFosterPlanCell.swift; sourceTree = "<group>"; };
-		72C3A33161FE4F3E2F5F334395FC735E /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
-		7394DB2AAFE1B1B4119E579E42F534BE /* UIImageView+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+CA.swift"; sourceTree = "<group>"; };
-		78CC29A51EDEDD810D8A9448FA2273F9 /* CACollectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACollectionsViewController.swift; sourceTree = "<group>"; };
-		7A16935B3FC1D715DB4CB72F53B6F50D /* CADeanAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADeanAccount.h; sourceTree = "<group>"; };
-		7AF0FED4C221EFBBBA248C8E7BCF3EA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7D3850FFC73A4545868A8B6C0B357446 /* MGCDateRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCDateRange.m; sourceTree = "<group>"; };
-		7F4E6BE3D5B5AB3560027D61BAB9B158 /* LCTabBarController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LCTabBarController.bundle; sourceTree = "<group>"; };
-		81A47542A046E5C528DABE3257692F4B /* CAAccountSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAAccountSectionView.xib; sourceTree = "<group>"; };
-		83CF16FB6ADF3B4F44BB9DB2536353C7 /* CADeanAccountTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CADeanAccountTool.swift; sourceTree = "<group>"; };
-		846CD011F5A70ED42C48B726B97437C9 /* CADeanAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADeanAccount.m; sourceTree = "<group>"; };
-		847DD7AD3244A5E109FC9A7C3DFB7562 /* OrderedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderedDictionary.m; sourceTree = "<group>"; };
-		85E40F8914D0BF9BEC8DA5FB79853AFD /* CALightAlphaTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALightAlphaTextField.swift; sourceTree = "<group>"; };
-		8C9F7AE1B0F2FB1CA6A70036E47C850D /* CAGradeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CAGradeCell.xib; path = GradeCell/CAGradeCell.xib; sourceTree = "<group>"; };
-		8D0774203643274E877B6A73ACFB409F /* CAWeatherSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAWeatherSectionView.swift; sourceTree = "<group>"; };
-		8E6F280106A5F84F96FCAD885D02C521 /* MGCStandardEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCStandardEventView.m; sourceTree = "<group>"; };
-		8EF93E8B5C2B7512F257DBB89FB92D4C /* MGCMonthMiniCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCMonthMiniCalendarView.m; sourceTree = "<group>"; };
-		931BE761B858490A86116AFEAF398FD7 /* LCTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBarItem.m; sourceTree = "<group>"; };
-		94F046E25806BE589E78DD188BE0CE64 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
-		959BCC9602D59255D50B2748928A04D8 /* MGCEventsRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCEventsRowView.m; sourceTree = "<group>"; };
-		95A5854404CC2B44A1A73B24EE512EA3 /* CAGrade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAGrade.h; sourceTree = "<group>"; };
-		96989C053D79C29096365E431B521064 /* CAProfileHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAProfileHeader.swift; sourceTree = "<group>"; };
-		96DC7D5DFCF0322D6A643DA509FE7C97 /* MGCEventCellLayoutAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCEventCellLayoutAttributes.h; sourceTree = "<group>"; };
-		9777A187879CE4CFC6E8201C5C1E30FA /* CACollectionTitleHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CACollectionTitleHeader.xib; sourceTree = "<group>"; };
-		982AAA6179374720B23FFF03A041BCD9 /* MGCMonthPlannerViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCMonthPlannerViewLayout.h; sourceTree = "<group>"; };
-		98921F1615BD5A399DAA547B44E591BA /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		98BD6662A8C747D097E1E6EC20873C1B /* MGCMonthPlannerHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCMonthPlannerHeaderView.m; sourceTree = "<group>"; };
-		9AB656C9A65D88E121713034481C84E1 /* MGCTimeRowsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCTimeRowsView.h; sourceTree = "<group>"; };
-		9B510AD1F4C269FB2BA6D10C77E67333 /* CACreditCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACreditCell.swift; sourceTree = "<group>"; };
-		9C6F29AA9ABE0AF8D425B03C8E2BDB5E /* BTNavigationDropdownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTNavigationDropdownMenu.swift; sourceTree = "<group>"; };
-		9C78DE3FD9F8A6DF6EC72D3B292CE04B /* MGCMonthPlannerBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCMonthPlannerBackgroundView.h; sourceTree = "<group>"; };
-		9D0DA692759363D2037A9021100F8F4E /* CACreditWarningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACreditWarningViewController.swift; sourceTree = "<group>"; };
-		9D456C38009F204429FBEC845255265B /* CAIPWGSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAIPWGSectionView.xib; sourceTree = "<group>"; };
-		9DE988DE3C2708342723BA067BD88B16 /* MGCDayPlannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCDayPlannerView.m; sourceTree = "<group>"; };
-		9F0B46BF3F4BD8D1836A16278196B05E /* String+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+CA.swift"; sourceTree = "<group>"; };
-		A254F448ABD87C12B4890FA3D89ED42E /* CAAccountSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAAccountSectionView.swift; sourceTree = "<group>"; };
-		A264754247CDB278BABAF1B29ECD8AFD /* CALoginAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CALoginAlertView.xib; sourceTree = "<group>"; };
-		A2A14A1526E8AFB25061E52855E9352B /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		A3AD05E52B1B879B7D3831102E8B2281 /* BTNavigationDropdownMenu.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BTNavigationDropdownMenu.bundle; sourceTree = "<group>"; };
-		A80F7C0F395547E44A3C0513D761AA12 /* CAClassListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAClassListViewController.swift; sourceTree = "<group>"; };
-		AAA44D9C8721F31FF8EC461DB554177F /* MGCAlignedGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCAlignedGeometry.m; sourceTree = "<group>"; };
-		AE4E2E2FC21BE202F98752CD00C82457 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
-		B40DDCB1F47D547D3588688866A0DE31 /* CAStudentTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAStudentTool.swift; sourceTree = "<group>"; };
-		B4FA23E2DDE8B817C4D83A66E44D00CC /* LCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBar.m; sourceTree = "<group>"; };
-		B4FC65A658C79F21B83F0F0DE8B9A535 /* LCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBar.h; sourceTree = "<group>"; };
-		B55AC93916685547E17CC43E8DD65ABF /* MGCMonthPlannerWeekView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCMonthPlannerWeekView.h; sourceTree = "<group>"; };
-		B55D9ED8C44E4A10BA085A820E63121A /* CAExamAgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAExamAgendaViewController.swift; sourceTree = "<group>"; };
-		B6299117BBB9705B26368611CD54759D /* MGCTimedEventsViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCTimedEventsViewLayout.h; sourceTree = "<group>"; };
-		B7B662261F160E34CE6B849E8E942C7B /* CAFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAFunction.m; sourceTree = "<group>"; };
-		B85378AA0D9F994F8A11270C86C09600 /* CAProfileInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAProfileInfoCell.swift; sourceTree = "<group>"; };
-		BD0DCDDF17C17994826A1F72D8DA8CDB /* OSCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCache.h; sourceTree = "<group>"; };
-		BE4264C3A90C07662A16FC24BA622F0C /* CAExamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CAExamCell.swift; path = ExamCell/CAExamCell.swift; sourceTree = "<group>"; };
-		BF5D1F9EB3BE2B2D4FB5EA6AAE0BC56D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		BF6A9850B25CF863753A6EE2E8A5B0EF /* CAFosterPlanHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAFosterPlanHeader.xib; sourceTree = "<group>"; };
-		C1E4DD7BB87D9ED5763761DEDF4ED034 /* CAGradeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CAGradeCell.swift; path = GradeCell/CAGradeCell.swift; sourceTree = "<group>"; };
-		C23257FF9DE3B9ABABFAF6A9C354D9E3 /* MGCEventKitSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCEventKitSupport.h; sourceTree = "<group>"; };
-		C3AAC11B3362AF88EA643954575ED620 /* LCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBarController.m; sourceTree = "<group>"; };
-		C50AA3FB1D9C12FD9944766BAF34B406 /* LCTabBarBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarBadge.h; sourceTree = "<group>"; };
-		C9113ADD45A2B23906E2488D907320B7 /* NSDate+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+CA.swift"; sourceTree = "<group>"; };
-		C9FCA0D5C7FC7F51E855FA694771F11D /* MGCMonthPlannerEKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCMonthPlannerEKViewController.h; sourceTree = "<group>"; };
-		CDE18CEB78E02F6EAA45AD82E922FF78 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
-		D177A36465CD2EBA75C9F819A245502E /* MGCDayPlannerEKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCDayPlannerEKViewController.h; sourceTree = "<group>"; };
-		D2141E3024690018F175F57A7288138A /* CAHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAHomeViewController.swift; sourceTree = "<group>"; };
-		D71974BEB7440C8104DEEB5A050900C9 /* MGCMonthPlannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCMonthPlannerViewController.h; sourceTree = "<group>"; };
-		D82A475468E8DDD8DC6DB1883B83A0A0 /* MGCMonthPlannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCMonthPlannerViewController.m; sourceTree = "<group>"; };
-		DBDBB2351E43E27C8052235C30595C97 /* MGCMonthPlannerBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCMonthPlannerBackgroundView.m; sourceTree = "<group>"; };
-		DCC098E547AD78BB1DAE733002153F72 /* MGCDayColumnCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCDayColumnCell.h; sourceTree = "<group>"; };
-		DD70DF669D38EAE7DCA42A8A1BF492AF /* CACheckGradesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACheckGradesViewController.swift; sourceTree = "<group>"; };
-		DE0D5ACFACB400572B96EA14C03CBE89 /* NSData+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+CA.swift"; sourceTree = "<group>"; };
-		DE6BE1B0CDDB7BA3308FBE3531A28D06 /* CAEmptyRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAEmptyRoomViewController.swift; sourceTree = "<group>"; };
-		DEA2554D425C0AA9DCE2B768A48DACE1 /* CAEmptyRoomHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAEmptyRoomHeader.swift; sourceTree = "<group>"; };
-		DEE54EC5902FC8273AE5AF71357A683D /* LCTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarItem.h; sourceTree = "<group>"; };
-		E24AEDA9E2D17AB8821AA7790D256BB6 /* CAGrade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAGrade.m; sourceTree = "<group>"; };
-		E2AA3655496D23C39B11319EDD6EC60A /* MGCEventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCEventCell.h; sourceTree = "<group>"; };
-		E3708CD9DD5D4FA9FCC3810D601107DE /* MGCYearCalendarMonthHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCYearCalendarMonthHeaderView.m; sourceTree = "<group>"; };
-		E709D72399B546F2F786A8D653BA52D1 /* CARegexTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CARegexTool.swift; sourceTree = "<group>"; };
-		E8281489A75A0141F57ED17ECD19585C /* CAFunctionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAFunctionCell.xib; sourceTree = "<group>"; };
-		E8FEA24361F73809320E8D999B4420E8 /* MGCEventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCEventCell.m; sourceTree = "<group>"; };
-		EB522FC6607015306473ABD02A18179C /* CampusAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB859D20D1EC8A3F521F3DB05FE3EF07 /* MGCMonthPlannerViewDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCMonthPlannerViewDayCell.h; sourceTree = "<group>"; };
-		EC18107F20F6F46FD8EA0E531126793A /* MGCMonthMiniCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCMonthMiniCalendarView.h; sourceTree = "<group>"; };
-		EC1E36AD73A382DA66F3C4D7E784C68B /* Pods-CampusAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusAssistant.release.xcconfig"; path = "Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant.release.xcconfig"; sourceTree = "<group>"; };
-		EC2144E8FAB021BD27BD9AD9C2EC7914 /* CAStudyLifeSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAStudyLifeSectionView.xib; sourceTree = "<group>"; };
-		ED0BF544AB40D2B3C8B4E015B624BA54 /* MGCAllDayEventsViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCAllDayEventsViewLayout.h; sourceTree = "<group>"; };
-		EDDDA45308906C1FEE05FF6C439B59C7 /* MGCYearCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCYearCalendarView.h; sourceTree = "<group>"; };
-		F0C7D53BAD165D3F6D37B76C883E075E /* NSAttributedString+MGCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+MGCAdditions.h"; sourceTree = "<group>"; };
-		F1027C594E634AE20697ED1DCEF38D11 /* CAAddMoreSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAAddMoreSectionView.swift; sourceTree = "<group>"; };
-		F1E896A3E412CB0DDA6F4885A8718CD9 /* CACollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACollection.h; sourceTree = "<group>"; };
-		F258E878AF831B064BFD14BD8D8A0BFF /* CAProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAProfileViewController.swift; sourceTree = "<group>"; };
-		F28FF246742DCBE7995D6E6E37256E34 /* CAAddMoreSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAAddMoreSectionView.xib; sourceTree = "<group>"; };
-		F4A0DEC7D629EA816738B7A0E832F58F /* CAFosterPlanCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAFosterPlanCell.xib; sourceTree = "<group>"; };
-		F4F8C7936F76E3B7E808941EE01B98BB /* MGCTimeRowsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCTimeRowsView.m; sourceTree = "<group>"; };
-		F51BDBAAA6AFF6EEBF5EEBEEC3031B23 /* MGCStandardEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCStandardEventView.h; sourceTree = "<group>"; };
-		F593BD7771160A867529B659883DBA76 /* UIImage+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CA.swift"; sourceTree = "<group>"; };
-		F7A96B04E1291C6A9ABCB3725BB2B913 /* MGCDayColumnCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCDayColumnCell.m; sourceTree = "<group>"; };
-		F83D7DD5D7502BBEC483D85CE9B8E91C /* MGCDayPlannerEKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCDayPlannerEKViewController.m; sourceTree = "<group>"; };
-		FBCDDD2ED5BD309C99ABF2D593B329A7 /* LCTabBarBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBarBadge.m; sourceTree = "<group>"; };
-		FCBF22B48CE6EAF92536C7E8A0AAB3B6 /* CACollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACollection.m; sourceTree = "<group>"; };
-		FD9D57BAF62FDB51EAB943C55FDA02E7 /* CARoomNameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CARoomNameCell.xib; sourceTree = "<group>"; };
+		0F04C9821C1B738753002A42 /* Pods_CampusAssistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CampusAssistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C5C8250F5FFB20728217A5C /* Pods-CampusAssistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusAssistant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant.debug.xcconfig"; sourceTree = "<group>"; };
+		69D9824D5BA22F340AC94276 /* CAGrade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAGrade.h; sourceTree = "<group>"; };
+		69D984513E26B38002EF8736 /* CAGrade.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAGrade.m; sourceTree = "<group>"; };
+		8E4C3E2FEADB86444CCA6E01 /* Pods-CampusAssistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CampusAssistant.release.xcconfig"; path = "Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant.release.xcconfig"; sourceTree = "<group>"; };
+		ED4A363E1CEB2F610032014F /* CANetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CANetworkTool.swift; sourceTree = "<group>"; };
+		ED4B25261CE2C7A800891428 /* CARegexTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CARegexTool.swift; sourceTree = "<group>"; };
+		ED77A2BC1CD8A25D00F43DC1 /* CAExamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CAExamCell.swift; path = ExamCell/CAExamCell.swift; sourceTree = "<group>"; };
+		ED77A2BD1CD8A25D00F43DC1 /* CAExamCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CAExamCell.xib; path = ExamCell/CAExamCell.xib; sourceTree = "<group>"; };
+		ED8BE6FB1CD0BA0500286E4D /* CAGradeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CAGradeCell.xib; path = GradeCell/CAGradeCell.xib; sourceTree = "<group>"; };
+		ED8BE7011CD0BBD700286E4D /* CAGradeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CAGradeCell.swift; path = GradeCell/CAGradeCell.swift; sourceTree = "<group>"; };
+		EDA814A61CEC8E5B00758ED5 /* CACalendarTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACalendarTool.swift; sourceTree = "<group>"; };
+		EF0BCE251CEB0B1E007F34FD /* CALoginAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALoginAlertView.swift; sourceTree = "<group>"; };
+		EF0BCE271CEB0B28007F34FD /* CALoginAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CALoginAlertView.xib; sourceTree = "<group>"; };
+		EF0C41711C758B820044B9C0 /* collections.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = collections.plist; sourceTree = "<group>"; };
+		EF0C41831C75CA5F0044B9C0 /* CACollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CACollection.h; sourceTree = "<group>"; };
+		EF0C41841C75CA5F0044B9C0 /* CACollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CACollection.m; sourceTree = "<group>"; };
+		EF0C41851C75CA5F0044B9C0 /* CAFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAFunction.h; sourceTree = "<group>"; };
+		EF0C41861C75CA5F0044B9C0 /* CAFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAFunction.m; sourceTree = "<group>"; };
+		EF18DAD21C79694200369F33 /* CARightSlideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CARightSlideMenuViewController.swift; sourceTree = "<group>"; };
+		EF2E421A1CD8971A00146D4D /* CACollectionTitleHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACollectionTitleHeader.swift; sourceTree = "<group>"; };
+		EF2E421B1CD8971A00146D4D /* CACollectionTitleHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CACollectionTitleHeader.xib; sourceTree = "<group>"; };
+		EF2E421E1CD8971A00146D4D /* CAProfileHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAProfileHeader.swift; sourceTree = "<group>"; };
+		EF2E421F1CD8971A00146D4D /* CAProfileHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAProfileHeader.xib; sourceTree = "<group>"; };
+		EF2E42241CD8974F00146D4D /* CAEmptyRoomHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAEmptyRoomHeader.swift; sourceTree = "<group>"; };
+		EF2E42261CD8975A00146D4D /* CAEmptyRoomHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAEmptyRoomHeader.xib; sourceTree = "<group>"; };
+		EF2E42291CD8DCD500146D4D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		EF2E422A1CD8DCD500146D4D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EF2E422C1CD8DCD500146D4D /* BTNavigationDropdownMenu.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BTNavigationDropdownMenu.bundle; sourceTree = "<group>"; };
+		EF2E422D1CD8DCD500146D4D /* BTNavigationDropdownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BTNavigationDropdownMenu.swift; sourceTree = "<group>"; };
+		EF331FC91C7861A200695A3B /* CAFunctionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAFunctionCell.swift; sourceTree = "<group>"; };
+		EF331FCA1C7861A200695A3B /* CAFunctionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAFunctionCell.xib; sourceTree = "<group>"; };
+		EF331FCE1C7861C100695A3B /* CAProfileInfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAProfileInfoCell.swift; sourceTree = "<group>"; };
+		EF331FD01C7861D000695A3B /* CAProfileInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAProfileInfoCell.xib; sourceTree = "<group>"; };
+		EF331FD31C786C6600695A3B /* CAStudentTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAStudentTool.swift; sourceTree = "<group>"; };
+		EF377C3B1C6F919B00B40D20 /* CampusAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF377C3E1C6F919B00B40D20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF377C431C6F919B00B40D20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF377C481C6F919B00B40D20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF377C4A1C6F919B00B40D20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF377C4F1C6F919B00B40D20 /* CampusAssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampusAssistantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF377C531C6F919B00B40D20 /* CampusAssistantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusAssistantTests.swift; sourceTree = "<group>"; };
+		EF377C551C6F919B00B40D20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF377C5E1C6F936900B40D20 /* CampusAssistant-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CampusAssistant-Bridging-Header.h"; sourceTree = "<group>"; };
+		EF3D6FDF1C7064740051DA24 /* CAHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAHomeViewController.swift; sourceTree = "<group>"; };
+		EF3D6FE11C70647C0051DA24 /* CAProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAProfileViewController.swift; sourceTree = "<group>"; };
+		EF3D6FE31C7064870051DA24 /* CACollectionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACollectionsViewController.swift; sourceTree = "<group>"; };
+		EF3D6FE91C70D09A0051DA24 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		EF3D6FEA1C70D09A0051DA24 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		EF3DF2701C784A08002276A6 /* CAStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStudent.h; sourceTree = "<group>"; };
+		EF3DF2711C784A08002276A6 /* CAStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAStudent.m; sourceTree = "<group>"; };
+		EF3DF2731C784F0F002276A6 /* NSData+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+CA.swift"; sourceTree = "<group>"; };
+		EF44E7FB1C7AFE0F00ADCC5E /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		EF44E7FC1C7AFE0F00ADCC5E /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		EF44E8041C7BFD0B00ADCC5E /* CAIPWGSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAIPWGSectionView.swift; sourceTree = "<group>"; };
+		EF44E8061C7BFD1E00ADCC5E /* CAIPWGSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAIPWGSectionView.xib; sourceTree = "<group>"; };
+		EF44E8091C7C1FA600ADCC5E /* CALightAlphaTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALightAlphaTextField.swift; sourceTree = "<group>"; };
+		EF44E80B1C7C5DB300ADCC5E /* UIColor+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+CA.swift"; sourceTree = "<group>"; };
+		EF44E80F1C7C8BC200ADCC5E /* String+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+CA.swift"; sourceTree = "<group>"; };
+		EF489D571CDB6A400017C32E /* CACreditCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACreditCell.swift; sourceTree = "<group>"; };
+		EF489D591CDB6A4E0017C32E /* CACreditCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CACreditCell.xib; sourceTree = "<group>"; };
+		EF489D5C1CDB9B9A0017C32E /* CAFosterPlanCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAFosterPlanCell.swift; sourceTree = "<group>"; };
+		EF489D5D1CDB9B9A0017C32E /* CAFosterPlanCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAFosterPlanCell.xib; sourceTree = "<group>"; };
+		EF4E1DB11C85C23200680EF4 /* CANavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CANavigationController.swift; sourceTree = "<group>"; };
+		EF4E1DBA1C85CFE200680EF4 /* CACheckGradesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACheckGradesViewController.swift; sourceTree = "<group>"; };
+		EF4E1DBC1C85CFEE00680EF4 /* CAClassListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAClassListViewController.swift; sourceTree = "<group>"; };
+		EF4E1DBE1C85D07C00680EF4 /* CACreditWarningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACreditWarningViewController.swift; sourceTree = "<group>"; };
+		EF4E1DC01C85D08D00680EF4 /* CAEmptyRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAEmptyRoomViewController.swift; sourceTree = "<group>"; };
+		EF4E1DC21C85D09700680EF4 /* CAExamAgendaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAExamAgendaViewController.swift; sourceTree = "<group>"; };
+		EF4E1DC41C85D0A100680EF4 /* CAFosterPlanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAFosterPlanViewController.swift; sourceTree = "<group>"; };
+		EF50E7F21C775C0A00A0A5A5 /* UIImage+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+CA.swift"; sourceTree = "<group>"; };
+		EF50E7F41C77621B00A0A5A5 /* UIImageView+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+CA.swift"; sourceTree = "<group>"; };
+		EF5808CA1CB7D4CC00069EA2 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		EF5808CC1CB7D4CC00069EA2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EF5808CD1CB7D4CC00069EA2 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		EF5808CE1CB7D4CC00069EA2 /* MGCAlignedGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCAlignedGeometry.h; sourceTree = "<group>"; };
+		EF5808CF1CB7D4CC00069EA2 /* MGCAlignedGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCAlignedGeometry.m; sourceTree = "<group>"; };
+		EF5808D01CB7D4CC00069EA2 /* MGCAllDayEventsViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCAllDayEventsViewLayout.h; sourceTree = "<group>"; };
+		EF5808D11CB7D4CC00069EA2 /* MGCAllDayEventsViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCAllDayEventsViewLayout.m; sourceTree = "<group>"; };
+		EF5808D21CB7D4CC00069EA2 /* MGCDateRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCDateRange.h; sourceTree = "<group>"; };
+		EF5808D31CB7D4CC00069EA2 /* MGCDateRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCDateRange.m; sourceTree = "<group>"; };
+		EF5808D41CB7D4CC00069EA2 /* MGCDayColumnCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCDayColumnCell.h; sourceTree = "<group>"; };
+		EF5808D51CB7D4CC00069EA2 /* MGCDayColumnCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCDayColumnCell.m; sourceTree = "<group>"; };
+		EF5808D61CB7D4CC00069EA2 /* MGCDayPlannerEKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCDayPlannerEKViewController.h; sourceTree = "<group>"; };
+		EF5808D71CB7D4CC00069EA2 /* MGCDayPlannerEKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCDayPlannerEKViewController.m; sourceTree = "<group>"; };
+		EF5808D81CB7D4CC00069EA2 /* MGCDayPlannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCDayPlannerView.h; sourceTree = "<group>"; };
+		EF5808D91CB7D4CC00069EA2 /* MGCDayPlannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCDayPlannerView.m; sourceTree = "<group>"; };
+		EF5808DA1CB7D4CC00069EA2 /* MGCDayPlannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCDayPlannerViewController.h; sourceTree = "<group>"; };
+		EF5808DB1CB7D4CC00069EA2 /* MGCDayPlannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCDayPlannerViewController.m; sourceTree = "<group>"; };
+		EF5808DC1CB7D4CC00069EA2 /* MGCEventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCEventCell.h; sourceTree = "<group>"; };
+		EF5808DD1CB7D4CC00069EA2 /* MGCEventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCEventCell.m; sourceTree = "<group>"; };
+		EF5808DE1CB7D4CC00069EA2 /* MGCEventCellLayoutAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCEventCellLayoutAttributes.h; sourceTree = "<group>"; };
+		EF5808DF1CB7D4CC00069EA2 /* MGCEventCellLayoutAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCEventCellLayoutAttributes.m; sourceTree = "<group>"; };
+		EF5808E01CB7D4CC00069EA2 /* MGCEventKitSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCEventKitSupport.h; sourceTree = "<group>"; };
+		EF5808E11CB7D4CC00069EA2 /* MGCEventKitSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCEventKitSupport.m; sourceTree = "<group>"; };
+		EF5808E21CB7D4CC00069EA2 /* MGCEventsRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCEventsRowView.h; sourceTree = "<group>"; };
+		EF5808E31CB7D4CC00069EA2 /* MGCEventsRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCEventsRowView.m; sourceTree = "<group>"; };
+		EF5808E41CB7D4CC00069EA2 /* MGCEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCEventView.h; sourceTree = "<group>"; };
+		EF5808E51CB7D4CC00069EA2 /* MGCEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCEventView.m; sourceTree = "<group>"; };
+		EF5808E61CB7D4CC00069EA2 /* MGCInteractiveEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCInteractiveEventView.h; sourceTree = "<group>"; };
+		EF5808E71CB7D4CC00069EA2 /* MGCInteractiveEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCInteractiveEventView.m; sourceTree = "<group>"; };
+		EF5808E81CB7D4CC00069EA2 /* MGCMonthMiniCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCMonthMiniCalendarView.h; sourceTree = "<group>"; };
+		EF5808E91CB7D4CC00069EA2 /* MGCMonthMiniCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCMonthMiniCalendarView.m; sourceTree = "<group>"; };
+		EF5808EA1CB7D4CC00069EA2 /* MGCMonthPlannerBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCMonthPlannerBackgroundView.h; sourceTree = "<group>"; };
+		EF5808EB1CB7D4CC00069EA2 /* MGCMonthPlannerBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCMonthPlannerBackgroundView.m; sourceTree = "<group>"; };
+		EF5808EC1CB7D4CC00069EA2 /* MGCMonthPlannerEKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCMonthPlannerEKViewController.h; sourceTree = "<group>"; };
+		EF5808ED1CB7D4CC00069EA2 /* MGCMonthPlannerEKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCMonthPlannerEKViewController.m; sourceTree = "<group>"; };
+		EF5808EE1CB7D4CC00069EA2 /* MGCMonthPlannerHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCMonthPlannerHeaderView.h; sourceTree = "<group>"; };
+		EF5808EF1CB7D4CC00069EA2 /* MGCMonthPlannerHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCMonthPlannerHeaderView.m; sourceTree = "<group>"; };
+		EF5808F01CB7D4CC00069EA2 /* MGCMonthPlannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCMonthPlannerView.h; sourceTree = "<group>"; };
+		EF5808F11CB7D4CC00069EA2 /* MGCMonthPlannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCMonthPlannerView.m; sourceTree = "<group>"; };
+		EF5808F21CB7D4CC00069EA2 /* MGCMonthPlannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCMonthPlannerViewController.h; sourceTree = "<group>"; };
+		EF5808F31CB7D4CC00069EA2 /* MGCMonthPlannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCMonthPlannerViewController.m; sourceTree = "<group>"; };
+		EF5808F41CB7D4CC00069EA2 /* MGCMonthPlannerViewDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCMonthPlannerViewDayCell.h; sourceTree = "<group>"; };
+		EF5808F51CB7D4CC00069EA2 /* MGCMonthPlannerViewDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCMonthPlannerViewDayCell.m; sourceTree = "<group>"; };
+		EF5808F61CB7D4CC00069EA2 /* MGCMonthPlannerViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCMonthPlannerViewLayout.h; sourceTree = "<group>"; };
+		EF5808F71CB7D4CC00069EA2 /* MGCMonthPlannerViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCMonthPlannerViewLayout.m; sourceTree = "<group>"; };
+		EF5808F81CB7D4CC00069EA2 /* MGCMonthPlannerWeekView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCMonthPlannerWeekView.h; sourceTree = "<group>"; };
+		EF5808F91CB7D4CC00069EA2 /* MGCMonthPlannerWeekView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCMonthPlannerWeekView.m; sourceTree = "<group>"; };
+		EF5808FA1CB7D4CC00069EA2 /* MGCReusableObjectQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCReusableObjectQueue.h; sourceTree = "<group>"; };
+		EF5808FB1CB7D4CC00069EA2 /* MGCReusableObjectQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCReusableObjectQueue.m; sourceTree = "<group>"; };
+		EF5808FC1CB7D4CC00069EA2 /* MGCStandardEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCStandardEventView.h; sourceTree = "<group>"; };
+		EF5808FD1CB7D4CC00069EA2 /* MGCStandardEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCStandardEventView.m; sourceTree = "<group>"; };
+		EF5808FE1CB7D4CC00069EA2 /* MGCTimedEventsViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCTimedEventsViewLayout.h; sourceTree = "<group>"; };
+		EF5808FF1CB7D4CC00069EA2 /* MGCTimedEventsViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCTimedEventsViewLayout.m; sourceTree = "<group>"; };
+		EF5809001CB7D4CC00069EA2 /* MGCTimeRowsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCTimeRowsView.h; sourceTree = "<group>"; };
+		EF5809011CB7D4CC00069EA2 /* MGCTimeRowsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCTimeRowsView.m; sourceTree = "<group>"; };
+		EF5809021CB7D4CC00069EA2 /* MGCYearCalendarMonthCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCYearCalendarMonthCell.h; sourceTree = "<group>"; };
+		EF5809031CB7D4CC00069EA2 /* MGCYearCalendarMonthCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCYearCalendarMonthCell.m; sourceTree = "<group>"; };
+		EF5809041CB7D4CC00069EA2 /* MGCYearCalendarMonthHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCYearCalendarMonthHeaderView.h; sourceTree = "<group>"; };
+		EF5809051CB7D4CC00069EA2 /* MGCYearCalendarMonthHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCYearCalendarMonthHeaderView.m; sourceTree = "<group>"; };
+		EF5809061CB7D4CC00069EA2 /* MGCYearCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGCYearCalendarView.h; sourceTree = "<group>"; };
+		EF5809071CB7D4CC00069EA2 /* MGCYearCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGCYearCalendarView.m; sourceTree = "<group>"; };
+		EF5809081CB7D4CC00069EA2 /* NSAttributedString+MGCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+MGCAdditions.h"; sourceTree = "<group>"; };
+		EF5809091CB7D4CC00069EA2 /* NSAttributedString+MGCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+MGCAdditions.m"; sourceTree = "<group>"; };
+		EF58090A1CB7D4CC00069EA2 /* NSCalendar+MGCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+MGCAdditions.h"; sourceTree = "<group>"; };
+		EF58090B1CB7D4CC00069EA2 /* NSCalendar+MGCAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+MGCAdditions.m"; sourceTree = "<group>"; };
+		EF58090D1CB7D4CC00069EA2 /* OrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderedDictionary.h; sourceTree = "<group>"; };
+		EF58090E1CB7D4CC00069EA2 /* OrderedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderedDictionary.m; sourceTree = "<group>"; };
+		EF5809101CB7D4CC00069EA2 /* OSCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCache.h; sourceTree = "<group>"; };
+		EF5809111CB7D4CC00069EA2 /* OSCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCache.m; sourceTree = "<group>"; };
+		EF5DF8311C7D75F4003CF533 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF656D3D1CDB9E810077FF10 /* CAFosterPlanHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAFosterPlanHeader.swift; sourceTree = "<group>"; };
+		EF656D3F1CDB9E910077FF10 /* CAFosterPlanHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAFosterPlanHeader.xib; sourceTree = "<group>"; };
+		EF77F42D1CD22405000CA2F6 /* CARoomNameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CARoomNameCell.swift; sourceTree = "<group>"; };
+		EF77F42E1CD22405000CA2F6 /* CARoomNameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CARoomNameCell.xib; sourceTree = "<group>"; };
+		EF89D4B11CEB672F00B2458C /* LCTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBar.h; sourceTree = "<group>"; };
+		EF89D4B21CEB672F00B2458C /* LCTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBar.m; sourceTree = "<group>"; };
+		EF89D4B31CEB672F00B2458C /* LCTabBarBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarBadge.h; sourceTree = "<group>"; };
+		EF89D4B41CEB672F00B2458C /* LCTabBarBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBarBadge.m; sourceTree = "<group>"; };
+		EF89D4B51CEB672F00B2458C /* LCTabBarCONST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarCONST.h; sourceTree = "<group>"; };
+		EF89D4B61CEB672F00B2458C /* LCTabBarController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LCTabBarController.bundle; sourceTree = "<group>"; };
+		EF89D4B71CEB672F00B2458C /* LCTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarController.h; sourceTree = "<group>"; };
+		EF89D4B81CEB672F00B2458C /* LCTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBarController.m; sourceTree = "<group>"; };
+		EF89D4B91CEB672F00B2458C /* LCTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTabBarItem.h; sourceTree = "<group>"; };
+		EF89D4BA1CEB672F00B2458C /* LCTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTabBarItem.m; sourceTree = "<group>"; };
+		EF89D4C01CEB807500B2458C /* SVProgressHUD+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SVProgressHUD+CA.swift"; sourceTree = "<group>"; };
+		EF89D4C41CEC0F4700B2458C /* CADeanAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADeanAccount.h; sourceTree = "<group>"; };
+		EF89D4C51CEC0F4700B2458C /* CADeanAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CADeanAccount.m; sourceTree = "<group>"; };
+		EF89D4C71CEC107600B2458C /* CADeanAccountTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CADeanAccountTool.swift; sourceTree = "<group>"; };
+		EF8FB9E31CED61320009171C /* NSDate+CA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+CA.swift"; sourceTree = "<group>"; };
+		EFBC489C1C719DE500915AC7 /* CAWeatherSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAWeatherSectionView.swift; sourceTree = "<group>"; };
+		EFBC489E1C719DFF00915AC7 /* CAWeatherSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAWeatherSectionView.xib; sourceTree = "<group>"; };
+		EFBC48A41C72F6AF00915AC7 /* CAStudyLifeSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAStudyLifeSectionView.swift; sourceTree = "<group>"; };
+		EFBC48A61C72FA0400915AC7 /* CAStudyLifeSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAStudyLifeSectionView.xib; sourceTree = "<group>"; };
+		EFBC48A91C73377000915AC7 /* Macro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Macro.swift; sourceTree = "<group>"; };
+		EFBC48B01C733C3100915AC7 /* CAAddMoreSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAAddMoreSectionView.swift; sourceTree = "<group>"; };
+		EFBC48B21C733C3D00915AC7 /* CAAddMoreSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAAddMoreSectionView.xib; sourceTree = "<group>"; };
+		EFE736701CDC8B73004CB989 /* CAAccountSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAAccountSectionView.swift; sourceTree = "<group>"; };
+		EFE736711CDC8B73004CB989 /* CAAccountSectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CAAccountSectionView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6F5FED12C506BE0CCE60CA193BE68EC2 /* Frameworks */ = {
+		EF377C381C6F919B00B40D20 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85DAAE718D226501BFD309319ADCEEEA /* Pods_CampusAssistant.framework in Frameworks */,
+				EC4584CD9F482D614B8AA32D /* Pods_CampusAssistant.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C07D7962EB17B375BE135BD4D98F4BAA /* Frameworks */ = {
+		EF377C4C1C6F919B00B40D20 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -326,593 +328,594 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		48BB2F83CD916063C3D4C05B9C6FE92C /* Frameworks */ = {
+		560AD298775BF00CED1FBBD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0A7E24107DC38B0B32E74007BBBB6BEC /* Pods_CampusAssistant.framework */,
+				0F04C9821C1B738753002A42 /* Pods_CampusAssistant.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DF56859A5512EDF473A7CE721CB45E03 /* Pods */ = {
+		B144BDE8A24E4EEF8DC88625 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3D7058C470A3452F0B9629001CD52893 /* Pods-CampusAssistant.debug.xcconfig */,
-				EC1E36AD73A382DA66F3C4D7E784C68B /* Pods-CampusAssistant.release.xcconfig */,
+				3C5C8250F5FFB20728217A5C /* Pods-CampusAssistant.debug.xcconfig */,
+				8E4C3E2FEADB86444CCA6E01 /* Pods-CampusAssistant.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		86130B2A90E256C1ADB29A3CB3F3B3F4 /* ExamCell */ = {
+		ED77A2BB1CD8A1F000F43DC1 /* ExamCell */ = {
 			isa = PBXGroup;
 			children = (
-				BE4264C3A90C07662A16FC24BA622F0C /* CAExamCell.swift */,
-				5879553B84E56F5F0B9D790611FC19E4 /* CAExamCell.xib */,
+				ED77A2BC1CD8A25D00F43DC1 /* CAExamCell.swift */,
+				ED77A2BD1CD8A25D00F43DC1 /* CAExamCell.xib */,
 			);
 			name = ExamCell;
 			sourceTree = "<group>";
 		};
-		242AD0C4ADC2C420E827B79F59D241F6 /* GradeCell */ = {
+		ED8BE6FA1CD0B9BA00286E4D /* GradeCell */ = {
 			isa = PBXGroup;
 			children = (
-				C1E4DD7BB87D9ED5763761DEDF4ED034 /* CAGradeCell.swift */,
-				8C9F7AE1B0F2FB1CA6A70036E47C850D /* CAGradeCell.xib */,
+				ED8BE7011CD0BBD700286E4D /* CAGradeCell.swift */,
+				ED8BE6FB1CD0BA0500286E4D /* CAGradeCell.xib */,
 			);
 			name = GradeCell;
 			sourceTree = "<group>";
 		};
-		3B9D74B06756633D26B6A061F4938922 /* Data */ = {
+		EF0C41701C758B820044B9C0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				38F06F678E6C820FC6157A3187FEA0EB /* collections.plist */,
+				EF0C41711C758B820044B9C0 /* collections.plist */,
 			);
 			path = Data;
 			sourceTree = "<group>";
 		};
-		B382FCFDCC99FC9C63B24DDEF4479628 /* Header */ = {
+		EF2E42181CD8971A00146D4D /* Header */ = {
 			isa = PBXGroup;
 			children = (
-				6ACB26B2CB83FC327F7B0009ABB7AC39 /* CollectionTitleHeader */,
-				6C7D46EB995AF22E7DFEA490F4D8902C /* EmptyRoomHeader */,
-				4F599532FFBD5BEB66C0A98D700909F4 /* FosterPlanHeader */,
-				A27676C768B04CC97BD2E6B8FEA409AD /* ProfileHeader */,
+				EF489D601CDB9E070017C32E /* FosterPlanHeader */,
+				EF2E42191CD8971A00146D4D /* CollectionTitleHeader */,
+				EF2E421C1CD8971A00146D4D /* EmptyRoomHeader */,
+				EF2E421D1CD8971A00146D4D /* ProfileHeader */,
 			);
 			path = Header;
 			sourceTree = "<group>";
 		};
-		6ACB26B2CB83FC327F7B0009ABB7AC39 /* CollectionTitleHeader */ = {
+		EF2E42191CD8971A00146D4D /* CollectionTitleHeader */ = {
 			isa = PBXGroup;
 			children = (
-				4F5927EDC8EF898AC750C85BAF003FFA /* CACollectionTitleHeader.swift */,
-				9777A187879CE4CFC6E8201C5C1E30FA /* CACollectionTitleHeader.xib */,
+				EF2E421A1CD8971A00146D4D /* CACollectionTitleHeader.swift */,
+				EF2E421B1CD8971A00146D4D /* CACollectionTitleHeader.xib */,
 			);
 			path = CollectionTitleHeader;
 			sourceTree = "<group>";
 		};
-		6C7D46EB995AF22E7DFEA490F4D8902C /* EmptyRoomHeader */ = {
+		EF2E421C1CD8971A00146D4D /* EmptyRoomHeader */ = {
 			isa = PBXGroup;
 			children = (
-				DEA2554D425C0AA9DCE2B768A48DACE1 /* CAEmptyRoomHeader.swift */,
-				13DCCF4EA4672AD7A0EEEDE4F5563128 /* CAEmptyRoomHeader.xib */,
+				EF2E42241CD8974F00146D4D /* CAEmptyRoomHeader.swift */,
+				EF2E42261CD8975A00146D4D /* CAEmptyRoomHeader.xib */,
 			);
 			path = EmptyRoomHeader;
 			sourceTree = "<group>";
 		};
-		A27676C768B04CC97BD2E6B8FEA409AD /* ProfileHeader */ = {
+		EF2E421D1CD8971A00146D4D /* ProfileHeader */ = {
 			isa = PBXGroup;
 			children = (
-				96989C053D79C29096365E431B521064 /* CAProfileHeader.swift */,
-				22CA5C8E67D84026B0D95218C6CCA531 /* CAProfileHeader.xib */,
+				EF2E421E1CD8971A00146D4D /* CAProfileHeader.swift */,
+				EF2E421F1CD8971A00146D4D /* CAProfileHeader.xib */,
 			);
 			path = ProfileHeader;
 			sourceTree = "<group>";
 		};
-		AFE37E44C2EF00C0C0F2F4FC47F549D2 /* BTNavigationDropdownMenu */ = {
+		EF2E42281CD8DCD500146D4D /* BTNavigationDropdownMenu */ = {
 			isa = PBXGroup;
 			children = (
-				6FD6D7320D470D12F9D161DAB2CB590B /* LICENSE */,
-				9D0AB44D42300BD2430B22A48DD00037 /* Source */,
-				61332C3B6E921FEE8D7FD3C454FE21FF /* README.md */,
+				EF2E42291CD8DCD500146D4D /* LICENSE */,
+				EF2E422A1CD8DCD500146D4D /* README.md */,
+				EF2E422B1CD8DCD500146D4D /* Source */,
 			);
 			path = BTNavigationDropdownMenu;
 			sourceTree = "<group>";
 		};
-		9D0AB44D42300BD2430B22A48DD00037 /* Source */ = {
+		EF2E422B1CD8DCD500146D4D /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				A3AD05E52B1B879B7D3831102E8B2281 /* BTNavigationDropdownMenu.bundle */,
-				9C6F29AA9ABE0AF8D425B03C8E2BDB5E /* BTNavigationDropdownMenu.swift */,
+				EF2E422C1CD8DCD500146D4D /* BTNavigationDropdownMenu.bundle */,
+				EF2E422D1CD8DCD500146D4D /* BTNavigationDropdownMenu.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
 		};
-		6DB5E67923314864F878731FAD06E5FF /* Cell */ = {
+		EF331FC71C7861A200695A3B /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				0A03A5EFA5CFD08A437E73F627C72032 /* CreditCell */,
-				86130B2A90E256C1ADB29A3CB3F3B3F4 /* ExamCell */,
-				59205648EDDBF51D3F7A83FC156C5CB5 /* FosterPlanCell */,
-				6F5CBE0D114616E887EBF6A44A9067AB /* FunctionCell */,
-				242AD0C4ADC2C420E827B79F59D241F6 /* GradeCell */,
-				21664A2AC70CC7DBD41C0C7EE4EDC01A /* ProfileInfoCell */,
-				F3BB939AA9BC686298F8087B93BF7E94 /* RoomNameCell */,
+				EF489D5B1CDB9B7B0017C32E /* FosterPlanCell */,
+				EF489D561CDB6A2F0017C32E /* CreditCell */,
+				EF77F42A1CD223BA000CA2F6 /* RoomNameCell */,
+				ED77A2BB1CD8A1F000F43DC1 /* ExamCell */,
+				ED8BE6FA1CD0B9BA00286E4D /* GradeCell */,
+				EF331FC81C7861A200695A3B /* FunctionCell */,
+				EF331FCB1C7861A200695A3B /* ProfileInfoCell */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		6F5CBE0D114616E887EBF6A44A9067AB /* FunctionCell */ = {
+		EF331FC81C7861A200695A3B /* FunctionCell */ = {
 			isa = PBXGroup;
 			children = (
-				381D0F569965F2CF4DE186202AF3F225 /* CAFunctionCell.swift */,
-				E8281489A75A0141F57ED17ECD19585C /* CAFunctionCell.xib */,
+				EF331FC91C7861A200695A3B /* CAFunctionCell.swift */,
+				EF331FCA1C7861A200695A3B /* CAFunctionCell.xib */,
 			);
 			path = FunctionCell;
 			sourceTree = "<group>";
 		};
-		21664A2AC70CC7DBD41C0C7EE4EDC01A /* ProfileInfoCell */ = {
+		EF331FCB1C7861A200695A3B /* ProfileInfoCell */ = {
 			isa = PBXGroup;
 			children = (
-				B85378AA0D9F994F8A11270C86C09600 /* CAProfileInfoCell.swift */,
-				4156162D6C0081BBF0941D6064A86DBF /* CAProfileInfoCell.xib */,
+				EF331FCE1C7861C100695A3B /* CAProfileInfoCell.swift */,
+				EF331FD01C7861D000695A3B /* CAProfileInfoCell.xib */,
 			);
 			path = ProfileInfoCell;
 			sourceTree = "<group>";
 		};
-		61480A5111DCF0A23C55FCCA46B0CC55 /* Tools */ = {
+		EF331FD21C786C5500695A3B /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				83CF16FB6ADF3B4F44BB9DB2536353C7 /* CADeanAccountTool.swift */,
-				5FD5C69680A6C39E8CBEEAFC14D6F867 /* CANetworkTool.swift */,
-				E709D72399B546F2F786A8D653BA52D1 /* CARegexTool.swift */,
-				B40DDCB1F47D547D3588688866A0DE31 /* CAStudentTool.swift */,
+				EF331FD31C786C6600695A3B /* CAStudentTool.swift */,
+				ED4B25261CE2C7A800891428 /* CARegexTool.swift */,
+				ED4A363E1CEB2F610032014F /* CANetworkTool.swift */,
+				EDA814A61CEC8E5B00758ED5 /* CACalendarTool.swift */,
+				EF89D4C71CEC107600B2458C /* CADeanAccountTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
 		};
-		A10983023D8DBC10DF98A5C82ECF3987 /* SlideMenu */ = {
+		EF331FF11C7960E800695A3B /* SlideMenu */ = {
 			isa = PBXGroup;
 			children = (
-				1ABDBAE8A678A0D84CFBA975A47B32E5 /* CARightSlideMenuViewController.swift */,
+				EF18DAD21C79694200369F33 /* CARightSlideMenuViewController.swift */,
 			);
 			name = SlideMenu;
 			path = SlidMenu;
 			sourceTree = "<group>";
 		};
-		983F6CA34693CDEFF7BAEB94F59DBBAF = {
+		EF377C321C6F919B00B40D20 = {
 			isa = PBXGroup;
 			children = (
-				26920C6C9E9D198B6B6318C123B893A3 /* CampusAssistant */,
-				7DD911BD362DD1EE24771C335AED9E85 /* CampusAssistantTests */,
-				48BB2F83CD916063C3D4C05B9C6FE92C /* Frameworks */,
-				DF56859A5512EDF473A7CE721CB45E03 /* Pods */,
-				69968728DE768A5A1BA2E60B888329AB /* Products */,
+				EF377C3D1C6F919B00B40D20 /* CampusAssistant */,
+				EF377C521C6F919B00B40D20 /* CampusAssistantTests */,
+				EF377C3C1C6F919B00B40D20 /* Products */,
+				B144BDE8A24E4EEF8DC88625 /* Pods */,
+				560AD298775BF00CED1FBBD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		69968728DE768A5A1BA2E60B888329AB /* Products */ = {
+		EF377C3C1C6F919B00B40D20 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EB522FC6607015306473ABD02A18179C /* CampusAssistant.app */,
-				67D29DF51C1BAE9995CDDF21A61DA673 /* CampusAssistantTests.xctest */,
+				EF377C3B1C6F919B00B40D20 /* CampusAssistant.app */,
+				EF377C4F1C6F919B00B40D20 /* CampusAssistantTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		26920C6C9E9D198B6B6318C123B893A3 /* CampusAssistant */ = {
+		EF377C3D1C6F919B00B40D20 /* CampusAssistant */ = {
 			isa = PBXGroup;
 			children = (
-				34A9F62F912C6EE19E32AEEFB5DDB4D8 /* 3rdPartFrameworks */,
-				3B9D74B06756633D26B6A061F4938922 /* Data */,
-				E60208924B9A7D6E8A30C4430B8EB205 /* Extensions */,
-				38FC363F77D0BDC22E976D04454F13BB /* Font */,
-				C7236E4FDC5365393E976D793BF102C6 /* Macro */,
-				F8227A1A1D17E170C3E31D05E9624E27 /* Models */,
-				61480A5111DCF0A23C55FCCA46B0CC55 /* Tools */,
-				14C02C433AC7159E5058BDD0E0B2400D /* ViewControllers */,
-				B5234C914790458AC3E2A699737B2190 /* Views */,
-				158B54BF4D6CAFF449AC6A0C6CD9F0DF /* AppDelegate.swift */,
-				2B8D6BF66C4F3FD632E5B31C60D9C2BD /* Assets.xcassets */,
-				4C8610DD7A924BDDFDAE39AD727D115A /* CampusAssistant-Bridging-Header.h */,
-				4BC626D0E660D04851325218EE3E5C5B /* Info.plist */,
-				855FA5915041EC67B83B2F64B889E731 /* LaunchScreen.storyboard */,
-				1415C27CFCB31014FF1CC140F5E17667 /* Main.storyboard */,
+				EF377C3E1C6F919B00B40D20 /* AppDelegate.swift */,
+				EF377C5E1C6F936900B40D20 /* CampusAssistant-Bridging-Header.h */,
+				EF5808C81CB7D4CC00069EA2 /* 3rdPartFrameworks */,
+				EF331FD21C786C5500695A3B /* Tools */,
+				EF0C41701C758B820044B9C0 /* Data */,
+				EFBC48A81C73376300915AC7 /* Macro */,
+				EF3D6FE81C70D09A0051DA24 /* Font */,
+				EF377C8E1C7038F800B40D20 /* Extensions */,
+				EF377C8F1C7038F800B40D20 /* Models */,
+				EF377C901C7038F800B40D20 /* ViewControllers */,
+				EF377C941C7038F800B40D20 /* Views */,
+				EF377C421C6F919B00B40D20 /* Main.storyboard */,
+				EF377C471C6F919B00B40D20 /* LaunchScreen.storyboard */,
+				EF5DF8311C7D75F4003CF533 /* Assets.xcassets */,
+				EF377C4A1C6F919B00B40D20 /* Info.plist */,
 			);
 			path = CampusAssistant;
 			sourceTree = "<group>";
 		};
-		7DD911BD362DD1EE24771C335AED9E85 /* CampusAssistantTests */ = {
+		EF377C521C6F919B00B40D20 /* CampusAssistantTests */ = {
 			isa = PBXGroup;
 			children = (
-				0A78F0C95BC404AF6FC4EB67A71D9F62 /* CampusAssistantTests.swift */,
-				3908677E08C1F05BAD7ED68D983034F9 /* Info.plist */,
+				EF377C531C6F919B00B40D20 /* CampusAssistantTests.swift */,
+				EF377C551C6F919B00B40D20 /* Info.plist */,
 			);
 			path = CampusAssistantTests;
 			sourceTree = "<group>";
 		};
-		E60208924B9A7D6E8A30C4430B8EB205 /* Extensions */ = {
+		EF377C8E1C7038F800B40D20 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				DE0D5ACFACB400572B96EA14C03CBE89 /* NSData+CA.swift */,
-				C9113ADD45A2B23906E2488D907320B7 /* NSDate+CA.swift */,
-				4F6CA60828A6C44CB88D1DB7A556E73C /* SVProgressHUD+CA.swift */,
-				9F0B46BF3F4BD8D1836A16278196B05E /* String+CA.swift */,
-				192F177E7525563A9512E2B3043EAA34 /* UIColor+CA.swift */,
-				F593BD7771160A867529B659883DBA76 /* UIImage+CA.swift */,
-				7394DB2AAFE1B1B4119E579E42F534BE /* UIImageView+CA.swift */,
+				EF44E80F1C7C8BC200ADCC5E /* String+CA.swift */,
+				EF50E7F21C775C0A00A0A5A5 /* UIImage+CA.swift */,
+				EF50E7F41C77621B00A0A5A5 /* UIImageView+CA.swift */,
+				EF3DF2731C784F0F002276A6 /* NSData+CA.swift */,
+				EF44E80B1C7C5DB300ADCC5E /* UIColor+CA.swift */,
+				EF89D4C01CEB807500B2458C /* SVProgressHUD+CA.swift */,
+				EF8FB9E31CED61320009171C /* NSDate+CA.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		F8227A1A1D17E170C3E31D05E9624E27 /* Models */ = {
+		EF377C8F1C7038F800B40D20 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F1E896A3E412CB0DDA6F4885A8718CD9 /* CACollection.h */,
-				FCBF22B48CE6EAF92536C7E8A0AAB3B6 /* CACollection.m */,
-				7A16935B3FC1D715DB4CB72F53B6F50D /* CADeanAccount.h */,
-				846CD011F5A70ED42C48B726B97437C9 /* CADeanAccount.m */,
-				5398298F1014593B6115C03E50B4F324 /* CAFunction.h */,
-				B7B662261F160E34CE6B849E8E942C7B /* CAFunction.m */,
-				95A5854404CC2B44A1A73B24EE512EA3 /* CAGrade.h */,
-				E24AEDA9E2D17AB8821AA7790D256BB6 /* CAGrade.m */,
-				352C23B51E9DAF6D779EFE17D463E6A6 /* CAStudent.h */,
-				09B883906AC156C61D25A155FB33E2BD /* CAStudent.m */,
+				EF0C41831C75CA5F0044B9C0 /* CACollection.h */,
+				EF0C41841C75CA5F0044B9C0 /* CACollection.m */,
+				EF0C41851C75CA5F0044B9C0 /* CAFunction.h */,
+				EF0C41861C75CA5F0044B9C0 /* CAFunction.m */,
+				EF3DF2701C784A08002276A6 /* CAStudent.h */,
+				EF3DF2711C784A08002276A6 /* CAStudent.m */,
+				69D984513E26B38002EF8736 /* CAGrade.m */,
+				69D9824D5BA22F340AC94276 /* CAGrade.h */,
+				EF89D4C41CEC0F4700B2458C /* CADeanAccount.h */,
+				EF89D4C51CEC0F4700B2458C /* CADeanAccount.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		14C02C433AC7159E5058BDD0E0B2400D /* ViewControllers */ = {
+		EF377C901C7038F800B40D20 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D566EE8F726D701A366A959957B54BA1 /* Collections */,
-				56179CC3D45D277BEEC5EF8EB083A80B /* EducationSystem */,
-				571B3CBCB9DC1BB7FBA4A776F3967EE6 /* Home */,
-				C54AD097C3BAB88D6FDD164C3877E419 /* Navigation */,
-				A5D9D9EAFC29FB38F55900E6387B6858 /* Profile */,
-				2D529FBC9DAB4942BB5A8308DBB3AA76 /* SWReveal */,
-				A10983023D8DBC10DF98A5C82ECF3987 /* SlideMenu */,
+				EF4E1DB31C85CB8000680EF4 /* EducationSystem */,
+				EF4E1DB01C85C21400680EF4 /* Navigation */,
+				EF44E7FA1C7AFE0F00ADCC5E /* SWReveal */,
+				EF331FF11C7960E800695A3B /* SlideMenu */,
+				EF3D6FDC1C7064260051DA24 /* Profile */,
+				EF3D6FDA1C7064260051DA24 /* Collections */,
+				EF3D6FDB1C7064260051DA24 /* Home */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		B5234C914790458AC3E2A699737B2190 /* Views */ = {
+		EF377C941C7038F800B40D20 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3528AE976833F757213392955530B1D6 /* Account */,
-				3F6B1C814A2D0FC927AF6618A2A264A6 /* AddMore */,
-				6DB5E67923314864F878731FAD06E5FF /* Cell */,
-				B382FCFDCC99FC9C63B24DDEF4479628 /* Header */,
-				196278D910313725234930F1FB572AA6 /* IPWG */,
-				61EFFB2BCD3C60130A073591B8ABD7B6 /* StudyLife */,
-				0FEE758E31101034F6909D684CB8B1E3 /* TextField */,
-				EBC927AAE53955F6F9A585328A53A953 /* Weather */,
+				EF2E42181CD8971A00146D4D /* Header */,
+				EF44E8081C7C1F4500ADCC5E /* TextField */,
+				EF44E7FE1C7BFCAF00ADCC5E /* Account */,
+				EF44E7FF1C7BFCAF00ADCC5E /* IPWG */,
+				EF331FC71C7861A200695A3B /* Cell */,
+				EFBC48AF1C733C1700915AC7 /* AddMore */,
+				EFBC489A1C719DA700915AC7 /* StudyLife */,
+				EFBC489B1C719DA700915AC7 /* Weather */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		D566EE8F726D701A366A959957B54BA1 /* Collections */ = {
+		EF3D6FDA1C7064260051DA24 /* Collections */ = {
 			isa = PBXGroup;
 			children = (
-				78CC29A51EDEDD810D8A9448FA2273F9 /* CACollectionsViewController.swift */,
+				EF3D6FE31C7064870051DA24 /* CACollectionsViewController.swift */,
 			);
 			path = Collections;
 			sourceTree = "<group>";
 		};
-		571B3CBCB9DC1BB7FBA4A776F3967EE6 /* Home */ = {
+		EF3D6FDB1C7064260051DA24 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				D2141E3024690018F175F57A7288138A /* CAHomeViewController.swift */,
+				EF3D6FDF1C7064740051DA24 /* CAHomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
 		};
-		A5D9D9EAFC29FB38F55900E6387B6858 /* Profile */ = {
+		EF3D6FDC1C7064260051DA24 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				F258E878AF831B064BFD14BD8D8A0BFF /* CAProfileViewController.swift */,
+				EF3D6FE11C70647C0051DA24 /* CAProfileViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		38FC363F77D0BDC22E976D04454F13BB /* Font */ = {
+		EF3D6FE81C70D09A0051DA24 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				94F046E25806BE589E78DD188BE0CE64 /* Montserrat-Bold.ttf */,
-				72C3A33161FE4F3E2F5F334395FC735E /* Montserrat-Regular.ttf */,
+				EF3D6FE91C70D09A0051DA24 /* Montserrat-Bold.ttf */,
+				EF3D6FEA1C70D09A0051DA24 /* Montserrat-Regular.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
 		};
-		2D529FBC9DAB4942BB5A8308DBB3AA76 /* SWReveal */ = {
+		EF44E7FA1C7AFE0F00ADCC5E /* SWReveal */ = {
 			isa = PBXGroup;
 			children = (
-				A2A14A1526E8AFB25061E52855E9352B /* SWRevealViewController.h */,
-				CDE18CEB78E02F6EAA45AD82E922FF78 /* SWRevealViewController.m */,
+				EF44E7FB1C7AFE0F00ADCC5E /* SWRevealViewController.h */,
+				EF44E7FC1C7AFE0F00ADCC5E /* SWRevealViewController.m */,
 			);
 			path = SWReveal;
 			sourceTree = "<group>";
 		};
-		3528AE976833F757213392955530B1D6 /* Account */ = {
+		EF44E7FE1C7BFCAF00ADCC5E /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				A254F448ABD87C12B4890FA3D89ED42E /* CAAccountSectionView.swift */,
-				81A47542A046E5C528DABE3257692F4B /* CAAccountSectionView.xib */,
-				054600359DA4F2FC0180DC8787DC9B9D /* CALoginAlertView.swift */,
-				A264754247CDB278BABAF1B29ECD8AFD /* CALoginAlertView.xib */,
+				EFE736701CDC8B73004CB989 /* CAAccountSectionView.swift */,
+				EFE736711CDC8B73004CB989 /* CAAccountSectionView.xib */,
+				EF0BCE251CEB0B1E007F34FD /* CALoginAlertView.swift */,
+				EF0BCE271CEB0B28007F34FD /* CALoginAlertView.xib */,
 			);
 			path = Account;
 			sourceTree = "<group>";
 		};
-		196278D910313725234930F1FB572AA6 /* IPWG */ = {
+		EF44E7FF1C7BFCAF00ADCC5E /* IPWG */ = {
 			isa = PBXGroup;
 			children = (
-				3A58993663A4FFBA5C1133602998ADA4 /* CAIPWGSectionView.swift */,
-				9D456C38009F204429FBEC845255265B /* CAIPWGSectionView.xib */,
+				EF44E8041C7BFD0B00ADCC5E /* CAIPWGSectionView.swift */,
+				EF44E8061C7BFD1E00ADCC5E /* CAIPWGSectionView.xib */,
 			);
 			path = IPWG;
 			sourceTree = "<group>";
 		};
-		0FEE758E31101034F6909D684CB8B1E3 /* TextField */ = {
+		EF44E8081C7C1F4500ADCC5E /* TextField */ = {
 			isa = PBXGroup;
 			children = (
-				85E40F8914D0BF9BEC8DA5FB79853AFD /* CALightAlphaTextField.swift */,
+				EF44E8091C7C1FA600ADCC5E /* CALightAlphaTextField.swift */,
 			);
 			path = TextField;
 			sourceTree = "<group>";
 		};
-		0A03A5EFA5CFD08A437E73F627C72032 /* CreditCell */ = {
+		EF489D561CDB6A2F0017C32E /* CreditCell */ = {
 			isa = PBXGroup;
 			children = (
-				9B510AD1F4C269FB2BA6D10C77E67333 /* CACreditCell.swift */,
-				5FC472EA37968B37DD67B253DC7CF8F6 /* CACreditCell.xib */,
+				EF489D571CDB6A400017C32E /* CACreditCell.swift */,
+				EF489D591CDB6A4E0017C32E /* CACreditCell.xib */,
 			);
 			path = CreditCell;
 			sourceTree = "<group>";
 		};
-		59205648EDDBF51D3F7A83FC156C5CB5 /* FosterPlanCell */ = {
+		EF489D5B1CDB9B7B0017C32E /* FosterPlanCell */ = {
 			isa = PBXGroup;
 			children = (
-				729D95919EA70BF27C2B1F2EEE810263 /* CAFosterPlanCell.swift */,
-				F4A0DEC7D629EA816738B7A0E832F58F /* CAFosterPlanCell.xib */,
+				EF489D5C1CDB9B9A0017C32E /* CAFosterPlanCell.swift */,
+				EF489D5D1CDB9B9A0017C32E /* CAFosterPlanCell.xib */,
 			);
 			path = FosterPlanCell;
 			sourceTree = "<group>";
 		};
-		4F599532FFBD5BEB66C0A98D700909F4 /* FosterPlanHeader */ = {
+		EF489D601CDB9E070017C32E /* FosterPlanHeader */ = {
 			isa = PBXGroup;
 			children = (
-				61AA8087B0F9E6EE440C1AFACD12EE22 /* CAFosterPlanHeader.swift */,
-				BF6A9850B25CF863753A6EE2E8A5B0EF /* CAFosterPlanHeader.xib */,
+				EF656D3D1CDB9E810077FF10 /* CAFosterPlanHeader.swift */,
+				EF656D3F1CDB9E910077FF10 /* CAFosterPlanHeader.xib */,
 			);
 			path = FosterPlanHeader;
 			sourceTree = "<group>";
 		};
-		C54AD097C3BAB88D6FDD164C3877E419 /* Navigation */ = {
+		EF4E1DB01C85C21400680EF4 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				265BDF53355DF3569F298336EF88B0D2 /* CANavigationController.swift */,
+				EF4E1DB11C85C23200680EF4 /* CANavigationController.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
 		};
-		56179CC3D45D277BEEC5EF8EB083A80B /* EducationSystem */ = {
+		EF4E1DB31C85CB8000680EF4 /* EducationSystem */ = {
 			isa = PBXGroup;
 			children = (
-				F0F2649C6FC7C12BC822852290832A85 /* CheckGrades */,
-				28F7801CED62CA0E1F77CCD67F5E702F /* ClassList */,
-				431F2750C4FFCFE92611C582924E6075 /* CreditWarning */,
-				92CF782335D360D9AEF046DBF6430C35 /* EmptyRoom */,
-				C8555F57EF80EB1F41DD56F3225C6C8B /* ExamAgenda */,
-				621422D66C06A08CD2C261F063EEE445 /* FosterPlan */,
+				EF4E1DB41C85CB8000680EF4 /* CheckGrades */,
+				EF4E1DB51C85CB8000680EF4 /* ClassList */,
+				EF4E1DB61C85CB8000680EF4 /* CreditWarning */,
+				EF4E1DB71C85CB8000680EF4 /* EmptyRoom */,
+				EF4E1DB81C85CB8000680EF4 /* ExamAgenda */,
+				EF4E1DB91C85CB8000680EF4 /* FosterPlan */,
 			);
 			path = EducationSystem;
 			sourceTree = "<group>";
 		};
-		F0F2649C6FC7C12BC822852290832A85 /* CheckGrades */ = {
+		EF4E1DB41C85CB8000680EF4 /* CheckGrades */ = {
 			isa = PBXGroup;
 			children = (
-				DD70DF669D38EAE7DCA42A8A1BF492AF /* CACheckGradesViewController.swift */,
+				EF4E1DBA1C85CFE200680EF4 /* CACheckGradesViewController.swift */,
 			);
 			path = CheckGrades;
 			sourceTree = "<group>";
 		};
-		28F7801CED62CA0E1F77CCD67F5E702F /* ClassList */ = {
+		EF4E1DB51C85CB8000680EF4 /* ClassList */ = {
 			isa = PBXGroup;
 			children = (
-				A80F7C0F395547E44A3C0513D761AA12 /* CAClassListViewController.swift */,
+				EF4E1DBC1C85CFEE00680EF4 /* CAClassListViewController.swift */,
 			);
 			path = ClassList;
 			sourceTree = "<group>";
 		};
-		431F2750C4FFCFE92611C582924E6075 /* CreditWarning */ = {
+		EF4E1DB61C85CB8000680EF4 /* CreditWarning */ = {
 			isa = PBXGroup;
 			children = (
-				9D0DA692759363D2037A9021100F8F4E /* CACreditWarningViewController.swift */,
+				EF4E1DBE1C85D07C00680EF4 /* CACreditWarningViewController.swift */,
 			);
 			path = CreditWarning;
 			sourceTree = "<group>";
 		};
-		92CF782335D360D9AEF046DBF6430C35 /* EmptyRoom */ = {
+		EF4E1DB71C85CB8000680EF4 /* EmptyRoom */ = {
 			isa = PBXGroup;
 			children = (
-				DE6BE1B0CDDB7BA3308FBE3531A28D06 /* CAEmptyRoomViewController.swift */,
+				EF4E1DC01C85D08D00680EF4 /* CAEmptyRoomViewController.swift */,
 			);
 			path = EmptyRoom;
 			sourceTree = "<group>";
 		};
-		C8555F57EF80EB1F41DD56F3225C6C8B /* ExamAgenda */ = {
+		EF4E1DB81C85CB8000680EF4 /* ExamAgenda */ = {
 			isa = PBXGroup;
 			children = (
-				B55D9ED8C44E4A10BA085A820E63121A /* CAExamAgendaViewController.swift */,
+				EF4E1DC21C85D09700680EF4 /* CAExamAgendaViewController.swift */,
 			);
 			path = ExamAgenda;
 			sourceTree = "<group>";
 		};
-		621422D66C06A08CD2C261F063EEE445 /* FosterPlan */ = {
+		EF4E1DB91C85CB8000680EF4 /* FosterPlan */ = {
 			isa = PBXGroup;
 			children = (
-				03B2D536D9BA6BDB9BF9BEDDE55FDAA4 /* CAFosterPlanViewController.swift */,
+				EF4E1DC41C85D0A100680EF4 /* CAFosterPlanViewController.swift */,
 			);
 			path = FosterPlan;
 			sourceTree = "<group>";
 		};
-		34A9F62F912C6EE19E32AEEFB5DDB4D8 /* 3rdPartFrameworks */ = {
+		EF5808C81CB7D4CC00069EA2 /* 3rdPartFrameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AFE37E44C2EF00C0C0F2F4FC47F549D2 /* BTNavigationDropdownMenu */,
-				DCE87B3CA3D11C0EDCAAEA421944A90A /* CalendarLib */,
-				3B1131BCBD0386E0BCEF2C5BAF63DE48 /* LCTabBarController */,
-				33F693B1FA270643AA4209829A26E129 /* OSCache */,
-				FA1F1AA1AF5D96198BB5521995259258 /* OrderedDictionary */,
+				EF89D4B01CEB672F00B2458C /* LCTabBarController */,
+				EF2E42281CD8DCD500146D4D /* BTNavigationDropdownMenu */,
+				EF5808C91CB7D4CC00069EA2 /* CalendarLib */,
+				EF58090C1CB7D4CC00069EA2 /* OrderedDictionary */,
+				EF58090F1CB7D4CC00069EA2 /* OSCache */,
 			);
 			path = 3rdPartFrameworks;
 			sourceTree = "<group>";
 		};
-		DCE87B3CA3D11C0EDCAAEA421944A90A /* CalendarLib */ = {
+		EF5808C91CB7D4CC00069EA2 /* CalendarLib */ = {
 			isa = PBXGroup;
 			children = (
-				AE4E2E2FC21BE202F98752CD00C82457 /* Constant.h */,
-				76054D856969822F4FFC561D7C706025 /* Localizable.strings */,
-				024BB74694F462C6B0FBD356B45D822A /* MGCAlignedGeometry.h */,
-				AAA44D9C8721F31FF8EC461DB554177F /* MGCAlignedGeometry.m */,
-				ED0BF544AB40D2B3C8B4E015B624BA54 /* MGCAllDayEventsViewLayout.h */,
-				18ED17945742BAC1BD562A31B7A5615F /* MGCAllDayEventsViewLayout.m */,
-				68FA34F09356480D635CB49559668D0F /* MGCDateRange.h */,
-				7D3850FFC73A4545868A8B6C0B357446 /* MGCDateRange.m */,
-				DCC098E547AD78BB1DAE733002153F72 /* MGCDayColumnCell.h */,
-				F7A96B04E1291C6A9ABCB3725BB2B913 /* MGCDayColumnCell.m */,
-				D177A36465CD2EBA75C9F819A245502E /* MGCDayPlannerEKViewController.h */,
-				F83D7DD5D7502BBEC483D85CE9B8E91C /* MGCDayPlannerEKViewController.m */,
-				64AC3C5D5CD84B76867A9C3923E2A5E2 /* MGCDayPlannerView.h */,
-				9DE988DE3C2708342723BA067BD88B16 /* MGCDayPlannerView.m */,
-				3145E7CB29220EC8C9DD2063562A728D /* MGCDayPlannerViewController.h */,
-				48532EE0EF5C3C420C7C46511C1613B1 /* MGCDayPlannerViewController.m */,
-				E2AA3655496D23C39B11319EDD6EC60A /* MGCEventCell.h */,
-				E8FEA24361F73809320E8D999B4420E8 /* MGCEventCell.m */,
-				96DC7D5DFCF0322D6A643DA509FE7C97 /* MGCEventCellLayoutAttributes.h */,
-				0A23552E0AA44A82851103C1261DE75B /* MGCEventCellLayoutAttributes.m */,
-				C23257FF9DE3B9ABABFAF6A9C354D9E3 /* MGCEventKitSupport.h */,
-				0DC4221F9D5B1CFF707BB3575F15BA79 /* MGCEventKitSupport.m */,
-				57AA9DA0A3DBC1FD83AFE30FD15CD2F8 /* MGCEventView.h */,
-				65BD90F247711A8A24973A29619EC3E0 /* MGCEventView.m */,
-				427847B5A59FA92B9C011FE859B81AB8 /* MGCEventsRowView.h */,
-				959BCC9602D59255D50B2748928A04D8 /* MGCEventsRowView.m */,
-				2CAEC91D91560C6F1621C02A432B006A /* MGCInteractiveEventView.h */,
-				254EAF51FECB87385C43E06C37805E6A /* MGCInteractiveEventView.m */,
-				EC18107F20F6F46FD8EA0E531126793A /* MGCMonthMiniCalendarView.h */,
-				8EF93E8B5C2B7512F257DBB89FB92D4C /* MGCMonthMiniCalendarView.m */,
-				9C78DE3FD9F8A6DF6EC72D3B292CE04B /* MGCMonthPlannerBackgroundView.h */,
-				DBDBB2351E43E27C8052235C30595C97 /* MGCMonthPlannerBackgroundView.m */,
-				C9FCA0D5C7FC7F51E855FA694771F11D /* MGCMonthPlannerEKViewController.h */,
-				6C0DB49540D6EA0DFEDE7389D038E37E /* MGCMonthPlannerEKViewController.m */,
-				014691F7CBFAC0C0A0C29E62F7D1F48F /* MGCMonthPlannerHeaderView.h */,
-				98BD6662A8C747D097E1E6EC20873C1B /* MGCMonthPlannerHeaderView.m */,
-				544266F4CCEACC949F4FDD72A5CFD5AB /* MGCMonthPlannerView.h */,
-				04E50A9A45FC29A548FE9F0F28C7B2A4 /* MGCMonthPlannerView.m */,
-				D71974BEB7440C8104DEEB5A050900C9 /* MGCMonthPlannerViewController.h */,
-				D82A475468E8DDD8DC6DB1883B83A0A0 /* MGCMonthPlannerViewController.m */,
-				EB859D20D1EC8A3F521F3DB05FE3EF07 /* MGCMonthPlannerViewDayCell.h */,
-				6144190C2207335E4500E7DF1B3E4B29 /* MGCMonthPlannerViewDayCell.m */,
-				982AAA6179374720B23FFF03A041BCD9 /* MGCMonthPlannerViewLayout.h */,
-				00464BA829A95EBC5D88C01F755C6167 /* MGCMonthPlannerViewLayout.m */,
-				B55AC93916685547E17CC43E8DD65ABF /* MGCMonthPlannerWeekView.h */,
-				4D749F0067B1E23801AC0669100E3AE7 /* MGCMonthPlannerWeekView.m */,
-				551A65E61FDF9D08109FBFDDE950D530 /* MGCReusableObjectQueue.h */,
-				5750F294EA67D460EA3B09ACB0D16BF6 /* MGCReusableObjectQueue.m */,
-				F51BDBAAA6AFF6EEBF5EEBEEC3031B23 /* MGCStandardEventView.h */,
-				8E6F280106A5F84F96FCAD885D02C521 /* MGCStandardEventView.m */,
-				9AB656C9A65D88E121713034481C84E1 /* MGCTimeRowsView.h */,
-				F4F8C7936F76E3B7E808941EE01B98BB /* MGCTimeRowsView.m */,
-				B6299117BBB9705B26368611CD54759D /* MGCTimedEventsViewLayout.h */,
-				1172026978448F58CDC9B35F1DA8CFE8 /* MGCTimedEventsViewLayout.m */,
-				4110854ECBD444C85B357F3C2BDAF4D8 /* MGCYearCalendarMonthCell.h */,
-				5ABDA019C0F269DF0E8005E05DB24E8A /* MGCYearCalendarMonthCell.m */,
-				1F3DCE257977731D177453B9C9689519 /* MGCYearCalendarMonthHeaderView.h */,
-				E3708CD9DD5D4FA9FCC3810D601107DE /* MGCYearCalendarMonthHeaderView.m */,
-				EDDDA45308906C1FEE05FF6C439B59C7 /* MGCYearCalendarView.h */,
-				45AFCEE36A61D55E3F7096062A379410 /* MGCYearCalendarView.m */,
-				F0C7D53BAD165D3F6D37B76C883E075E /* NSAttributedString+MGCAdditions.h */,
-				2D118AEE0F752BC9DB87AC5556C9AED1 /* NSAttributedString+MGCAdditions.m */,
-				18E67C79C79AD79BE69A9D35EEFEF838 /* NSCalendar+MGCAdditions.h */,
-				30DCF3D921A4E95680C74826DE0B2979 /* NSCalendar+MGCAdditions.m */,
+				EF5808CA1CB7D4CC00069EA2 /* Constant.h */,
+				EF5808CB1CB7D4CC00069EA2 /* Localizable.strings */,
+				EF5808CE1CB7D4CC00069EA2 /* MGCAlignedGeometry.h */,
+				EF5808CF1CB7D4CC00069EA2 /* MGCAlignedGeometry.m */,
+				EF5808D01CB7D4CC00069EA2 /* MGCAllDayEventsViewLayout.h */,
+				EF5808D11CB7D4CC00069EA2 /* MGCAllDayEventsViewLayout.m */,
+				EF5808D21CB7D4CC00069EA2 /* MGCDateRange.h */,
+				EF5808D31CB7D4CC00069EA2 /* MGCDateRange.m */,
+				EF5808D41CB7D4CC00069EA2 /* MGCDayColumnCell.h */,
+				EF5808D51CB7D4CC00069EA2 /* MGCDayColumnCell.m */,
+				EF5808D61CB7D4CC00069EA2 /* MGCDayPlannerEKViewController.h */,
+				EF5808D71CB7D4CC00069EA2 /* MGCDayPlannerEKViewController.m */,
+				EF5808D81CB7D4CC00069EA2 /* MGCDayPlannerView.h */,
+				EF5808D91CB7D4CC00069EA2 /* MGCDayPlannerView.m */,
+				EF5808DA1CB7D4CC00069EA2 /* MGCDayPlannerViewController.h */,
+				EF5808DB1CB7D4CC00069EA2 /* MGCDayPlannerViewController.m */,
+				EF5808DC1CB7D4CC00069EA2 /* MGCEventCell.h */,
+				EF5808DD1CB7D4CC00069EA2 /* MGCEventCell.m */,
+				EF5808DE1CB7D4CC00069EA2 /* MGCEventCellLayoutAttributes.h */,
+				EF5808DF1CB7D4CC00069EA2 /* MGCEventCellLayoutAttributes.m */,
+				EF5808E01CB7D4CC00069EA2 /* MGCEventKitSupport.h */,
+				EF5808E11CB7D4CC00069EA2 /* MGCEventKitSupport.m */,
+				EF5808E21CB7D4CC00069EA2 /* MGCEventsRowView.h */,
+				EF5808E31CB7D4CC00069EA2 /* MGCEventsRowView.m */,
+				EF5808E41CB7D4CC00069EA2 /* MGCEventView.h */,
+				EF5808E51CB7D4CC00069EA2 /* MGCEventView.m */,
+				EF5808E61CB7D4CC00069EA2 /* MGCInteractiveEventView.h */,
+				EF5808E71CB7D4CC00069EA2 /* MGCInteractiveEventView.m */,
+				EF5808E81CB7D4CC00069EA2 /* MGCMonthMiniCalendarView.h */,
+				EF5808E91CB7D4CC00069EA2 /* MGCMonthMiniCalendarView.m */,
+				EF5808EA1CB7D4CC00069EA2 /* MGCMonthPlannerBackgroundView.h */,
+				EF5808EB1CB7D4CC00069EA2 /* MGCMonthPlannerBackgroundView.m */,
+				EF5808EC1CB7D4CC00069EA2 /* MGCMonthPlannerEKViewController.h */,
+				EF5808ED1CB7D4CC00069EA2 /* MGCMonthPlannerEKViewController.m */,
+				EF5808EE1CB7D4CC00069EA2 /* MGCMonthPlannerHeaderView.h */,
+				EF5808EF1CB7D4CC00069EA2 /* MGCMonthPlannerHeaderView.m */,
+				EF5808F01CB7D4CC00069EA2 /* MGCMonthPlannerView.h */,
+				EF5808F11CB7D4CC00069EA2 /* MGCMonthPlannerView.m */,
+				EF5808F21CB7D4CC00069EA2 /* MGCMonthPlannerViewController.h */,
+				EF5808F31CB7D4CC00069EA2 /* MGCMonthPlannerViewController.m */,
+				EF5808F41CB7D4CC00069EA2 /* MGCMonthPlannerViewDayCell.h */,
+				EF5808F51CB7D4CC00069EA2 /* MGCMonthPlannerViewDayCell.m */,
+				EF5808F61CB7D4CC00069EA2 /* MGCMonthPlannerViewLayout.h */,
+				EF5808F71CB7D4CC00069EA2 /* MGCMonthPlannerViewLayout.m */,
+				EF5808F81CB7D4CC00069EA2 /* MGCMonthPlannerWeekView.h */,
+				EF5808F91CB7D4CC00069EA2 /* MGCMonthPlannerWeekView.m */,
+				EF5808FA1CB7D4CC00069EA2 /* MGCReusableObjectQueue.h */,
+				EF5808FB1CB7D4CC00069EA2 /* MGCReusableObjectQueue.m */,
+				EF5808FC1CB7D4CC00069EA2 /* MGCStandardEventView.h */,
+				EF5808FD1CB7D4CC00069EA2 /* MGCStandardEventView.m */,
+				EF5808FE1CB7D4CC00069EA2 /* MGCTimedEventsViewLayout.h */,
+				EF5808FF1CB7D4CC00069EA2 /* MGCTimedEventsViewLayout.m */,
+				EF5809001CB7D4CC00069EA2 /* MGCTimeRowsView.h */,
+				EF5809011CB7D4CC00069EA2 /* MGCTimeRowsView.m */,
+				EF5809021CB7D4CC00069EA2 /* MGCYearCalendarMonthCell.h */,
+				EF5809031CB7D4CC00069EA2 /* MGCYearCalendarMonthCell.m */,
+				EF5809041CB7D4CC00069EA2 /* MGCYearCalendarMonthHeaderView.h */,
+				EF5809051CB7D4CC00069EA2 /* MGCYearCalendarMonthHeaderView.m */,
+				EF5809061CB7D4CC00069EA2 /* MGCYearCalendarView.h */,
+				EF5809071CB7D4CC00069EA2 /* MGCYearCalendarView.m */,
+				EF5809081CB7D4CC00069EA2 /* NSAttributedString+MGCAdditions.h */,
+				EF5809091CB7D4CC00069EA2 /* NSAttributedString+MGCAdditions.m */,
+				EF58090A1CB7D4CC00069EA2 /* NSCalendar+MGCAdditions.h */,
+				EF58090B1CB7D4CC00069EA2 /* NSCalendar+MGCAdditions.m */,
 			);
 			path = CalendarLib;
 			sourceTree = "<group>";
 		};
-		FA1F1AA1AF5D96198BB5521995259258 /* OrderedDictionary */ = {
+		EF58090C1CB7D4CC00069EA2 /* OrderedDictionary */ = {
 			isa = PBXGroup;
 			children = (
-				4C5ADD94B489C87224298BC33AB475EA /* OrderedDictionary.h */,
-				847DD7AD3244A5E109FC9A7C3DFB7562 /* OrderedDictionary.m */,
+				EF58090D1CB7D4CC00069EA2 /* OrderedDictionary.h */,
+				EF58090E1CB7D4CC00069EA2 /* OrderedDictionary.m */,
 			);
 			path = OrderedDictionary;
 			sourceTree = "<group>";
 		};
-		33F693B1FA270643AA4209829A26E129 /* OSCache */ = {
+		EF58090F1CB7D4CC00069EA2 /* OSCache */ = {
 			isa = PBXGroup;
 			children = (
-				BD0DCDDF17C17994826A1F72D8DA8CDB /* OSCache.h */,
-				208351479CE571D78E4DA8AC89C6FEB1 /* OSCache.m */,
+				EF5809101CB7D4CC00069EA2 /* OSCache.h */,
+				EF5809111CB7D4CC00069EA2 /* OSCache.m */,
 			);
 			path = OSCache;
 			sourceTree = "<group>";
 		};
-		F3BB939AA9BC686298F8087B93BF7E94 /* RoomNameCell */ = {
+		EF77F42A1CD223BA000CA2F6 /* RoomNameCell */ = {
 			isa = PBXGroup;
 			children = (
-				25C72082A7DFF930AC1252BBD1C9E5D9 /* CARoomNameCell.swift */,
-				FD9D57BAF62FDB51EAB943C55FDA02E7 /* CARoomNameCell.xib */,
+				EF77F42D1CD22405000CA2F6 /* CARoomNameCell.swift */,
+				EF77F42E1CD22405000CA2F6 /* CARoomNameCell.xib */,
 			);
 			path = RoomNameCell;
 			sourceTree = "<group>";
 		};
-		3B1131BCBD0386E0BCEF2C5BAF63DE48 /* LCTabBarController */ = {
+		EF89D4B01CEB672F00B2458C /* LCTabBarController */ = {
 			isa = PBXGroup;
 			children = (
-				B4FC65A658C79F21B83F0F0DE8B9A535 /* LCTabBar.h */,
-				B4FA23E2DDE8B817C4D83A66E44D00CC /* LCTabBar.m */,
-				C50AA3FB1D9C12FD9944766BAF34B406 /* LCTabBarBadge.h */,
-				FBCDDD2ED5BD309C99ABF2D593B329A7 /* LCTabBarBadge.m */,
-				1C74A463E8ADBCC092A2C733907DD426 /* LCTabBarCONST.h */,
-				7F4E6BE3D5B5AB3560027D61BAB9B158 /* LCTabBarController.bundle */,
-				16AD8CDF1AD1D415A512522F3ACFC617 /* LCTabBarController.h */,
-				C3AAC11B3362AF88EA643954575ED620 /* LCTabBarController.m */,
-				DEE54EC5902FC8273AE5AF71357A683D /* LCTabBarItem.h */,
-				931BE761B858490A86116AFEAF398FD7 /* LCTabBarItem.m */,
+				EF89D4B11CEB672F00B2458C /* LCTabBar.h */,
+				EF89D4B21CEB672F00B2458C /* LCTabBar.m */,
+				EF89D4B31CEB672F00B2458C /* LCTabBarBadge.h */,
+				EF89D4B41CEB672F00B2458C /* LCTabBarBadge.m */,
+				EF89D4B51CEB672F00B2458C /* LCTabBarCONST.h */,
+				EF89D4B61CEB672F00B2458C /* LCTabBarController.bundle */,
+				EF89D4B71CEB672F00B2458C /* LCTabBarController.h */,
+				EF89D4B81CEB672F00B2458C /* LCTabBarController.m */,
+				EF89D4B91CEB672F00B2458C /* LCTabBarItem.h */,
+				EF89D4BA1CEB672F00B2458C /* LCTabBarItem.m */,
 			);
 			path = LCTabBarController;
 			sourceTree = "<group>";
 		};
-		61EFFB2BCD3C60130A073591B8ABD7B6 /* StudyLife */ = {
+		EFBC489A1C719DA700915AC7 /* StudyLife */ = {
 			isa = PBXGroup;
 			children = (
-				4EE868DE78061E734E00A8840A883833 /* CAStudyLifeSectionView.swift */,
-				EC2144E8FAB021BD27BD9AD9C2EC7914 /* CAStudyLifeSectionView.xib */,
+				EFBC48A41C72F6AF00915AC7 /* CAStudyLifeSectionView.swift */,
+				EFBC48A61C72FA0400915AC7 /* CAStudyLifeSectionView.xib */,
 			);
 			path = StudyLife;
 			sourceTree = "<group>";
 		};
-		EBC927AAE53955F6F9A585328A53A953 /* Weather */ = {
+		EFBC489B1C719DA700915AC7 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
-				8D0774203643274E877B6A73ACFB409F /* CAWeatherSectionView.swift */,
-				2EF2E170226744C52444FE8DDD3F940D /* CAWeatherSectionView.xib */,
+				EFBC489C1C719DE500915AC7 /* CAWeatherSectionView.swift */,
+				EFBC489E1C719DFF00915AC7 /* CAWeatherSectionView.xib */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
 		};
-		C7236E4FDC5365393E976D793BF102C6 /* Macro */ = {
+		EFBC48A81C73376300915AC7 /* Macro */ = {
 			isa = PBXGroup;
 			children = (
-				312A4ED13E3BA8B9469668726A4CDABC /* Macro.swift */,
+				EFBC48A91C73377000915AC7 /* Macro.swift */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
 		};
-		3F6B1C814A2D0FC927AF6618A2A264A6 /* AddMore */ = {
+		EFBC48AF1C733C1700915AC7 /* AddMore */ = {
 			isa = PBXGroup;
 			children = (
-				F1027C594E634AE20697ED1DCEF38D11 /* CAAddMoreSectionView.swift */,
-				F28FF246742DCBE7995D6E6E37256E34 /* CAAddMoreSectionView.xib */,
+				EFBC48B01C733C3100915AC7 /* CAAddMoreSectionView.swift */,
+				EFBC48B21C733C3D00915AC7 /* CAAddMoreSectionView.xib */,
 			);
 			path = AddMore;
 			sourceTree = "<group>";
@@ -920,19 +923,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5DF70F916E07BEB51CB83FF5A12140EF /* CampusAssistant */ = {
+		EF377C3A1C6F919B00B40D20 /* CampusAssistant */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EBE3E77E432FB85D76FC8FC62F58132C /* Build configuration list for PBXNativeTarget "CampusAssistant" */;
+			buildConfigurationList = EF377C581C6F919B00B40D20 /* Build configuration list for PBXNativeTarget "CampusAssistant" */;
 			buildPhases = (
-				B84458A3946F056F0774D99CB10BD915 /* 📦 Check Pods Manifest.lock */,
-				B84458A3946F056F0774D99CB10BD915 /* uD83DuDCE6 Check Pods Manifest.lock */,
-				DFA34734046850066210CC890D118B83 /* Sources */,
-				6F5FED12C506BE0CCE60CA193BE68EC2 /* Frameworks */,
-				ECAD48C2AB7D817A5DFD0F8B876EFD69 /* Resources */,
-				D62F23EA4FCBC97C51A0DD7F73FC2D4B /* uD83DuDCE6 Embed Pods Frameworks */,
-				0748E7BB43A74A09E704A5B2489DC8B4 /* uD83DuDCE6 Copy Pods Resources */,
-				D62F23EA4FCBC97C51A0DD7F73FC2D4B /* 📦 Embed Pods Frameworks */,
-				0748E7BB43A74A09E704A5B2489DC8B4 /* 📦 Copy Pods Resources */,
+				93352E01E35B834D631D5159 /* 📦 Check Pods Manifest.lock */,
+				89E4B2F18D792F2B377DADEB /* uD83DuDCE6 Check Pods Manifest.lock */,
+				EF377C371C6F919B00B40D20 /* Sources */,
+				EF377C381C6F919B00B40D20 /* Frameworks */,
+				EF377C391C6F919B00B40D20 /* Resources */,
+				F0B24A34BC7F1E158D1DD336 /* uD83DuDCE6 Embed Pods Frameworks */,
+				B159DA94C0E5A76086074A01 /* uD83DuDCE6 Copy Pods Resources */,
+				F80E513B9D91D76FBA8B9077 /* 📦 Embed Pods Frameworks */,
+				A1B930094788F786ABF57D73 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -940,31 +943,31 @@
 			);
 			name = CampusAssistant;
 			productName = CampusAssistant;
-			productReference = EB522FC6607015306473ABD02A18179C /* CampusAssistant.app */;
+			productReference = EF377C3B1C6F919B00B40D20 /* CampusAssistant.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D094CF6D8A54E5F14AB553699E89D06B /* CampusAssistantTests */ = {
+		EF377C4E1C6F919B00B40D20 /* CampusAssistantTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 98D8C2D767F01DB07CFEB9A8A165E032 /* Build configuration list for PBXNativeTarget "CampusAssistantTests" */;
+			buildConfigurationList = EF377C5B1C6F919B00B40D20 /* Build configuration list for PBXNativeTarget "CampusAssistantTests" */;
 			buildPhases = (
-				DA7FEAF169F72F080CBFA4A4BF56DA36 /* Sources */,
-				C07D7962EB17B375BE135BD4D98F4BAA /* Frameworks */,
-				FE557BD8C3B4FC9FE7D27819F68E2F5E /* Resources */,
+				EF377C4B1C6F919B00B40D20 /* Sources */,
+				EF377C4C1C6F919B00B40D20 /* Frameworks */,
+				EF377C4D1C6F919B00B40D20 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DE7566FD9E0D32171263162FE8DC42F0 /* PBXTargetDependency */,
+				EF377C511C6F919B00B40D20 /* PBXTargetDependency */,
 			);
 			name = CampusAssistantTests;
 			productName = CampusAssistantTests;
-			productReference = 67D29DF51C1BAE9995CDDF21A61DA673 /* CampusAssistantTests.xctest */;
+			productReference = EF377C4F1C6F919B00B40D20 /* CampusAssistantTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		CF97754877FDE098510277AD94F346EE /* Project object */ = {
+		EF377C331C6F919B00B40D20 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = CA;
@@ -972,17 +975,17 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = com.jacob;
 				TargetAttributes = {
-					5DF70F916E07BEB51CB83FF5A12140EF = {
+					EF377C3A1C6F919B00B40D20 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 733C233Y34;
+						DevelopmentTeam = TFZ4X5269Y;
 					};
-					D094CF6D8A54E5F14AB553699E89D06B = {
+					EF377C4E1C6F919B00B40D20 = {
 						CreatedOnToolsVersion = 7.2.1;
-						TestTargetID = 5DF70F916E07BEB51CB83FF5A12140EF;
+						TestTargetID = EF377C3A1C6F919B00B40D20;
 					};
 				};
 			};
-			buildConfigurationList = D0EBA8FCECF0557CD2F879BD23170D41 /* Build configuration list for PBXProject "CampusAssistant" */;
+			buildConfigurationList = EF377C361C6F919B00B40D20 /* Build configuration list for PBXProject "CampusAssistant" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -991,53 +994,53 @@
 				Base,
 				fr,
 			);
-			mainGroup = 983F6CA34693CDEFF7BAEB94F59DBBAF;
-			productRefGroup = 69968728DE768A5A1BA2E60B888329AB /* Products */;
+			mainGroup = EF377C321C6F919B00B40D20;
+			productRefGroup = EF377C3C1C6F919B00B40D20 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5DF70F916E07BEB51CB83FF5A12140EF /* CampusAssistant */,
-				D094CF6D8A54E5F14AB553699E89D06B /* CampusAssistantTests */,
+				EF377C3A1C6F919B00B40D20 /* CampusAssistant */,
+				EF377C4E1C6F919B00B40D20 /* CampusAssistantTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		ECAD48C2AB7D817A5DFD0F8B876EFD69 /* Resources */ = {
+		EF377C391C6F919B00B40D20 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3B4E4F208E766879AD54E84D8F5357D /* Assets.xcassets in Resources */,
-				3C353B948681FCD6F1CF69D9717B8619 /* BTNavigationDropdownMenu.bundle in Resources */,
-				CA35EE9ED063361EA64C25B8917604F7 /* CAAccountSectionView.xib in Resources */,
-				02D56E612B43012F400A0C7CC081D0EA /* CAAddMoreSectionView.xib in Resources */,
-				C9F17F90400E7C8510720CFEA2F8ACD2 /* CACollectionTitleHeader.xib in Resources */,
-				C34FD390EC34D23F879281DF2383948F /* CACreditCell.xib in Resources */,
-				6C8EA77F7DDF63CA57F634F815C96C2A /* CAEmptyRoomHeader.xib in Resources */,
-				989688B35ACC184276DAD4FBEBE57DD1 /* CAExamCell.xib in Resources */,
-				38F6F1BE86CCF82A7DA41686C5C5E835 /* CAFosterPlanCell.xib in Resources */,
-				BD0E8166D6E15BBCA2B9D37C26516958 /* CAFosterPlanHeader.xib in Resources */,
-				7346F254322A1F7E3585662D5ED7E0D5 /* CAFunctionCell.xib in Resources */,
-				49F0E25E2829431109D1CF0F00E04C49 /* CAGradeCell.xib in Resources */,
-				BF98484F6204823F7A04409481115C1E /* CAIPWGSectionView.xib in Resources */,
-				AE9C59541CB81243D94E29D44B5C0CDD /* CALoginAlertView.xib in Resources */,
-				C45BBC1F91A953F01C229BBB8A49BAF9 /* CAProfileHeader.xib in Resources */,
-				E229516DAFE527261DDF246260E8F883 /* CAProfileInfoCell.xib in Resources */,
-				6EA923F37F83852735D198D55F98033E /* CARoomNameCell.xib in Resources */,
-				4098AF27C4088DC538177DC4F2BF64F0 /* CAStudyLifeSectionView.xib in Resources */,
-				B9612839924C7BF64BEBF4E2BD82B3CE /* CAWeatherSectionView.xib in Resources */,
-				D3C6173939A8A1D5BC145450F9F8211A /* LCTabBarController.bundle in Resources */,
-				A425B50C0CA7666D4D32C0DF1EBCABE8 /* LICENSE in Resources */,
-				161FA9F4E73F6C869782D9E41AA7E87C /* LaunchScreen.storyboard in Resources */,
-				409561800AEDE30A4E444C14E7ECFE78 /* Localizable.strings in Resources */,
-				4ED80EBF6269B84E2D00A16529D54293 /* Main.storyboard in Resources */,
-				5DD2A096FAF70C94F087A51CC4F24B9B /* Montserrat-Bold.ttf in Resources */,
-				B53F38813102C1C02BFD4B95CB3E73E5 /* Montserrat-Regular.ttf in Resources */,
-				2DD2026211843AD0B638EB2B06C5E347 /* collections.plist in Resources */,
+				EFE736731CDC8B73004CB989 /* CAAccountSectionView.xib in Resources */,
+				EF3D6FEB1C70D09A0051DA24 /* Montserrat-Bold.ttf in Resources */,
+				EF2E42271CD8975A00146D4D /* CAEmptyRoomHeader.xib in Resources */,
+				EF489D5A1CDB6A4E0017C32E /* CACreditCell.xib in Resources */,
+				EF377C491C6F919B00B40D20 /* LaunchScreen.storyboard in Resources */,
+				EF2E42231CD8971A00146D4D /* CAProfileHeader.xib in Resources */,
+				ED8BE6FC1CD0BA0500286E4D /* CAGradeCell.xib in Resources */,
+				EF5DF8321C7D75F4003CF533 /* Assets.xcassets in Resources */,
+				EF489D5F1CDB9B9A0017C32E /* CAFosterPlanCell.xib in Resources */,
+				EF331FD11C7861D000695A3B /* CAProfileInfoCell.xib in Resources */,
+				EF89D4BD1CEB672F00B2458C /* LCTabBarController.bundle in Resources */,
+				ED77A2BF1CD8A25D00F43DC1 /* CAExamCell.xib in Resources */,
+				EF3D6FEC1C70D09A0051DA24 /* Montserrat-Regular.ttf in Resources */,
+				EF0C41721C758B820044B9C0 /* collections.plist in Resources */,
+				EFBC48B31C733C3D00915AC7 /* CAAddMoreSectionView.xib in Resources */,
+				EF2E42211CD8971A00146D4D /* CACollectionTitleHeader.xib in Resources */,
+				EF44E8071C7BFD1E00ADCC5E /* CAIPWGSectionView.xib in Resources */,
+				EF2E42301CD8DCD500146D4D /* BTNavigationDropdownMenu.bundle in Resources */,
+				EF2E422E1CD8DCD500146D4D /* LICENSE in Resources */,
+				EF656D401CDB9E910077FF10 /* CAFosterPlanHeader.xib in Resources */,
+				EFBC48A71C72FA0400915AC7 /* CAStudyLifeSectionView.xib in Resources */,
+				EF377C441C6F919B00B40D20 /* Main.storyboard in Resources */,
+				EF331FCD1C7861A200695A3B /* CAFunctionCell.xib in Resources */,
+				EF5809251CB7D4CC00069EA2 /* Localizable.strings in Resources */,
+				EF77F4301CD22405000CA2F6 /* CARoomNameCell.xib in Resources */,
+				EF0BCE281CEB0B28007F34FD /* CALoginAlertView.xib in Resources */,
+				EFBC489F1C719DFF00915AC7 /* CAWeatherSectionView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FE557BD8C3B4FC9FE7D27819F68E2F5E /* Resources */ = {
+		EF377C4D1C6F919B00B40D20 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1047,7 +1050,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B84458A3946F056F0774D99CB10BD915 /* uD83DuDCE6 Check Pods Manifest.lock */ = {
+		89E4B2F18D792F2B377DADEB /* uD83DuDCE6 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1062,52 +1065,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		0748E7BB43A74A09E704A5B2489DC8B4 /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		0748E7BB43A74A09E704A5B2489DC8B4 /* uD83DuDCE6 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "uD83DuDCE6 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D62F23EA4FCBC97C51A0DD7F73FC2D4B /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B84458A3946F056F0774D99CB10BD915 /* 📦 Check Pods Manifest.lock */ = {
+		93352E01E35B834D631D5159 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1122,7 +1080,37 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		D62F23EA4FCBC97C51A0DD7F73FC2D4B /* uD83DuDCE6 Embed Pods Frameworks */ = {
+		A1B930094788F786ABF57D73 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B159DA94C0E5A76086074A01 /* uD83DuDCE6 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "uD83DuDCE6 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0B24A34BC7F1E158D1DD336 /* uD83DuDCE6 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1137,143 +1125,159 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F80E513B9D91D76FBA8B9077 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CampusAssistant/Pods-CampusAssistant-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DFA34734046850066210CC890D118B83 /* Sources */ = {
+		EF377C371C6F919B00B40D20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E64A466432276E1D7D831B596DC106F3 /* AppDelegate.swift in Sources */,
-				0E0C9F3A893E7D02ABEA85A1498027BC /* BTNavigationDropdownMenu.swift in Sources */,
-				AB3B83CA5BE26A3A766297DE7378946D /* CAAccountSectionView.swift in Sources */,
-				6A82D41C794FBD05BB1D9C1D26685981 /* CAAddMoreSectionView.swift in Sources */,
-				AB40E38EC2C62AB9CE13C07171220F9E /* CACheckGradesViewController.swift in Sources */,
-				A32E3B02E82200DB99E4C1AB629F0A1C /* CAClassListViewController.swift in Sources */,
-				05B81EDEC09E9F678DB5AEA5CF288BB7 /* CACollection.m in Sources */,
-				6BDDAF07D18F46AD670C8EADE1B9514E /* CACollectionTitleHeader.swift in Sources */,
-				02F19612C1D4243E42BF33984AFC7178 /* CACollectionsViewController.swift in Sources */,
-				7024883BCBB89CEB0630DBEE529361BF /* CACreditCell.swift in Sources */,
-				7AB95D09AAE389AC418106011A55C262 /* CACreditWarningViewController.swift in Sources */,
-				F6D6B24D823E3C41B6D0FC3728634DA7 /* CADeanAccount.m in Sources */,
-				BE30A7E742AA4B17326AF99E99F6D53C /* CADeanAccountTool.swift in Sources */,
-				B31309350C3108DC081C04BD3FC0B7E9 /* CAEmptyRoomHeader.swift in Sources */,
-				5E920B8B6E2DF96308ADDC87113F040A /* CAEmptyRoomViewController.swift in Sources */,
-				EB5543F31EBBC953874C3475D8864997 /* CAExamAgendaViewController.swift in Sources */,
-				07291722F0E3C1CADF8C762F40480D68 /* CAExamCell.swift in Sources */,
-				6B51931558AECD941403DF5DF3DAB284 /* CAFosterPlanCell.swift in Sources */,
-				1F2E9D4B0BEC161CF1BE0AEF6DDA2169 /* CAFosterPlanHeader.swift in Sources */,
-				06106800666B8ED4EEFDC2D03F292287 /* CAFosterPlanViewController.swift in Sources */,
-				FD7D32FF06E2199608831A2C38CF6B70 /* CAFunction.m in Sources */,
-				63390BE41B3AEB9257388961FF6C2D4B /* CAFunctionCell.swift in Sources */,
-				11D9A1B3BEC3F4F7E9B74D6791469B35 /* CAGrade.m in Sources */,
-				102A8DBF2FE407A938F5B90CEA375C28 /* CAGradeCell.swift in Sources */,
-				5F171F91151B7D1FB9A882725BD20D87 /* CAHomeViewController.swift in Sources */,
-				810EF31E56A0E63880E4C8FD19E89F0F /* CAIPWGSectionView.swift in Sources */,
-				5DD0179D008E1EADE66E126F69DD915F /* CALightAlphaTextField.swift in Sources */,
-				2E1CA902944599B953DE6759B0A33568 /* CALoginAlertView.swift in Sources */,
-				18AAEC73E9122C551DE037E9A3F6A25C /* CANavigationController.swift in Sources */,
-				0B727ED2990399802A8AD15672EA14A2 /* CANetworkTool.swift in Sources */,
-				86C9090DF66D958D67BEA84E06C507F5 /* CAProfileHeader.swift in Sources */,
-				8B194B61241CD94B265674AC6F12E252 /* CAProfileInfoCell.swift in Sources */,
-				77B62421F6B13D2B63534E1A9A6B0404 /* CAProfileViewController.swift in Sources */,
-				B0822EF80B6DBC79653C52312F1041FF /* CARegexTool.swift in Sources */,
-				24C29771828F4127A9107AB54BCBD224 /* CARightSlideMenuViewController.swift in Sources */,
-				094CC3E2520686B95F28111EDC751639 /* CARoomNameCell.swift in Sources */,
-				CE1DCE4F77F8BA43D4064353EED43016 /* CAStudent.m in Sources */,
-				C6F086DAB32F2CB7E3DADFCE27E4BABC /* CAStudentTool.swift in Sources */,
-				22308702FD02A90F90C5C55B64A96D38 /* CAStudyLifeSectionView.swift in Sources */,
-				96AA3295035832948E55473F0F13382E /* CAWeatherSectionView.swift in Sources */,
-				3857C97F9BC1D7CB8116E23B8CEE366A /* LCTabBar.m in Sources */,
-				FDE77181F4283DF47CD415C3D081AB4F /* LCTabBarBadge.m in Sources */,
-				99DC0E47A9EF8554684D3001BABC5353 /* LCTabBarController.m in Sources */,
-				C66DEBE2CD4E8BC2C3F2F3514F05650E /* LCTabBarItem.m in Sources */,
-				D0C407ECB6464037AB730C5961295B44 /* MGCAlignedGeometry.m in Sources */,
-				0098C11D18B2D8BB70AA0CFC12A5B228 /* MGCAllDayEventsViewLayout.m in Sources */,
-				7BF7E7D75F9AA71D87E59B50A89FB766 /* MGCDateRange.m in Sources */,
-				1459F44DA6AC9148F58BF7DA607B321D /* MGCDayColumnCell.m in Sources */,
-				3F0B6AFF9C9D3B1780A16A51CEF254A8 /* MGCDayPlannerEKViewController.m in Sources */,
-				C9C7FF1F40C4B0D0E33E8A78F6EDEF84 /* MGCDayPlannerView.m in Sources */,
-				220A3C5430928F26F06684A1D22C95AE /* MGCDayPlannerViewController.m in Sources */,
-				F82D736AC76F0A6126256E3F9F32AD71 /* MGCEventCell.m in Sources */,
-				228C9BB2F35A015249F691B26B0BE834 /* MGCEventCellLayoutAttributes.m in Sources */,
-				C74A83DABE58A2F21B6F67E12B3C48D7 /* MGCEventKitSupport.m in Sources */,
-				410CED7B8D8B8CC3B41FBBB28F1AD33B /* MGCEventView.m in Sources */,
-				12BE6FBFE5EE0F6A64E8BB4BEBC42346 /* MGCEventsRowView.m in Sources */,
-				E93C8609A8B19322B0C44FC8CCB30FC7 /* MGCInteractiveEventView.m in Sources */,
-				DCAED03543FE177E83056AB334271F8E /* MGCMonthMiniCalendarView.m in Sources */,
-				6A704070C1F1D586A9ABE899443EBBC0 /* MGCMonthPlannerBackgroundView.m in Sources */,
-				1D2E38EC4C2A4A17AED87C35F02274BB /* MGCMonthPlannerEKViewController.m in Sources */,
-				54CD467761855668DDA1968B18C75ED0 /* MGCMonthPlannerHeaderView.m in Sources */,
-				64B44C33D18F3EDCFE2DC3866FBFCBC0 /* MGCMonthPlannerView.m in Sources */,
-				B2C2B75C1BF536A1B4DB9B891B2C8C13 /* MGCMonthPlannerViewController.m in Sources */,
-				1FD06B6F3FB4FC3A04EAFE93E820EE04 /* MGCMonthPlannerViewDayCell.m in Sources */,
-				596116FCE679071FDF31570A304942A3 /* MGCMonthPlannerViewLayout.m in Sources */,
-				3CB5C11E1F2E033C3BCC134B365DCA35 /* MGCMonthPlannerWeekView.m in Sources */,
-				25D7E4469157654F0554203DAD7CF26F /* MGCReusableObjectQueue.m in Sources */,
-				98DD290133BE2B9B05A0F47908B96E6D /* MGCStandardEventView.m in Sources */,
-				7793AB717D85699CE69D6D95D821A915 /* MGCTimeRowsView.m in Sources */,
-				E59B5CD6EEEAA0870F6AEACF36A7191F /* MGCTimedEventsViewLayout.m in Sources */,
-				DB5CD47BFD77F76F8B9B4DC480A2F43F /* MGCYearCalendarMonthCell.m in Sources */,
-				78277A2C95AF6A84C018FCF8E4C8F8C5 /* MGCYearCalendarMonthHeaderView.m in Sources */,
-				A5E1FD871DC13EF94461FD10F41BECA3 /* MGCYearCalendarView.m in Sources */,
-				B21F265F0B16021ABDFE6E323F24FD7D /* Macro.swift in Sources */,
-				3706196D95F6EF095885618EE12337CF /* NSAttributedString+MGCAdditions.m in Sources */,
-				60D2CEF5AFA16D993CC4CB32D440B5A5 /* NSCalendar+MGCAdditions.m in Sources */,
-				6C05D1F59DA459B5F5D6C6FDDDDB7B35 /* NSData+CA.swift in Sources */,
-				AFF4200505914DD1A20B63160507C4D8 /* NSDate+CA.swift in Sources */,
-				B189B9CC6CDE9A4222A8B1A3ECFC3D21 /* OSCache.m in Sources */,
-				CD7D2ACC6E7F14440EC3314EF48726F8 /* OrderedDictionary.m in Sources */,
-				B6B6A271A9E8020D470E764D91BE48BC /* README.md in Sources */,
-				F476099200B4090CEB52BF8443815D1D /* SVProgressHUD+CA.swift in Sources */,
-				77553E8976116366616809F95A53DA29 /* SWRevealViewController.m in Sources */,
-				83402D9E241AA99C9205D85FACCE0490 /* String+CA.swift in Sources */,
-				7E4A608050327BBB6C90E49538BBEE7A /* UIColor+CA.swift in Sources */,
-				0E76064D307E6A6436397D664ED681BE /* UIImage+CA.swift in Sources */,
-				E323B8E2F4E8FE575B22A190D1EAABB0 /* UIImageView+CA.swift in Sources */,
+				EF89D4BE1CEB672F00B2458C /* LCTabBarController.m in Sources */,
+				EFE736721CDC8B73004CB989 /* CAAccountSectionView.swift in Sources */,
+				EF3D6FE21C70647C0051DA24 /* CAProfileViewController.swift in Sources */,
+				EF5809341CB7D4CC00069EA2 /* MGCMonthPlannerBackgroundView.m in Sources */,
+				ED8BE7021CD0BBD700286E4D /* CAGradeCell.swift in Sources */,
+				EF331FCF1C7861C100695A3B /* CAProfileInfoCell.swift in Sources */,
+				EF58092B1CB7D4CC00069EA2 /* MGCDayPlannerView.m in Sources */,
+				EF77F42F1CD22405000CA2F6 /* CARoomNameCell.swift in Sources */,
+				EF4E1DB21C85C23200680EF4 /* CANavigationController.swift in Sources */,
+				EF58092A1CB7D4CC00069EA2 /* MGCDayPlannerEKViewController.m in Sources */,
+				EF5809431CB7D4CC00069EA2 /* NSAttributedString+MGCAdditions.m in Sources */,
+				EF5809331CB7D4CC00069EA2 /* MGCMonthMiniCalendarView.m in Sources */,
+				EFBC48B11C733C3100915AC7 /* CAAddMoreSectionView.swift in Sources */,
+				EF58092E1CB7D4CC00069EA2 /* MGCEventCellLayoutAttributes.m in Sources */,
+				EF3DF2721C784A08002276A6 /* CAStudent.m in Sources */,
+				EF5809271CB7D4CC00069EA2 /* MGCAllDayEventsViewLayout.m in Sources */,
+				EF5809281CB7D4CC00069EA2 /* MGCDateRange.m in Sources */,
+				EF5809411CB7D4CC00069EA2 /* MGCYearCalendarMonthHeaderView.m in Sources */,
+				EF5809361CB7D4CC00069EA2 /* MGCMonthPlannerHeaderView.m in Sources */,
+				EF89D4C81CEC107600B2458C /* CADeanAccountTool.swift in Sources */,
+				EF5809441CB7D4CC00069EA2 /* NSCalendar+MGCAdditions.m in Sources */,
+				EF2E42221CD8971A00146D4D /* CAProfileHeader.swift in Sources */,
+				EF2E42251CD8974F00146D4D /* CAEmptyRoomHeader.swift in Sources */,
+				EF89D4BF1CEB672F00B2458C /* LCTabBarItem.m in Sources */,
+				EF4E1DC51C85D0A100680EF4 /* CAFosterPlanViewController.swift in Sources */,
+				EF89D4C61CEC0F4700B2458C /* CADeanAccount.m in Sources */,
+				EF3D6FE41C7064870051DA24 /* CACollectionsViewController.swift in Sources */,
+				EF3DF2741C784F0F002276A6 /* NSData+CA.swift in Sources */,
+				EF331FD41C786C6600695A3B /* CAStudentTool.swift in Sources */,
+				ED4B25271CE2C7A800891428 /* CARegexTool.swift in Sources */,
+				EFBC48A51C72F6AF00915AC7 /* CAStudyLifeSectionView.swift in Sources */,
+				EF2E42201CD8971A00146D4D /* CACollectionTitleHeader.swift in Sources */,
+				EF489D581CDB6A400017C32E /* CACreditCell.swift in Sources */,
+				EF44E8101C7C8BC200ADCC5E /* String+CA.swift in Sources */,
+				EF377C3F1C6F919B00B40D20 /* AppDelegate.swift in Sources */,
+				ED77A2BE1CD8A25D00F43DC1 /* CAExamCell.swift in Sources */,
+				EF89D4BB1CEB672F00B2458C /* LCTabBar.m in Sources */,
+				EF5809421CB7D4CC00069EA2 /* MGCYearCalendarView.m in Sources */,
+				EF58092F1CB7D4CC00069EA2 /* MGCEventKitSupport.m in Sources */,
+				EF58092D1CB7D4CC00069EA2 /* MGCEventCell.m in Sources */,
+				EF58093D1CB7D4CC00069EA2 /* MGCStandardEventView.m in Sources */,
+				EF4E1DBD1C85CFEE00680EF4 /* CAClassListViewController.swift in Sources */,
+				EF5809371CB7D4CC00069EA2 /* MGCMonthPlannerView.m in Sources */,
+				EF4E1DBB1C85CFE200680EF4 /* CACheckGradesViewController.swift in Sources */,
+				EF3D6FE01C7064740051DA24 /* CAHomeViewController.swift in Sources */,
+				EF5809291CB7D4CC00069EA2 /* MGCDayColumnCell.m in Sources */,
+				EF2E42311CD8DCD500146D4D /* BTNavigationDropdownMenu.swift in Sources */,
+				EFBC48AA1C73377000915AC7 /* Macro.swift in Sources */,
+				EF58093E1CB7D4CC00069EA2 /* MGCTimedEventsViewLayout.m in Sources */,
+				EF50E7F51C77621B00A0A5A5 /* UIImageView+CA.swift in Sources */,
+				EF4E1DC31C85D09700680EF4 /* CAExamAgendaViewController.swift in Sources */,
+				EF58093A1CB7D4CC00069EA2 /* MGCMonthPlannerViewLayout.m in Sources */,
+				EF5809301CB7D4CC00069EA2 /* MGCEventsRowView.m in Sources */,
+				EF89D4C11CEB807500B2458C /* SVProgressHUD+CA.swift in Sources */,
+				EF4E1DC11C85D08D00680EF4 /* CAEmptyRoomViewController.swift in Sources */,
+				EF5809401CB7D4CC00069EA2 /* MGCYearCalendarMonthCell.m in Sources */,
+				EF0BCE261CEB0B1E007F34FD /* CALoginAlertView.swift in Sources */,
+				EF331FCC1C7861A200695A3B /* CAFunctionCell.swift in Sources */,
+				EF0C41881C75CA5F0044B9C0 /* CAFunction.m in Sources */,
+				EF5809351CB7D4CC00069EA2 /* MGCMonthPlannerEKViewController.m in Sources */,
+				EF5809311CB7D4CC00069EA2 /* MGCEventView.m in Sources */,
+				EF489D5E1CDB9B9A0017C32E /* CAFosterPlanCell.swift in Sources */,
+				EF18DAD31C79694200369F33 /* CARightSlideMenuViewController.swift in Sources */,
+				EF5809261CB7D4CC00069EA2 /* MGCAlignedGeometry.m in Sources */,
+				EF58093C1CB7D4CC00069EA2 /* MGCReusableObjectQueue.m in Sources */,
+				EF5809451CB7D4CC00069EA2 /* OrderedDictionary.m in Sources */,
+				EF4E1DBF1C85D07C00680EF4 /* CACreditWarningViewController.swift in Sources */,
+				EF2E422F1CD8DCD500146D4D /* README.md in Sources */,
+				ED4A363F1CEB2F610032014F /* CANetworkTool.swift in Sources */,
+				EF44E7FD1C7AFE0F00ADCC5E /* SWRevealViewController.m in Sources */,
+				EF58093B1CB7D4CC00069EA2 /* MGCMonthPlannerWeekView.m in Sources */,
+				EF8FB9E41CED61320009171C /* NSDate+CA.swift in Sources */,
+				EF5809461CB7D4CC00069EA2 /* OSCache.m in Sources */,
+				EF44E8051C7BFD0B00ADCC5E /* CAIPWGSectionView.swift in Sources */,
+				EFBC489D1C719DE500915AC7 /* CAWeatherSectionView.swift in Sources */,
+				EF50E7F31C775C0A00A0A5A5 /* UIImage+CA.swift in Sources */,
+				EF5809381CB7D4CC00069EA2 /* MGCMonthPlannerViewController.m in Sources */,
+				EF5809391CB7D4CC00069EA2 /* MGCMonthPlannerViewDayCell.m in Sources */,
+				EF89D4BC1CEB672F00B2458C /* LCTabBarBadge.m in Sources */,
+				EF58092C1CB7D4CC00069EA2 /* MGCDayPlannerViewController.m in Sources */,
+				EF656D3E1CDB9E810077FF10 /* CAFosterPlanHeader.swift in Sources */,
+				EF5809321CB7D4CC00069EA2 /* MGCInteractiveEventView.m in Sources */,
+				EF44E80C1C7C5DB300ADCC5E /* UIColor+CA.swift in Sources */,
+				EDA814A71CEC8E5B00758ED5 /* CACalendarTool.swift in Sources */,
+				EF44E80A1C7C1FA600ADCC5E /* CALightAlphaTextField.swift in Sources */,
+				EF0C41871C75CA5F0044B9C0 /* CACollection.m in Sources */,
+				EF58093F1CB7D4CC00069EA2 /* MGCTimeRowsView.m in Sources */,
+				69D98655E4D8CE8C090158E1 /* CAGrade.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA7FEAF169F72F080CBFA4A4BF56DA36 /* Sources */ = {
+		EF377C4B1C6F919B00B40D20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA1FC6833E382FC0AE94B2B29ABA465E /* CampusAssistantTests.swift in Sources */,
+				EF377C541C6F919B00B40D20 /* CampusAssistantTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DE7566FD9E0D32171263162FE8DC42F0 /* PBXTargetDependency */ = {
+		EF377C511C6F919B00B40D20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5DF70F916E07BEB51CB83FF5A12140EF /* CampusAssistant */;
-			targetProxy = 366F804F179ACD1CEE26C26CC61AE192 /* PBXContainerItemProxy */;
+			target = EF377C3A1C6F919B00B40D20 /* CampusAssistant */;
+			targetProxy = EF377C501C6F919B00B40D20 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1415C27CFCB31014FF1CC140F5E17667 /* Main.storyboard */ = {
+		EF377C421C6F919B00B40D20 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7AF0FED4C221EFBBBA248C8E7BCF3EA5 /* Base */,
+				EF377C431C6F919B00B40D20 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		855FA5915041EC67B83B2F64B889E731 /* LaunchScreen.storyboard */ = {
+		EF377C471C6F919B00B40D20 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4BB60DDADEF84883590DFB38AC29CC2D /* Base */,
+				EF377C481C6F919B00B40D20 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		76054D856969822F4FFC561D7C706025 /* Localizable.strings */ = {
+		EF5808CB1CB7D4CC00069EA2 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BF5D1F9EB3BE2B2D4FB5EA6AAE0BC56D /* en */,
-				98921F1615BD5A399DAA547B44E591BA /* fr */,
+				EF5808CC1CB7D4CC00069EA2 /* en */,
+				EF5808CD1CB7D4CC00069EA2 /* fr */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1281,7 +1285,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FD1CCC4692F2E64F724AB615B344DB6E /* Debug */ = {
+		EF377C561C6F919B00B40D20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1326,7 +1330,7 @@
 			};
 			name = Debug;
 		};
-		584A49EAFAD50379ECBCD53AF5ED99BE /* Release */ = {
+		EF377C571C6F919B00B40D20 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1364,9 +1368,9 @@
 			};
 			name = Release;
 		};
-		62ACFD53B51E3142C1F27B5FB8925475 /* Debug */ = {
+		EF377C591C6F919B00B40D20 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D7058C470A3452F0B9629001CD52893 /* Pods-CampusAssistant.debug.xcconfig */;
+			baseConfigurationReference = 3C5C8250F5FFB20728217A5C /* Pods-CampusAssistant.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1375,7 +1379,7 @@
 				INFOPLIST_FILE = CampusAssistant/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-acob947124563-gmail.com.CampusAssistant";
+				PRODUCT_BUNDLE_IDENTIFIER = "-ncode.xii-gmail.com.CampusAssistant";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "CampusAssistant/CampusAssistant-Bridging-Header.h";
@@ -1383,9 +1387,9 @@
 			};
 			name = Debug;
 		};
-		871A57695AA16918EB29ABFA3C25BE63 /* Release */ = {
+		EF377C5A1C6F919B00B40D20 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC1E36AD73A382DA66F3C4D7E784C68B /* Pods-CampusAssistant.release.xcconfig */;
+			baseConfigurationReference = 8E4C3E2FEADB86444CCA6E01 /* Pods-CampusAssistant.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -1394,7 +1398,7 @@
 				INFOPLIST_FILE = CampusAssistant/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-acob947124563-gmail.com.CampusAssistant";
+				PRODUCT_BUNDLE_IDENTIFIER = "-ncode.xii-gmail.com.CampusAssistant";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "CampusAssistant/CampusAssistant-Bridging-Header.h";
@@ -1402,7 +1406,7 @@
 			};
 			name = Release;
 		};
-		8BE276999DACF798FE7E69DE43617B96 /* Debug */ = {
+		EF377C5C1C6F919B00B40D20 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1415,7 +1419,7 @@
 			};
 			name = Debug;
 		};
-		0315A71B0795758DA9A167609B918643 /* Release */ = {
+		EF377C5D1C6F919B00B40D20 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1431,34 +1435,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D0EBA8FCECF0557CD2F879BD23170D41 /* Build configuration list for PBXProject "CampusAssistant" */ = {
+		EF377C361C6F919B00B40D20 /* Build configuration list for PBXProject "CampusAssistant" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FD1CCC4692F2E64F724AB615B344DB6E /* Debug */,
-				584A49EAFAD50379ECBCD53AF5ED99BE /* Release */,
+				EF377C561C6F919B00B40D20 /* Debug */,
+				EF377C571C6F919B00B40D20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EBE3E77E432FB85D76FC8FC62F58132C /* Build configuration list for PBXNativeTarget "CampusAssistant" */ = {
+		EF377C581C6F919B00B40D20 /* Build configuration list for PBXNativeTarget "CampusAssistant" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				62ACFD53B51E3142C1F27B5FB8925475 /* Debug */,
-				871A57695AA16918EB29ABFA3C25BE63 /* Release */,
+				EF377C591C6F919B00B40D20 /* Debug */,
+				EF377C5A1C6F919B00B40D20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		98D8C2D767F01DB07CFEB9A8A165E032 /* Build configuration list for PBXNativeTarget "CampusAssistantTests" */ = {
+		EF377C5B1C6F919B00B40D20 /* Build configuration list for PBXNativeTarget "CampusAssistantTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8BE276999DACF798FE7E69DE43617B96 /* Debug */,
-				0315A71B0795758DA9A167609B918643 /* Release */,
+				EF377C5C1C6F919B00B40D20 /* Debug */,
+				EF377C5D1C6F919B00B40D20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = CF97754877FDE098510277AD94F346EE /* Project object */;
+	rootObject = EF377C331C6F919B00B40D20 /* Project object */;
 }

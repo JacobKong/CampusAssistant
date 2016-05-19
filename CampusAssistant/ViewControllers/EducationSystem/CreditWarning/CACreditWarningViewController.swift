@@ -7,15 +7,18 @@
 //
 
 import UIKit
+import Alamofire
 
 class CACreditWarningViewController: UIViewController {
     var tableView:UITableView!
     private let creditWarningCellIdentifier = "CreditCell"
+    var creditList:[[String]] = Array()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "学分预警"
         self.view.backgroundColor = UIColor.whiteColor()
         setupTableView()
+        setupCreditData()
         // Do any additional setup after loading the view.
     }
     
@@ -25,7 +28,7 @@ class CACreditWarningViewController: UIViewController {
     }
     
     private func setupTableView(){
-        self.tableView = UITableView.init(frame: CGRectMake(0, 0, kScreenWidth, kScreenHeight - 30), style: .Plain)
+        self.tableView = UITableView.init(frame: CGRectMake(0, 0, kScreenWidth, kScreenHeight - 64), style: .Plain)
         
         //        self.tableView.backgroundColor = kRGBA(74, g: 144, b: 226, a: 100)
         
@@ -36,6 +39,22 @@ class CACreditWarningViewController: UIViewController {
         self.view.addSubview(self.tableView)
     }
     
+    private func setupCreditData(){
+        Alamofire.request(.GET, "http://202.118.31.197/ACTIONQUERYBASESTUDENTINFO.APPPROCESS?mode=3").validate().responseString {
+            (response) in
+            switch response.result {
+            case .Success:
+                var r_result: [[String]] = CARegexTool.parseCreditTable(response.result.value!)
+                self.creditList.removeAll()
+                for result in r_result{
+                    self.creditList.append(result)
+                }
+                self.tableView.reloadData()
+            case .Failure(let error):
+                print(error)
+            }
+        }
+    }
 }
 
 extension CACreditWarningViewController:UITableViewDelegate, UITableViewDataSource{
@@ -44,12 +63,18 @@ extension CACreditWarningViewController:UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 8
+        if(self.creditList.count > 0){
+            return self.creditList.count - 1
+        }
+        return self.creditList.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(creditWarningCellIdentifier, forIndexPath: indexPath) as! CACreditCell
         cell.courseGroupLabel.textColor = UIColor.caNavigationBarColor()
+        cell.courseGroupLabel.text = self.creditList[indexPath.row][1]
+        cell.information1Label.text = "计划学分: \(self.creditList[indexPath.row][2]) 已修学分: \(self.creditList[indexPath.row][3]) 学分差: \(self.creditList[indexPath.row][4])"
+        cell.information2Label.text = "不及格学分和: \(self.creditList[indexPath.row][5])"
         return cell
     }
 }

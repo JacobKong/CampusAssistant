@@ -15,8 +15,7 @@ class CACheckGradesViewController: UIViewController {
     var courseArray: [[String]] = Array()
     var menuView: BTNavigationDropdownMenu!
     
-    
-    var semesterList:[[String]] = [["Most Popular"]]
+    var termList:[[String]] = [["Most Popular"]]
 
     private let gradeCellIdentifier = "GradeCell"
 
@@ -91,7 +90,7 @@ class CACheckGradesViewController: UIViewController {
     }
 
     private func setupNavigationBarDropDownMenu() {
-        menuView = BTNavigationDropdownMenu(navigationController: self.navigationController, title: "请选择学期", items: semesterList)
+        menuView = BTNavigationDropdownMenu(navigationController: self.navigationController, title: "请选择学期", items: termList)
         menuView.cellHeight = 50
         menuView.cellBackgroundColor = UIColor.caNavigationBarColor()
         menuView.cellSelectionColor = UIColor.caDarkerNavigationBarColor()
@@ -106,10 +105,10 @@ class CACheckGradesViewController: UIViewController {
             (indexPath: Int) -> () in
             print("Did select item at index: \(indexPath)")
             //            self.selectedCellLabel.text = items[indexPath]
-            self.menuView.setMenuTitle(self.semesterList[indexPath][1])
+            self.menuView.setMenuTitle(self.termList[indexPath][1])
             
             let para: [String:AnyObject] = [
-                "YearTermNO": self.semesterList[indexPath][0]
+                "YearTermNO": self.termList[indexPath][0]
             ]
             
             Alamofire.request(.POST, "http://202.118.31.197/ACTIONQUERYSTUDENTSCORE.APPPROCESS", parameters: para).validate().responseString {
@@ -145,7 +144,7 @@ class CACheckGradesViewController: UIViewController {
     }
 
     private func setupTermList() {
-        print("Setup Data")
+//        print("Setup Data")
 //        Alamofire.request(.GET, "http://202.118.31.241:8080/api/v1/termList?token=201602192328181600003301580").validate()
 //        .responseString {
 //            response in
@@ -170,14 +169,15 @@ class CACheckGradesViewController: UIViewController {
             switch response.result {
             case .Success:
                 let r_result: [[String]] = CARegexTool.parseGradeTermList(response.result.value!)
-                self.semesterList.removeAll()
+                self.termList.removeAll()
                 self.menuView.tableView.items.removeAll()
                 for result in r_result{
-                    self.semesterList.append(result)
+                    self.termList.append(result)
                     self.menuView.tableView.items.append(result[1])
                 }
                 self.menuView.tableView.reloadData()
                 print(r_result)
+                self.menuView.tableView.tableView(self.menuView.tableView, didSelectRowAtIndexPath: NSIndexPath(forRow: self.termList.count - 1, inSection: 0))
             case .Failure(let error):
                 print(error)
             }
