@@ -237,7 +237,6 @@ extension AppDelegate:CustomIOSAlertViewDelegate{
                             deanAccount.password = self.espassword
                             deanAccount.cookie = cookie
                             CADeanAccountTool.saveAccount(deanAccount)
-                            print(cookie)
                             alertView.close()
                         }else if loginResult == "请输入正确的附加码"{
                             self.loadVerifyCode() // 重新加载图片
