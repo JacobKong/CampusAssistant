@@ -15,6 +15,7 @@
 		ED77A2BF1CD8A25D00F43DC1 /* CAExamCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED77A2BD1CD8A25D00F43DC1 /* CAExamCell.xib */; };
 		ED8BE6FC1CD0BA0500286E4D /* CAGradeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED8BE6FB1CD0BA0500286E4D /* CAGradeCell.xib */; };
 		ED8BE7021CD0BBD700286E4D /* CAGradeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8BE7011CD0BBD700286E4D /* CAGradeCell.swift */; };
+		EDA814A71CEC8E5B00758ED5 /* CACalendarTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA814A61CEC8E5B00758ED5 /* CACalendarTool.swift */; };
 		EF0BCE261CEB0B1E007F34FD /* CALoginAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0BCE251CEB0B1E007F34FD /* CALoginAlertView.swift */; };
 		EF0BCE281CEB0B28007F34FD /* CALoginAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF0BCE271CEB0B28007F34FD /* CALoginAlertView.xib */; };
 		EF0C41721C758B820044B9C0 /* collections.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF0C41711C758B820044B9C0 /* collections.plist */; };
@@ -138,6 +139,7 @@
 		ED77A2BD1CD8A25D00F43DC1 /* CAExamCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CAExamCell.xib; path = ExamCell/CAExamCell.xib; sourceTree = "<group>"; };
 		ED8BE6FB1CD0BA0500286E4D /* CAGradeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CAGradeCell.xib; path = GradeCell/CAGradeCell.xib; sourceTree = "<group>"; };
 		ED8BE7011CD0BBD700286E4D /* CAGradeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CAGradeCell.swift; path = GradeCell/CAGradeCell.swift; sourceTree = "<group>"; };
+		EDA814A61CEC8E5B00758ED5 /* CACalendarTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CACalendarTool.swift; sourceTree = "<group>"; };
 		EF0BCE251CEB0B1E007F34FD /* CALoginAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALoginAlertView.swift; sourceTree = "<group>"; };
 		EF0BCE271CEB0B28007F34FD /* CALoginAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CALoginAlertView.xib; sourceTree = "<group>"; };
 		EF0C41711C758B820044B9C0 /* collections.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = collections.plist; sourceTree = "<group>"; };
@@ -440,6 +442,7 @@
 				EF331FD31C786C6600695A3B /* CAStudentTool.swift */,
 				ED4B25261CE2C7A800891428 /* CARegexTool.swift */,
 				ED4A363E1CEB2F610032014F /* CANetworkTool.swift */,
+				EDA814A61CEC8E5B00758ED5 /* CACalendarTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -1139,6 +1142,7 @@
 				EF656D3E1CDB9E810077FF10 /* CAFosterPlanHeader.swift in Sources */,
 				EF5809321CB7D4CC00069EA2 /* MGCInteractiveEventView.m in Sources */,
 				EF44E80C1C7C5DB300ADCC5E /* UIColor+CA.swift in Sources */,
+				EDA814A71CEC8E5B00758ED5 /* CACalendarTool.swift in Sources */,
 				EF44E80A1C7C1FA600ADCC5E /* CALightAlphaTextField.swift in Sources */,
 				EF0C41871C75CA5F0044B9C0 /* CACollection.m in Sources */,
 				EF58093F1CB7D4CC00069EA2 /* MGCTimeRowsView.m in Sources */,

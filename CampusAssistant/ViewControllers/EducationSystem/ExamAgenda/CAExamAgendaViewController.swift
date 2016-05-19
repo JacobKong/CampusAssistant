@@ -97,7 +97,7 @@ extension CAExamAgendaViewController:UITableViewDataSource,UITableViewDelegate{
         var today = NSDate(),target:NSDate
         let formatter = NSDateFormatter();
         formatter.dateFormat = "yyyy-MM-dd";
-        formatter.locale = NSLocale(localeIdentifier:"zh_CN");
+        formatter.locale = NSLocale(localeIdentifier:"zh_CN")
         today = formatter.dateFromString(formatter.stringFromDate(today))!
         
         if(self.examList[indexPath.row][3]==""){

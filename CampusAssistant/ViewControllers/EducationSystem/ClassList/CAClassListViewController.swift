@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 //@objc protocol CalendarViewControllerNavigation{
 //    func moveToDate(date:NSDate, animated:Bool)
 //    func moveToNextPageAnimated(animated:Bool)
@@ -22,12 +23,16 @@ class CAClassListViewController: MGCDayPlannerEKViewController {
 
     let dateFormatter = NSDateFormatter()
     let currentDateLabel =  UILabel()
+    let ekEventStore = EKEventStore()
+    var courseIdentifier:NSArray?
 //    let currentDateButton = UIButton.init(type: UIButtonType.Custom)
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
         setupNavigationBar()
         setupDayPlannerView()
+        
+        trySetupCalendarData()
 //        self.calendar = NSCalendar.currentCalendar()
         // Do any additional setup after loading the view.
     }
@@ -68,10 +73,73 @@ class CAClassListViewController: MGCDayPlannerEKViewController {
         
     }
     
+    private func trySetupCalendarData(){
+//        courseIdentifier = NSArray(contentsOfFile: NSHomeDirectory() + "/Documents/courseid.plist")
+//        
+//        if courseIdentifier != nil && courseIdentifier?.count != 0 {
+//            print(courseIdentifier)
+//            ekEventStore.requestAccessToEntityType(EKEntityType.Event, completion: { (granted, error) in
+//                if granted && error == nil {
+//                    for id in self.courseIdentifier! {
+//                        let eventToRemove = self.ekEventStore.eventWithIdentifier(id as! String)
+//                        do{
+//                            try self.ekEventStore.removeEvent(eventToRemove!, span: EKSpan.ThisEvent, commit: true)
+//                            print("EVENT DELETED")
+//                            
+//                            self.courseIdentifier = NSArray()
+//                            let filePath:String = NSHomeDirectory() + "/Documents/courseid.plist"
+//                            self.courseIdentifier?.writeToFile(filePath, atomically: true)
+//                        }catch{
+//                            print("CALENDAR DELETE ERROR!!!")
+//                        }
+//                    }
+//                }
+//            })
+//        }
+//        
+//        ekEventStore.requestAccessToEntityType(EKEntityType.Event) { (granted, error) in
+//            if granted && error == nil{
+//                var array:[String] = Array()
+//                let event = EKEvent(eventStore: self.ekEventStore)
+//                event.title = "测试"
+//                event.startDate = NSDate()
+//                event.endDate = NSDate()
+//                event.location = "信息B221"
+//                event.notes = "教师名"
+//                event.calendar = self.ekEventStore.defaultCalendarForNewEvents
+//                
+//                do{
+//                    try self.ekEventStore.saveEvent(event, span: EKSpan.ThisEvent)
+//                    array.append(event.eventIdentifier)
+//                    print("SAVED EVENT")
+//                    
+//                    self.courseIdentifier = NSArray(array: array)
+//                    let filePath:String = NSHomeDirectory() + "/Documents/courseid.plist"
+//                    self.courseIdentifier?.writeToFile(filePath, atomically: true)
+//                }catch{
+//                    print("CALENDAR INSERT ERROR!!!")
+//                }
+//            }
+//        }
+        
+        CANetworkTool.setAAOCookies("X82067xK1syLDBSJ4MrV2IuQxS125KlY53wamfL4NKruPYklCtNt!1269920556")
+        Alamofire.request(.GET, "http://202.118.31.197/ACTIONQUERYSTUDENTSCHEDULEBYSELF.APPPROCESS").validate().responseString {
+            (response) in
+            switch response.result {
+            case .Success:
+                let r_result: [[String]] = CARegexTool.parseCourseTable(response.result.value!)
+                CACalendarTool.refreshCalendarWithCourseList(r_result)
+            case .Failure(let error):
+                print(error)
+            }
+            
+        }
+    }
+    
     override func dayPlannerView(view: MGCDayPlannerView!, willDisplayDate date: NSDate!) {
         self.dateFormatter.dateFormat = "yyyy.M"
         let currentMonth = dateFormatter.stringFromDate(date)
-        print(currentMonth)
+//        print(currentMonth)
         currentDateLabel.text = currentMonth
         currentDateLabel.sizeToFit()
     }

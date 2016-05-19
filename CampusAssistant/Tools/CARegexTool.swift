@@ -14,7 +14,7 @@ class CARegexTool: NSObject {
         var r_value:String! = response
         
         r_value.replaceAllMatching("<br style=\"mso-data-placement:same-cell\">", with: "<br>")
-        r_value.replaceAllMatching("(<br>)+", with: "<br>")
+//        r_value.replaceAllMatching("(<br>)+", with: "<br>")
         
         var rg:Regex = Regex("<tr style=\"height:100px\">([\\s\\S]*?)</tr>")
         
@@ -53,7 +53,7 @@ class CARegexTool: NSObject {
             }
         }
         
-        rg = Regex("^.+?(?=<br>)|(?<=<br>).+?(?=<br>)|(?<=<br>).+?$")
+        rg = Regex("^.+?(?=<br>)|(?<=<br>).*?(?=<br>)|(?<=<br>).+?$")
         
         for i in 0...41 {
             if(r_result[i].count==0){
@@ -65,6 +65,35 @@ class CARegexTool: NSObject {
                 r_second = rg.allMatches(r_result[i][0])
                 for j in 0..<r_second.count {
                     r_result[i].append(r_second[j].matchedString)
+                }
+                r_result[i].removeFirst()
+            }
+        }
+        
+        return r_result
+    }
+    class func parseCourseWeekDescription(description:String) ->[[String]]{
+        // 分析周数字符串
+        // 首先按.分割
+        // 分析各块 若是 <数字-数字>格式 则创建带循环的事件
+        // 若是<数字>格式 则创建单一事件
+        var r_result:[[String]] = Array()
+        let r_value = description
+        var r_pattern:Regex = Regex("^.+?(?=\\.)|(?<=\\.).+?(?=\\.)|(?<=\\.).+?(?=周)|^.+?(?=周)")
+        var r_matches:[MatchResult] = r_pattern.allMatches(r_value)
+        
+        for i in 0..<r_matches.count {
+            r_result.append(Array())
+            r_result[i].append(r_matches[i].matchedString)
+        }
+        
+        r_pattern = Regex("\\d+-\\d+")
+        
+        for i in 0..<r_result.count {
+            if(r_pattern.matches(r_result[i][0])){
+                r_matches = Regex("\\d+").allMatches(r_result[i][0])
+                for match in r_matches {
+                    r_result[i].append(match.matchedString)
                 }
                 r_result[i].removeFirst()
             }
