@@ -351,6 +351,13 @@ class CARegexTool: NSObject {
             r_result[i].append(r_matches[i].matchedString)
         }
         
+        r_pattern = Regex("^.+(\\**)(?=\\[)")
+        
+        for i in 0..<r_matches.count {
+            let match = r_pattern.match(r_result[i][1])!.matchedString
+            r_result[i][1] = match
+        }
+        
         return r_result
     }
     
