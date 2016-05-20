@@ -43,7 +43,7 @@ class CAProfileViewController: UIViewController {
         // 设置tableView的backgroundImage
         let bgView = UIView.init(frame: self.tableView.frame)
         bgView.backgroundColor = UIColor.whiteColor()
-        let bgColorView = UIView.init(frame:CGRectMake(0, 0, kScreenWidth, kScreenHeight*0.5))
+        let bgColorView = UIView.init(frame:CGRectMake(0, 0, kScreenWidth, kScreenHeight*0.3))
         bgColorView.backgroundColor = UIColor.caNavigationBarColor()
         bgView.addSubview(bgColorView)
         self.tableView.backgroundView = bgView

@@ -239,7 +239,7 @@ class CAHomeViewController: UIViewController {
 //                let para: [String:AnyObject] = [
 //                    "YearTermNO": "14",                   // todo 以后改为先用GET获取学期列表
 //                    "WeekdayID":"1",
-//                    "StartSection":"1",
+//                    "StartSection":、"1",
 //                    "EndSection":"12",
 //                    "ClassroomNO":"000107101"             // todo 选定教学楼后获取教室列表
 //                ]
