@@ -44,7 +44,7 @@ class CACreditWarningViewController: UIViewController {
             (response) in
             switch response.result {
             case .Success:
-                var r_result: [[String]] = CARegexTool.parseCreditTable(response.result.value!)
+                let r_result: [[String]] = CARegexTool.parseCreditTable(response.result.value!)
                 self.creditList.removeAll()
                 for result in r_result{
                     self.creditList.append(result)
