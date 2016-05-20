@@ -102,6 +102,7 @@ class CAEmptyRoomViewController: UIViewController {
                 (response) in
                 switch response.result {
                 case .Success:
+                    self.classRoomArray.removeAll()
                     var r_result: [[String]] = CARegexTool.parseEptClsrmClsrmList(response.result.value!)
                     self.classRoomArray = r_result
                     self.collectionView.reloadData()
@@ -117,7 +118,6 @@ class CAEmptyRoomViewController: UIViewController {
     }
     
     private func setupBuildingList(){
-
         Alamofire.request(.GET, "http://202.118.31.197/ACTIONQUERYCLASSROOMNOUSE.APPPROCESS").validate().responseString {
             (response) in
             switch response.result {
@@ -185,18 +185,32 @@ extension CAEmptyRoomViewController:UICollectionViewDataSource,UICollectionViewD
             "ClassroomNO": self.classRoomArray[indexPath.item][0]             // todo 选定教学楼后获取教室列表
         ]
 
-        Alamofire.request(.POST, "http://202.118.31.197/ACTIONQUERYCLASSROOMNOUSE.APPPROCESS", parameters: para).validate().responseString {
+        Alamofire.request(.POST, "http://202.118.31.197/ACTIONQUERYCLASSROOMUSEBYWEEKDAYSECTION.APPPROCESS?mode=2", parameters: para).validate().responseString {
             (response) in
             switch response.result {
             case .Success:
-                print(response)
-//                let r_result: [[String]] = CARegexTool.parseEptClsrmTermList(response.result.value!)
-//                print(r_result)
+                let r_result: [[String]] = CARegexTool.parseEmptyClassroomTable(response.result.value!)
+                var alertView = UIAlertView()
+                if r_result.count==0{
+                    alertView = UIAlertView.init(title: "提示", message: "该教室今天全天空闲！", delegate: self, cancelButtonTitle: "好的！")
+                }else{
+                    var classMessageStr = ""
+                    for i in 0 ..< r_result.count{
+                        classMessageStr+="\(r_result[i][1])节\t\(r_result[i][5])\n"
+                    }
+                    alertView = UIAlertView.init(title: "该教室今天占用情况", message: classMessageStr, delegate: self, cancelButtonTitle: "知道了！")
+                }
+                alertView.show()
             case .Failure(let error):
+                SVProgressHUD.showErrorMessage(kErrorMessage)
                 print(error)
             }
 
         }
     }
+
+}
+
+extension CAEmptyRoomViewController:UIAlertViewDelegate{
 
 }

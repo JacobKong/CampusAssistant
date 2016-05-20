@@ -89,6 +89,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // 检测cookie是否可用
     private func checkCookieisExpired() {
+        SVProgressHUD.setDefaultMaskType(.Black)
         SVProgressHUD.show()
         if CADeanAccountTool.isExistAccountData(){
             let deanAccount = CADeanAccountTool.deanAccount()
