@@ -100,11 +100,11 @@ class CAProfileViewController: UIViewController {
                     self.student.StudyForm = r_result[8]
                     CAStudentTool.saveStudent(self.student)
                     self.titleArray[0] = self.student.StudentId
-                    self.titleArray[1] = self.student.collegeName
-                    self.titleArray[2] = self.student.professionName
+                    self.titleArray[1] = self.student.professionName
+                    self.titleArray[2] = self.student.className
                     self.titleArray[3] = self.student.StudyForm
                     self.titleArray[4] = self.student.startDate
-                    self.profileHeader.nameLabel.text = "\(self.student.StudentName)  \(self.student.sex)"
+                    self.profileHeader.nameLabel.text = "\(self.student.StudentName)  \(self.student.collegeName)"
                     self.profileHeader.englishNameLabel.text = self.student.englishName
                     print(r_result)
                     self.tableView.reloadData()
@@ -116,7 +116,7 @@ class CAProfileViewController: UIViewController {
         }else{
             self.student = CAStudentTool.student()
             setupTitleArray()
-            self.profileHeader.nameLabel.text = "\(self.student.StudentName)  \(self.student.sex)"
+            self.profileHeader.nameLabel.text = "\(self.student.StudentName)  \(self.student.collegeName)"
             self.profileHeader.englishNameLabel.text = self.student.englishName
         }
     }
@@ -141,8 +141,8 @@ class CAProfileViewController: UIViewController {
     
     private func setupTitleArray(){
         self.titleArray[0] = self.student.StudentId
-        self.titleArray[1] = self.student.collegeName
-        self.titleArray[2] = self.student.professionName
+        self.titleArray[1] = self.student.professionName
+        self.titleArray[2] = self.student.className
         self.titleArray[3] = self.student.StudyForm
         self.titleArray[4] = self.student.startDate
         
