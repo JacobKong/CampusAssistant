@@ -25,14 +25,25 @@ class CAClassListViewController: MGCDayPlannerEKViewController {
     let currentDateLabel =  UILabel()
     let ekEventStore = EKEventStore()
     var courseIdentifier:NSArray?
+    var isLoadedEvent:Bool = false
+    let isLoadedEventKey = "isLoadedEvent"
 //    let currentDateButton = UIButton.init(type: UIButtonType.Custom)
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
+        let userDefault = NSUserDefaults.standardUserDefaults()
+        let loadedEventKey = userDefault.objectForKey(isLoadedEventKey)
+        if loadedEventKey==nil{
+            isLoadedEvent = false
+            trySetupCalendarData()
+            
+        }else{
+            isLoadedEvent = loadedEventKey as! Bool
+            print(loadedEventKey)
+        }
+        
         setupNavigationBar()
         setupDayPlannerView()
-        
-        trySetupCalendarData()
 //        self.calendar = NSCalendar.currentCalendar()
         // Do any additional setup after loading the view.
     }
@@ -52,10 +63,22 @@ class CAClassListViewController: MGCDayPlannerEKViewController {
         let currentMonth = dateFormatter.stringFromDate(NSDate())
         currentDateLabel.text = currentMonth
         currentDateLabel.textColor = UIColor.whiteColor()
-        currentDateLabel.font = UIFont.systemFontOfSize(15)
+        currentDateLabel.textAlignment = .Center
+        currentDateLabel.font = UIFont.boldSystemFontOfSize(15)
         currentDateLabel.sizeToFit()
+        currentDateLabel.frame.origin = CGPointMake(10, 0)
+        
+        let refreshBtn = UIButton.init(type: .Custom)
+        refreshBtn.setBackgroundImage(UIImage.init(named: "navigationbar_refresh"), forState: .Normal)
+        refreshBtn.frame = CGRectMake(currentDateLabel.frame.size.width+20, 0, 20, 20)
+        refreshBtn.addTarget(self, action: #selector(self.refreshBtnCliked), forControlEvents: .TouchUpInside)
+        
+        let rightView = UIView.init(frame: CGRectMake(0, 0, 90, 20))
+        rightView.addSubview(currentDateLabel)
+        rightView.addSubview(refreshBtn)
+        
         let rightBarButton = UIBarButtonItem()
-        rightBarButton.customView = currentDateLabel
+        rightBarButton.customView = rightView
         self.navigationItem.rightBarButtonItem = rightBarButton
 
     }
@@ -71,6 +94,11 @@ class CAClassListViewController: MGCDayPlannerEKViewController {
         self.dayPlannerView.hourRange = NSRange.init(location: 7, length: 17)
         self.dayPlannerView.dateFormat = "d eee"
         
+    }
+    
+    @objc private func refreshBtnCliked(){
+        self.isLoadedEvent = false
+        trySetupCalendarData()
     }
     
     private func trySetupCalendarData(){
@@ -123,16 +151,22 @@ class CAClassListViewController: MGCDayPlannerEKViewController {
 //        }
         
 //        CANetworkTool.setAAOCookies("X82067xK1syLDBSJ4MrV2IuQxS125KlY53wamfL4NKruPYklCtNt!1269920556")
-        Alamofire.request(.GET, "http://202.118.31.197/ACTIONQUERYSTUDENTSCHEDULEBYSELF.APPPROCESS").validate().responseString {
-            (response) in
-            switch response.result {
-            case .Success:
-                let r_result: [[String]] = CARegexTool.parseCourseTable(response.result.value!)
-                CACalendarTool.refreshCalendarWithCourseList(r_result)
-            case .Failure(let error):
-                print(error)
+        if isLoadedEvent==false {
+            Alamofire.request(.GET, "http://202.118.31.197/ACTIONQUERYSTUDENTSCHEDULEBYSELF.APPPROCESS").validate().responseString {
+                (response) in
+                switch response.result {
+                case .Success:
+                    let r_result: [[String]] = CARegexTool.parseCourseTable(response.result.value!)
+                    CACalendarTool.refreshCalendarWithCourseList(r_result)
+                    self.isLoadedEvent = true
+                    let userDefault = NSUserDefaults.standardUserDefaults()
+                    userDefault.setBool(true, forKey: self.isLoadedEventKey)
+                    userDefault.synchronize()
+                case .Failure(let error):
+                    print(error)
+                }
+                
             }
-            
         }
     }
     
@@ -143,14 +177,4 @@ class CAClassListViewController: MGCDayPlannerEKViewController {
         currentDateLabel.text = currentMonth
         currentDateLabel.sizeToFit()
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

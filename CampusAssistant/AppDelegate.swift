@@ -163,9 +163,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.espasswordTextfield.text = deanAccount.password
             self.esusername = self.esusernameTextfield.text
             self.espassword = self.espasswordTextfield.text
-            self.alertView.buttonTitles = ["登录", "解绑", "取消"];
+            self.alertView.buttonTitles = ["登录", "解绑"];
         }else{
-            self.alertView.buttonTitles = ["登录", "取消"];
+            self.alertView.buttonTitles = ["登录"];
         }
         
         self.alertView.containerView = self.loginAlertView

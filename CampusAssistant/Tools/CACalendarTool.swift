@@ -26,10 +26,12 @@ class CACalendarTool: NSObject {
     }
     
     class func refreshCalendarWithCourseList(courseList:[[String]]){
+        print(_instance.events)
+        print(_instance.identifierArray)
         _instance.removeAllEvents()
-        
         var day_counter = 0, time_counter:Double = 0
         print(courseList)
+        
         
         _instance.identifierArray.removeAll()
         _instance.events.removeAll()
@@ -137,6 +139,7 @@ class CACalendarTool: NSObject {
                             
                             self.courseIdentifier = NSArray()
                             let filePath:String = NSHomeDirectory() + "/Documents/courseid.plist"
+                            print(filePath)
                             self.courseIdentifier?.writeToFile(filePath, atomically: true)
                         }catch{
 //                            print("CALENDAR DELETE ERROR!!!")
