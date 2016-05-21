@@ -39,7 +39,6 @@
 		EF331FD41C786C6600695A3B /* CAStudentTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF331FD31C786C6600695A3B /* CAStudentTool.swift */; };
 		EF377C3F1C6F919B00B40D20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF377C3E1C6F919B00B40D20 /* AppDelegate.swift */; };
 		EF377C441C6F919B00B40D20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF377C421C6F919B00B40D20 /* Main.storyboard */; };
-		EF377C491C6F919B00B40D20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF377C471C6F919B00B40D20 /* LaunchScreen.storyboard */; };
 		EF377C541C6F919B00B40D20 /* CampusAssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF377C531C6F919B00B40D20 /* CampusAssistantTests.swift */; };
 		EF3D6FE01C7064740051DA24 /* CAHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D6FDF1C7064740051DA24 /* CAHomeViewController.swift */; };
 		EF3D6FE21C70647C0051DA24 /* CAProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3D6FE11C70647C0051DA24 /* CAProfileViewController.swift */; };
@@ -175,7 +174,6 @@
 		EF377C3B1C6F919B00B40D20 /* CampusAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF377C3E1C6F919B00B40D20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF377C431C6F919B00B40D20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EF377C481C6F919B00B40D20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF377C4A1C6F919B00B40D20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF377C4F1C6F919B00B40D20 /* CampusAssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CampusAssistantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF377C531C6F919B00B40D20 /* CampusAssistantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusAssistantTests.swift; sourceTree = "<group>"; };
@@ -516,7 +514,6 @@
 				EF377C901C7038F800B40D20 /* ViewControllers */,
 				EF377C941C7038F800B40D20 /* Views */,
 				EF377C421C6F919B00B40D20 /* Main.storyboard */,
-				EF377C471C6F919B00B40D20 /* LaunchScreen.storyboard */,
 				EF5DF8311C7D75F4003CF533 /* Assets.xcassets */,
 				EF377C4A1C6F919B00B40D20 /* Info.plist */,
 			);
@@ -1014,7 +1011,6 @@
 				EF3D6FEB1C70D09A0051DA24 /* Montserrat-Bold.ttf in Resources */,
 				EF2E42271CD8975A00146D4D /* CAEmptyRoomHeader.xib in Resources */,
 				EF489D5A1CDB6A4E0017C32E /* CACreditCell.xib in Resources */,
-				EF377C491C6F919B00B40D20 /* LaunchScreen.storyboard in Resources */,
 				EF2E42231CD8971A00146D4D /* CAProfileHeader.xib in Resources */,
 				ED8BE6FC1CD0BA0500286E4D /* CAGradeCell.xib in Resources */,
 				EF5DF8321C7D75F4003CF533 /* Assets.xcassets in Resources */,
@@ -1265,14 +1261,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		EF377C471C6F919B00B40D20 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EF377C481C6F919B00B40D20 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		EF5808CB1CB7D4CC00069EA2 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1373,6 +1361,7 @@
 			baseConfigurationReference = 3C5C8250F5FFB20728217A5C /* Pods-CampusAssistant.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1392,6 +1381,7 @@
 			baseConfigurationReference = 8E4C3E2FEADB86444CCA6E01 /* Pods-CampusAssistant.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
