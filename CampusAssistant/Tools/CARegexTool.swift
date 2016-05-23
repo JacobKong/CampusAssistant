@@ -430,4 +430,22 @@ class CARegexTool: NSObject {
         
         return r_result
     }
+    
+    class func parseGateWayErrorResult(response:String)->String{
+        let r_value:String = response
+        let r_pattern:Regex = Regex("(?<=\\().+?(?=\\)</p>)")
+        var r_matches:[MatchResult] = r_pattern.allMatches(r_value)
+        let r_match:String = r_matches[0].matchedString
+        
+        return r_match
+    }
+    
+    class func parseGateWayIP(response:String)->String{
+        let r_value:String = response
+        let r_pattern:Regex = Regex("(?<=name=\"user_ip\" value=\").+?(?=\">)")
+        var r_matches:[MatchResult] = r_pattern.allMatches(r_value)
+        let r_match:String = r_matches[0].matchedString
+        
+        return r_match
+    }
 }

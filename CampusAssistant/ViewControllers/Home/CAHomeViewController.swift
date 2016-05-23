@@ -27,9 +27,9 @@ class CAHomeViewController: UIViewController {
         setupWeedNoTextview()
 //        self.title = "NEU CAMPUS ASSISTANT"
 //        self.title = "NEU Campus Assistant"
-
-        // 测试 添加登录功能
-//        setupTestLogin()
+        
+//         测试 IP网关
+//        testIPGW()
     }
 
     
@@ -143,176 +143,74 @@ class CAHomeViewController: UIViewController {
         self.weatherView.setupWeedNoTextview(todayNo)
         
     }
-    // 测试 登录功能
-    private func setupTestLogin() {
-        let view: UIImageView = UIImageView.init(frame: CGRectMake(0, 500, kScreenWidth / 2, 40))
-        input = UITextField.init(frame: CGRectMake(kScreenWidth / 2, 500, kScreenWidth / 2, 40))
-
-//        self.hideKeyboardWhenTappedAround()
-
-        self.view.addSubview(view)
-        self.view.addSubview(input)
-
-        if let url = NSURL(string: "http://202.118.31.197/ACTIONVALIDATERANDOMPICTURE.APPPROCESS") {
-            if let data = NSData(contentsOfURL: url) {
-                view.image = UIImage(data: data)
-            }
-        }
-    }
-
     
-    private func testLogin() {
-        let paras: [String:AnyObject] = [
-                "WebUserNO": "20134649",
-                "Password": "950426",
-                "Agnomen": input.text!
-        ]
-
-        Alamofire.request(.POST, "http://202.118.31.197/ACTIONLOGON.APPPROCESS?mode=4", parameters: paras).validate().responseString {
+    private func testIPGW(){
+        Alamofire.request(.GET, "http://ipgw.neu.edu.cn/ac_detect.php?ac_id=1&").responseString {
             (response) in
             switch response.result {
             case .Success:
-
-                // 课程表
-//                Alamofire.request(.GET, "http://202.118.31.197/ACTIONQUERYSTUDENTSCHEDULEBYSELF.APPPROCESS").validate().responseString {
-//                    (response) in
-//                    switch response.result {
-//                    case .Success:
-//                        var r_result: [[String]] = CARegexTool.parseCourseTable(response.result.value!)
-//                        print("\n")
-//                    case .Failure(let error):
-//                        print(error)
-//                    }
-//
-//                }
-
-                // 成绩
-
-                let para: [String:AnyObject] = [
-                    "YearTermNO": "13"                   // todo 以后改为先用GET获取学期列表
+                //                var r_result: [[String]] = CARegexTool.parseCreditTable(response.result.value!)
+                print(response.response)
+                print(response.result.value as String!)
+                print(response.response?.URL)              // 此项需要首先获取以获得正确请求地址
+                
+                // 登录
+                let par: [String:AnyObject] = [
+                    "action":"login",
+                    "ac_id":"1",
+                    "user_ip":"",
+                    "nas_ip":"",
+                    "user_mac":"",
+                    "url":"",
+                    "username":"20134649",                  // 学号
+                    "password":"950426",                    // 密码 此两项需要保存
+                    "save_me":"0"
                 ]
+                
+                let url = response.response?.URL?.absoluteString
 
-                Alamofire.request(.POST, "http://202.118.31.197/ACTIONQUERYSTUDENTSCORE.APPPROCESS", parameters: para).validate().responseString {
+                Alamofire.request(.POST, url!, parameters: par).validate().responseString {
                     (response) in
                     switch response.result {
                     case .Success:
-                        var r_result: [[String]] = CARegexTool.parseGradeTermList(response.result.value!)
-                        r_result = CARegexTool.parseGradeTable(response.result.value!)
+                        print(response.result.value as String!)
+                        
+                        // 此处需要判断是否成功登录 若失败的话使用
+                        // CARegexTool.parseGateWayErrorResult(response.result.value!)
+                        // 来取出错误原因
+                        
+                        let ip = CARegexTool.parseGateWayIP(response.result.value!)     // IP地址 此项需要存储
+                        
+                        //注销
+                        
+                        let para: [String:AnyObject] = [
+                            "action":"auto_logout",
+                            "info":"",
+                            "user_ip":ip                    // 在此处填入ip
+                        ]
+                        
+                        Alamofire.request(.POST, url!, parameters: para).validate().responseString {
+                            (response) in
+                            switch response.result {
+                            case .Success:
+                                print(response.result.value as String!)
+                            case .Failure(let error):
+                                print(error)
+                            }
+                            
+                        }
 
-                        print(r_result)
                     case .Failure(let error):
                         print(error)
                     }
-
+                    
                 }
-
-                // 考试日程
-
-//                Alamofire.request(.GET, "http://202.118.31.197/ACTIONQUERYEXAMTIMETABLEBYSTUDENT.APPPROCESS?mode=2").validate().responseString {
-//                    (response) in
-//                    switch response.result {
-//                    case .Success:
-//                        var r_result: [[String]] = CARegexTool.parseExamTable(response.result.value!)
-//                        print("\n")
-//                    case .Failure(let error):
-//                        print(error)
-//                    }
-//
-//                }
-
-//                 学业预警
-//
-//                Alamofire.request(.GET, "http://202.118.31.197/ACTIONQUERYBASESTUDENTINFO.APPPROCESS?mode=3").validate().responseString {
-//                    (response) in
-//                    switch response.result {
-//                    case .Success:
-//                        var r_result: [[String]] = CARegexTool.parseCreditTable(response.result.value!)
-//                        print("\n")
-//                    case .Failure(let error):
-//                        print(error)
-//                    }
-//
-//                }
-
-                // 空闲教室
-
-//                let para: [String:AnyObject] = [
-//                    "YearTermNO": "14",                   // todo 以后改为先用GET获取学期列表
-//                    "WeekdayID":"1",
-//                    "StartSection":、"1",
-//                    "EndSection":"12",
-//                    "ClassroomNO":"000107101"             // todo 选定教学楼后获取教室列表
-//                ]
-//
-//                Alamofire.request(.POST, "http://202.118.31.197/ACTIONQUERYCLASSROOMUSEBYWEEKDAYSECTION.APPPROCESS?mode=2", parameters: para).validate().responseString {
-//                    (response) in
-//                    switch response.result {
-//                    case .Success:
-//                        var r_result: [[String]] = CARegexTool.parseEmptyClassroomTable(response.result.value!)
-//                        print("\n")
-//                    case .Failure(let error):
-//                        print(error)
-//                    }
-//
-//                }
-
-                // 空闲教室相关参数变量获取
-
-//                let par: [String:AnyObject] = [
-//                    "YearTermNO": "14",                   // todo 以后改为先用GET获取学期列表
-//                    "WeekdayID":"1",
-//                    "StartSection":"1",
-//                    "EndSection":"12",
-//                    "STORYNO":"0001",                     // todo 选定教室刷新
-//                    "ClassroomNO":"000107101"             // todo 选定教学楼后获取教室列表
-//                ]
-//
-//                Alamofire.request(.POST, "http://202.118.31.197/ACTIONQUERYCLASSROOMNOUSE.APPPROCESS", parameters: par).validate().responseString {
-//                    (response) in
-//                    switch response.result {
-//                    case .Success:
-//                        var r_result: [[String]] = CARegexTool.parseEptClsrmClsrmList(response.result.value!)
-////                        r_result = CARegexTool.parseEptClsrmStoryList(response.result.value!)
-////                        r_result = CARegexTool.parseEptClsrmTermList(response.result.value!)
-//                        print("\n")
-//                    case .Failure(let error):
-//                        print(error)
-//                    }
-//
-//                }
-
-                // 个人信息
-
-//                Alamofire.request(.GET, "http://202.118.31.197/ACTIONFINDSTUDENTINFO.APPPROCESS?mode=1&showMsg=").validate().responseString {
-//                    (response) in
-//                    switch response.result {
-//                    case .Success:
-//                        var r_result: [String] = CARegexTool.parsePersonalInfoTable(response.result.value!)
-//                        print("\n")
-//                    case .Failure(let error):
-//                        print(error)
-//                    }
-//
-//                }
             case .Failure(let error):
                 print(error)
             }
+
         }
     }
-
-    // 此处设定了弹出键盘时点击别处收起键盘
-
-//    func hideKeyboardWhenTappedAround() {
-//        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
-//        view.addGestureRecognizer(tap)
-//    }
-//
-//    func dismissKeyboard() {
-//        view.endEditing(true)
-//
-//        // 改成按钮
-//        testLogin()
-//    }
 
 }
 
