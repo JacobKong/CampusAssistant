@@ -26,15 +26,17 @@ class CACalendarTool: NSObject {
     }
     
     class func refreshCalendarWithCourseList(courseList:[[String]]){
-        print(_instance.events)
-        print(_instance.identifierArray)
-        _instance.removeAllEvents()
+//        print(_instance.events)
+//        print(_instance.identifierArray)
+        _instance.removeAllEvents(courseList)
+//        print(courseList)
+    }
+    
+    private func refreshCalendar(courseList:[[String]]){
         var day_counter = 0, time_counter:Double = 0
-        print(courseList)
         
-        
-        _instance.identifierArray.removeAll()
-        _instance.events.removeAll()
+        self.identifierArray.removeAll()
+        self.events.removeAll()
         
         for _item in courseList {
             if _item.count != 0 {
@@ -44,17 +46,17 @@ class CACalendarTool: NSObject {
                         let t_start_week = Int(week[0])
                         let interval_days = (t_start_week! - 1) * 7 + day_counter + 1
                         var interval_seconds = (Double(8 + interval_days * 24) + time_counter) * 3600
-                        let t_from:NSDate = _instance.termStartDate.dateByAddingTimeInterval(NSTimeInterval(interval_seconds))
+                        let t_from:NSDate = self.termStartDate.dateByAddingTimeInterval(NSTimeInterval(interval_seconds))
                         interval_seconds += 7200
-                        let t_to:NSDate = _instance.termStartDate.dateByAddingTimeInterval(NSTimeInterval(interval_seconds))
+                        let t_to:NSDate = self.termStartDate.dateByAddingTimeInterval(NSTimeInterval(interval_seconds))
                         
                         if week.count == 1{
-                            _instance.prepareEvent(_item[i*4], location: _item[i*4+2], notes: _item[i*4+1], fromTime: t_from, toTime: t_to, isRecurrenceEvent: false, endDate: nil)
+                            self.prepareEvent(_item[i*4], location: _item[i*4+2], notes: _item[i*4+1], fromTime: t_from, toTime: t_to, isRecurrenceEvent: false, endDate: nil)
                         }else{
                             let t_end_week = Int(week[1])
                             interval_seconds += Double((t_end_week! - t_start_week!) * 7 * 24 * 3600)
-                            let t_end:NSDate = _instance.termStartDate.dateByAddingTimeInterval(NSTimeInterval(interval_seconds))
-                            _instance.prepareEvent(_item[i*4], location: _item[i*4+2], notes: _item[i*4+1], fromTime: t_from, toTime: t_to, isRecurrenceEvent: true, endDate: t_end)
+                            let t_end:NSDate = self.termStartDate.dateByAddingTimeInterval(NSTimeInterval(interval_seconds))
+                            self.prepareEvent(_item[i*4], location: _item[i*4+2], notes: _item[i*4+1], fromTime: t_from, toTime: t_to, isRecurrenceEvent: true, endDate: t_end)
                         }
                     }
                 }
@@ -73,10 +75,10 @@ class CACalendarTool: NSObject {
                 }
             }
             // test code
-//            break
+            //            break
         }
         
-        _instance.addAllEventsToCalendar()
+        self.addAllEventsToCalendar()
     }
     
     private func prepareEvent(title:String, location:String, notes:String, fromTime:NSDate, toTime:NSDate, isRecurrenceEvent:Bool, endDate:NSDate?){
@@ -112,41 +114,45 @@ class CACalendarTool: NSObject {
                         _instance.identifierArray.append(event.eventIdentifier)
                     }
                     try self.ekEventStore.commit()
-//                    print("SAVED EVENTS")
+                    print("SAVED EVENTS")
                     self.saveAllEventIdentifiers()
                 }catch{
-//                    print("CALENDAR INSERT ERROR!!!")
+                    print("CALENDAR INSERT ERROR!!!")
                 }
             }
         }
     }
     
-    private func removeAllEvents(){
+    private func removeAllEvents(courseListToRefresh:[[String]]){
 //        self.courseIdentifier = NSArray()
 //        let filePath:String = NSHomeDirectory() + "/Documents/courseid.plist"
 //        self.courseIdentifier?.writeToFile(filePath, atomically: true)
         
         self.courseIdentifier = NSArray(contentsOfFile: NSHomeDirectory() + "/Documents/courseid.plist")
         if self.courseIdentifier != nil && self.courseIdentifier?.count != 0 {
-            print(self.courseIdentifier)
+//            print(self.courseIdentifier)
             ekEventStore.requestAccessToEntityType(EKEntityType.Event, completion: { (granted, error) in
                 if granted && error == nil {
-                    for id in self.courseIdentifier! {
-                        let eventToRemove = self.ekEventStore.eventWithIdentifier(id as! String)
-                        do{
-                            try self.ekEventStore.removeEvent(eventToRemove!, span: EKSpan.FutureEvents, commit: true)
-//                            print("EVENT DELETED")
-                            
-                            self.courseIdentifier = NSArray()
-                            let filePath:String = NSHomeDirectory() + "/Documents/courseid.plist"
-                            print(filePath)
-                            self.courseIdentifier?.writeToFile(filePath, atomically: true)
-                        }catch{
-//                            print("CALENDAR DELETE ERROR!!!")
+                    do{
+                        for id in self.courseIdentifier! {
+                            let eventToRemove = self.ekEventStore.eventWithIdentifier(id as! String)
+                            try self.ekEventStore.removeEvent(eventToRemove!, span: EKSpan.FutureEvents)
                         }
+                        try self.ekEventStore.commit()
+                        print("EVENT DELETED")
+                    }catch{
+                        print("CALENDAR DELETE ERROR!!!")
                     }
+                    self.courseIdentifier = NSArray()
+                    let filePath:String = NSHomeDirectory() + "/Documents/courseid.plist"
+//                    print(filePath)
+                    self.courseIdentifier?.writeToFile(filePath, atomically: true)
+                    
+                    self.refreshCalendar(courseListToRefresh)
                 }
             })
+        }else{
+            self.refreshCalendar(courseListToRefresh)
         }
     }
     
