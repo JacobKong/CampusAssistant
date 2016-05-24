@@ -23,4 +23,31 @@ extension UIImage{
         
     }
     
+    class func RBSquareImage(image: UIImage) -> UIImage {
+        let originalWidth  = image.size.width
+        let originalHeight = image.size.height
+        
+        let cropSquare = CGRectMake(0, (originalHeight - originalWidth)/2, originalWidth, originalWidth)
+        let imageRef = CGImageCreateWithImageInRect(image.CGImage, cropSquare);
+        
+        return UIImage(CGImage: imageRef!, scale: UIScreen.mainScreen().scale, orientation: image.imageOrientation)
+    }
+    
+    class func imageByCroppingImage(image : UIImage, size : CGSize) -> UIImage{
+        let refWidth : CGFloat = CGFloat(CGImageGetWidth(image.CGImage))
+        let refHeight : CGFloat = CGFloat(CGImageGetHeight(image.CGImage))
+        
+        let x = (refWidth - size.width) / 2
+        let y = (refHeight - size.height) / 2
+        
+        let cropRect = CGRectMake(x, y, size.height, size.width)
+        let imageRef = CGImageCreateWithImageInRect(image.CGImage, cropRect)
+        
+        let cropped : UIImage = UIImage(CGImage: imageRef!, scale: 0, orientation: image.imageOrientation)
+        
+        
+        return cropped
+    }
+
+    
 }
