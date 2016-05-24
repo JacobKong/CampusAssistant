@@ -12,8 +12,10 @@ class CACalendarTool: NSObject {
     // 2016-03-06 00:00
     let ekEventStore = EKEventStore()
     var identifierArray:[String]
+    var calendarIdentifierArray:[String]
     var events:[EKEvent]
     var courseIdentifier:NSArray?
+    var calendarIdentifier:NSArray?
     var formatter:NSDateFormatter = NSDateFormatter()
     var termStartDate:NSDate
     
@@ -23,6 +25,7 @@ class CACalendarTool: NSObject {
         self.formatter.dateFormat = "yyyy-MM-dd HH:mm"
         self.formatter.locale = NSLocale(localeIdentifier:"zh_CN")
         self.identifierArray = Array()
+        self.calendarIdentifierArray = Array()
         self.events = Array()
         termStartDate = formatter.dateFromString("2016-03-06 00:00")!
     }
@@ -37,6 +40,15 @@ class CACalendarTool: NSObject {
     class func getTodayNextEvent(handler:eventHandler){
         _instance.ekEventStore.requestAccessToEntityType(EKEntityType.Event) { (granted, error) in
             
+            _instance.calendarIdentifier = NSArray(contentsOfFile: NSHomeDirectory() + "/Documents/calendar.plist")
+            if (_instance.calendarIdentifier == nil){
+                _instance.addNewCalendar()
+                _instance.calendarIdentifier = NSArray(contentsOfFile: NSHomeDirectory() + "/Documents/calendar.plist")
+            }
+            
+            let identifier = _instance.calendarIdentifier![0] as! String
+            let calendar = _instance.ekEventStore.calendarWithIdentifier(identifier)
+            
             let t_from = NSDate()
             let formatter = NSDateFormatter();
             formatter.dateFormat = "yyyy-MM-dd";
@@ -48,7 +60,7 @@ class CACalendarTool: NSObject {
             let predicate = _instance.ekEventStore.predicateForEventsWithStartDate(
                 t_from,
                 endDate: t_to,
-                calendars: [_instance.ekEventStore.defaultCalendarForNewEvents])
+                calendars: [calendar!])
             
             let events = _instance.ekEventStore.eventsMatchingPredicate(predicate)
             
@@ -60,7 +72,7 @@ class CACalendarTool: NSObject {
         }
     }
     
-    private func refreshCalendar(courseList:[[String]]){
+    private func refreshCalendar(courseList:[[String]], calendarToRefresh:EKCalendar){
         var day_counter = 0, time_counter:Double = 0
         
         self.identifierArray.removeAll()
@@ -79,12 +91,12 @@ class CACalendarTool: NSObject {
                         let t_to:NSDate = self.termStartDate.dateByAddingTimeInterval(NSTimeInterval(interval_seconds))
                         
                         if week.count == 1{
-                            self.prepareEvent(_item[i*4], location: _item[i*4+2], notes: _item[i*4+1], fromTime: t_from, toTime: t_to, isRecurrenceEvent: false, endDate: nil)
+                            self.prepareEvent(_item[i*4], location: _item[i*4+2], notes: _item[i*4+1], fromTime: t_from, toTime: t_to, isRecurrenceEvent: false, endDate: nil, calendar: calendarToRefresh)
                         }else{
                             let t_end_week = Int(week[1])
                             interval_seconds += Double((t_end_week! - t_start_week!) * 7 * 24 * 3600)
                             let t_end:NSDate = self.termStartDate.dateByAddingTimeInterval(NSTimeInterval(interval_seconds))
-                            self.prepareEvent(_item[i*4], location: _item[i*4+2], notes: _item[i*4+1], fromTime: t_from, toTime: t_to, isRecurrenceEvent: true, endDate: t_end)
+                            self.prepareEvent(_item[i*4], location: _item[i*4+2], notes: _item[i*4+1], fromTime: t_from, toTime: t_to, isRecurrenceEvent: true, endDate: t_end, calendar: calendarToRefresh)
                         }
                     }
                 }
@@ -109,7 +121,7 @@ class CACalendarTool: NSObject {
         self.addAllEventsToCalendar()
     }
     
-    private func prepareEvent(title:String, location:String, notes:String, fromTime:NSDate, toTime:NSDate, isRecurrenceEvent:Bool, endDate:NSDate?){
+    private func prepareEvent(title:String, location:String, notes:String, fromTime:NSDate, toTime:NSDate, isRecurrenceEvent:Bool, endDate:NSDate?, calendar:EKCalendar){
 //        print(formatter.stringFromDate(fromTime))
 //        print(formatter.stringFromDate(toTime))
 //        if(isRecurrenceEvent){
@@ -122,7 +134,7 @@ class CACalendarTool: NSObject {
         event.endDate = toTime
         event.location = location
         event.notes = notes
-        event.calendar = self.ekEventStore.defaultCalendarForNewEvents
+        event.calendar = calendar
         
         if(isRecurrenceEvent){
             let recurrence_rule = EKRecurrenceRule(recurrenceWithFrequency: EKRecurrenceFrequency.Weekly, interval: 1, end: EKRecurrenceEnd(endDate: endDate!))
@@ -156,11 +168,21 @@ class CACalendarTool: NSObject {
 //        let filePath:String = NSHomeDirectory() + "/Documents/courseid.plist"
 //        self.courseIdentifier?.writeToFile(filePath, atomically: true)
         
-        self.courseIdentifier = NSArray(contentsOfFile: NSHomeDirectory() + "/Documents/courseid.plist")
-        if self.courseIdentifier != nil && self.courseIdentifier?.count != 0 {
-//            print(self.courseIdentifier)
-            ekEventStore.requestAccessToEntityType(EKEntityType.Event, completion: { (granted, error) in
-                if granted && error == nil {
+        ekEventStore.requestAccessToEntityType(EKEntityType.Event, completion: { (granted, error) in
+            if granted && error == nil {
+                _instance.calendarIdentifier = NSArray(contentsOfFile: NSHomeDirectory() + "/Documents/calendar.plist")
+                if (_instance.calendarIdentifier == nil){
+                    _instance.addNewCalendar()
+                    _instance.calendarIdentifier = NSArray(contentsOfFile: NSHomeDirectory() + "/Documents/calendar.plist")
+                }
+                
+                print(_instance.calendarIdentifier)
+                
+                let identifier = _instance.calendarIdentifier![0] as! String
+                let calendar = _instance.ekEventStore.calendarWithIdentifier(identifier)
+                
+                self.courseIdentifier = NSArray(contentsOfFile: NSHomeDirectory() + "/Documents/courseid.plist")
+                if self.courseIdentifier != nil && self.courseIdentifier?.count != 0 {
                     do{
                         for id in self.courseIdentifier! {
                             let eventToRemove = self.ekEventStore.eventWithIdentifier(id as! String)
@@ -173,15 +195,15 @@ class CACalendarTool: NSObject {
                     }
                     self.courseIdentifier = NSArray()
                     let filePath:String = NSHomeDirectory() + "/Documents/courseid.plist"
-//                    print(filePath)
+                    //                    print(filePath)
                     self.courseIdentifier?.writeToFile(filePath, atomically: true)
                     
-                    self.refreshCalendar(courseListToRefresh)
+                    self.refreshCalendar(courseListToRefresh, calendarToRefresh: calendar!)
+                }else{
+                    self.refreshCalendar(courseListToRefresh, calendarToRefresh: calendar!)
                 }
-            })
-        }else{
-            self.refreshCalendar(courseListToRefresh)
-        }
+            }
+        })
     }
     
     private func saveAllEventIdentifiers(){
@@ -189,6 +211,31 @@ class CACalendarTool: NSObject {
         let filePath:String = NSHomeDirectory() + "/Documents/courseid.plist"
         self.courseIdentifier?.writeToFile(filePath, atomically: true)
 //        print("IDENTIFIERS SAVED")
+    }
+    
+    private func addNewCalendar(){
+        let calendar = EKCalendar(forEntityType: EKEntityType.Event, eventStore: self.ekEventStore)
+        calendar.title = "课程表 - 东大校园助手"
+        let sourcesInEventStore = _instance.ekEventStore.sources
+        calendar.source = sourcesInEventStore.filter({ (source) -> Bool in
+            source.sourceType.rawValue == EKSourceType.Local.rawValue
+        }).first!
+        
+        do{
+            try self.ekEventStore.saveCalendar(calendar, commit: true)
+            
+            let identifier = calendar.calendarIdentifier
+            let filePath:String = NSHomeDirectory() + "/Documents/calendar.plist"
+            self.calendarIdentifierArray.removeAll()
+            self.calendarIdentifierArray.append(identifier)
+            
+            self.calendarIdentifier = NSArray(array:self.calendarIdentifierArray)
+            self.calendarIdentifier?.writeToFile(filePath, atomically: true)
+            
+            print("ADD CALENDAR SUCCESS & SAVED")
+        }catch{
+            print("ADD CALENDAR FAILED")
+        }
     }
 }
 
