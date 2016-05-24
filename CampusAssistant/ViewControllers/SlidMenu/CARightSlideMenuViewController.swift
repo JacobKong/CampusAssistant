@@ -34,6 +34,8 @@ class CARightSlideMenuViewController: UIViewController {
     var passwordTextField = CALightAlphaTextField()
     var ipgwusername:String!
     var ipgwpassword:String!
+    let ipgwunKey = "ipgwusername"
+    let ipgwpwdKey = "ipgwpassword"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +50,7 @@ class CARightSlideMenuViewController: UIViewController {
             self.accountSection.deanBindState.text = "未绑定"
             self.accountSection.deanBindState.textColor = UIColor.whiteColor()
         }
+        
         // Do any additional setup after loading the view.
     }
 
@@ -92,6 +95,24 @@ class CARightSlideMenuViewController: UIViewController {
         self.passwordTextField = IPWGSection.passwordTextField
         self.usernameTextField = IPWGSection.usernameTextField
         
+        let userDefault = NSUserDefaults.standardUserDefaults()
+        let ipgwusernameKey = userDefault.objectForKey(ipgwunKey)
+        let ipgwpasswordKey = userDefault.objectForKey(ipgwpwdKey)
+        
+//        ipgwusername = ipgwusernameKey as?String
+//        ipgwpassword = ipgwpasswordKey as? String
+        self.usernameTextField.text = ipgwusernameKey as?String
+        self.passwordTextField.text = ipgwpasswordKey as?String
+//        if  ipgwusernameKey==nil || ipgwpasswordKey == nil{
+//            
+//        }else{
+//            ipgwusername = ipgwusernameKey as!String
+//            ipgwpassword = ipgwpasswordKey as! String
+//            self.usernameTextField.text = ipgwusernameKey as?String
+//            self.passwordTextField.text = ipgwpasswordKey as?String
+//        }
+//        
+        
         IPWGSection.usernameTextField.rac_textSignal().subscribeNext {  (next:AnyObject!) -> () in
             if let text = next as? String {
                 self.ipgwusername = text
@@ -116,71 +137,56 @@ class CARightSlideMenuViewController: UIViewController {
         }else if self.ipgwpassword.length == 0{
             SVProgressHUD.showErrorMessage("请输入账号密码")
         }else{
-//            Alamofire.request(.GET, "http://ipgw.neu.edu.cn/ac_detect.php?ac_id=1&").responseString {
-//                (response) in
-//                switch response.result {
-//                case .Success:
-//                    //                var r_result: [[String]] = CARegexTool.parseCreditTable(response.result.value!)
+            SVProgressHUD.showStatus()
+            Alamofire.request(.GET, "http://ipgw.neu.edu.cn/ac_detect.php?ac_id=1&").responseString {
+                (response) in
+                switch response.result {
+                case .Success:
 //                    print(response.response)
 //                    print(response.result.value as String!)
 //                    print(response.response?.URL)              // 此项需要首先获取以获得正确请求地址
-//                    
-//                    // 登录
-//                    let par: [String:AnyObject] = [
-//                        "action":"login",
-//                        "ac_id":"1",
-//                        "user_ip":"",
-//                        "nas_ip":"",
-//                        "user_mac":"",
-//                        "url":"",
-//                        "username":self.ipgwusername,                  // 学号
-//                        "password":self.ipgwpassword,                    // 密码 此两项需要保存
-//                        "save_me":"0"
-//                    ]
-//                    
-//                    let url = response.response?.URL?.absoluteString
-//                    
-//                    Alamofire.request(.POST, url!, parameters: par).validate().responseString {
-//                        (response) in
-//                        switch response.result {
-//                        case .Success:
-//                            print(response.result.value as String!)
-//                            
-//                            // 此处需要判断是否成功登录 若失败的话使用 已登录成功
-//                            // CARegexTool.parseGateWayErrorResult(response.result.value!)
-//                            // 来取出错误原因
-//                            
-//                            let ip = CARegexTool.parseGateWayIP(response.result.value!)     // IP地址 此项需要存储
-//                            
-//                            //注销
-//                            
-//                            let para: [String:AnyObject] = [
-//                                "action":"auto_logout",
-//                                "info":"",
-//                                "user_ip":ip                    // 在此处填入ip
-//                            ]
-//                            
-//                            Alamofire.request(.POST, url!, parameters: para).validate().responseString {
-//                                (response) in
-//                                switch response.result {
-//                                case .Success:
-//                                    print(response.result.value as String!)
-//                                case .Failure(let error):
-//                                    print(error)
-//                                }
-//                                
-//                            }
-//                            
-//                        case .Failure(let error):
-//                            print(error)
-//                        }
-//                        
-//                    }
-//                case .Failure(let error):
-//                    print(error)
-//                }
-//                
-//            }
+                    
+                    // 登录
+                    let par: [String:AnyObject] = [
+                        "action":"login",
+                        "ac_id":"1",
+                        "user_ip":"",
+                        "nas_ip":"",
+                        "user_mac":"",
+                        "url":"",
+                        "username":self.ipgwusername,                  // 学号
+                        "password":self.ipgwpassword,                    // 密码 此两项需要保存
+                        "save_me":"0"
+                    ]
+                    
+                    let url = response.response?.URL?.absoluteString
+                    
+                    Alamofire.request(.POST, url!, parameters: par).validate().responseString {
+                        (response) in
+                        switch response.result {
+                        case .Success:
+                            if CARegexTool.parseIPGWConnect(response.result.value as String!){
+                                let userDefault = NSUserDefaults.standardUserDefaults()
+                                userDefault.setObject(self.ipgwusername, forKey: self.ipgwunKey)
+                                userDefault.setObject(self.ipgwpassword, forKey: self.ipgwpwdKey)
+                                userDefault.synchronize()
+                                SVProgressHUD.showSuccessMessage("网络已连接")
+                            }else{
+                                // 来取出错误原因
+                                let errorMessage = CARegexTool.parseGateWayErrorResult(response.result.value!)
+                                SVProgressHUD.showErrorMessage(errorMessage)
+                            }
+                        case .Failure(let error):
+                            SVProgressHUD.showErrorMessage(kErrorMessage)
+                            print(error)
+                        }
+                        
+                    }
+                case .Failure(let error):
+                    print(error)
+                }
+                
+            }
         }
     }
     
@@ -190,8 +196,39 @@ class CARightSlideMenuViewController: UIViewController {
         }else if self.ipgwpassword.length == 0{
             SVProgressHUD.showErrorMessage("请输入账号密码")
         }else{
+            SVProgressHUD.showStatus()
+            Alamofire.request(.GET, "http://ipgw.neu.edu.cn/ac_detect.php?ac_id=1&").responseString {
+                (response) in
+                switch response.result {
+                case .Success:
+                    // 此项需要首先获取以获得正确请求地址
+                    let url = response.response?.URL?.absoluteString
+                    let para: [String:AnyObject] = [
+                        "action":"auto_logout",
+                        "info":"",
+                        "user_ip":""                    // 在此处填入ip
+                    ]
+                    
+                    Alamofire.request(.POST, url!, parameters: para).validate().responseString {
+                        (response) in
+                        switch response.result {
+                        case .Success:
+                            SVProgressHUD.showSuccessMessage("网络已断开")
+                        case .Failure(let error):
+                            // 来取出错误原因
+                            let errorMessage = CARegexTool.parseGateWayErrorResult(response.result.value!)
+                            SVProgressHUD.showErrorMessage(errorMessage)
+                            print(error)
+                        }
+                    }
+                case .Failure(let error):
+                    SVProgressHUD.showErrorMessage(kErrorMessage)
+                    print(error)
+                }
+            }
             
         }
+        
         
     }
     

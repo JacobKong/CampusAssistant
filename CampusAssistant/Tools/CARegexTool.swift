@@ -10,6 +10,28 @@ import UIKit
 import Regex
 
 class CARegexTool: NSObject {
+    class func parseIPGWConnect(response:String)->Bool{
+        let r_value:String! = response
+        let r_pattern:Regex = Regex("网络已连接")
+        let r_matches:[MatchResult] = r_pattern.allMatches(r_value)
+        if r_matches.count>0 {
+            return true
+        }else{
+            return false
+        }
+    }
+
+    class func parseIPGWDisconnect(response:String)->Bool{
+        let r_value:String! = response
+        let r_pattern:Regex = Regex("网络已断开")
+        let r_matches:[MatchResult] = r_pattern.allMatches(r_value)
+        if r_matches.count>0 {
+            return true
+        }else{
+            return false
+        }
+    }
+
     class func parseLogin(response:String) -> String{
         let r_value:String! = response
         let r_pattern1:Regex = Regex("欢迎登录教务处网络平台")

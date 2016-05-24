@@ -25,11 +25,6 @@ class CAHomeViewController: UIViewController {
         setupAddMoreSection()
         setupRevealController()
         setupWeedNoTextview()
-//        self.title = "NEU CAMPUS ASSISTANT"
-//        self.title = "NEU Campus Assistant"
-        
-//         测试 IP网关
-//        testIPGW()
         
     }
 
@@ -86,37 +81,33 @@ class CAHomeViewController: UIViewController {
                 let startTime = formatter.stringFromDate(event!.startDate)
                 let endTime = formatter.stringFromDate(event!.endDate)
                 let timeText = "\(startTime)~\(endTime)"
-                print(timeText)
                 if NSDate().compare(event!.startDate).rawValue > 0 {
-                    print("正在上课")
                     studyLifeView.titleLabel.hidden = false
                     studyLifeView.timeLabel.hidden = false
                     studyLifeView.localtionLable.hidden = false
                     
-                    studyLifeView.titleLabel.text = "正在进行的事件"
+                    studyLifeView.titleLabel.text = "正在上课"
                     studyLifeView.classNameLabel.text = event!.title
                     studyLifeView.timeLabel.text = timeText
                     studyLifeView.localtionLable.text = event!.location
-                    print(event!.title )
-                    print(event!.location)
+//                    print(event!.title )
+//                    print(event!.location)
                 }else{
-                    print("下一节课")
                     studyLifeView.titleLabel.hidden = false
                     studyLifeView.timeLabel.hidden = false
                     studyLifeView.localtionLable.hidden = false
                     
-                    studyLifeView.titleLabel.text = "下一个事件"
+                    studyLifeView.titleLabel.text = "下一节课"
                     studyLifeView.classNameLabel.text = event!.title
                     studyLifeView.timeLabel.text = timeText
                     studyLifeView.localtionLable.text = event!.location
-                    print(event!.title)
+//                    print(event!.title)
                 }
             }else{
-                print("当前没有任何事件")
                 studyLifeView.titleLabel.hidden = true
                 studyLifeView.timeLabel.hidden = true
                 studyLifeView.localtionLable.hidden = true
-                studyLifeView.classNameLabel.text = "今天没有任何事件"
+                studyLifeView.classNameLabel.text = "今天没有课啦！"
             }
         }
 
@@ -188,75 +179,6 @@ class CAHomeViewController: UIViewController {
         self.weatherView.setupWeedNoTextview(todayNo)
         
     }
-    
-    private func testIPGW(){
-        Alamofire.request(.GET, "http://ipgw.neu.edu.cn/ac_detect.php?ac_id=1&").responseString {
-            (response) in
-            switch response.result {
-            case .Success:
-                //                var r_result: [[String]] = CARegexTool.parseCreditTable(response.result.value!)
-                print(response.response)
-                print(response.result.value as String!)
-                print(response.response?.URL)              // 此项需要首先获取以获得正确请求地址
-                
-                // 登录
-                let par: [String:AnyObject] = [
-                    "action":"login",
-                    "ac_id":"1",
-                    "user_ip":"",
-                    "nas_ip":"",
-                    "user_mac":"",
-                    "url":"",
-                    "username":"20134649",                  // 学号
-                    "password":"950426",                    // 密码 此两项需要保存
-                    "save_me":"0"
-                ]
-                
-                let url = response.response?.URL?.absoluteString
-
-                Alamofire.request(.POST, url!, parameters: par).validate().responseString {
-                    (response) in
-                    switch response.result {
-                    case .Success:
-                        print(response.result.value as String!)
-                        
-                        // 此处需要判断是否成功登录 若失败的话使用
-                        // CARegexTool.parseGateWayErrorResult(response.result.value!)
-                        // 来取出错误原因
-                        
-                        let ip = CARegexTool.parseGateWayIP(response.result.value!)     // IP地址 此项需要存储
-                        
-                        //注销
-                        
-                        let para: [String:AnyObject] = [
-                            "action":"auto_logout",
-                            "info":"",
-                            "user_ip":ip                    // 在此处填入ip
-                        ]
-                        
-                        Alamofire.request(.POST, url!, parameters: para).validate().responseString {
-                            (response) in
-                            switch response.result {
-                            case .Success:
-                                print(response.result.value as String!)
-                            case .Failure(let error):
-                                print(error)
-                            }
-                            
-                        }
-
-                    case .Failure(let error):
-                        print(error)
-                    }
-                    
-                }
-            case .Failure(let error):
-                print(error)
-            }
-
-        }
-    }
-
 }
 
 extension CAHomeViewController: SWRevealViewControllerDelegate {
@@ -269,14 +191,12 @@ extension CAHomeViewController: SWRevealViewControllerDelegate {
             rightBarItemButton.curve = "linear"
             rightBarItemButton.duration = 0.5
             rightBarItemButton.setImage(UIImage(named: "navigationbar_side_menu"), forState: .Normal)
-            print("Left")
         } else if position == FrontViewPosition.LeftSide {
             // 开启
             rightBarItemButton.animation = "morph"
             rightBarItemButton.curve = "linear"
             rightBarItemButton.duration = 0.5
             rightBarItemButton.setImage(UIImage(named: "navigationbar_cancle"), forState: .Normal)
-            print("LeftSide")
         }
         rightBarItemButton.animate()
     }
