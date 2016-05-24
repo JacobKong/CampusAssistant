@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         checkCookieisExpired()
         return true
     }
-    
+        
     // MARK: - Methods
     private func setupViewControllers() {
         let homeViewController: CAHomeViewController = CAHomeViewController()
