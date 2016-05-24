@@ -31,20 +31,6 @@ class CAHomeViewController: UIViewController {
 //         测试 IP网关
 //        testIPGW()
         
-        
-        CACalendarTool.getTodayNextEvent { (event) in
-            if (event) != nil {
-                if NSDate().compare(event!.startDate).rawValue > 0 {
-                    print("正在上课")
-                    print(event?.title)
-                }else{
-                    print("下一节课")
-                    print(event?.title)
-                }
-            }else{
-                print("今天没有课了")
-            }
-        }
     }
 
     
@@ -86,10 +72,54 @@ class CAHomeViewController: UIViewController {
     }
 
     private func setupStudyLifeSection() {
-        let view = CAStudyLifeSectionView.instanceFromNib() as! CAStudyLifeSectionView
-        view.frame = CGRectMake(0, 220, kScreenWidth, 230)
-        self.view.addSubview(view)
-        view.delegate = self
+        let studyLifeView = CAStudyLifeSectionView.instanceFromNib() as! CAStudyLifeSectionView
+        studyLifeView.frame = CGRectMake(0, 220, kScreenWidth, 230)
+        self.view.addSubview(studyLifeView)
+        studyLifeView.delegate = self
+        
+        let formatter = NSDateFormatter();
+        formatter.dateFormat = "HH:mm";
+        formatter.locale = NSLocale(localeIdentifier:"zh_CN")
+
+        CACalendarTool.getTodayNextEvent { (event) in
+            if (event) != nil {
+                let startTime = formatter.stringFromDate(event!.startDate)
+                let endTime = formatter.stringFromDate(event!.endDate)
+                let timeText = "\(startTime)~\(endTime)"
+                print(timeText)
+                if NSDate().compare(event!.startDate).rawValue > 0 {
+                    print("正在上课")
+                    studyLifeView.titleLabel.hidden = false
+                    studyLifeView.timeLabel.hidden = false
+                    studyLifeView.localtionLable.hidden = false
+                    
+                    studyLifeView.titleLabel.text = "正在进行的事件"
+                    studyLifeView.classNameLabel.text = event!.title
+                    studyLifeView.timeLabel.text = timeText
+                    studyLifeView.localtionLable.text = event!.location
+                    print(event!.title )
+                    print(event!.location)
+                }else{
+                    print("下一节课")
+                    studyLifeView.titleLabel.hidden = false
+                    studyLifeView.timeLabel.hidden = false
+                    studyLifeView.localtionLable.hidden = false
+                    
+                    studyLifeView.titleLabel.text = "下一个事件"
+                    studyLifeView.classNameLabel.text = event!.title
+                    studyLifeView.timeLabel.text = timeText
+                    studyLifeView.localtionLable.text = event!.location
+                    print(event!.title)
+                }
+            }else{
+                print("当前没有任何事件")
+                studyLifeView.titleLabel.hidden = true
+                studyLifeView.timeLabel.hidden = true
+                studyLifeView.localtionLable.hidden = true
+                studyLifeView.classNameLabel.text = "今天没有任何事件"
+            }
+        }
+
     }
 
     private func setupAddMoreSection() {

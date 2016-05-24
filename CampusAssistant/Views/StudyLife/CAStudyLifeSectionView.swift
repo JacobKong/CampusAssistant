@@ -16,6 +16,11 @@ import UIKit
 }
 
 class CAStudyLifeSectionView: UIView {
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var localtionLable: UILabel!
+    @IBOutlet weak var classNameLabel: UILabel!
+    
     var delegate:StudyLifeSectionProtocol?
     
     class func instanceFromNib() -> UIView {
