@@ -29,8 +29,12 @@ class CARightSlideMenuViewController: UIViewController {
     var esusername:String!
     var espassword:String!
     var esverigyCode:String!
-//    var usernameTextField = CALightAlphaTextField()
-//    var passwordTextField = CALightAlphaTextField()
+    
+    var usernameTextField = CALightAlphaTextField()
+    var passwordTextField = CALightAlphaTextField()
+    var ipgwusername:String!
+    var ipgwpassword:String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupBgImage()
@@ -85,11 +89,110 @@ class CARightSlideMenuViewController: UIViewController {
         let IPWGW:CGFloat = kScreenWidth - 60
         let IPWGH:CGFloat = 170
         IPWGSection.frame = CGRectMake(IPWGX, IPWGY, IPWGW, IPWGH)
-//        IPWGSection.usernameTextField.delegate = self
-//        IPWGSection.passwordTextField.delegate = self
-//        self.passwordTextField = IPWGSection.passwordTextField
-//        self.usernameTextField = IPWGSection.usernameTextField
+        self.passwordTextField = IPWGSection.passwordTextField
+        self.usernameTextField = IPWGSection.usernameTextField
+        
+        IPWGSection.usernameTextField.rac_textSignal().subscribeNext {  (next:AnyObject!) -> () in
+            if let text = next as? String {
+                self.ipgwusername = text
+            }
+        }
+        
+        IPWGSection.passwordTextField.rac_textSignal().subscribeNext {  (next:AnyObject!) -> () in
+            if let text = next as? String {
+                self.ipgwpassword = text
+            }
+        }
+
+        IPWGSection.connect_btn.addTarget(self, action: #selector(self.connect_btn_cliked), forControlEvents: .TouchUpInside)
+        IPWGSection.disconnect_btn.addTarget(self, action: #selector(self.disconnect_btn_clicked), forControlEvents: .TouchUpInside)
+        
         self.scrollView.addSubview(IPWGSection)
+    }
+    
+    @objc private func connect_btn_cliked(){
+        if self.ipgwusername.length==0 {
+            SVProgressHUD.showErrorMessage("请输入校园网账号")
+        }else if self.ipgwpassword.length == 0{
+            SVProgressHUD.showErrorMessage("请输入账号密码")
+        }else{
+//            Alamofire.request(.GET, "http://ipgw.neu.edu.cn/ac_detect.php?ac_id=1&").responseString {
+//                (response) in
+//                switch response.result {
+//                case .Success:
+//                    //                var r_result: [[String]] = CARegexTool.parseCreditTable(response.result.value!)
+//                    print(response.response)
+//                    print(response.result.value as String!)
+//                    print(response.response?.URL)              // 此项需要首先获取以获得正确请求地址
+//                    
+//                    // 登录
+//                    let par: [String:AnyObject] = [
+//                        "action":"login",
+//                        "ac_id":"1",
+//                        "user_ip":"",
+//                        "nas_ip":"",
+//                        "user_mac":"",
+//                        "url":"",
+//                        "username":self.ipgwusername,                  // 学号
+//                        "password":self.ipgwpassword,                    // 密码 此两项需要保存
+//                        "save_me":"0"
+//                    ]
+//                    
+//                    let url = response.response?.URL?.absoluteString
+//                    
+//                    Alamofire.request(.POST, url!, parameters: par).validate().responseString {
+//                        (response) in
+//                        switch response.result {
+//                        case .Success:
+//                            print(response.result.value as String!)
+//                            
+//                            // 此处需要判断是否成功登录 若失败的话使用 已登录成功
+//                            // CARegexTool.parseGateWayErrorResult(response.result.value!)
+//                            // 来取出错误原因
+//                            
+//                            let ip = CARegexTool.parseGateWayIP(response.result.value!)     // IP地址 此项需要存储
+//                            
+//                            //注销
+//                            
+//                            let para: [String:AnyObject] = [
+//                                "action":"auto_logout",
+//                                "info":"",
+//                                "user_ip":ip                    // 在此处填入ip
+//                            ]
+//                            
+//                            Alamofire.request(.POST, url!, parameters: para).validate().responseString {
+//                                (response) in
+//                                switch response.result {
+//                                case .Success:
+//                                    print(response.result.value as String!)
+//                                case .Failure(let error):
+//                                    print(error)
+//                                }
+//                                
+//                            }
+//                            
+//                        case .Failure(let error):
+//                            print(error)
+//                        }
+//                        
+//                    }
+//                case .Failure(let error):
+//                    print(error)
+//                }
+//                
+//            }
+        }
+    }
+    
+    @objc private func disconnect_btn_clicked(){
+        if self.ipgwusername.length==0 {
+            SVProgressHUD.showErrorMessage("请输入校园网账号")
+        }else if self.ipgwpassword.length == 0{
+            SVProgressHUD.showErrorMessage("请输入账号密码")
+        }else{
+            
+        }
+        
     }
     
 
