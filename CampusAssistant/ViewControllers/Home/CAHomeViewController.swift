@@ -30,6 +30,21 @@ class CAHomeViewController: UIViewController {
         
 //         测试 IP网关
 //        testIPGW()
+        
+        
+        CACalendarTool.getTodayNextEvent { (event) in
+            if (event) != nil {
+                if NSDate().compare(event!.startDate).rawValue > 0 {
+                    print("正在上课")
+                    print(event?.title)
+                }else{
+                    print("下一节课")
+                    print(event?.title)
+                }
+            }else{
+                print("今天没有课了")
+            }
+        }
     }
 
     
