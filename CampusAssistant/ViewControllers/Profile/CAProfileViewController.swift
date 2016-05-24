@@ -71,7 +71,7 @@ class CAProfileViewController: UIViewController {
             switch response.result {
             case .Success:
                 let image = UIImage(data: response.data! as NSData)
-                let newImage = UIImage.imageByCroppingImage(image!, size: CGSizeMake(150, 150))
+                let newImage = UIImage.imageByCroppingImage(image!, size: CGSizeMake(130, 130))
                 self.profileHeader.iconImageView.image = newImage
                 break
             case .Failure(let error):
