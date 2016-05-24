@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import SVProgressHUD
 
 class CACreditWarningViewController: UIViewController {
     var tableView:UITableView!
@@ -40,10 +41,12 @@ class CACreditWarningViewController: UIViewController {
     }
     
     private func setupCreditData(){
+        SVProgressHUD.showStatus()
         Alamofire.request(.GET, "http://202.118.31.197/ACTIONQUERYBASESTUDENTINFO.APPPROCESS?mode=3").validate().responseString {
             (response) in
             switch response.result {
             case .Success:
+                SVProgressHUD.dismiss()
                 let r_result: [[String]] = CARegexTool.parseCreditTable(response.result.value!)
                 self.creditList.removeAll()
                 for result in r_result{

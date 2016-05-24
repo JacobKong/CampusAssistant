@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import SVProgressHUD
 
 class CAExamAgendaViewController: UIViewController {
     var tableView:UITableView!
@@ -48,11 +49,12 @@ class CAExamAgendaViewController: UIViewController {
     
     private func setupExamList(){
 //        CANetworkTool.setAAOCookies("X7WZPtqSvgAnzEzwcnjKOUNDtytBK2bHlhcsVWfNhplMU2v3N0Aq!1269920556")
-        
+        SVProgressHUD.showStatus()
         Alamofire.request(.GET, "http://202.118.31.197/ACTIONQUERYEXAMTIMETABLEBYSTUDENT.APPPROCESS?mode=2").validate().responseString {
             (response) in
             switch response.result {
             case .Success:
+                SVProgressHUD.dismiss()
                 let r_result: [[String]] = CARegexTool.parseExamTable(response.result.value!)
                 self.examList.removeAll()
                 for result in r_result{

@@ -118,10 +118,12 @@ class CAEmptyRoomViewController: UIViewController {
     }
     
     private func setupBuildingList(){
+        SVProgressHUD.showStatus()
         Alamofire.request(.GET, "http://202.118.31.197/ACTIONQUERYCLASSROOMNOUSE.APPPROCESS").validate().responseString {
             (response) in
             switch response.result {
             case .Success:
+                SVProgressHUD.dismiss()
                 let r_result: [[String]] = CARegexTool.parseEptClsrmStoryList(response.result.value!)
                 self.buildingList.removeAll()
                 self.menuView.tableView.items.removeAll()

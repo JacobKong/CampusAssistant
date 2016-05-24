@@ -89,8 +89,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // 检测cookie是否可用
     private func checkCookieisExpired() {
-        SVProgressHUD.setDefaultMaskType(.Black)
-        SVProgressHUD.show()
+        SVProgressHUD.showStatus()
         if CADeanAccountTool.isExistAccountData(){
             let deanAccount = CADeanAccountTool.deanAccount()
             self.esusername = deanAccount.username
@@ -209,6 +208,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate:CustomIOSAlertViewDelegate{
     func customIOS7dialogButtonTouchUpInside(alertView: AnyObject!, clickedButtonAtIndex buttonIndex: Int) {
         if buttonIndex==0 {
+            SVProgressHUD.showStatus()
             if esusername.length==0 {
                 SVProgressHUD.showErrorMessage("请输入学号")
             }else if espassword.length == 0{

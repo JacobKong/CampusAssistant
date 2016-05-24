@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import SVProgressHUD
 
 class CACheckGradesViewController: UIViewController {
     var tableView: UITableView!
@@ -144,30 +145,12 @@ class CACheckGradesViewController: UIViewController {
     }
 
     private func setupTermList() {
-//        print("Setup Data")
-//        Alamofire.request(.GET, "http://202.118.31.241:8080/api/v1/termList?token=201602192328181600003301580").validate()
-//        .responseString {
-//            response in
-//            switch response.result {
-//            case .Success:
-//                if let value = response.result.value {
-//                    let data: NSData = value.dataUsingEncoding(NSUTF8StringEncoding)!
-//                    let json = NSData.NSDataToJSON(data)
-//                    let termData = json!["data"] as! [AnyObject]
-////                    print(termData!["termName"] as! [String:AnyObject])
-////                    let studentDictionary = studentArray[0] as! [String:AnyObject]
-////                    let student = CAStudent.mj_objectWithKeyValues(studentDictionary) as CAStudent
-////                    CAStudentTool.saveStudent(self.student)
-//                }
-//            case .Failure(let error):
-//                print(error)
-//            }
-//        }
-        
+        SVProgressHUD.showStatus()
         Alamofire.request(.GET, "http://202.118.31.197/ACTIONQUERYSTUDENTSCORE.APPPROCESS").validate().responseString {
             (response) in
             switch response.result {
             case .Success:
+                SVProgressHUD.dismiss()
                 let r_result: [[String]] = CARegexTool.parseGradeTermList(response.result.value!)
                 self.termList.removeAll()
                 self.menuView.tableView.items.removeAll()

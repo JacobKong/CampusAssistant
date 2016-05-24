@@ -10,6 +10,11 @@ import Foundation
 import SVProgressHUD
 
 extension SVProgressHUD{
+    class func showStatus(){
+        SVProgressHUD.setDefaultMaskType(.Black)
+        SVProgressHUD.show()
+    }
+    
     class func showErrorMessage(message:String){
         SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType.Black)
         SVProgressHUD.setMinimumDismissTimeInterval(1.0)
