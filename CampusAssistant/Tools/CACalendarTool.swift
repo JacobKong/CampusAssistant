@@ -17,6 +17,8 @@ class CACalendarTool: NSObject {
     var formatter:NSDateFormatter = NSDateFormatter()
     var termStartDate:NSDate
     
+    typealias eventHandler = (event:EKEvent?) -> Void
+    
     override init() {
         self.formatter.dateFormat = "yyyy-MM-dd HH:mm"
         self.formatter.locale = NSLocale(localeIdentifier:"zh_CN")
@@ -30,6 +32,32 @@ class CACalendarTool: NSObject {
 //        print(_instance.identifierArray)
         _instance.removeAllEvents(courseList)
 //        print(courseList)
+    }
+    
+    class func getTodayNextEvent(handler:eventHandler){
+        _instance.ekEventStore.requestAccessToEntityType(EKEntityType.Event) { (granted, error) in
+            
+            let t_from = NSDate()
+            let formatter = NSDateFormatter();
+            formatter.dateFormat = "yyyy-MM-dd";
+            formatter.locale = NSLocale(localeIdentifier:"zh_CN")
+            let today = formatter.dateFromString(formatter.stringFromDate(t_from))!
+            
+            let t_to = today.dateByAddingTimeInterval(NSTimeInterval(24*3600))
+            
+            let predicate = _instance.ekEventStore.predicateForEventsWithStartDate(
+                t_from,
+                endDate: t_to,
+                calendars: [_instance.ekEventStore.defaultCalendarForNewEvents])
+            
+            let events = _instance.ekEventStore.eventsMatchingPredicate(predicate)
+            
+            if events.count > 0{
+                handler(event: events[0])
+            }else{
+                handler(event: nil)
+            }
+        }
     }
     
     private func refreshCalendar(courseList:[[String]]){
